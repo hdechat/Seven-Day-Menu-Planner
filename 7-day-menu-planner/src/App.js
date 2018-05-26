@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import {paleo} from './mock-data.js'
+import {cleanData} from './helpers/helpers.js'
 
 class App extends Component {
   constructor(props) {
@@ -9,10 +11,15 @@ class App extends Component {
       recipeCards: []
     }
   }
-  
+
   render() {
     return (
       <div className="App">
+        <select id='diet-plan'>
+          <option value='paleo'>Paleo</option>
+          <option value='vegetarian'>Vegetarian</option>
+          <option value='vegan'>Vegan</option>
+        </select>
       </div>
     );
   }
