@@ -19,7 +19,11 @@ ShallowWrapper {
     "props": Object {
       "children": <select
         id="diet-plan"
+        onChange={[Function]}
 >
+        <option>
+                SELECT DIET PLAN
+        </option>
         <option
                 value="paleo"
         >
@@ -45,6 +49,9 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <option>
+            SELECT DIET PLAN
+</option>,
           <option
             value="paleo"
 >
@@ -62,9 +69,21 @@ ShallowWrapper {
 </option>,
         ],
         "id": "diet-plan",
+        "onChange": [Function],
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "SELECT DIET PLAN",
+          },
+          "ref": null,
+          "rendered": "SELECT DIET PLAN",
+          "type": "option",
+        },
         Object {
           "instance": null,
           "key": undefined,
@@ -114,7 +133,11 @@ ShallowWrapper {
       "props": Object {
         "children": <select
           id="diet-plan"
+          onChange={[Function]}
 >
+          <option>
+                    SELECT DIET PLAN
+          </option>
           <option
                     value="paleo"
           >
@@ -140,6 +163,9 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
+            <option>
+              SELECT DIET PLAN
+</option>,
             <option
               value="paleo"
 >
@@ -157,9 +183,21 @@ ShallowWrapper {
 </option>,
           ],
           "id": "diet-plan",
+          "onChange": [Function],
         },
         "ref": null,
         "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "SELECT DIET PLAN",
+            },
+            "ref": null,
+            "rendered": "SELECT DIET PLAN",
+            "type": "option",
+          },
           Object {
             "instance": null,
             "key": undefined,
