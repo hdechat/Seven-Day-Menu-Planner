@@ -3,7 +3,7 @@ export const cleanData = (data) => {
     return {
       image: hit.recipe.image,
       url: hit.recipe.url,
-      ingredients: hit.recipe.ingredientLines,
+      ingredients: hit.recipe.ingredientLines
     }
   });
 }
