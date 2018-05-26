@@ -9,7 +9,9 @@ describe('App', () => {
   beforeEach(() => {
     wrapper = shallow(<App />)
   });
-it('matches snapshot', () => {
-  expect(wrapper).toMatchSnapshot();
-});
+
+  it('matches snapshot', () => {
+    expect(wrapper).toMatchSnapshot();
+  });
+
 });

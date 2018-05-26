@@ -19,7 +19,6 @@ ShallowWrapper {
     "props": Object {
       "children": <select
         id="diet-plan"
-        onChange={[Function]}
 >
         <option
                 value="paleo"
@@ -63,7 +62,6 @@ ShallowWrapper {
 </option>,
         ],
         "id": "diet-plan",
-        "onChange": [Function],
       },
       "ref": null,
       "rendered": Array [
@@ -116,7 +114,6 @@ ShallowWrapper {
       "props": Object {
         "children": <select
           id="diet-plan"
-          onChange={[Function]}
 >
           <option
                     value="paleo"
@@ -160,7 +157,6 @@ ShallowWrapper {
 </option>,
           ],
           "id": "diet-plan",
-          "onChange": [Function],
         },
         "ref": null,
         "rendered": Array [
