@@ -27,6 +27,19 @@ describe('PALEO ACTIONS', () => {
       expect(actual).toEqual(expected);      
     });
   });
+
+  describe('Paleo Has Errored', () => {
+    it('should return a boolean', () => {
+      const expected = {
+        type: 'PALEO_HAS_ERRORED',
+        paleoHasErrored: true
+      }
+
+      const actual = actions.paleoHasErrored(true)
+
+      expect(actual).toEqual(expected);
+    });
+  });
 });
 
 // expect(actual).toEqual(expected);

@@ -8,3 +8,8 @@ export const paleoIsLoading = (bool) => ({
   type: 'PALEO_IS_LOADING',
   paleoIsLoading: bool
 });
+
+export const paleoHasErrored = (bool) => ({
+  type: 'PALEO_HAS_ERRORED',
+  paleoHasErrored: bool
+});
