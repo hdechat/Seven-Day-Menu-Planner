@@ -1,6 +1,19 @@
 import * as actions from './index.js';
 import { cleanedPaleoRecipes } from '../mock-data.js';
 
+describe('Choose Category', () => {
+  it('should have a type of CHOOSE_CATEGORY and return a category string', () => {
+    const expected = {
+      type: 'CHOOSE_CATEGORY',
+      category: 'paleo'
+    };
+
+    const actual = actions.chooseCategory('paleo');
+
+    expect(actual).toEqual(expected);
+  });
+});
+
 describe('RECIPES ACTIONS', () => {
   describe('Fetch Recipes Success', () => {
     it('should have a type of FETCH_RECIPES_SUCCESS and return an array of cleaned recipe objects', () => {
@@ -9,7 +22,7 @@ describe('RECIPES ACTIONS', () => {
         recipes: cleanedPaleoRecipes
       };
 
-      const actual = actions.recipes(cleanedPaleoRecipes)
+      const actual = actions.fetchRecipesSuccess(cleanedPaleoRecipes)
 
       expect(actual).toEqual(expected);
     });

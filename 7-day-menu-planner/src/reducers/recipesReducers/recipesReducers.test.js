@@ -1,50 +1,48 @@
 import * as reducers from './recipesReducers.js';
-import { recipes, recipesIsLoading, recipesHasErrored } from '../../actions';
+import { fetchRecipesSuccess, recipesIsLoading, recipesHasErrored } from '../../actions';
 import { cleanedPaleoRecipes } from '../../mock-data.js';
 
-describe('Fetch Recipes Success Reducer', () => {
-  it('should return empty array if there is no given state', () => {
-    const actual = reducers.recipesReducer(undefined, {});
+describe('Recipes Reducer', () => {
+  let mockState;
 
-    expect(actual).toEqual([]);
+  beforeEach(() => {
+    mockState = { results: [] }
   });
 
-  it('should return an array of recipes object when it receives the correct action', () => {
-    const state = [{test: 'object'}];
+  it('should return initialState if there is no given state', () => {
+    const actual = reducers.recipesReducer(undefined, {});
 
-    const expected = [{test: 'object'}, ...cleanedPaleoRecipes];
+    expect(actual).toEqual(mockState);
+  });
 
-    const actual = reducers.recipesReducer(state, recipes(cleanedPaleoRecipes));
+  it('should return results array of recipes object when it receives the correct action', () => {
+    const state = {results: [{test: 'object'}]};
+
+    const expected = {results: [...cleanedPaleoRecipes]};
+
+    const actual = reducers.recipesReducer(state, fetchRecipesSuccess(cleanedPaleoRecipes));
 
     expect(actual).toEqual(expected);
   });
-});
-
-describe('Recipes Is Loading Reducer', () => {
-  it('should return false if there is no given state', () => {
-    const actual = reducers.recipesIsLoadingReducer(undefined, {});
-
-    expect(actual).toBe(false);
-  });
 
   it('should return a boolean when it receives the correct action', () => {
-    const state = false;
-    const actual = reducers.recipesIsLoadingReducer(state, recipesIsLoading(true))
-    expect(actual).toBe(true);
-  });
-});
+    const state = { results: [] };
 
-describe('Recipes Has Errored Reducer', () => {
-  it('should return false if there is no given state', () => {
-    const actual = reducers.recipesHasErroredReducer(undefined, {});
+    const expected = { results: [], recipesIsLoading: true}
 
-    expect(actual).toBe(false);
+    const actual = reducers.recipesReducer(state, recipesIsLoading(true));
+
+    expect(actual).toEqual(expected);
   });
+
 
   it('should return a boolean when it receives the correct action', () => {
-    const state = false;
-    const actual = reducers.recipesHasErroredReducer(state, recipesHasErrored(true))
-    expect(actual).toBe(true);
+    const state = { results: [] };
+
+    const expected = { results: [], recipesHasErrored: true}
+
+    const actual = reducers.recipesReducer(state, recipesHasErrored(true))
+    expect(actual).toEqual(expected);
   });
 });
 

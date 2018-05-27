@@ -1,26 +1,17 @@
+const initialState = {
+  results: [],
+}
 
-export const recipesReducer = (state = [], action) => {
+
+export const recipesReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'FETCH_RECIPES_SUCCESS':
-      return [...state, ...action.recipes];
-    default:
-      return state;
-  }
-};
-
-export const recipesIsLoadingReducer = (state = false, action) => {
-  switch (action.type) {
-    case 'RECIPES_IS_LOADING':
-      return action.recipesIsLoading;
-    default:
-      return state;
-  }
-};
-
-export const recipesHasErroredReducer = (state = false, action) => {
-  switch (action.type) {
+      return {...state, results: action.recipes};
     case 'RECIPES_HAS_ERRORED':
-      return action.recipesHasErrored;
+      return {...state, recipesHasErrored: action.recipesHasErrored};
+    case 'RECIPES_IS_LOADING':
+      return {...state, recipesIsLoading: action.recipesIsLoading};
+      return 
     default:
       return state;
   }

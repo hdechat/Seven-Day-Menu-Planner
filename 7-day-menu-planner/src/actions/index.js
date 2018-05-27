@@ -1,5 +1,10 @@
 
-export const recipes = (recipes) => ({
+export const chooseCategory = (category) => ({
+  type: 'CHOOSE_CATEGORY',
+  category
+});
+
+export const fetchRecipesSuccess = (recipes) => ({
   type: 'FETCH_RECIPES_SUCCESS',
   recipes
 });
