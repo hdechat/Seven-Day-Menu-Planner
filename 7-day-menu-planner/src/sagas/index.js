@@ -16,3 +16,5 @@ export function* chooseCategory(action) {
 export function* listenForChooseCategory() {
   yield takeLatest('CHOOSE_CATEGORY', chooseCategory);
 }
+
+export default listenForChooseCategory;
