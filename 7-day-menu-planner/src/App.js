@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import { paleo } from './mock-data.js'
-import { cleanData } from './helpers/helpers.js'
-import { appID, key } from './/helpers/api-keys.js'
 
 class App extends Component {
   constructor(props) {
@@ -16,7 +13,6 @@ class App extends Component {
 
   handleClick = async (event) => {
     await this.setState({ dietPlan: event.target.value} );
-    this.fetchRecipes()
   }
 
   render() {

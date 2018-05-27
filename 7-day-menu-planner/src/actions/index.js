@@ -1,15 +1,19 @@
-// PALEO ACTIONS
-export const fetchPaleoSuccess = (recipes) => ({
-  type: 'FETCH_PALEO_SUCCESS',
+export const chooseCategory = (category) => ({
+  type: 'CHOOSE_CATEGORY',
+  category
+});
+
+export const fetchRecipesSuccess = (recipes) => ({
+  type: 'FETCH_RECIPES_SUCCESS',
   recipes
 });
 
-export const paleoIsLoading = (bool) => ({
-  type: 'PALEO_IS_LOADING',
-  paleoIsLoading: bool
+export const recipesIsLoading = (bool) => ({
+  type: 'RECIPES_IS_LOADING',
+  recipesIsLoading: bool
 });
 
-export const paleoHasErrored = (bool) => ({
-  type: 'PALEO_HAS_ERRORED',
-  paleoHasErrored: bool
+export const recipesHasErrored = (error) => ({
+  type: 'RECIPES_HAS_ERRORED',
+  error
 });
