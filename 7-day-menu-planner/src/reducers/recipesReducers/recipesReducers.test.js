@@ -1,5 +1,5 @@
 import * as reducers from './recipesReducers.js';
-import { fetchRecipesSuccess, recipesIsLoading, recipesHasErrored } from '../../actions';
+import { chooseCategory, fetchRecipesSuccess, recipesIsLoading, recipesHasErrored } from '../../actions';
 import { cleanedPaleoRecipes } from '../../mock-data.js';
 
 describe('Recipes Reducer', () => {
@@ -15,33 +15,35 @@ describe('Recipes Reducer', () => {
     expect(actual).toEqual(mockState);
   });
 
-  it('should return results array of recipes object when it receives the correct action', () => {
-    const state = {results: [{test: 'object'}]};
+  it('should return category string when it receives the correct action', () => {
+    const actual = reducers.recipesReducer(mockState, chooseCategory('paleo'));
 
+    const expected = { results: [], category: 'paleo'}
+
+    expect(actual).toEqual(expected);
+  });
+
+  it('should return results array of recipes object when it receives the correct action', () => {
     const expected = {results: [...cleanedPaleoRecipes]};
 
-    const actual = reducers.recipesReducer(state, fetchRecipesSuccess(cleanedPaleoRecipes));
+    const actual = reducers.recipesReducer(mockState, fetchRecipesSuccess(cleanedPaleoRecipes));
 
     expect(actual).toEqual(expected);
   });
 
   it('should return a boolean when it receives the correct action', () => {
-    const state = { results: [] };
-
     const expected = { results: [], recipesIsLoading: true}
 
-    const actual = reducers.recipesReducer(state, recipesIsLoading(true));
+    const actual = reducers.recipesReducer(mockState, recipesIsLoading(true));
 
     expect(actual).toEqual(expected);
   });
 
 
   it('should return a boolean when it receives the correct action', () => {
-    const state = { results: [] };
-
     const expected = { results: [], recipesHasErrored: true}
 
-    const actual = reducers.recipesReducer(state, recipesHasErrored(true))
+    const actual = reducers.recipesReducer(mockState, recipesHasErrored(true))
     expect(actual).toEqual(expected);
   });
 });
