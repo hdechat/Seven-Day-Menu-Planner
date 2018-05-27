@@ -15,14 +15,6 @@ describe('Recipes Reducer', () => {
     expect(actual).toEqual(mockState);
   });
 
-  it('should return category string when it receives the correct action', () => {
-    const actual = reducers.recipesReducer(mockState, chooseCategory('paleo'));
-
-    const expected = { results: [], category: 'paleo'}
-
-    expect(actual).toEqual(expected);
-  });
-
   it('should return results array of recipes object when it receives the correct action', () => {
     const expected = {results: [...cleanedPaleoRecipes]};
 
@@ -41,9 +33,9 @@ describe('Recipes Reducer', () => {
 
 
   it('should return a boolean when it receives the correct action', () => {
-    const expected = { results: [], recipesHasErrored: true}
+    const expected = { results: [], recipesHasErrored: 'error message'}
 
-    const actual = reducers.recipesReducer(mockState, recipesHasErrored(true))
+    const actual = reducers.recipesReducer(mockState, recipesHasErrored('error message'))
     expect(actual).toEqual(expected);
   });
 });

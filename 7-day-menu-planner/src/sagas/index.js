@@ -1,32 +1,18 @@
 import { call, put, takeLatest } from 'redux-saga/effects';
-import { fetchRecipes } from '../api';
-import { chooseCategory } from '../actions';
+import fetchRecipes from '../api';
+import { fetchRecipesSuccess, recipesHasErrored } from '../actions';
+import { cleanData } from '../helpers';
 
 export function* chooseCategory(action) {
   try {
-    const data = yield call(fetchRecipes, action.category)
+    const results = yield call(fetchRecipes, action.category);
+    const recipes = cleanData(results);
+    yield put(fetchRecipesSuccess(recipes));
+  } catch(error) {
+    yield put(recipesHasErrored(error.message));
   }
 }
 
-
-
-
-
-
-
-
-
-// export function* submitUserLogin(action) {
-//   try {
-//     const user = yield call(API.postLoginUser, action.email, action.password)
-//     yield put(actions.loginUser(user))
-//   } catch(error) {
-//     yield put(actions.loginError(error.message))
-//   }
-// }
-
-// export function* listenForSubmitUserLogin() {
-//   yield takeLatest('SUBMIT_USER_LOGIN', submitUserLogin)
-// }
-
-// export default listenForSubmitUserLogi
+export function* listenForChooseCategory() {
+  yield takeLatest('CHOOSE_CATEGORY', chooseCategory);
+}

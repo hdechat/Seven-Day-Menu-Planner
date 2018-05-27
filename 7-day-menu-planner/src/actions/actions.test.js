@@ -45,10 +45,10 @@ describe('RECIPES ACTIONS', () => {
     it('should have a type of RECIPES_HAS_ERRORED and return a boolean', () => {
       const expected = {
         type: 'RECIPES_HAS_ERRORED',
-        recipesHasErrored: true
+        error: 'error message'
       }
 
-      const actual = actions.recipesHasErrored(true)
+      const actual = actions.recipesHasErrored('error message')
 
       expect(actual).toEqual(expected);
     });

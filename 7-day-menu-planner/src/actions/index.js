@@ -1,4 +1,3 @@
-
 export const chooseCategory = (category) => ({
   type: 'CHOOSE_CATEGORY',
   category
@@ -14,7 +13,7 @@ export const recipesIsLoading = (bool) => ({
   recipesIsLoading: bool
 });
 
-export const recipesHasErrored = (bool) => ({
+export const recipesHasErrored = (error) => ({
   type: 'RECIPES_HAS_ERRORED',
-  recipesHasErrored: bool
+  error
 });
