@@ -11,7 +11,8 @@ describe('App', () => {
   let mockFunction;
 
   beforeEach(() => {
-    mockFunction = jest.fn();
+    mockFunction = jest.fn()
+
     wrapper = shallow(<App chooseCategory={mockFunction} />);
   });
 
@@ -20,7 +21,7 @@ describe('App', () => {
   });
 
   it('should call handleClick when user selects diet plan', () => {
-    wrapper = mount(<App />)
+    wrapper = mount(<App chooseCategory={mockFunction} recipeCards={ [{title: 'Recipe Name'}] }/>)
     const spy = spyOn(wrapper.instance(), 'handleClick');
     
     wrapper.instance().forceUpdate();
