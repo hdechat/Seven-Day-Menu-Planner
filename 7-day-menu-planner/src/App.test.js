@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import { App } from './App';
 import { shallow, mount } from 'enzyme';
 import { chooseCategory } from './actions';
-import { mapDispatchToProps } from './App.js';
+import { mapStateToProps, mapDispatchToProps } from './App.js';
+import * as sagas from './sagas';
 
 describe('App', () => {
   let wrapper;
@@ -53,9 +54,29 @@ describe('App', () => {
 
     expect(dispatch).toHaveBeenCalledWith(actionToDispatch);
   });
+
+  it('should return the recipesIsLoading prop object', () => {
+    const mockState = {
+      recipes: {
+        results: [],
+        recipesIsLoading: false,
+        recipesHasErrored: false
+      }
+    };
+
+    const expected = { recipesIsLoading: false }
+
+    const mappedProps = mapStateToProps(mockState)
+
+    expect(mappedProps).toEqual(expected);
+  });
+
+  // it('should render message if recipesIsLoading is true', () => {
+  //   wrapper.setState({recipesIsLoading: true});
+
+  //   expect(wrapper.find('.loading-message').length).toEqual(1);
+  // });
 });
-
-
 
 
 

@@ -18,6 +18,7 @@ export class App extends Component {
   }
 
   render() {
+
     return (
       <div className="App">
         <select onChange={this.handleClick} id='diet-plan'>
@@ -31,8 +32,12 @@ export class App extends Component {
   }
 }
 
+export const mapStateToProps = state => ({
+  recipesIsLoading: state.recipes.recipesIsLoading
+});
+
 export const mapDispatchToProps = dispatch => ({
   chooseCategory: category => dispatch(chooseCategory(category))
 })
 
-export default connect(null, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);
