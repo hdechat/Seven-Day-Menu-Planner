@@ -11,8 +11,9 @@ import rootReducer from './reducers';
 import listenForChooseCategory from './sagas';
 
 const sagaMiddleware = createSagaMiddleware();
+const devTools = const devTools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
 
-const store = createStore(rootReducer, applyMiddleware(sagaMiddleware));
+const store = createStore(rootReducer, devTools, applyMiddleware(sagaMiddleware));
 
 sagaMiddleware.run(listenForChooseCategory);
 
