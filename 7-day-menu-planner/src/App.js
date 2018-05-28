@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { connect } from 'react-redux';
 import { chooseCategory } from './actions';
-import RecipeCardsDisplay from './components/RecipeCardsDisplay.js'
+import RecipeCardsDisplay from './components/RecipeCardsDisplay'
 
 export class App extends Component {
   constructor(props) {
@@ -43,7 +43,6 @@ export const mapStateToProps = state => ({
   recipesIsLoading: state.recipes.recipesIsLoading,
   recipeCards: state.recipes.results
 });
-
 export const mapDispatchToProps = dispatch => ({
   chooseCategory: category => dispatch(chooseCategory(category))
 })
