@@ -31,6 +31,7 @@ export class App extends Component {
             <option value='vegetarian'>Vegetarian</option>
             <option value='vegan'>Vegan</option>
           </select>
+        
         </div>
       );
     }
@@ -38,7 +39,8 @@ export class App extends Component {
 }
 
 export const mapStateToProps = state => ({
-  recipesIsLoading: state.recipes.recipesIsLoading
+  recipesIsLoading: state.recipes.recipesIsLoading,
+  recipeCards: state.recipes.results
 });
 
 export const mapDispatchToProps = dispatch => ({
