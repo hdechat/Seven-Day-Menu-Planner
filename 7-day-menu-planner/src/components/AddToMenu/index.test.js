@@ -14,7 +14,7 @@ describe('Add To Menu', () => {
       "url": "http://nomnompaleo.com/post/36060636540/paleo-sriracha"
     };
 
-    wrapper = shallow(<AddToMenu addToMenu={jest.fn()} recipe={mockRecipe}/>)
+    wrapper = shallow(<AddToMenu addToGroceryList={jest.fn()} addToMenu={jest.fn()} recipe={mockRecipe}/>)
   });
 
   it('matches snapshot', () => {
@@ -32,7 +32,7 @@ describe('Add To Menu', () => {
     });
 
     it('should call handleClick when user selects weekday', () => {
-      wrapper = mount(<AddToMenu recipe={mockRecipe} />);
+      wrapper = mount(<AddToMenu addToGroceryList={jest.fn()} addToMenu={jest.fn()} recipe={mockRecipe} />);
 
       const spy = spyOn(wrapper.instance(), 'handleClick');
 
@@ -60,7 +60,7 @@ describe('Add To Menu', () => {
     });
 
     it('should call handleClick when user selects meal time', () => {
-      wrapper = mount(<AddToMenu recipe={mockRecipe} />);
+      wrapper = mount(<AddToMenu addToGroceryList={jest.fn()} addToMenu={jest.fn()} recipe={mockRecipe} />);
 
       const spy = spyOn(wrapper.instance(), 'handleClick');
 
@@ -78,7 +78,7 @@ describe('Add To Menu', () => {
   });
 
   it('should call AddToMenu on submit', () => {
-    wrapper = mount(<AddToMenu recipe={mockRecipe} />);
+    wrapper = mount(<AddToMenu addToGroceryList={jest.fn()} addToMenu={jest.fn()} recipe={mockRecipe} />);
 
     const spy = spyOn(wrapper.instance(), 'AddToMenu');
 
@@ -88,5 +88,14 @@ describe('Add To Menu', () => {
     expect(spy).toHaveBeenCalled();
   });
 
-});
+  it('should call AddToGroceryList on submit', () => {
+    wrapper = mount(<AddToMenu addToGroceryList={jest.fn()} addToMenu={jest.fn()} recipe={mockRecipe} />);
 
+    const spy = spyOn(wrapper.instance(), 'AddToGrocerList');
+
+    wrapper.instance().forceUpdate();
+    wrapper.find('button').simulate('click', {preventDefault: jest.fn()});
+
+    expect(spy).toHaveBeenCalled();
+  });
+});
