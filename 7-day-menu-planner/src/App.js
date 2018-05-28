@@ -18,17 +18,22 @@ export class App extends Component {
   }
 
   render() {
-
-    return (
-      <div className="App">
-        <select onChange={this.handleClick} id='diet-plan'>
-          <option>SELECT DIET PLAN</option>
-          <option value='paleo'>Paleo</option>
-          <option value='vegetarian'>Vegetarian</option>
-          <option value='vegan'>Vegan</option>
-        </select>
-      </div>
-    );
+    if(this.props.recipesIsLoading) {
+      return (
+        <p className="loading-message">Your Recipes Are Loading</p>
+      )
+    } else {
+      return (
+        <div className="App">
+          <select onChange={this.handleClick} id='diet-plan'>
+            <option>SELECT DIET PLAN</option>
+            <option value='paleo'>Paleo</option>
+            <option value='vegetarian'>Vegetarian</option>
+            <option value='vegan'>Vegan</option>
+          </select>
+        </div>
+      );
+    }
   }
 }
 

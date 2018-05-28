@@ -71,13 +71,11 @@ describe('App', () => {
     expect(mappedProps).toEqual(expected);
   });
 
-  // it('should render message if recipesIsLoading is true', () => {
-  //   wrapper.setState({recipesIsLoading: true});
+  it('should render message if recipesIsLoading is true', () => {
+    expect(wrapper.find('.loading-message').length).toEqual(0);    
 
-  //   expect(wrapper.find('.loading-message').length).toEqual(1);
-  // });
+    wrapper.setProps({recipesIsLoading: true});
+
+    expect(wrapper.find('.loading-message').length).toEqual(1);
+  });
 });
-
-
-
-
