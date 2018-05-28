@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
 import './App.css';
+import { connect } from 'react-redux';
+import { chooseCategory } from './actions';
 
-class App extends Component {
+export class App extends Component {
   constructor(props) {
     super();
 
     this.state = {
-      dietPlan: ''
+      category: ''
     }
   }
 
   handleClick = async (event) => {
-    await this.setState({ dietPlan: event.target.value} );
+    await this.setState({ dietPlan: event.target.value});
+    this.props.chooseCategory(this.state.dietPlan);
   }
 
   render() {
@@ -28,4 +31,8 @@ class App extends Component {
   }
 }
 
-export default App;
+export const mapDispatchToProps = dispatch => ({
+  chooseCategory: category => dispatch(chooseCategory(category))
+})
+
+export default connect(null, mapDispatchToProps)(App);
