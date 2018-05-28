@@ -8,12 +8,13 @@ export class App extends Component {
     super();
 
     this.state = {
-      dietPlan: ''
+      category: ''
     }
   }
 
   handleClick = async (event) => {
-    await this.setState({ dietPlan: event.target.value} );
+    await this.setState({ dietPlan: event.target.value});
+    this.props.chooseCategory(this.state.dietPlan);
   }
 
   render() {
