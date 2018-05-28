@@ -14,7 +14,7 @@ describe('Add To Menu', () => {
       "url": "http://nomnompaleo.com/post/36060636540/paleo-sriracha"
     };
 
-    wrapper = shallow(<AddToMenu recipe={mockRecipe}/>)
+    wrapper = shallow(<AddToMenu addToMenu={jest.fn()} recipe={mockRecipe}/>)
   });
 
   it('matches snapshot', () => {
@@ -47,6 +47,7 @@ describe('Add To Menu', () => {
 
       expect(wrapper.state('weekday')).toEqual('Monday');
     });
+  });
 
   describe('Select MealTime', () => {
     let mockEvent;
@@ -86,7 +87,6 @@ describe('Add To Menu', () => {
 
     expect(spy).toHaveBeenCalled();
   });
+
 });
-
-
 
