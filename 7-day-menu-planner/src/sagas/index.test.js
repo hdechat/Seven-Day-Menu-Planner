@@ -40,6 +40,15 @@ describe('chooseCategory happy path', () => {
     iterator = sagas.chooseCategory(mockAction);
   });
 
+  it('should yield put with recipesIsLoading with param of true', () => {
+    const expected = put(recipesIsLoading(true));
+
+    const value = iterator.next().value;
+
+    expect(value).toEqual(expected);
+  });
+
+
   it('should yield call with fetchRecipes and correct params', () => {
     const expected = call(fetchRecipes, mockAction.category);
 
@@ -58,6 +67,13 @@ describe('chooseCategory happy path', () => {
     expect(value).toEqual(expected);
   });
 
+  it('should yield put with recipesIsLoading with param of false', () => {
+    const expected = put(recipesIsLoading(false));
+
+    const value = iterator.next().value;
+
+    expect(value).toEqual(expected);
+  });
 });
 
 describe('chooseCategory on error', () => {

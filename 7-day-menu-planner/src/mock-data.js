@@ -10,10 +10,10 @@ export const paleo = {
             "paleo"
         ],
         "app_key": [
-            "de997af620368eed6dcd7f4f42c179c2"
+            "mockappkeydata"
         ],
         "app_id": [
-            "3ed8819c"
+            "mockappiddata"
         ]
     },
     "more": true,

@@ -55,16 +55,19 @@ describe('App', () => {
     expect(dispatch).toHaveBeenCalledWith(actionToDispatch);
   });
 
-  it('should return the recipesIsLoading prop object', () => {
+  it('should return the prop object', () => {
     const mockState = {
       recipes: {
-        results: [],
+        results: [{title: 'Recipe Name'}],
         recipesIsLoading: false,
         recipesHasErrored: false
       }
     };
 
-    const expected = { recipesIsLoading: false }
+    const expected = { 
+      recipesIsLoading: false, 
+      recipeCards: [{title: 'Recipe Name'}] 
+    }
 
     const mappedProps = mapStateToProps(mockState)
 
