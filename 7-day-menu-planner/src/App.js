@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { connect } from 'react-redux';
 import { chooseCategory } from './actions';
+import RecipeCardsDisplay from './components/RecipeCardsDisplay.js'
 
 export class App extends Component {
   constructor(props) {
@@ -31,7 +32,7 @@ export class App extends Component {
             <option value='vegetarian'>Vegetarian</option>
             <option value='vegan'>Vegan</option>
           </select>
-        
+        <RecipeCardsDisplay recipeCards={this.props.recipeCards} />
         </div>
       );
     }

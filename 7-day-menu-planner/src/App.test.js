@@ -55,7 +55,7 @@ describe('App', () => {
     expect(dispatch).toHaveBeenCalledWith(actionToDispatch);
   });
 
-  it('should return the recipesIsLoading prop object', () => {
+  it('should return the prop object', () => {
     const mockState = {
       recipes: {
         results: [{title: 'Recipe Name'}],
