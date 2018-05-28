@@ -1,4 +1,5 @@
 import React from 'react';
+import AddToMenu from '../AddToMenu'
 
 const RecipeCard = ({ recipe }) => {
   return (
@@ -6,6 +7,7 @@ const RecipeCard = ({ recipe }) => {
       <h1>{recipe.title}</h1>
       <img src={recipe.image} alt="recipe meal" />
       <a href={recipe.url}>Click Here to Go To Recipe Page</a>
+      <AddToMenu recipe={recipe} />
     </article>
   )
 }

@@ -14,8 +14,8 @@ export class App extends Component {
   }
 
   handleClick = async (event) => {
-    await this.setState({ dietPlan: event.target.value});
-    this.props.chooseCategory(this.state.dietPlan);
+    await this.setState({ category: event.target.value});
+    this.props.chooseCategory(this.state.category);
   }
 
   render() {

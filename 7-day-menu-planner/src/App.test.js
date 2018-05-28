@@ -20,25 +20,26 @@ describe('App', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should call handleClick when user selects diet plan', () => {
-    wrapper = mount(<App chooseCategory={mockFunction} recipeCards={ [{title: 'Recipe Name'}] }/>)
+  it('should call handleClick when user selects category', () => {
+    wrapper = mount(<App chooseCategory={mockFunction} recipeCards={ [{title: 'Recipe Name'}] }/>);
+
     const spy = spyOn(wrapper.instance(), 'handleClick');
     
     wrapper.instance().forceUpdate();
-    wrapper.find('select').simulate('change', {target: {value: 'paleo'}})
+    wrapper.find('select').simulate('change', {target: {value: 'paleo'}});
 
     expect(spy).toHaveBeenCalled();
   });
 
-  it('should upate dietPlan in state when diet plan is selected', () => {
+  it('should upate category in state when category is selected', async () => {
     const mockEvent = { target: {value: 'paleo'} };
 
-    wrapper.instance().handleClick(mockEvent);
+    await wrapper.instance().handleClick(mockEvent);
 
-    expect(wrapper.state('dietPlan')).toEqual('paleo')
+    expect(wrapper.state('category')).toEqual('paleo')
   });
 
-  it('should call chooseCategory with the selected dietPlan when handleClick is fired', async () => {
+  it('should call chooseCategory with the selected category when handleClick is fired', async () => {
     const mockEvent = { target: {value: 'paleo'} };
 
     await wrapper.instance().handleClick(mockEvent);
