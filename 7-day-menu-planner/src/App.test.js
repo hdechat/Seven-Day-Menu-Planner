@@ -30,6 +30,5 @@ describe('App', () => {
     wrapper.instance().handleClick( mockEvent);
 
     expect(wrapper.state('dietPlan')).toEqual('paleo')
-    
   });
 });
