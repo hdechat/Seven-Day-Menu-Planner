@@ -1,3 +1,162 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Recipe Card matches snapshot 1`] = `undefined`;
+exports[`Recipe Card matches snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <RecipeCard
+    recipe={
+        Object {
+            "image": "https://www.edamam.com/web-img/e50/e50584043c015a91a26a7a37f093d476",
+            "ingredients": Array [
+              "1½ pounds fresh red jalapeño peppers, stemmed, seeded, and roughly chopped",
+              "8 garlic cloves, peeled and smashed",
+              "⅓ cup apple cider vinegar",
+              "3 tablespoons tomato paste",
+              "3 tablespoons honey",
+              "2 tablespoons Paleo-friendly fish sauce (Red Boat!)",
+              "1½ teaspoons kosher salt",
+            ],
+            "title": "Paleo Sriracha recipes",
+            "url": "http://nomnompaleo.com/post/36060636540/paleo-sriracha",
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1>
+          Paleo Sriracha recipes
+</h1>,
+        <img
+          alt="recipe meal"
+          src="https://www.edamam.com/web-img/e50/e50584043c015a91a26a7a37f093d476"
+/>,
+        <a
+          href="http://nomnompaleo.com/post/36060636540/paleo-sriracha"
+>
+          Click Here to Go To Recipe Page
+</a>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Paleo Sriracha recipes",
+        },
+        "ref": null,
+        "rendered": "Paleo Sriracha recipes",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "recipe meal",
+          "src": "https://www.edamam.com/web-img/e50/e50584043c015a91a26a7a37f093d476",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Click Here to Go To Recipe Page",
+          "href": "http://nomnompaleo.com/post/36060636540/paleo-sriracha",
+        },
+        "ref": null,
+        "rendered": "Click Here to Go To Recipe Page",
+        "type": "a",
+      },
+    ],
+    "type": "article",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1>
+            Paleo Sriracha recipes
+</h1>,
+          <img
+            alt="recipe meal"
+            src="https://www.edamam.com/web-img/e50/e50584043c015a91a26a7a37f093d476"
+/>,
+          <a
+            href="http://nomnompaleo.com/post/36060636540/paleo-sriracha"
+>
+            Click Here to Go To Recipe Page
+</a>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Paleo Sriracha recipes",
+          },
+          "ref": null,
+          "rendered": "Paleo Sriracha recipes",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "recipe meal",
+            "src": "https://www.edamam.com/web-img/e50/e50584043c015a91a26a7a37f093d476",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Click Here to Go To Recipe Page",
+            "href": "http://nomnompaleo.com/post/36060636540/paleo-sriracha",
+          },
+          "ref": null,
+          "rendered": "Click Here to Go To Recipe Page",
+          "type": "a",
+        },
+      ],
+      "type": "article",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

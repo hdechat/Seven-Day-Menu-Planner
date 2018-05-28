@@ -4,9 +4,12 @@ import { shallow } from 'enzyme';
 
 describe('Recipe Cards Display', () => {
   let wrapper;
+  let mockRecipeCards;
 
   beforeEach(() => {
-    wrapper = shallow(<RecipeCardsDisplay />)
+    mockRecipeCards = [{title: 'recipe 1'}, {title: 'recipe 2'}]
+
+    wrapper = shallow(<RecipeCardsDisplay recipeCards = {mockRecipeCards}/>)
   });
   it('matches snapshot', () => {
     expect(wrapper).toMatchSnapshot();
