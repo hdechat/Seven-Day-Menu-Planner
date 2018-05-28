@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import { shallow, mount } from 'enzyme'
+import { App } from './App';
+import { shallow, mount } from 'enzyme';
+import { chooseCategory } from './actions';
+import { mapDispatchToProps } from './App.js';
 
 describe('App', () => {
   let wrapper;
@@ -30,5 +32,17 @@ describe('App', () => {
     wrapper.instance().handleClick( mockEvent);
 
     expect(wrapper.state('dietPlan')).toEqual('paleo')
+  });
+
+  it('calls dispatch with a chooseCategory action', () => {
+    const dispatch = jest.fn();
+
+    const actionToDispatch = chooseCategory('paleo');
+
+    const mappedProps = mapDispatchToProps(dispatch);
+
+    mappedProps.chooseCategory('paleo');
+
+    expect(dispatch).toHaveBeenCalledWith(actionToDispatch);
   });
 });

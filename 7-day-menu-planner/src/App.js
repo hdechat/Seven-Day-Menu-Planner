@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
+import { connect } from 'react-redux';
+import { chooseCategory } from './actions';
 
-class App extends Component {
+export class App extends Component {
   constructor(props) {
     super();
 
@@ -28,4 +30,8 @@ class App extends Component {
   }
 }
 
-export default App;
+export const mapDispatchToProps = dispatch => ({
+  chooseCategory: category => dispatch(chooseCategory(category))
+})
+
+export default connect(null, mapDispatchToProps)(App);
