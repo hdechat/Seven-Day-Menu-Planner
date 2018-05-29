@@ -14,8 +14,8 @@ export class App extends Component {
   }
 
   handleClick = async (event) => {
-    await this.setState({ dietPlan: event.target.value});
-    this.props.chooseCategory(this.state.dietPlan);
+    await this.setState({ category: event.target.value});
+    this.props.chooseCategory(this.state.category);
   }
 
   render() {
@@ -26,8 +26,8 @@ export class App extends Component {
     } else {
       return (
         <div className="App">
-          <select onChange={this.handleClick} id='diet-plan'>
-            <option>SELECT DIET PLAN</option>
+          <select onChange={this.handleClick} id='category'>
+            <option>SELECT CATEGORY</option>
             <option value='paleo'>Paleo</option>
             <option value='vegetarian'>Vegetarian</option>
             <option value='vegan'>Vegan</option>

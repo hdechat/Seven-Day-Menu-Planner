@@ -21,11 +21,11 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <select
-          id="diet-plan"
+          id="category"
           onChange={[Function]}
 >
           <option>
-                    SELECT DIET PLAN
+                    SELECT CATEGORY
           </option>
           <option
                     value="paleo"
@@ -58,7 +58,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <option>
-              SELECT DIET PLAN
+              SELECT CATEGORY
 </option>,
             <option
               value="paleo"
@@ -76,7 +76,7 @@ ShallowWrapper {
               Vegan
 </option>,
           ],
-          "id": "diet-plan",
+          "id": "category",
           "onChange": [Function],
         },
         "ref": null,
@@ -86,10 +86,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "SELECT DIET PLAN",
+              "children": "SELECT CATEGORY",
             },
             "ref": null,
-            "rendered": "SELECT DIET PLAN",
+            "rendered": "SELECT CATEGORY",
             "type": "option",
           },
           Object {
@@ -153,11 +153,11 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <select
-            id="diet-plan"
+            id="category"
             onChange={[Function]}
 >
             <option>
-                        SELECT DIET PLAN
+                        SELECT CATEGORY
             </option>
             <option
                         value="paleo"
@@ -190,7 +190,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <option>
-                SELECT DIET PLAN
+                SELECT CATEGORY
 </option>,
               <option
                 value="paleo"
@@ -208,7 +208,7 @@ ShallowWrapper {
                 Vegan
 </option>,
             ],
-            "id": "diet-plan",
+            "id": "category",
             "onChange": [Function],
           },
           "ref": null,
@@ -218,10 +218,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "SELECT DIET PLAN",
+                "children": "SELECT CATEGORY",
               },
               "ref": null,
-              "rendered": "SELECT DIET PLAN",
+              "rendered": "SELECT CATEGORY",
               "type": "option",
             },
             Object {
