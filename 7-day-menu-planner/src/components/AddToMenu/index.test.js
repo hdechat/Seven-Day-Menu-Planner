@@ -94,7 +94,7 @@ describe('Add To Menu', () => {
   });
 
   it('should call addToMenu and addToGroceryList when handleSubmit is fired', () => {
-    wrapper.instance().handleSubmit();
+    wrapper.instance().handleSubmit({preventDefault: jest.fn()});
 
     expect(mockAddToMenu).toHaveBeenCalled();
     expect(mockAddToGroceryList).toHaveBeenCalled();

@@ -27,7 +27,7 @@ export class App extends Component {
       return (
         <div className="App">
           <select onChange={this.handleClick} id='category'>
-            <option>SELECT DIET PLAN</option>
+            <option>SELECT CATEGORY</option>
             <option value='paleo'>Paleo</option>
             <option value='vegetarian'>Vegetarian</option>
             <option value='vegan'>Vegan</option>

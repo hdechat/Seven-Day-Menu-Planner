@@ -47,7 +47,7 @@ ShallowWrapper {
 >
           Click Here to Go To Recipe Page
 </a>,
-        <AddToMenu
+        <Connect(AddToMenu)
           recipe={
                     Object {
                               "image": "https://www.edamam.com/web-img/e50/e50584043c015a91a26a7a37f093d476",
@@ -150,7 +150,7 @@ ShallowWrapper {
 >
             Click Here to Go To Recipe Page
 </a>,
-          <AddToMenu
+          <Connect(AddToMenu)
             recipe={
                         Object {
                                     "image": "https://www.edamam.com/web-img/e50/e50584043c015a91a26a7a37f093d476",

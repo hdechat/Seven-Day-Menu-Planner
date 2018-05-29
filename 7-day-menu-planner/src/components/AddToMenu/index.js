@@ -14,7 +14,8 @@ export default class AddToMenu extends Component {
     this.setState({ [event.target.name]: event.target.value})
   }
 
-  handleSubmit = () => {
+  handleSubmit = (event) => {
+    event.preventDefault();
     this.props.addToMenu(this.state.weekday, this.state.mealTime, this.props.recipe);
     this.props.addToGroceryList(this.props.recipe.ingredients);
   }
@@ -23,6 +24,7 @@ export default class AddToMenu extends Component {
     return (
       <form onSubmit={this.handleSubmit}>
         <select name="weekday" id="weekday" onChange={this.handleClick}>
+          <option>SELECT WEEKDAY</option>
           <option value='sunday'>Sunday</option>
           <option value='monday'>Monday</option>
           <option value='tuesday'>Tueday</option>
@@ -32,6 +34,7 @@ export default class AddToMenu extends Component {
           <option value='saturday'>Saturday</option>
         </select>
         <select name="mealTime" id="meal-time" onChange={this.handleClick}>
+          <option>SELECT MEAL-TIME</option>
           <option value='breakfast'>Breakfast</option>
           <option value='lunch'>Lunch</option>
           <option value='dinner'>Dinner</option>

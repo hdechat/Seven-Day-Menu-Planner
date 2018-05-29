@@ -42,6 +42,9 @@ ShallowWrapper {
           name="weekday"
           onChange={[Function]}
 >
+          <option>
+                    SELECT WEEKDAY
+          </option>
           <option
                     value="sunday"
           >
@@ -83,6 +86,9 @@ ShallowWrapper {
           name="mealTime"
           onChange={[Function]}
 >
+          <option>
+                    SELECT MEAL-TIME
+          </option>
           <option
                     value="breakfast"
           >
@@ -115,6 +121,9 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
+            <option>
+              SELECT WEEKDAY
+</option>,
             <option
               value="sunday"
 >
@@ -157,6 +166,17 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "SELECT WEEKDAY",
+            },
+            "ref": null,
+            "rendered": "SELECT WEEKDAY",
+            "type": "option",
+          },
           Object {
             "instance": null,
             "key": undefined,
@@ -250,6 +270,9 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
+            <option>
+              SELECT MEAL-TIME
+</option>,
             <option
               value="breakfast"
 >
@@ -272,6 +295,17 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "SELECT MEAL-TIME",
+            },
+            "ref": null,
+            "rendered": "SELECT MEAL-TIME",
+            "type": "option",
+          },
           Object {
             "instance": null,
             "key": undefined,
@@ -338,6 +372,9 @@ ShallowWrapper {
             name="weekday"
             onChange={[Function]}
 >
+            <option>
+                        SELECT WEEKDAY
+            </option>
             <option
                         value="sunday"
             >
@@ -379,6 +416,9 @@ ShallowWrapper {
             name="mealTime"
             onChange={[Function]}
 >
+            <option>
+                        SELECT MEAL-TIME
+            </option>
             <option
                         value="breakfast"
             >
@@ -411,6 +451,9 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
+              <option>
+                SELECT WEEKDAY
+</option>,
               <option
                 value="sunday"
 >
@@ -453,6 +496,17 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "SELECT WEEKDAY",
+              },
+              "ref": null,
+              "rendered": "SELECT WEEKDAY",
+              "type": "option",
+            },
             Object {
               "instance": null,
               "key": undefined,
@@ -546,6 +600,9 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
+              <option>
+                SELECT MEAL-TIME
+</option>,
               <option
                 value="breakfast"
 >
@@ -568,6 +625,17 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "SELECT MEAL-TIME",
+              },
+              "ref": null,
+              "rendered": "SELECT MEAL-TIME",
+              "type": "option",
+            },
             Object {
               "instance": null,
               "key": undefined,
