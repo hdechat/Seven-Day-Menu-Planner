@@ -5,6 +5,8 @@ import AddToMenu from './index.js'
 describe('Add To Menu', () => {
   let wrapper;
   let mockRecipe;
+  let mockAddToMenu;
+  let mockAddToGroceryList;
 
   beforeEach(() => {
     mockRecipe = {
@@ -14,7 +16,10 @@ describe('Add To Menu', () => {
       "url": "http://nomnompaleo.com/post/36060636540/paleo-sriracha"
     };
 
-    wrapper = shallow(<AddToMenu addToGroceryList={jest.fn()} addToMenu={jest.fn()} recipe={mockRecipe}/>)
+    mockAddToMenu = jest.fn();
+    mockAddToGroceryList = jest.fn();
+
+    wrapper = shallow(<AddToMenu addToGroceryList={mockAddToGroceryList} addToMenu={mockAddToMenu} recipe={mockRecipe}/>)
   });
 
   it('matches snapshot', () => {
@@ -77,25 +82,21 @@ describe('Add To Menu', () => {
     });
   });
 
-  it('should call AddToMenu on submit', () => {
+  it('should call handleSubmit on submit', () => {
     wrapper = mount(<AddToMenu addToGroceryList={jest.fn()} addToMenu={jest.fn()} recipe={mockRecipe} />);
 
-    const spy = spyOn(wrapper.instance(), 'AddToMenu');
+    const spy = spyOn(wrapper.instance(), 'handleSubmit');
 
     wrapper.instance().forceUpdate();
-    wrapper.find('button').simulate('click', {preventDefault: jest.fn()});
+    wrapper.find('form').simulate('submit');
 
     expect(spy).toHaveBeenCalled();
   });
 
-  it('should call AddToGroceryList on submit', () => {
-    wrapper = mount(<AddToMenu addToGroceryList={jest.fn()} addToMenu={jest.fn()} recipe={mockRecipe} />);
+  it('should call addToMenu and addToGroceryList when handleSubmit is fired', () => {
+    wrapper.instance().handleSubmit();
 
-    const spy = spyOn(wrapper.instance(), 'AddToGrocerList');
-
-    wrapper.instance().forceUpdate();
-    wrapper.find('button').simulate('click', {preventDefault: jest.fn()});
-
-    expect(spy).toHaveBeenCalled();
+    expect(mockAddToMenu).toHaveBeenCalled();
+    expect(mockAddToGroceryList).toHaveBeenCalled();
   });
 });

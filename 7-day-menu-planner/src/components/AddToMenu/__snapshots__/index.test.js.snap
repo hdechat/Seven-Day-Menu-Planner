@@ -35,9 +35,295 @@ ShallowWrapper {
     "instance": null,
     "key": undefined,
     "nodeType": "host",
-    "props": Object {},
+    "props": Object {
+      "children": Array [
+        <select
+          id="weekday"
+          name="weekday"
+          onChange={[Function]}
+>
+          <option
+                    value="sunday"
+          >
+                    Sunday
+          </option>
+          <option
+                    value="monday"
+          >
+                    Monday
+          </option>
+          <option
+                    value="tuesday"
+          >
+                    Tueday
+          </option>
+          <option
+                    value="wednesday"
+          >
+                    Wednesday
+          </option>
+          <option
+                    value="thursday"
+          >
+                    Thursday
+          </option>
+          <option
+                    value="friday"
+          >
+                    Friday
+          </option>
+          <option
+                    value="saturday"
+          >
+                    Saturday
+          </option>
+</select>,
+        <select
+          id="meal-time"
+          name="mealTime"
+          onChange={[Function]}
+>
+          <option
+                    value="breakfast"
+          >
+                    Breakfast
+          </option>
+          <option
+                    value="lunch"
+          >
+                    Lunch
+          </option>
+          <option
+                    value="dinner"
+          >
+                    Dinner
+          </option>
+</select>,
+        <button
+          type="submit"
+>
+          Add To Menu
+</button>,
+      ],
+      "onSubmit": [Function],
+    },
     "ref": null,
-    "rendered": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <option
+              value="sunday"
+>
+              Sunday
+</option>,
+            <option
+              value="monday"
+>
+              Monday
+</option>,
+            <option
+              value="tuesday"
+>
+              Tueday
+</option>,
+            <option
+              value="wednesday"
+>
+              Wednesday
+</option>,
+            <option
+              value="thursday"
+>
+              Thursday
+</option>,
+            <option
+              value="friday"
+>
+              Friday
+</option>,
+            <option
+              value="saturday"
+>
+              Saturday
+</option>,
+          ],
+          "id": "weekday",
+          "name": "weekday",
+          "onChange": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Sunday",
+              "value": "sunday",
+            },
+            "ref": null,
+            "rendered": "Sunday",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Monday",
+              "value": "monday",
+            },
+            "ref": null,
+            "rendered": "Monday",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Tueday",
+              "value": "tuesday",
+            },
+            "ref": null,
+            "rendered": "Tueday",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Wednesday",
+              "value": "wednesday",
+            },
+            "ref": null,
+            "rendered": "Wednesday",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Thursday",
+              "value": "thursday",
+            },
+            "ref": null,
+            "rendered": "Thursday",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Friday",
+              "value": "friday",
+            },
+            "ref": null,
+            "rendered": "Friday",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Saturday",
+              "value": "saturday",
+            },
+            "ref": null,
+            "rendered": "Saturday",
+            "type": "option",
+          },
+        ],
+        "type": "select",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <option
+              value="breakfast"
+>
+              Breakfast
+</option>,
+            <option
+              value="lunch"
+>
+              Lunch
+</option>,
+            <option
+              value="dinner"
+>
+              Dinner
+</option>,
+          ],
+          "id": "meal-time",
+          "name": "mealTime",
+          "onChange": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Breakfast",
+              "value": "breakfast",
+            },
+            "ref": null,
+            "rendered": "Breakfast",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Lunch",
+              "value": "lunch",
+            },
+            "ref": null,
+            "rendered": "Lunch",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Dinner",
+              "value": "dinner",
+            },
+            "ref": null,
+            "rendered": "Dinner",
+            "type": "option",
+          },
+        ],
+        "type": "select",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Add To Menu",
+          "type": "submit",
+        },
+        "ref": null,
+        "rendered": "Add To Menu",
+        "type": "button",
+      },
+    ],
     "type": "form",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -45,9 +331,295 @@ ShallowWrapper {
       "instance": null,
       "key": undefined,
       "nodeType": "host",
-      "props": Object {},
+      "props": Object {
+        "children": Array [
+          <select
+            id="weekday"
+            name="weekday"
+            onChange={[Function]}
+>
+            <option
+                        value="sunday"
+            >
+                        Sunday
+            </option>
+            <option
+                        value="monday"
+            >
+                        Monday
+            </option>
+            <option
+                        value="tuesday"
+            >
+                        Tueday
+            </option>
+            <option
+                        value="wednesday"
+            >
+                        Wednesday
+            </option>
+            <option
+                        value="thursday"
+            >
+                        Thursday
+            </option>
+            <option
+                        value="friday"
+            >
+                        Friday
+            </option>
+            <option
+                        value="saturday"
+            >
+                        Saturday
+            </option>
+</select>,
+          <select
+            id="meal-time"
+            name="mealTime"
+            onChange={[Function]}
+>
+            <option
+                        value="breakfast"
+            >
+                        Breakfast
+            </option>
+            <option
+                        value="lunch"
+            >
+                        Lunch
+            </option>
+            <option
+                        value="dinner"
+            >
+                        Dinner
+            </option>
+</select>,
+          <button
+            type="submit"
+>
+            Add To Menu
+</button>,
+        ],
+        "onSubmit": [Function],
+      },
       "ref": null,
-      "rendered": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <option
+                value="sunday"
+>
+                Sunday
+</option>,
+              <option
+                value="monday"
+>
+                Monday
+</option>,
+              <option
+                value="tuesday"
+>
+                Tueday
+</option>,
+              <option
+                value="wednesday"
+>
+                Wednesday
+</option>,
+              <option
+                value="thursday"
+>
+                Thursday
+</option>,
+              <option
+                value="friday"
+>
+                Friday
+</option>,
+              <option
+                value="saturday"
+>
+                Saturday
+</option>,
+            ],
+            "id": "weekday",
+            "name": "weekday",
+            "onChange": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Sunday",
+                "value": "sunday",
+              },
+              "ref": null,
+              "rendered": "Sunday",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Monday",
+                "value": "monday",
+              },
+              "ref": null,
+              "rendered": "Monday",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Tueday",
+                "value": "tuesday",
+              },
+              "ref": null,
+              "rendered": "Tueday",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Wednesday",
+                "value": "wednesday",
+              },
+              "ref": null,
+              "rendered": "Wednesday",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Thursday",
+                "value": "thursday",
+              },
+              "ref": null,
+              "rendered": "Thursday",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Friday",
+                "value": "friday",
+              },
+              "ref": null,
+              "rendered": "Friday",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Saturday",
+                "value": "saturday",
+              },
+              "ref": null,
+              "rendered": "Saturday",
+              "type": "option",
+            },
+          ],
+          "type": "select",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <option
+                value="breakfast"
+>
+                Breakfast
+</option>,
+              <option
+                value="lunch"
+>
+                Lunch
+</option>,
+              <option
+                value="dinner"
+>
+                Dinner
+</option>,
+            ],
+            "id": "meal-time",
+            "name": "mealTime",
+            "onChange": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Breakfast",
+                "value": "breakfast",
+              },
+              "ref": null,
+              "rendered": "Breakfast",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Lunch",
+                "value": "lunch",
+              },
+              "ref": null,
+              "rendered": "Lunch",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Dinner",
+                "value": "dinner",
+              },
+              "ref": null,
+              "rendered": "Dinner",
+              "type": "option",
+            },
+          ],
+          "type": "select",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Add To Menu",
+            "type": "submit",
+          },
+          "ref": null,
+          "rendered": "Add To Menu",
+          "type": "button",
+        },
+      ],
       "type": "form",
     },
   ],
