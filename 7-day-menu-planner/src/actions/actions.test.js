@@ -65,8 +65,8 @@ describe('RECIPES ACTIONS', () => {
 
       const expected = {
         type: 'ADD_TO_MENU',
-        weekday: 'Monday',
-        mealTime: 'Breakfast',
+        weekday: 'monday',
+        mealTime: 'breakfast',
         recipe: mockRecipe
       };
 
