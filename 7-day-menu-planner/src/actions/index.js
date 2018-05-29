@@ -17,3 +17,15 @@ export const recipesHasErrored = (error) => ({
   type: 'RECIPES_HAS_ERRORED',
   error
 });
+
+export const addToMenu = (weekday, mealTime, recipe) => ({
+  type: 'ADD_TO_MENU',
+  weekday,
+  mealTime,
+  recipe
+});
+
+export const addToGroceryList = (ingredients) => ({
+  type: 'ADD_TO_GROCERY_LIST',
+  ingredients
+});

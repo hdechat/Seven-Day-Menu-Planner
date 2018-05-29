@@ -70,7 +70,7 @@ describe('RECIPES ACTIONS', () => {
         recipe: mockRecipe
       };
 
-      const actual = actions.addToMenu({weekday: 'Monday', mealTime: 'Breakfast', recipe: mockRecipe});
+      const actual = actions.addToMenu('Monday', 'Breakfast', mockRecipe);
 
       expect(actual).toEqual(expected);
     });
