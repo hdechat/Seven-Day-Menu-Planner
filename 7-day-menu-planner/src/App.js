@@ -5,13 +5,6 @@ import { chooseCategory } from './actions';
 import RecipeCardsDisplay from './components/RecipeCardsDisplay'
 
 export class App extends Component {
-  constructor(props) {
-    super();
-
-    
-  }
-
-  
 
   render() {
     if(this.props.recipesIsLoading) {
