@@ -43,6 +43,7 @@ ShallowWrapper {
                     Vegan
           </option>
 </select>,
+        null,
         <RecipeCardsDisplay
           recipeCards={undefined}
 />,
@@ -131,6 +132,7 @@ ShallowWrapper {
         ],
         "type": "select",
       },
+      null,
       Object {
         "instance": null,
         "key": undefined,
@@ -175,6 +177,7 @@ ShallowWrapper {
                         Vegan
             </option>
 </select>,
+          null,
           <RecipeCardsDisplay
             recipeCards={undefined}
 />,
@@ -263,6 +266,7 @@ ShallowWrapper {
           ],
           "type": "select",
         },
+        null,
         Object {
           "instance": null,
           "key": undefined,

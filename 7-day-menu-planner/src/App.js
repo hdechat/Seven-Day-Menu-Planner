@@ -6,26 +6,28 @@ import RecipeCardsDisplay from './components/RecipeCardsDisplay'
 
 export class App extends Component {
 
+  displayLoadingMessage() {
+    return this.props.recipesIsLoading ?
+      <p className="loading-message">Your Recipes Are Loading</p> : null;
+  }
+
   render() {
-    if(this.props.recipesIsLoading) {
-      return (
-        <p className="loading-message">Your Recipes Are Loading</p>
-      )
-    } else {
-      return (
-        <div className="App">
-          <select 
-            onChange={event => this.props.chooseCategory(event.target.value)}
-            id='category'>
-            <option>SELECT CATEGORY</option>
-            <option value='paleo'>Paleo</option>
-            <option value='vegetarian'>Vegetarian</option>
-            <option value='vegan'>Vegan</option>
-          </select>
-        <RecipeCardsDisplay recipeCards={this.props.recipeCards} />
-        </div>
-      );
-    }
+    const { recipeCards, chooseCategory } = this.props;
+    
+    return (
+      <div className="App">
+        <select 
+          onChange={event => chooseCategory(event.target.value)}
+          id='category'>
+          <option>SELECT CATEGORY</option>
+          <option value='paleo'>Paleo</option>
+          <option value='vegetarian'>Vegetarian</option>
+          <option value='vegan'>Vegan</option>
+        </select>
+        {this.displayLoadingMessage()}
+      <RecipeCardsDisplay recipeCards={recipeCards} />
+      </div>
+    );
   }
 }
 
