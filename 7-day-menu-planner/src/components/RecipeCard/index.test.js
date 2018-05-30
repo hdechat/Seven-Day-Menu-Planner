@@ -13,10 +13,14 @@ describe('Recipe Card', () => {
       "title": "Paleo Sriracha recipes",
       "url": "http://nomnompaleo.com/post/36060636540/paleo-sriracha"
     }
-    wrapper = shallow(<RecipeCard recipe={mockRecipe} />);
+    wrapper = shallow(<RecipeCard recipe={mockRecipe} displayAddToMenu={true}/>);
   });
 
   it('matches snapshot', () => {
     expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should render AddToMenu if displayAddToMenu prop is true', () => {
+    expect(wrapper.find('form').length).toEqual(1);
   });
 });

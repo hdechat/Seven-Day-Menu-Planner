@@ -5,10 +5,11 @@ import Home from '../../components/Home';
 
 export const mapStateToProps = state => ({
   recipesIsLoading: state.recipes.recipesIsLoading,
-  recipeCards: state.recipes.results
+  recipeCards: state.recipes.results,
+  recipesHasErrored: state.recipes.recipesHasErrored
 });
 export const mapDispatchToProps = dispatch => ({
   chooseCategory: category => dispatch(chooseCategory(category))
 })
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Home));

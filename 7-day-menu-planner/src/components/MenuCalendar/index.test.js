@@ -1,11 +1,19 @@
+import React from 'react';
 import MenuCalendar from './index.js';
 import { shallow } from 'enzyme';
 
 describe('Add To Menu', () => {
   let wrapper;
+  let mockMenu;
 
   beforeEach(() => {
-    wrapper = shallow(<MenuCalendar />);
+    mockMenu = {
+      menu: {
+        breakfast: {title: 'Recipe Name'}
+      }
+    }
+
+    wrapper = shallow(<MenuCalendar menu={mockMenu} />);
   });
 
   it('matches snapshot', () => {

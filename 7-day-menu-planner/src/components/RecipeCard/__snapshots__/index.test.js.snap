@@ -5,6 +5,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <RecipeCard
+    displayAddToMenu={true}
     recipe={
         Object {
             "image": "https://www.edamam.com/web-img/e50/e50584043c015a91a26a7a37f093d476",
