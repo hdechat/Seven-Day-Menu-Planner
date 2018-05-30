@@ -5,12 +5,21 @@ describe('Menu Reducer', () => {
   let mockState;
 
   beforeEach(() => {
-    mockState = {};
+    const weekdays = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+
+    mockState = weekdays.reduce((state, day) => {
+      return {...state, [day]: {
+        breakfast: {},
+        lunch: {},
+        dinner: {}
+        }
+      }
+    }, {});
+    
   });
 
   it('should return initalState if there is no given state', () => {
     const actual = reducers.menuReducer(undefined, {});
-
     expect(actual).toEqual(mockState);
   });
 
@@ -21,9 +30,11 @@ describe('Menu Reducer', () => {
       "url": "http://nomnompaleo.com/post/36060636540/paleo-sriracha"
     }
 
-    const expected = {
+    const expected = {...mockState,
       monday: {
-        breakfast: mockRecipe
+        breakfast: mockRecipe,
+        lunch: {},
+        dinner: {}
       }
     };
 
