@@ -25,13 +25,13 @@ export default class AddToMenu extends Component {
   listWeekdayOptions = () => {
     const weekdays = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
 
-    return weekdays.map(day => <option value={day}>{day}</option>)
+    return weekdays.map(day => <option key={day} value={day}>{day}</option>)
   }
 
   listMealTimeOptions = () => {
     const mealTimes = ['breakfast', 'lunch', 'dinner'];
 
-    return mealTimes.map(meal => <option value={meal}>{meal}</option>)
+    return mealTimes.map(meal => <option key={meal} value={meal}>{meal}</option>)
   }
 
   render() {

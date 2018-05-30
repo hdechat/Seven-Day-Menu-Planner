@@ -48,37 +48,37 @@ ShallowWrapper {
           <option
                     value="sunday"
           >
-                    Sunday
+                    sunday
           </option>
           <option
                     value="monday"
           >
-                    Monday
+                    monday
           </option>
           <option
                     value="tuesday"
           >
-                    Tueday
+                    tuesday
           </option>
           <option
                     value="wednesday"
           >
-                    Wednesday
+                    wednesday
           </option>
           <option
                     value="thursday"
           >
-                    Thursday
+                    thursday
           </option>
           <option
                     value="friday"
           >
-                    Friday
+                    friday
           </option>
           <option
                     value="saturday"
           >
-                    Saturday
+                    saturday
           </option>
 </select>,
         <select
@@ -92,17 +92,17 @@ ShallowWrapper {
           <option
                     value="breakfast"
           >
-                    Breakfast
+                    breakfast
           </option>
           <option
                     value="lunch"
           >
-                    Lunch
+                    lunch
           </option>
           <option
                     value="dinner"
           >
-                    Dinner
+                    dinner
           </option>
 </select>,
         <button
@@ -124,41 +124,43 @@ ShallowWrapper {
             <option>
               SELECT WEEKDAY
 </option>,
-            <option
-              value="sunday"
+            Array [
+              <option
+                value="sunday"
 >
-              Sunday
+                sunday
 </option>,
-            <option
-              value="monday"
+              <option
+                value="monday"
 >
-              Monday
+                monday
 </option>,
-            <option
-              value="tuesday"
+              <option
+                value="tuesday"
 >
-              Tueday
+                tuesday
 </option>,
-            <option
-              value="wednesday"
+              <option
+                value="wednesday"
 >
-              Wednesday
+                wednesday
 </option>,
-            <option
-              value="thursday"
+              <option
+                value="thursday"
 >
-              Thursday
+                thursday
 </option>,
-            <option
-              value="friday"
+              <option
+                value="friday"
 >
-              Friday
+                friday
 </option>,
-            <option
-              value="saturday"
+              <option
+                value="saturday"
 >
-              Saturday
+                saturday
 </option>,
+            ],
           ],
           "id": "weekday",
           "name": "weekday",
@@ -182,11 +184,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Sunday",
+              "children": "sunday",
               "value": "sunday",
             },
             "ref": null,
-            "rendered": "Sunday",
+            "rendered": "sunday",
             "type": "option",
           },
           Object {
@@ -194,11 +196,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Monday",
+              "children": "monday",
               "value": "monday",
             },
             "ref": null,
-            "rendered": "Monday",
+            "rendered": "monday",
             "type": "option",
           },
           Object {
@@ -206,11 +208,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Tueday",
+              "children": "tuesday",
               "value": "tuesday",
             },
             "ref": null,
-            "rendered": "Tueday",
+            "rendered": "tuesday",
             "type": "option",
           },
           Object {
@@ -218,11 +220,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Wednesday",
+              "children": "wednesday",
               "value": "wednesday",
             },
             "ref": null,
-            "rendered": "Wednesday",
+            "rendered": "wednesday",
             "type": "option",
           },
           Object {
@@ -230,11 +232,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Thursday",
+              "children": "thursday",
               "value": "thursday",
             },
             "ref": null,
-            "rendered": "Thursday",
+            "rendered": "thursday",
             "type": "option",
           },
           Object {
@@ -242,11 +244,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Friday",
+              "children": "friday",
               "value": "friday",
             },
             "ref": null,
-            "rendered": "Friday",
+            "rendered": "friday",
             "type": "option",
           },
           Object {
@@ -254,11 +256,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Saturday",
+              "children": "saturday",
               "value": "saturday",
             },
             "ref": null,
-            "rendered": "Saturday",
+            "rendered": "saturday",
             "type": "option",
           },
         ],
@@ -273,21 +275,23 @@ ShallowWrapper {
             <option>
               SELECT MEAL-TIME
 </option>,
-            <option
-              value="breakfast"
+            Array [
+              <option
+                value="breakfast"
 >
-              Breakfast
+                breakfast
 </option>,
-            <option
-              value="lunch"
+              <option
+                value="lunch"
 >
-              Lunch
+                lunch
 </option>,
-            <option
-              value="dinner"
+              <option
+                value="dinner"
 >
-              Dinner
+                dinner
 </option>,
+            ],
           ],
           "id": "meal-time",
           "name": "mealTime",
@@ -311,11 +315,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Breakfast",
+              "children": "breakfast",
               "value": "breakfast",
             },
             "ref": null,
-            "rendered": "Breakfast",
+            "rendered": "breakfast",
             "type": "option",
           },
           Object {
@@ -323,11 +327,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Lunch",
+              "children": "lunch",
               "value": "lunch",
             },
             "ref": null,
-            "rendered": "Lunch",
+            "rendered": "lunch",
             "type": "option",
           },
           Object {
@@ -335,11 +339,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Dinner",
+              "children": "dinner",
               "value": "dinner",
             },
             "ref": null,
-            "rendered": "Dinner",
+            "rendered": "dinner",
             "type": "option",
           },
         ],
@@ -378,37 +382,37 @@ ShallowWrapper {
             <option
                         value="sunday"
             >
-                        Sunday
+                        sunday
             </option>
             <option
                         value="monday"
             >
-                        Monday
+                        monday
             </option>
             <option
                         value="tuesday"
             >
-                        Tueday
+                        tuesday
             </option>
             <option
                         value="wednesday"
             >
-                        Wednesday
+                        wednesday
             </option>
             <option
                         value="thursday"
             >
-                        Thursday
+                        thursday
             </option>
             <option
                         value="friday"
             >
-                        Friday
+                        friday
             </option>
             <option
                         value="saturday"
             >
-                        Saturday
+                        saturday
             </option>
 </select>,
           <select
@@ -422,17 +426,17 @@ ShallowWrapper {
             <option
                         value="breakfast"
             >
-                        Breakfast
+                        breakfast
             </option>
             <option
                         value="lunch"
             >
-                        Lunch
+                        lunch
             </option>
             <option
                         value="dinner"
             >
-                        Dinner
+                        dinner
             </option>
 </select>,
           <button
@@ -454,41 +458,43 @@ ShallowWrapper {
               <option>
                 SELECT WEEKDAY
 </option>,
-              <option
-                value="sunday"
+              Array [
+                <option
+                  value="sunday"
 >
-                Sunday
+                  sunday
 </option>,
-              <option
-                value="monday"
+                <option
+                  value="monday"
 >
-                Monday
+                  monday
 </option>,
-              <option
-                value="tuesday"
+                <option
+                  value="tuesday"
 >
-                Tueday
+                  tuesday
 </option>,
-              <option
-                value="wednesday"
+                <option
+                  value="wednesday"
 >
-                Wednesday
+                  wednesday
 </option>,
-              <option
-                value="thursday"
+                <option
+                  value="thursday"
 >
-                Thursday
+                  thursday
 </option>,
-              <option
-                value="friday"
+                <option
+                  value="friday"
 >
-                Friday
+                  friday
 </option>,
-              <option
-                value="saturday"
+                <option
+                  value="saturday"
 >
-                Saturday
+                  saturday
 </option>,
+              ],
             ],
             "id": "weekday",
             "name": "weekday",
@@ -512,11 +518,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Sunday",
+                "children": "sunday",
                 "value": "sunday",
               },
               "ref": null,
-              "rendered": "Sunday",
+              "rendered": "sunday",
               "type": "option",
             },
             Object {
@@ -524,11 +530,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Monday",
+                "children": "monday",
                 "value": "monday",
               },
               "ref": null,
-              "rendered": "Monday",
+              "rendered": "monday",
               "type": "option",
             },
             Object {
@@ -536,11 +542,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Tueday",
+                "children": "tuesday",
                 "value": "tuesday",
               },
               "ref": null,
-              "rendered": "Tueday",
+              "rendered": "tuesday",
               "type": "option",
             },
             Object {
@@ -548,11 +554,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Wednesday",
+                "children": "wednesday",
                 "value": "wednesday",
               },
               "ref": null,
-              "rendered": "Wednesday",
+              "rendered": "wednesday",
               "type": "option",
             },
             Object {
@@ -560,11 +566,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Thursday",
+                "children": "thursday",
                 "value": "thursday",
               },
               "ref": null,
-              "rendered": "Thursday",
+              "rendered": "thursday",
               "type": "option",
             },
             Object {
@@ -572,11 +578,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Friday",
+                "children": "friday",
                 "value": "friday",
               },
               "ref": null,
-              "rendered": "Friday",
+              "rendered": "friday",
               "type": "option",
             },
             Object {
@@ -584,11 +590,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Saturday",
+                "children": "saturday",
                 "value": "saturday",
               },
               "ref": null,
-              "rendered": "Saturday",
+              "rendered": "saturday",
               "type": "option",
             },
           ],
@@ -603,21 +609,23 @@ ShallowWrapper {
               <option>
                 SELECT MEAL-TIME
 </option>,
-              <option
-                value="breakfast"
+              Array [
+                <option
+                  value="breakfast"
 >
-                Breakfast
+                  breakfast
 </option>,
-              <option
-                value="lunch"
+                <option
+                  value="lunch"
 >
-                Lunch
+                  lunch
 </option>,
-              <option
-                value="dinner"
+                <option
+                  value="dinner"
 >
-                Dinner
+                  dinner
 </option>,
+              ],
             ],
             "id": "meal-time",
             "name": "mealTime",
@@ -641,11 +649,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Breakfast",
+                "children": "breakfast",
                 "value": "breakfast",
               },
               "ref": null,
-              "rendered": "Breakfast",
+              "rendered": "breakfast",
               "type": "option",
             },
             Object {
@@ -653,11 +661,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Lunch",
+                "children": "lunch",
                 "value": "lunch",
               },
               "ref": null,
-              "rendered": "Lunch",
+              "rendered": "lunch",
               "type": "option",
             },
             Object {
@@ -665,11 +673,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Dinner",
+                "children": "dinner",
                 "value": "dinner",
               },
               "ref": null,
-              "rendered": "Dinner",
+              "rendered": "dinner",
               "type": "option",
             },
           ],
