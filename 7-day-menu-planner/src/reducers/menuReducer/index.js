@@ -1,40 +1,13 @@
-const initialState = {
-  sunday: {
+const weekdays = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+
+const initialState = weekdays.reduce((state, day) => {
+  return {...state, [day]: {
     breakfast: {},
     lunch: {},
     dinner: {}
-  },
-  monday: {
-   breakfast: {},
-    lunch: {},
-    dinner: {}
-  },
-  tuesday: {
-    breakfast: {},
-    lunch: {},
-    dinner: {}
-  },
-  wednesday: {
-    breakfast: {},
-    lunch: {},
-    dinner: {}
-  },
-  thursday: {
-    breakfast: {},
-    lunch: {},
-    dinner: {}
-  },
-  friday: {
-    breakfast: {},
-    lunch: {},
-    dinner: {}
-  },
-  saturday: {
-    breakfast: {},
-    lunch: {},
-    dinner: {}
+    }
   }
-}
+}, {});
 
 export const menuReducer = (state = initialState, action) => {
   switch(action.type) {

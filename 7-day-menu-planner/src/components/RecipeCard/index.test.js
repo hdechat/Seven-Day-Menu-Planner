@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, render } from 'enzyme';
 import RecipeCard from './index.js';
 
 describe('Recipe Card', () => {
@@ -18,9 +18,5 @@ describe('Recipe Card', () => {
 
   it('matches snapshot', () => {
     expect(wrapper).toMatchSnapshot();
-  });
-
-  it('should render AddToMenu if displayAddToMenu prop is true', () => {
-    expect(wrapper.find('form').length).toEqual(1);
   });
 });
