@@ -8,15 +8,10 @@ export class App extends Component {
   constructor(props) {
     super();
 
-    this.state = {
-      category: ''
-    }
+    
   }
 
-  handleClick = async (event) => {
-    await this.setState({ category: event.target.value});
-    this.props.chooseCategory(this.state.category);
-  }
+  
 
   render() {
     if(this.props.recipesIsLoading) {
@@ -26,7 +21,9 @@ export class App extends Component {
     } else {
       return (
         <div className="App">
-          <select onChange={this.handleClick} id='category'>
+          <select 
+            onChange={event => this.props.chooseCategory(event.target.value)}
+            id='category'>
             <option>SELECT CATEGORY</option>
             <option value='paleo'>Paleo</option>
             <option value='vegetarian'>Vegetarian</option>
