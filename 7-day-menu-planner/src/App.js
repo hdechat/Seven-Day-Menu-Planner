@@ -1,50 +1,21 @@
 import React, { Component } from 'react';
+import { NavLink, Route } from 'react-router-dom';
+import HomeContainer from './containers/HomeContainer';
+import MenuCalendarContainer from './containers/MenuCalendarContainer';
 import './App.css';
-import { connect } from 'react-redux';
-import { chooseCategory } from './actions';
-import RecipeCardsDisplay from './components/RecipeCardsDisplay'
 
-export class App extends Component {
-  constructor(props) {
-    super();
-
-    this.state = {
-      category: ''
-    }
-  }
-
-  handleClick = async (event) => {
-    await this.setState({ category: event.target.value});
-    this.props.chooseCategory(this.state.category);
-  }
+export default class App extends Component {
 
   render() {
-    if(this.props.recipesIsLoading) {
-      return (
-        <p className="loading-message">Your Recipes Are Loading</p>
-      )
-    } else {
-      return (
-        <div className="App">
-          <select onChange={this.handleClick} id='category'>
-            <option>SELECT CATEGORY</option>
-            <option value='paleo'>Paleo</option>
-            <option value='vegetarian'>Vegetarian</option>
-            <option value='vegan'>Vegan</option>
-          </select>
-        <RecipeCardsDisplay recipeCards={this.props.recipeCards} />
-        </div>
-      );
-    }
+    return (
+      <div className="App">
+        <header>
+          <NavLink to='/menu-calendar'>Menu Calendar</NavLink>
+          <NavLink to='/'>Home</NavLink>
+        </header>
+          <Route exact path='/' component={HomeContainer} />
+          <Route exact path='/menu-calendar' component={MenuCalendarContainer} />
+      </div>
+    );
   }
 }
-
-export const mapStateToProps = state => ({
-  recipesIsLoading: state.recipes.recipesIsLoading,
-  recipeCards: state.recipes.results
-});
-export const mapDispatchToProps = dispatch => ({
-  chooseCategory: category => dispatch(chooseCategory(category))
-})
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);

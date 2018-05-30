@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, render } from 'enzyme';
 import RecipeCard from './index.js';
 
 describe('Recipe Card', () => {
@@ -13,7 +13,7 @@ describe('Recipe Card', () => {
       "title": "Paleo Sriracha recipes",
       "url": "http://nomnompaleo.com/post/36060636540/paleo-sriracha"
     }
-    wrapper = shallow(<RecipeCard recipe={mockRecipe} />);
+    wrapper = shallow(<RecipeCard recipe={mockRecipe} displayAddToMenu={true}/>);
   });
 
   it('matches snapshot', () => {

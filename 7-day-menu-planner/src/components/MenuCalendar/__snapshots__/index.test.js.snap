@@ -1,0 +1,693 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Add To Menu matches snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <MenuCalendar
+    menu={
+        Object {
+            "menu": Object {
+              "breakfast": Object {
+                "title": "Recipe Name",
+              },
+            },
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1>
+          THIS WEEKS MENU PLAN
+</h1>,
+        <ul>
+          <li>
+                    Sunday
+                    <Day
+                              menu={undefined}
+                    />
+          </li>
+          <li>
+                    Monday
+                    <Day
+                              menu={undefined}
+                    />
+          </li>
+          <li>
+                    Tuesday
+                    <Day
+                              menu={undefined}
+                    />
+          </li>
+          <li>
+                    Wednesday
+                    <Day
+                              menu={undefined}
+                    />
+          </li>
+          <li>
+                    Thursday
+                    <Day
+                              menu={undefined}
+                    />
+          </li>
+          <li>
+                    Friday
+                    <Day
+                              menu={undefined}
+                    />
+          </li>
+          <li>
+                    Saturday
+                    <Day
+                              menu={undefined}
+                    />
+          </li>
+</ul>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "THIS WEEKS MENU PLAN",
+        },
+        "ref": null,
+        "rendered": "THIS WEEKS MENU PLAN",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <li>
+              Sunday
+              <Day
+                            menu={undefined}
+              />
+</li>,
+            <li>
+              Monday
+              <Day
+                            menu={undefined}
+              />
+</li>,
+            <li>
+              Tuesday
+              <Day
+                            menu={undefined}
+              />
+</li>,
+            <li>
+              Wednesday
+              <Day
+                            menu={undefined}
+              />
+</li>,
+            <li>
+              Thursday
+              <Day
+                            menu={undefined}
+              />
+</li>,
+            <li>
+              Friday
+              <Day
+                            menu={undefined}
+              />
+</li>,
+            <li>
+              Saturday
+              <Day
+                            menu={undefined}
+              />
+</li>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Sunday",
+                <Day
+                  menu={undefined}
+/>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Sunday",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "menu": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Monday",
+                <Day
+                  menu={undefined}
+/>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Monday",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "menu": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Tuesday",
+                <Day
+                  menu={undefined}
+/>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Tuesday",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "menu": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Wednesday",
+                <Day
+                  menu={undefined}
+/>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Wednesday",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "menu": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Thursday",
+                <Day
+                  menu={undefined}
+/>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Thursday",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "menu": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Friday",
+                <Day
+                  menu={undefined}
+/>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Friday",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "menu": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Saturday",
+                <Day
+                  menu={undefined}
+/>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Saturday",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "menu": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "li",
+          },
+        ],
+        "type": "ul",
+      },
+    ],
+    "type": "article",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1>
+            THIS WEEKS MENU PLAN
+</h1>,
+          <ul>
+            <li>
+                        Sunday
+                        <Day
+                                    menu={undefined}
+                        />
+            </li>
+            <li>
+                        Monday
+                        <Day
+                                    menu={undefined}
+                        />
+            </li>
+            <li>
+                        Tuesday
+                        <Day
+                                    menu={undefined}
+                        />
+            </li>
+            <li>
+                        Wednesday
+                        <Day
+                                    menu={undefined}
+                        />
+            </li>
+            <li>
+                        Thursday
+                        <Day
+                                    menu={undefined}
+                        />
+            </li>
+            <li>
+                        Friday
+                        <Day
+                                    menu={undefined}
+                        />
+            </li>
+            <li>
+                        Saturday
+                        <Day
+                                    menu={undefined}
+                        />
+            </li>
+</ul>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "THIS WEEKS MENU PLAN",
+          },
+          "ref": null,
+          "rendered": "THIS WEEKS MENU PLAN",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <li>
+                Sunday
+                <Day
+                                menu={undefined}
+                />
+</li>,
+              <li>
+                Monday
+                <Day
+                                menu={undefined}
+                />
+</li>,
+              <li>
+                Tuesday
+                <Day
+                                menu={undefined}
+                />
+</li>,
+              <li>
+                Wednesday
+                <Day
+                                menu={undefined}
+                />
+</li>,
+              <li>
+                Thursday
+                <Day
+                                menu={undefined}
+                />
+</li>,
+              <li>
+                Friday
+                <Day
+                                menu={undefined}
+                />
+</li>,
+              <li>
+                Saturday
+                <Day
+                                menu={undefined}
+                />
+</li>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Sunday",
+                  <Day
+                    menu={undefined}
+/>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Sunday",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "menu": undefined,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Monday",
+                  <Day
+                    menu={undefined}
+/>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Monday",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "menu": undefined,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Tuesday",
+                  <Day
+                    menu={undefined}
+/>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Tuesday",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "menu": undefined,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Wednesday",
+                  <Day
+                    menu={undefined}
+/>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Wednesday",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "menu": undefined,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Thursday",
+                  <Day
+                    menu={undefined}
+/>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Thursday",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "menu": undefined,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Friday",
+                  <Day
+                    menu={undefined}
+/>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Friday",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "menu": undefined,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Saturday",
+                  <Day
+                    menu={undefined}
+/>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Saturday",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "menu": undefined,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "li",
+            },
+          ],
+          "type": "ul",
+        },
+      ],
+      "type": "article",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

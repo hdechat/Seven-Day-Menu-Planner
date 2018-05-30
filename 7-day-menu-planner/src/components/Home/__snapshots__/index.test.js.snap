@@ -1,11 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App matches snapshot 1`] = `
+exports[`Home matches snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <App
+  Symbol(enzyme.__unrendered__): <Home
     chooseCategory={[Function]}
+    recipeCards={Array []}
+    recipesHasErrored=""
+    recipesIsLoading={false}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -20,6 +23,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <header />,
         <select
           id="category"
           onChange={[Function]}
@@ -43,14 +47,25 @@ ShallowWrapper {
                     Vegan
           </option>
 </select>,
+        null,
+        null,
         <RecipeCardsDisplay
-          recipeCards={undefined}
+          recipeCards={Array []}
 />,
       ],
       "className": "App",
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "header",
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -131,12 +146,14 @@ ShallowWrapper {
         ],
         "type": "select",
       },
+      null,
+      null,
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "recipeCards": undefined,
+          "recipeCards": Array [],
         },
         "ref": null,
         "rendered": null,
@@ -152,6 +169,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <header />,
           <select
             id="category"
             onChange={[Function]}
@@ -175,14 +193,25 @@ ShallowWrapper {
                         Vegan
             </option>
 </select>,
+          null,
+          null,
           <RecipeCardsDisplay
-            recipeCards={undefined}
+            recipeCards={Array []}
 />,
         ],
         "className": "App",
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "header",
+        },
         Object {
           "instance": null,
           "key": undefined,
@@ -263,12 +292,14 @@ ShallowWrapper {
           ],
           "type": "select",
         },
+        null,
+        null,
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "recipeCards": undefined,
+            "recipeCards": Array [],
           },
           "ref": null,
           "rendered": null,
