@@ -2,7 +2,6 @@ import React from 'react';
 import Day from '../Day';
 
 const MenuCalendar = ({menu}) => {
-  console.log(menu)
   return(
     <article>
       <h1>THIS WEEKS MENU PLAN</h1>

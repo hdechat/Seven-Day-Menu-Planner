@@ -15,6 +15,3 @@ const RecipeCardsDisplay = ({ recipeCards }) => {
 }
 
 export default RecipeCardsDisplay;
-
-//from App receives mSTP 
-//maybe sent a boolen from here to display addToMen

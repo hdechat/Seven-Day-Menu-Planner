@@ -15,9 +15,23 @@ export default class AddToMenu extends Component {
   }
 
   handleSubmit = (event) => {
+    const { addToMenu, addToGroceryList, recipe } = this.props;
+
     event.preventDefault();
-    this.props.addToMenu(this.state.weekday, this.state.mealTime, this.props.recipe);
-    this.props.addToGroceryList(this.props.recipe.ingredients);
+    addToMenu(this.state.weekday, this.state.mealTime, this.props.recipe);
+    addToGroceryList(recipe.ingredients);
+  }
+
+  listWeekdayOptions = () => {
+    const weekdays = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+
+    return weekdays.map(day => <option value={day}>{day}</option>)
+  }
+
+  listMealTimeOptions = () => {
+    const mealTimes = ['breakfast', 'lunch', 'dinner'];
+
+    return mealTimes.map(meal => <option value={meal}>{meal}</option>)
   }
 
   render() {
@@ -25,19 +39,11 @@ export default class AddToMenu extends Component {
       <form onSubmit={this.handleSubmit}>
         <select name="weekday" id="weekday" onChange={this.handleClick}>
           <option>SELECT WEEKDAY</option>
-          <option value='sunday'>Sunday</option>
-          <option value='monday'>Monday</option>
-          <option value='tuesday'>Tueday</option>
-          <option value='wednesday'>Wednesday</option>
-          <option value='thursday'>Thursday</option>
-          <option value='friday'>Friday</option>
-          <option value='saturday'>Saturday</option>
+          {this.listWeekdayOptions()}
         </select>
         <select name="mealTime" id="meal-time" onChange={this.handleClick}>
           <option>SELECT MEAL-TIME</option>
-          <option value='breakfast'>Breakfast</option>
-          <option value='lunch'>Lunch</option>
-          <option value='dinner'>Dinner</option>
+          {this.listMealTimeOptions()}
         </select>
         <button type='submit'>Add To Menu</button>
       </form>

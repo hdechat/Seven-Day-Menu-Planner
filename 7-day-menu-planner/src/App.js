@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './App.css';
 import { NavLink, Route } from 'react-router-dom';
 import HomeContainer from './containers/HomeContainer';
 import MenuCalendarContainer from './containers/MenuCalendarContainer';
+import './App.css';
 
 export default class App extends Component {
 
