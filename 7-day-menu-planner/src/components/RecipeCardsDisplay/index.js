@@ -1,17 +1,17 @@
 import React from 'react';
-import RecipeCard from '../RecipeCard'
+import RecipeCard from '../RecipeCard';
 
 const RecipeCardsDisplay = ({ recipeCards }) => {
   const cards = recipeCards.map(recipe => {
     return (
       <RecipeCard key={recipe.title} recipe={recipe} displayAddToMenu={true} />
-    )
+    );
   });
   return (
     <div>
-     {cards}
+      {cards}
     </div>
-  )
-}
+  );
+};
 
 export default RecipeCardsDisplay;

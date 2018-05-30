@@ -1,6 +1,6 @@
 const initialState = {
-  results: [],
-}
+  results: []
+};
 
 export const recipesReducer = (state = initialState, action) => {
   switch (action.type) {

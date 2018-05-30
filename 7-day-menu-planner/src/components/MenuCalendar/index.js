@@ -1,8 +1,8 @@
 import React from 'react';
 import Day from '../Day';
 
-const MenuCalendar = ({menu}) => {
-  return(
+const MenuCalendar = ({ menu }) => {
+  return (
     <article>
       <h1>THIS WEEKS MENU PLAN</h1>
       <ul>
@@ -15,7 +15,7 @@ const MenuCalendar = ({menu}) => {
         <li>Saturday<Day menu={menu.saturday}/></li>
       </ul>
     </article>
-  )
-}
+  );
+};
 
 export default MenuCalendar;

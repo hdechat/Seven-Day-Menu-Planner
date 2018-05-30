@@ -13,8 +13,8 @@ export default class App extends Component {
           <NavLink to='/menu-calendar'>Menu Calendar</NavLink>
           <NavLink to='/'>Home</NavLink>
         </header>
-          <Route exact path='/' component={HomeContainer} />
-          <Route exact path='/menu-calendar' component={MenuCalendarContainer} />
+        <Route exact path='/' component={HomeContainer} />
+        <Route exact path='/menu-calendar' component={MenuCalendarContainer} />
       </div>
     );
   }

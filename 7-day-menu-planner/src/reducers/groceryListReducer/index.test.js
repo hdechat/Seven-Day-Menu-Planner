@@ -14,9 +14,17 @@ describe('Grocery List Reducer', () => {
     expect(actual).toEqual(mockState);
   });
 
-  it('should return an array of ingredient strings when it receives the correct action', () => {
-    mockState = ['last recipes ingredients']
-    const mockIngredients = ["1½ pounds fresh red jalapeño peppers, stemmed, seeded, and roughly chopped", "8 garlic cloves, peeled and smashed", "⅓ cup apple cider vinegar", "3 tablespoons tomato paste", "3 tablespoons honey", "2 tablespoons Paleo-friendly fish sauce (Red Boat!)", "1½ teaspoons kosher salt"];
+  it('should return an array of ingredients when it receives the correct action', () => {
+    mockState = ['last recipes ingredients'];
+    const mockIngredients = [
+      "1½ pounds fresh red jalapeño peppers, stemmed, seeded, and roughly chopped", 
+      "8 garlic cloves, peeled and smashed", 
+      "⅓ cup apple cider vinegar", 
+      "3 tablespoons tomato paste", 
+      "3 tablespoons honey", 
+      "2 tablespoons Paleo-friendly fish sauce (Red Boat!)", 
+      "1½ teaspoons kosher salt"
+    ];
 
     const expected = [...mockState, ...mockIngredients];
 

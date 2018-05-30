@@ -9,7 +9,7 @@ ShallowWrapper {
     addToMenu={[Function]}
     recipe={
         Object {
-            "image": "https://www.edamam.com/web-img/e50/e50584043c015a91a26a7a37f093d476",
+            "image": "https://www.edamam.com/web-img/e50/e50584043c015a91a26a7",
             "ingredients": Array [
               "1½ pounds fresh red jalapeño peppers, stemmed, seeded, and roughly chopped",
               "8 garlic cloves, peeled and smashed",
@@ -181,7 +181,7 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": undefined,
+            "key": "sunday",
             "nodeType": "host",
             "props": Object {
               "children": "sunday",
@@ -193,7 +193,7 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": undefined,
+            "key": "monday",
             "nodeType": "host",
             "props": Object {
               "children": "monday",
@@ -205,7 +205,7 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": undefined,
+            "key": "tuesday",
             "nodeType": "host",
             "props": Object {
               "children": "tuesday",
@@ -217,7 +217,7 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": undefined,
+            "key": "wednesday",
             "nodeType": "host",
             "props": Object {
               "children": "wednesday",
@@ -229,7 +229,7 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": undefined,
+            "key": "thursday",
             "nodeType": "host",
             "props": Object {
               "children": "thursday",
@@ -241,7 +241,7 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": undefined,
+            "key": "friday",
             "nodeType": "host",
             "props": Object {
               "children": "friday",
@@ -253,7 +253,7 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": undefined,
+            "key": "saturday",
             "nodeType": "host",
             "props": Object {
               "children": "saturday",
@@ -312,7 +312,7 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": undefined,
+            "key": "breakfast",
             "nodeType": "host",
             "props": Object {
               "children": "breakfast",
@@ -324,7 +324,7 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": undefined,
+            "key": "lunch",
             "nodeType": "host",
             "props": Object {
               "children": "lunch",
@@ -336,7 +336,7 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": undefined,
+            "key": "dinner",
             "nodeType": "host",
             "props": Object {
               "children": "dinner",
@@ -515,7 +515,7 @@ ShallowWrapper {
             },
             Object {
               "instance": null,
-              "key": undefined,
+              "key": "sunday",
               "nodeType": "host",
               "props": Object {
                 "children": "sunday",
@@ -527,7 +527,7 @@ ShallowWrapper {
             },
             Object {
               "instance": null,
-              "key": undefined,
+              "key": "monday",
               "nodeType": "host",
               "props": Object {
                 "children": "monday",
@@ -539,7 +539,7 @@ ShallowWrapper {
             },
             Object {
               "instance": null,
-              "key": undefined,
+              "key": "tuesday",
               "nodeType": "host",
               "props": Object {
                 "children": "tuesday",
@@ -551,7 +551,7 @@ ShallowWrapper {
             },
             Object {
               "instance": null,
-              "key": undefined,
+              "key": "wednesday",
               "nodeType": "host",
               "props": Object {
                 "children": "wednesday",
@@ -563,7 +563,7 @@ ShallowWrapper {
             },
             Object {
               "instance": null,
-              "key": undefined,
+              "key": "thursday",
               "nodeType": "host",
               "props": Object {
                 "children": "thursday",
@@ -575,7 +575,7 @@ ShallowWrapper {
             },
             Object {
               "instance": null,
-              "key": undefined,
+              "key": "friday",
               "nodeType": "host",
               "props": Object {
                 "children": "friday",
@@ -587,7 +587,7 @@ ShallowWrapper {
             },
             Object {
               "instance": null,
-              "key": undefined,
+              "key": "saturday",
               "nodeType": "host",
               "props": Object {
                 "children": "saturday",
@@ -646,7 +646,7 @@ ShallowWrapper {
             },
             Object {
               "instance": null,
-              "key": undefined,
+              "key": "breakfast",
               "nodeType": "host",
               "props": Object {
                 "children": "breakfast",
@@ -658,7 +658,7 @@ ShallowWrapper {
             },
             Object {
               "instance": null,
-              "key": undefined,
+              "key": "lunch",
               "nodeType": "host",
               "props": Object {
                 "children": "lunch",
@@ -670,7 +670,7 @@ ShallowWrapper {
             },
             Object {
               "instance": null,
-              "key": undefined,
+              "key": "dinner",
               "nodeType": "host",
               "props": Object {
                 "children": "dinner",

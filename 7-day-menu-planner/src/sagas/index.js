@@ -10,7 +10,7 @@ export function* chooseCategory(action) {
     const recipes = cleanData(results);
     yield put(fetchRecipesSuccess(recipes));
     yield put(recipesIsLoading(false));
-  } catch(error) {
+  } catch (error) {
     yield put(recipesHasErrored(error.message));
   }
 }

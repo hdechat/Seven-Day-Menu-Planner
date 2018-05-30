@@ -6,7 +6,8 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Home
     chooseCategory={[Function]}
-    recipeCards={Array []}
+    ecipeCards={Array []}
+    r={true}
     recipesHasErrored=""
     recipesIsLoading={false}
 />,
@@ -23,7 +24,6 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <header />,
         <select
           id="category"
           onChange={[Function]}
@@ -50,22 +50,13 @@ ShallowWrapper {
         null,
         null,
         <RecipeCardsDisplay
-          recipeCards={Array []}
+          recipeCards={undefined}
 />,
       ],
       "className": "App",
     },
     "ref": null,
     "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": "header",
-      },
       Object {
         "instance": null,
         "key": undefined,
@@ -153,7 +144,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "recipeCards": Array [],
+          "recipeCards": undefined,
         },
         "ref": null,
         "rendered": null,
@@ -169,7 +160,6 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <header />,
           <select
             id="category"
             onChange={[Function]}
@@ -196,22 +186,13 @@ ShallowWrapper {
           null,
           null,
           <RecipeCardsDisplay
-            recipeCards={Array []}
+            recipeCards={undefined}
 />,
         ],
         "className": "App",
       },
       "ref": null,
       "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": "header",
-        },
         Object {
           "instance": null,
           "key": undefined,
@@ -299,7 +280,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "recipeCards": Array [],
+            "recipeCards": undefined,
           },
           "ref": null,
           "rendered": null,
