@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Home from './index.js';
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 
 describe('Home', () => {
   let wrapper;
@@ -34,12 +34,3 @@ describe('Home', () => {
     expect(wrapper.find('.error-message').length).toEqual(1);
   });
 });
-
-
-
-
-
-
-
-
-
