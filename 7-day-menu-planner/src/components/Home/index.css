@@ -1,0 +1,19 @@
+.home {
+  margin-top: 85px;
+}
+
+.select-category {
+  border: solid 1px white;
+  margin: auto;
+  width: 9rem;
+}
+
+select {
+  background: transparent;
+  background-image: none;
+  border: none;
+  color: white;
+  height: 2rem;
+  outline: none;
+  padding: 5px 8px;
+}

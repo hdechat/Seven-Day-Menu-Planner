@@ -1,5 +1,6 @@
 import React from 'react';
 import RecipeCardsDisplay from '../RecipeCardsDisplay';
+import './index.css';
 
 const Home = (props) => {
   const { 
@@ -19,18 +20,22 @@ const Home = (props) => {
   };
 
   return (
-    <div className="App">
-      <select 
-        onChange={event => chooseCategory(event.target.value)}
-        id='category'>
-        <option>SELECT CATEGORY</option>
-        <option value='paleo'>Paleo</option>
-        <option value='vegetarian'>Vegetarian</option>
-        <option value='vegan'>Vegan</option>
-      </select>
-      {displayLoadingMessage()}
-      {displayErrorMessage()}
-      <RecipeCardsDisplay recipeCards={recipeCards} />
+    <div className="home">
+      <div className="select-category">
+        <select 
+          onChange={event => chooseCategory(event.target.value)}
+          id='category'>
+          <option>SELECT CATEGORY</option>
+          <option value='paleo'>Paleo</option>
+          <option value='vegetarian'>Vegetarian</option>
+          <option value='vegan'>Vegan</option>
+        </select>
+      </div>
+        {displayLoadingMessage()}
+        {displayErrorMessage()}
+      <div className="display-cards">
+        <RecipeCardsDisplay recipeCards={recipeCards} />
+      </div>
     </div>
   );
 }

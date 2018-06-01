@@ -37,81 +37,96 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <select
-          id="weekday"
-          name="weekday"
-          onChange={[Function]}
+        <p>
+          Add this meal to your menu!
+</p>,
+        <form
+          class="add-to-menu"
+          onSubmit={[Function]}
 >
-          <option>
-                    SELECT WEEKDAY
-          </option>
-          <option
-                    value="sunday"
+          <div
+                    className="select-category"
           >
-                    sunday
-          </option>
-          <option
-                    value="monday"
+                    <select
+                              id="weekday"
+                              name="weekday"
+                              onChange={[Function]}
+                    >
+                              <option>
+                                        SELECT WEEKDAY
+                              </option>
+                              <option
+                                        value="sunday"
+                              >
+                                        sunday
+                              </option>
+                              <option
+                                        value="monday"
+                              >
+                                        monday
+                              </option>
+                              <option
+                                        value="tuesday"
+                              >
+                                        tuesday
+                              </option>
+                              <option
+                                        value="wednesday"
+                              >
+                                        wednesday
+                              </option>
+                              <option
+                                        value="thursday"
+                              >
+                                        thursday
+                              </option>
+                              <option
+                                        value="friday"
+                              >
+                                        friday
+                              </option>
+                              <option
+                                        value="saturday"
+                              >
+                                        saturday
+                              </option>
+                    </select>
+          </div>
+          <div
+                    className="select-category"
           >
-                    monday
-          </option>
-          <option
-                    value="tuesday"
+                    <select
+                              id="meal-time"
+                              name="mealTime"
+                              onChange={[Function]}
+                    >
+                              <option>
+                                        SELECT MEAL-TIME
+                              </option>
+                              <option
+                                        value="breakfast"
+                              >
+                                        breakfast
+                              </option>
+                              <option
+                                        value="lunch"
+                              >
+                                        lunch
+                              </option>
+                              <option
+                                        value="dinner"
+                              >
+                                        dinner
+                              </option>
+                    </select>
+          </div>
+          <button
+                    type="submit"
           >
-                    tuesday
-          </option>
-          <option
-                    value="wednesday"
-          >
-                    wednesday
-          </option>
-          <option
-                    value="thursday"
-          >
-                    thursday
-          </option>
-          <option
-                    value="friday"
-          >
-                    friday
-          </option>
-          <option
-                    value="saturday"
-          >
-                    saturday
-          </option>
-</select>,
-        <select
-          id="meal-time"
-          name="mealTime"
-          onChange={[Function]}
->
-          <option>
-                    SELECT MEAL-TIME
-          </option>
-          <option
-                    value="breakfast"
-          >
-                    breakfast
-          </option>
-          <option
-                    value="lunch"
-          >
-                    lunch
-          </option>
-          <option
-                    value="dinner"
-          >
-                    dinner
-          </option>
-</select>,
-        <button
-          type="submit"
->
-          Add To Menu
-</button>,
+                    Add To Menu
+          </button>
+</form>,
       ],
-      "onSubmit": [Function],
     },
     "ref": null,
     "rendered": Array [
@@ -120,51 +135,102 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
+          "children": "Add this meal to your menu!",
+        },
+        "ref": null,
+        "rendered": "Add this meal to your menu!",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
           "children": Array [
-            <option>
-              SELECT WEEKDAY
-</option>,
-            Array [
-              <option
-                value="sunday"
+            <div
+              className="select-category"
 >
-                sunday
-</option>,
-              <option
-                value="monday"
+              <select
+                            id="weekday"
+                            name="weekday"
+                            onChange={[Function]}
+              >
+                            <option>
+                                          SELECT WEEKDAY
+                            </option>
+                            <option
+                                          value="sunday"
+                            >
+                                          sunday
+                            </option>
+                            <option
+                                          value="monday"
+                            >
+                                          monday
+                            </option>
+                            <option
+                                          value="tuesday"
+                            >
+                                          tuesday
+                            </option>
+                            <option
+                                          value="wednesday"
+                            >
+                                          wednesday
+                            </option>
+                            <option
+                                          value="thursday"
+                            >
+                                          thursday
+                            </option>
+                            <option
+                                          value="friday"
+                            >
+                                          friday
+                            </option>
+                            <option
+                                          value="saturday"
+                            >
+                                          saturday
+                            </option>
+              </select>
+</div>,
+            <div
+              className="select-category"
 >
-                monday
-</option>,
-              <option
-                value="tuesday"
+              <select
+                            id="meal-time"
+                            name="mealTime"
+                            onChange={[Function]}
+              >
+                            <option>
+                                          SELECT MEAL-TIME
+                            </option>
+                            <option
+                                          value="breakfast"
+                            >
+                                          breakfast
+                            </option>
+                            <option
+                                          value="lunch"
+                            >
+                                          lunch
+                            </option>
+                            <option
+                                          value="dinner"
+                            >
+                                          dinner
+                            </option>
+              </select>
+</div>,
+            <button
+              type="submit"
 >
-                tuesday
-</option>,
-              <option
-                value="wednesday"
->
-                wednesday
-</option>,
-              <option
-                value="thursday"
->
-                thursday
-</option>,
-              <option
-                value="friday"
->
-                friday
-</option>,
-              <option
-                value="saturday"
->
-                saturday
-</option>,
-            ],
+              Add To Menu
+</button>,
           ],
-          "id": "weekday",
-          "name": "weekday",
-          "onChange": [Function],
+          "class": "add-to-menu",
+          "onSubmit": [Function],
         },
         "ref": null,
         "rendered": Array [
@@ -173,196 +239,340 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "SELECT WEEKDAY",
-            },
-            "ref": null,
-            "rendered": "SELECT WEEKDAY",
-            "type": "option",
-          },
-          Object {
-            "instance": null,
-            "key": "sunday",
-            "nodeType": "host",
-            "props": Object {
-              "children": "sunday",
-              "value": "sunday",
-            },
-            "ref": null,
-            "rendered": "sunday",
-            "type": "option",
-          },
-          Object {
-            "instance": null,
-            "key": "monday",
-            "nodeType": "host",
-            "props": Object {
-              "children": "monday",
-              "value": "monday",
-            },
-            "ref": null,
-            "rendered": "monday",
-            "type": "option",
-          },
-          Object {
-            "instance": null,
-            "key": "tuesday",
-            "nodeType": "host",
-            "props": Object {
-              "children": "tuesday",
-              "value": "tuesday",
-            },
-            "ref": null,
-            "rendered": "tuesday",
-            "type": "option",
-          },
-          Object {
-            "instance": null,
-            "key": "wednesday",
-            "nodeType": "host",
-            "props": Object {
-              "children": "wednesday",
-              "value": "wednesday",
-            },
-            "ref": null,
-            "rendered": "wednesday",
-            "type": "option",
-          },
-          Object {
-            "instance": null,
-            "key": "thursday",
-            "nodeType": "host",
-            "props": Object {
-              "children": "thursday",
-              "value": "thursday",
-            },
-            "ref": null,
-            "rendered": "thursday",
-            "type": "option",
-          },
-          Object {
-            "instance": null,
-            "key": "friday",
-            "nodeType": "host",
-            "props": Object {
-              "children": "friday",
-              "value": "friday",
-            },
-            "ref": null,
-            "rendered": "friday",
-            "type": "option",
-          },
-          Object {
-            "instance": null,
-            "key": "saturday",
-            "nodeType": "host",
-            "props": Object {
-              "children": "saturday",
-              "value": "saturday",
-            },
-            "ref": null,
-            "rendered": "saturday",
-            "type": "option",
-          },
-        ],
-        "type": "select",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <option>
-              SELECT MEAL-TIME
-</option>,
-            Array [
-              <option
-                value="breakfast"
+              "children": <select
+                id="weekday"
+                name="weekday"
+                onChange={[Function]}
 >
-                breakfast
+                <option>
+                                SELECT WEEKDAY
+                </option>
+                <option
+                                value="sunday"
+                >
+                                sunday
+                </option>
+                <option
+                                value="monday"
+                >
+                                monday
+                </option>
+                <option
+                                value="tuesday"
+                >
+                                tuesday
+                </option>
+                <option
+                                value="wednesday"
+                >
+                                wednesday
+                </option>
+                <option
+                                value="thursday"
+                >
+                                thursday
+                </option>
+                <option
+                                value="friday"
+                >
+                                friday
+                </option>
+                <option
+                                value="saturday"
+                >
+                                saturday
+                </option>
+</select>,
+              "className": "select-category",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <option>
+                    SELECT WEEKDAY
 </option>,
-              <option
-                value="lunch"
+                  Array [
+                    <option
+                      value="sunday"
 >
-                lunch
+                      sunday
 </option>,
-              <option
-                value="dinner"
+                    <option
+                      value="monday"
 >
-                dinner
+                      monday
 </option>,
-            ],
-          ],
-          "id": "meal-time",
-          "name": "mealTime",
-          "onChange": [Function],
-        },
-        "ref": null,
-        "rendered": Array [
+                    <option
+                      value="tuesday"
+>
+                      tuesday
+</option>,
+                    <option
+                      value="wednesday"
+>
+                      wednesday
+</option>,
+                    <option
+                      value="thursday"
+>
+                      thursday
+</option>,
+                    <option
+                      value="friday"
+>
+                      friday
+</option>,
+                    <option
+                      value="saturday"
+>
+                      saturday
+</option>,
+                  ],
+                ],
+                "id": "weekday",
+                "name": "weekday",
+                "onChange": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "SELECT WEEKDAY",
+                  },
+                  "ref": null,
+                  "rendered": "SELECT WEEKDAY",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "sunday",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "sunday",
+                    "value": "sunday",
+                  },
+                  "ref": null,
+                  "rendered": "sunday",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "monday",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "monday",
+                    "value": "monday",
+                  },
+                  "ref": null,
+                  "rendered": "monday",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "tuesday",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "tuesday",
+                    "value": "tuesday",
+                  },
+                  "ref": null,
+                  "rendered": "tuesday",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "wednesday",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "wednesday",
+                    "value": "wednesday",
+                  },
+                  "ref": null,
+                  "rendered": "wednesday",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "thursday",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "thursday",
+                    "value": "thursday",
+                  },
+                  "ref": null,
+                  "rendered": "thursday",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "friday",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "friday",
+                    "value": "friday",
+                  },
+                  "ref": null,
+                  "rendered": "friday",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "saturday",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "saturday",
+                    "value": "saturday",
+                  },
+                  "ref": null,
+                  "rendered": "saturday",
+                  "type": "option",
+                },
+              ],
+              "type": "select",
+            },
+            "type": "div",
+          },
           Object {
             "instance": null,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "SELECT MEAL-TIME",
+              "children": <select
+                id="meal-time"
+                name="mealTime"
+                onChange={[Function]}
+>
+                <option>
+                                SELECT MEAL-TIME
+                </option>
+                <option
+                                value="breakfast"
+                >
+                                breakfast
+                </option>
+                <option
+                                value="lunch"
+                >
+                                lunch
+                </option>
+                <option
+                                value="dinner"
+                >
+                                dinner
+                </option>
+</select>,
+              "className": "select-category",
             },
             "ref": null,
-            "rendered": "SELECT MEAL-TIME",
-            "type": "option",
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <option>
+                    SELECT MEAL-TIME
+</option>,
+                  Array [
+                    <option
+                      value="breakfast"
+>
+                      breakfast
+</option>,
+                    <option
+                      value="lunch"
+>
+                      lunch
+</option>,
+                    <option
+                      value="dinner"
+>
+                      dinner
+</option>,
+                  ],
+                ],
+                "id": "meal-time",
+                "name": "mealTime",
+                "onChange": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "SELECT MEAL-TIME",
+                  },
+                  "ref": null,
+                  "rendered": "SELECT MEAL-TIME",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "breakfast",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "breakfast",
+                    "value": "breakfast",
+                  },
+                  "ref": null,
+                  "rendered": "breakfast",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "lunch",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "lunch",
+                    "value": "lunch",
+                  },
+                  "ref": null,
+                  "rendered": "lunch",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "dinner",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "dinner",
+                    "value": "dinner",
+                  },
+                  "ref": null,
+                  "rendered": "dinner",
+                  "type": "option",
+                },
+              ],
+              "type": "select",
+            },
+            "type": "div",
           },
           Object {
             "instance": null,
-            "key": "breakfast",
+            "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "breakfast",
-              "value": "breakfast",
+              "children": "Add To Menu",
+              "type": "submit",
             },
             "ref": null,
-            "rendered": "breakfast",
-            "type": "option",
-          },
-          Object {
-            "instance": null,
-            "key": "lunch",
-            "nodeType": "host",
-            "props": Object {
-              "children": "lunch",
-              "value": "lunch",
-            },
-            "ref": null,
-            "rendered": "lunch",
-            "type": "option",
-          },
-          Object {
-            "instance": null,
-            "key": "dinner",
-            "nodeType": "host",
-            "props": Object {
-              "children": "dinner",
-              "value": "dinner",
-            },
-            "ref": null,
-            "rendered": "dinner",
-            "type": "option",
+            "rendered": "Add To Menu",
+            "type": "button",
           },
         ],
-        "type": "select",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Add To Menu",
-          "type": "submit",
-        },
-        "ref": null,
-        "rendered": "Add To Menu",
-        "type": "button",
+        "type": "form",
       },
     ],
-    "type": "form",
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -371,81 +581,96 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <select
-            id="weekday"
-            name="weekday"
-            onChange={[Function]}
+          <p>
+            Add this meal to your menu!
+</p>,
+          <form
+            class="add-to-menu"
+            onSubmit={[Function]}
 >
-            <option>
-                        SELECT WEEKDAY
-            </option>
-            <option
-                        value="sunday"
+            <div
+                        className="select-category"
             >
-                        sunday
-            </option>
-            <option
-                        value="monday"
+                        <select
+                                    id="weekday"
+                                    name="weekday"
+                                    onChange={[Function]}
+                        >
+                                    <option>
+                                                SELECT WEEKDAY
+                                    </option>
+                                    <option
+                                                value="sunday"
+                                    >
+                                                sunday
+                                    </option>
+                                    <option
+                                                value="monday"
+                                    >
+                                                monday
+                                    </option>
+                                    <option
+                                                value="tuesday"
+                                    >
+                                                tuesday
+                                    </option>
+                                    <option
+                                                value="wednesday"
+                                    >
+                                                wednesday
+                                    </option>
+                                    <option
+                                                value="thursday"
+                                    >
+                                                thursday
+                                    </option>
+                                    <option
+                                                value="friday"
+                                    >
+                                                friday
+                                    </option>
+                                    <option
+                                                value="saturday"
+                                    >
+                                                saturday
+                                    </option>
+                        </select>
+            </div>
+            <div
+                        className="select-category"
             >
-                        monday
-            </option>
-            <option
-                        value="tuesday"
+                        <select
+                                    id="meal-time"
+                                    name="mealTime"
+                                    onChange={[Function]}
+                        >
+                                    <option>
+                                                SELECT MEAL-TIME
+                                    </option>
+                                    <option
+                                                value="breakfast"
+                                    >
+                                                breakfast
+                                    </option>
+                                    <option
+                                                value="lunch"
+                                    >
+                                                lunch
+                                    </option>
+                                    <option
+                                                value="dinner"
+                                    >
+                                                dinner
+                                    </option>
+                        </select>
+            </div>
+            <button
+                        type="submit"
             >
-                        tuesday
-            </option>
-            <option
-                        value="wednesday"
-            >
-                        wednesday
-            </option>
-            <option
-                        value="thursday"
-            >
-                        thursday
-            </option>
-            <option
-                        value="friday"
-            >
-                        friday
-            </option>
-            <option
-                        value="saturday"
-            >
-                        saturday
-            </option>
-</select>,
-          <select
-            id="meal-time"
-            name="mealTime"
-            onChange={[Function]}
->
-            <option>
-                        SELECT MEAL-TIME
-            </option>
-            <option
-                        value="breakfast"
-            >
-                        breakfast
-            </option>
-            <option
-                        value="lunch"
-            >
-                        lunch
-            </option>
-            <option
-                        value="dinner"
-            >
-                        dinner
-            </option>
-</select>,
-          <button
-            type="submit"
->
-            Add To Menu
-</button>,
+                        Add To Menu
+            </button>
+</form>,
         ],
-        "onSubmit": [Function],
       },
       "ref": null,
       "rendered": Array [
@@ -454,51 +679,102 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "children": "Add this meal to your menu!",
+          },
+          "ref": null,
+          "rendered": "Add this meal to your menu!",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
             "children": Array [
-              <option>
-                SELECT WEEKDAY
-</option>,
-              Array [
-                <option
-                  value="sunday"
+              <div
+                className="select-category"
 >
-                  sunday
-</option>,
-                <option
-                  value="monday"
+                <select
+                                id="weekday"
+                                name="weekday"
+                                onChange={[Function]}
+                >
+                                <option>
+                                                SELECT WEEKDAY
+                                </option>
+                                <option
+                                                value="sunday"
+                                >
+                                                sunday
+                                </option>
+                                <option
+                                                value="monday"
+                                >
+                                                monday
+                                </option>
+                                <option
+                                                value="tuesday"
+                                >
+                                                tuesday
+                                </option>
+                                <option
+                                                value="wednesday"
+                                >
+                                                wednesday
+                                </option>
+                                <option
+                                                value="thursday"
+                                >
+                                                thursday
+                                </option>
+                                <option
+                                                value="friday"
+                                >
+                                                friday
+                                </option>
+                                <option
+                                                value="saturday"
+                                >
+                                                saturday
+                                </option>
+                </select>
+</div>,
+              <div
+                className="select-category"
 >
-                  monday
-</option>,
-                <option
-                  value="tuesday"
+                <select
+                                id="meal-time"
+                                name="mealTime"
+                                onChange={[Function]}
+                >
+                                <option>
+                                                SELECT MEAL-TIME
+                                </option>
+                                <option
+                                                value="breakfast"
+                                >
+                                                breakfast
+                                </option>
+                                <option
+                                                value="lunch"
+                                >
+                                                lunch
+                                </option>
+                                <option
+                                                value="dinner"
+                                >
+                                                dinner
+                                </option>
+                </select>
+</div>,
+              <button
+                type="submit"
 >
-                  tuesday
-</option>,
-                <option
-                  value="wednesday"
->
-                  wednesday
-</option>,
-                <option
-                  value="thursday"
->
-                  thursday
-</option>,
-                <option
-                  value="friday"
->
-                  friday
-</option>,
-                <option
-                  value="saturday"
->
-                  saturday
-</option>,
-              ],
+                Add To Menu
+</button>,
             ],
-            "id": "weekday",
-            "name": "weekday",
-            "onChange": [Function],
+            "class": "add-to-menu",
+            "onSubmit": [Function],
           },
           "ref": null,
           "rendered": Array [
@@ -507,196 +783,340 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "SELECT WEEKDAY",
-              },
-              "ref": null,
-              "rendered": "SELECT WEEKDAY",
-              "type": "option",
-            },
-            Object {
-              "instance": null,
-              "key": "sunday",
-              "nodeType": "host",
-              "props": Object {
-                "children": "sunday",
-                "value": "sunday",
-              },
-              "ref": null,
-              "rendered": "sunday",
-              "type": "option",
-            },
-            Object {
-              "instance": null,
-              "key": "monday",
-              "nodeType": "host",
-              "props": Object {
-                "children": "monday",
-                "value": "monday",
-              },
-              "ref": null,
-              "rendered": "monday",
-              "type": "option",
-            },
-            Object {
-              "instance": null,
-              "key": "tuesday",
-              "nodeType": "host",
-              "props": Object {
-                "children": "tuesday",
-                "value": "tuesday",
-              },
-              "ref": null,
-              "rendered": "tuesday",
-              "type": "option",
-            },
-            Object {
-              "instance": null,
-              "key": "wednesday",
-              "nodeType": "host",
-              "props": Object {
-                "children": "wednesday",
-                "value": "wednesday",
-              },
-              "ref": null,
-              "rendered": "wednesday",
-              "type": "option",
-            },
-            Object {
-              "instance": null,
-              "key": "thursday",
-              "nodeType": "host",
-              "props": Object {
-                "children": "thursday",
-                "value": "thursday",
-              },
-              "ref": null,
-              "rendered": "thursday",
-              "type": "option",
-            },
-            Object {
-              "instance": null,
-              "key": "friday",
-              "nodeType": "host",
-              "props": Object {
-                "children": "friday",
-                "value": "friday",
-              },
-              "ref": null,
-              "rendered": "friday",
-              "type": "option",
-            },
-            Object {
-              "instance": null,
-              "key": "saturday",
-              "nodeType": "host",
-              "props": Object {
-                "children": "saturday",
-                "value": "saturday",
-              },
-              "ref": null,
-              "rendered": "saturday",
-              "type": "option",
-            },
-          ],
-          "type": "select",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <option>
-                SELECT MEAL-TIME
-</option>,
-              Array [
-                <option
-                  value="breakfast"
+                "children": <select
+                  id="weekday"
+                  name="weekday"
+                  onChange={[Function]}
 >
-                  breakfast
+                  <option>
+                                    SELECT WEEKDAY
+                  </option>
+                  <option
+                                    value="sunday"
+                  >
+                                    sunday
+                  </option>
+                  <option
+                                    value="monday"
+                  >
+                                    monday
+                  </option>
+                  <option
+                                    value="tuesday"
+                  >
+                                    tuesday
+                  </option>
+                  <option
+                                    value="wednesday"
+                  >
+                                    wednesday
+                  </option>
+                  <option
+                                    value="thursday"
+                  >
+                                    thursday
+                  </option>
+                  <option
+                                    value="friday"
+                  >
+                                    friday
+                  </option>
+                  <option
+                                    value="saturday"
+                  >
+                                    saturday
+                  </option>
+</select>,
+                "className": "select-category",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <option>
+                      SELECT WEEKDAY
 </option>,
-                <option
-                  value="lunch"
+                    Array [
+                      <option
+                        value="sunday"
 >
-                  lunch
+                        sunday
 </option>,
-                <option
-                  value="dinner"
+                      <option
+                        value="monday"
 >
-                  dinner
+                        monday
 </option>,
-              ],
-            ],
-            "id": "meal-time",
-            "name": "mealTime",
-            "onChange": [Function],
-          },
-          "ref": null,
-          "rendered": Array [
+                      <option
+                        value="tuesday"
+>
+                        tuesday
+</option>,
+                      <option
+                        value="wednesday"
+>
+                        wednesday
+</option>,
+                      <option
+                        value="thursday"
+>
+                        thursday
+</option>,
+                      <option
+                        value="friday"
+>
+                        friday
+</option>,
+                      <option
+                        value="saturday"
+>
+                        saturday
+</option>,
+                    ],
+                  ],
+                  "id": "weekday",
+                  "name": "weekday",
+                  "onChange": [Function],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "SELECT WEEKDAY",
+                    },
+                    "ref": null,
+                    "rendered": "SELECT WEEKDAY",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "sunday",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "sunday",
+                      "value": "sunday",
+                    },
+                    "ref": null,
+                    "rendered": "sunday",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "monday",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "monday",
+                      "value": "monday",
+                    },
+                    "ref": null,
+                    "rendered": "monday",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "tuesday",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "tuesday",
+                      "value": "tuesday",
+                    },
+                    "ref": null,
+                    "rendered": "tuesday",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "wednesday",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "wednesday",
+                      "value": "wednesday",
+                    },
+                    "ref": null,
+                    "rendered": "wednesday",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "thursday",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "thursday",
+                      "value": "thursday",
+                    },
+                    "ref": null,
+                    "rendered": "thursday",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "friday",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "friday",
+                      "value": "friday",
+                    },
+                    "ref": null,
+                    "rendered": "friday",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "saturday",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "saturday",
+                      "value": "saturday",
+                    },
+                    "ref": null,
+                    "rendered": "saturday",
+                    "type": "option",
+                  },
+                ],
+                "type": "select",
+              },
+              "type": "div",
+            },
             Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "SELECT MEAL-TIME",
+                "children": <select
+                  id="meal-time"
+                  name="mealTime"
+                  onChange={[Function]}
+>
+                  <option>
+                                    SELECT MEAL-TIME
+                  </option>
+                  <option
+                                    value="breakfast"
+                  >
+                                    breakfast
+                  </option>
+                  <option
+                                    value="lunch"
+                  >
+                                    lunch
+                  </option>
+                  <option
+                                    value="dinner"
+                  >
+                                    dinner
+                  </option>
+</select>,
+                "className": "select-category",
               },
               "ref": null,
-              "rendered": "SELECT MEAL-TIME",
-              "type": "option",
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <option>
+                      SELECT MEAL-TIME
+</option>,
+                    Array [
+                      <option
+                        value="breakfast"
+>
+                        breakfast
+</option>,
+                      <option
+                        value="lunch"
+>
+                        lunch
+</option>,
+                      <option
+                        value="dinner"
+>
+                        dinner
+</option>,
+                    ],
+                  ],
+                  "id": "meal-time",
+                  "name": "mealTime",
+                  "onChange": [Function],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "SELECT MEAL-TIME",
+                    },
+                    "ref": null,
+                    "rendered": "SELECT MEAL-TIME",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "breakfast",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "breakfast",
+                      "value": "breakfast",
+                    },
+                    "ref": null,
+                    "rendered": "breakfast",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "lunch",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "lunch",
+                      "value": "lunch",
+                    },
+                    "ref": null,
+                    "rendered": "lunch",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "dinner",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "dinner",
+                      "value": "dinner",
+                    },
+                    "ref": null,
+                    "rendered": "dinner",
+                    "type": "option",
+                  },
+                ],
+                "type": "select",
+              },
+              "type": "div",
             },
             Object {
               "instance": null,
-              "key": "breakfast",
+              "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "breakfast",
-                "value": "breakfast",
+                "children": "Add To Menu",
+                "type": "submit",
               },
               "ref": null,
-              "rendered": "breakfast",
-              "type": "option",
-            },
-            Object {
-              "instance": null,
-              "key": "lunch",
-              "nodeType": "host",
-              "props": Object {
-                "children": "lunch",
-                "value": "lunch",
-              },
-              "ref": null,
-              "rendered": "lunch",
-              "type": "option",
-            },
-            Object {
-              "instance": null,
-              "key": "dinner",
-              "nodeType": "host",
-              "props": Object {
-                "children": "dinner",
-                "value": "dinner",
-              },
-              "ref": null,
-              "rendered": "dinner",
-              "type": "option",
+              "rendered": "Add To Menu",
+              "type": "button",
             },
           ],
-          "type": "select",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Add To Menu",
-            "type": "submit",
-          },
-          "ref": null,
-          "rendered": "Add To Menu",
-          "type": "button",
+          "type": "form",
         },
       ],
-      "type": "form",
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {

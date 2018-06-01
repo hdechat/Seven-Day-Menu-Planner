@@ -1,0 +1,23 @@
+article {
+  box-shadow: 0.1rem 0.2rem 0.7rem -0.1rem;
+  border: solid gray thin;
+  border-radius: 3%;
+  margin: 0.5rem auto;
+  padding: 0.5rem 0rem;
+  width: 100%;
+  background: #D5C1B480;
+}
+
+img {
+  display: block;
+  left: 25%;
+  margin-bottom: 1rem;
+  position: relative;
+  width: 50%;
+}
+
+a {
+  font-size: 12px;
+  text-decoration: none;
+  color: black;
+}

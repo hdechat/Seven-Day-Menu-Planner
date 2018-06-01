@@ -1,16 +1,19 @@
 import React from 'react';
 import RecipeCard from '../RecipeCard';
+import './index.css';
 
 const RecipeCardsDisplay = ({ recipeCards }) => {
   const cards = recipeCards.map(recipe => {
     return (
-      <RecipeCard key={recipe.title} recipe={recipe} displayAddToMenu={true} />
+      <div className="home-display">
+        <RecipeCard key={recipe.title} recipe={recipe} displayAddToMenu={true} />
+      </div>
     );
   });
   return (
-    <div>
+    <section className="recipe-cards-display">
       {cards}
-    </div>
+    </section>
   );
 };
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import AddToMenuContainer from '../../containers/AddToMenuContainer';
+import './index.css'
 
 const RecipeCard = ({ recipe, displayAddToMenu }) => {
   const displayInset = () => {
@@ -8,9 +9,8 @@ const RecipeCard = ({ recipe, displayAddToMenu }) => {
   };
   return (
     <article>
-      <h1>{recipe.title}</h1>
       <img src={recipe.image} alt="recipe meal" />
-      <a href={recipe.url} target="_blank">Open Recipe Page in a new window</a>
+      <a href={recipe.url} target="_blank">{recipe.title}</a>
       {displayInset()}
     </article>
   );

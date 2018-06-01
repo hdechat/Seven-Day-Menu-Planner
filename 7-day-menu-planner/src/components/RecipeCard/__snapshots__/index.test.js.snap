@@ -36,9 +36,6 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h1>
-          Paleo Sriracha recipes
-</h1>,
         <img
           alt="recipe meal"
           src="https://www.edamam.com/web-img/e50/e50584043"
@@ -47,7 +44,7 @@ ShallowWrapper {
           href="http://nomnompaleo.com/post/36060636540/paleo-sriracha"
           target="_blank"
 >
-          Open Recipe Page in a new window
+          Paleo Sriracha recipes
 </a>,
         <Connect(AddToMenu)
           recipe={
@@ -76,17 +73,6 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Paleo Sriracha recipes",
-        },
-        "ref": null,
-        "rendered": "Paleo Sriracha recipes",
-        "type": "h1",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
           "alt": "recipe meal",
           "src": "https://www.edamam.com/web-img/e50/e50584043",
         },
@@ -99,12 +85,12 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Open Recipe Page in a new window",
+          "children": "Paleo Sriracha recipes",
           "href": "http://nomnompaleo.com/post/36060636540/paleo-sriracha",
           "target": "_blank",
         },
         "ref": null,
-        "rendered": "Open Recipe Page in a new window",
+        "rendered": "Paleo Sriracha recipes",
         "type": "a",
       },
       Object {
@@ -141,9 +127,6 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h1>
-            Paleo Sriracha recipes
-</h1>,
           <img
             alt="recipe meal"
             src="https://www.edamam.com/web-img/e50/e50584043"
@@ -152,7 +135,7 @@ ShallowWrapper {
             href="http://nomnompaleo.com/post/36060636540/paleo-sriracha"
             target="_blank"
 >
-            Open Recipe Page in a new window
+            Paleo Sriracha recipes
 </a>,
           <Connect(AddToMenu)
             recipe={
@@ -181,17 +164,6 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Paleo Sriracha recipes",
-          },
-          "ref": null,
-          "rendered": "Paleo Sriracha recipes",
-          "type": "h1",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
             "alt": "recipe meal",
             "src": "https://www.edamam.com/web-img/e50/e50584043",
           },
@@ -204,12 +176,12 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Open Recipe Page in a new window",
+            "children": "Paleo Sriracha recipes",
             "href": "http://nomnompaleo.com/post/36060636540/paleo-sriracha",
             "target": "_blank",
           },
           "ref": null,
-          "rendered": "Open Recipe Page in a new window",
+          "rendered": "Paleo Sriracha recipes",
           "type": "a",
         },
         Object {

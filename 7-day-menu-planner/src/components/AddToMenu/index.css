@@ -1,0 +1,27 @@
+.add-to-menu {
+  margin: 0.3rem;
+}
+
+.select-category {
+  border: solid 1px;
+  margin: auto;
+  width: 9rem;
+}
+
+select {
+  background: transparent;
+  background-image: none;
+  border: none;
+  height: 2rem;
+  outline: none;
+  padding: 5px 8px;
+}
+
+p {
+  margin-bottom: 0rem;
+}
+
+button {
+  height: 2rem;
+  widows: 9rem;
+}

@@ -1,9 +1,10 @@
 import React from 'react';
 import RecipeCard from '../RecipeCard';
+import './index.css';
 
 const Day = ({ menu }) => {
   return (
-    <section>
+    <section className="day">
       <h6>Breakfast</h6>
       <RecipeCard recipe={menu.breakfast} displayAddToMenu={false} />
 
