@@ -1,6 +1,8 @@
 import React from 'react';
 import AddToMenuContainer from '../../containers/AddToMenuContainer';
 import './index.css'
+import star from '../../assets/star-empty.png';
+import yellowStar from '../../assets/yellow-star.png';
 
 const RecipeCard = ({ recipe, displayAddToMenu }) => {
   const displayInset = () => {
@@ -9,6 +11,7 @@ const RecipeCard = ({ recipe, displayAddToMenu }) => {
   };
   return (
     <article>
+      <img src={star} alt='empty star' className='star'/>    
       <img src={recipe.image} alt="recipe meal" />
       <a href={recipe.url} target="_blank">{recipe.title}</a>
       {displayInset()}
