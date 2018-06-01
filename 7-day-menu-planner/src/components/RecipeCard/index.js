@@ -1,7 +1,7 @@
 import React from 'react';
 import AddToMenuContainer from '../../containers/AddToMenuContainer';
 import './index.css'
-import star from '../../assets/star-empty.png';
+import emptyStar from '../../assets/star-empty.png';
 import yellowStar from '../../assets/yellow-star.png';
 
 const RecipeCard = props => {

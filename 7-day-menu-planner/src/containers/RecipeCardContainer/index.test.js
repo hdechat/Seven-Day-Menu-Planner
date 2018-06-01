@@ -1,4 +1,4 @@
-import { mapDispatchToProps } from './index.js';
+import { mapStateToProps, mapDispatchToProps } from './index.js';
 import { addToFavorites } from '../../actions';
 
 describe('RECIPE CARD CONTAINER', () => {
@@ -16,5 +16,22 @@ describe('RECIPE CARD CONTAINER', () => {
     mappedProps.addToFavorites(mockRecipe);
 
     expect(dispatch).toHaveBeenCalledWith(actionToDispatch);
+  });
+
+  it('should return the expected objected', () => {
+    const mockState = {
+      favorites: [{title: 'recipe name'}],
+      recipes: {},
+      menu: {},
+      groceryList: []
+    };
+
+    const actual = mapStateToProps(mockState);
+
+    const expected = {
+      favorites: [{title: 'recipe name'}]
+    };
+
+    expect(actual).toEqual(expected);
   });
 });
