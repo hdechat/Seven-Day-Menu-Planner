@@ -6,6 +6,13 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <RecipeCard
     displayAddToMenu={true}
+    favorites={
+        Array [
+            Object {
+              "title": "Recipe1",
+            },
+          ]
+    }
     recipe={
         Object {
             "image": "https://www.edamam.com/web-img/e50/e50584043",
@@ -39,7 +46,7 @@ ShallowWrapper {
       "children": Array [
         <img
           alt="empty star"
-          className="star"
+          className="empty-star"
           onClick={[Function]}
           src="star-empty.png"
 />,
@@ -81,7 +88,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "alt": "empty star",
-          "className": "star",
+          "className": "empty-star",
           "onClick": [Function],
           "src": "star-empty.png",
         },
@@ -150,7 +157,7 @@ ShallowWrapper {
         "children": Array [
           <img
             alt="empty star"
-            className="star"
+            className="empty-star"
             onClick={[Function]}
             src="star-empty.png"
 />,
@@ -192,7 +199,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "alt": "empty star",
-            "className": "star",
+            "className": "empty-star",
             "onClick": [Function],
             "src": "star-empty.png",
           },

@@ -6,6 +6,7 @@ describe('Recipe Card', () => {
   let wrapper;
   let mockRecipe;
   let mockFunction;
+  let mockFavorites;
 
   beforeEach(() => {
     mockRecipe = {
@@ -24,11 +25,13 @@ describe('Recipe Card', () => {
     };
 
     mockFunction = jest.fn();
+    mockFavorites = [{title: 'Recipe1'}]
 
     wrapper = shallow(<RecipeCard 
       recipe={mockRecipe} 
       displayAddToMenu={true}
-      toggleFavorites={mockFunction}/>);
+      toggleFavorites={mockFunction}
+      favorites={mockFavorites}/>);
   });
 
   it('matches snapshot', () => {
@@ -36,8 +39,20 @@ describe('Recipe Card', () => {
   });
 
   it('should call toggleFavorites when star icon is clicked', () => {
-    wrapper.find('.star').simulate('click');
+    wrapper.find('.empty-star').simulate('click');
 
     expect(mockFunction).toHaveBeenCalledWith(mockRecipe);
+  });
+
+  it('should render an empty star if it is not a favorite', () => {
+
+    expect(wrapper.find('.empty-star').length).toEqual(1)
+  });
+
+
+  it('should render a yellow star if it is not a favorite', () => {
+    wrapper.setProps({favorites: [mockRecipe]})
+
+    expect(wrapper.find('.yellow-star').length).toEqual(1)
   });
 });
