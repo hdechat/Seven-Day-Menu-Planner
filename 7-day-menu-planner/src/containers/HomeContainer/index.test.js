@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import HomeContainer, { mapStateToProps, mapDispatchToProps } from './index.js';
 import { chooseCategory } from '../../actions';
 
-describe('HomeContainer', () => {
+describe('HOME CONTAINER', () => {
   let wrapper;
 
   beforeEach(() => {
