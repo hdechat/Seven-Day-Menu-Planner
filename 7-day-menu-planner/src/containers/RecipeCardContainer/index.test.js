@@ -1,5 +1,5 @@
 import { mapStateToProps, mapDispatchToProps } from './index.js';
-import { addToFavorites } from '../../actions';
+import { toggleFavorites } from '../../actions';
 
 describe('RECIPE CARD CONTAINER', () => {
   it('should call dispatch with the addToFavorites action', () => {
@@ -10,10 +10,10 @@ describe('RECIPE CARD CONTAINER', () => {
     };
 
     const dispatch = jest.fn();
-    const actionToDispatch = addToFavorites(mockRecipe);
+    const actionToDispatch = toggleFavorites(mockRecipe);
     const mappedProps = mapDispatchToProps(dispatch);
 
-    mappedProps.addToFavorites(mockRecipe);
+    mappedProps.toggleFavorites(mockRecipe);
 
     expect(dispatch).toHaveBeenCalledWith(actionToDispatch);
   });
