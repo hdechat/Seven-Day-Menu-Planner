@@ -5,6 +5,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <RecipeCard
+    addToFavorites={[Function]}
     displayAddToMenu={true}
     recipe={
         Object {
@@ -37,6 +38,12 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <img
+          alt="empty star"
+          className="star"
+          onClick={[Function]}
+          src="star-empty.png"
+/>,
+        <img
           alt="recipe meal"
           src="https://www.edamam.com/web-img/e50/e50584043"
 />,
@@ -68,6 +75,20 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "empty star",
+          "className": "star",
+          "onClick": [Function],
+          "src": "star-empty.png",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -128,6 +149,12 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <img
+            alt="empty star"
+            className="star"
+            onClick={[Function]}
+            src="star-empty.png"
+/>,
+          <img
             alt="recipe meal"
             src="https://www.edamam.com/web-img/e50/e50584043"
 />,
@@ -159,6 +186,20 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "empty star",
+            "className": "star",
+            "onClick": [Function],
+            "src": "star-empty.png",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
         Object {
           "instance": null,
           "key": undefined,

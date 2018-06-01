@@ -5,6 +5,7 @@ import RecipeCard from './index.js';
 describe('Recipe Card', () => {
   let wrapper;
   let mockRecipe;
+  let mockFunction;
 
   beforeEach(() => {
     mockRecipe = {
@@ -21,12 +22,22 @@ describe('Recipe Card', () => {
       "title": "Paleo Sriracha recipes",
       "url": "http://nomnompaleo.com/post/36060636540/paleo-sriracha"
     };
+
+    mockFunction = jest.fn();
+
     wrapper = shallow(<RecipeCard 
       recipe={mockRecipe} 
-      displayAddToMenu={true}/>);
+      displayAddToMenu={true}
+      addToFavorites={mockFunction}/>);
   });
 
   it('matches snapshot', () => {
     expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should call addToFavorites when star icon is clicked', () => {
+    wrapper.find('.star').simulate('click');
+
+    expect(mockFunction).toHaveBeenCalledWith(mockRecipe);
   });
 });
