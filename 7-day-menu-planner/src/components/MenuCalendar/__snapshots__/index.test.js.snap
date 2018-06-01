@@ -31,7 +31,9 @@ ShallowWrapper {
         <h1>
           THIS WEEKS MENU PLAN
 </h1>,
-        <ul>
+        <ul
+          className="week"
+>
           <li>
                     Sunday
                     <Day
@@ -76,6 +78,7 @@ ShallowWrapper {
           </li>
 </ul>,
       ],
+      "class": "menu",
     },
     "ref": null,
     "rendered": Array [
@@ -139,6 +142,7 @@ ShallowWrapper {
               />
 </li>,
           ],
+          "className": "week",
         },
         "ref": null,
         "rendered": Array [
@@ -349,7 +353,7 @@ ShallowWrapper {
         "type": "ul",
       },
     ],
-    "type": "article",
+    "type": "section",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -361,7 +365,9 @@ ShallowWrapper {
           <h1>
             THIS WEEKS MENU PLAN
 </h1>,
-          <ul>
+          <ul
+            className="week"
+>
             <li>
                         Sunday
                         <Day
@@ -406,6 +412,7 @@ ShallowWrapper {
             </li>
 </ul>,
         ],
+        "class": "menu",
       },
       "ref": null,
       "rendered": Array [
@@ -469,6 +476,7 @@ ShallowWrapper {
                 />
 </li>,
             ],
+            "className": "week",
           },
           "ref": null,
           "rendered": Array [
@@ -679,7 +687,7 @@ ShallowWrapper {
           "type": "ul",
         },
       ],
-      "type": "article",
+      "type": "section",
     },
   ],
   Symbol(enzyme.__options__): Object {

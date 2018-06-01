@@ -1,5 +1,5 @@
 import React from 'react';
-import Favorites from '/index.js';
+import Favorites from './index.js';
 import { shallow } from 'enzyme';
 
 describe('FAVORITES', () => {

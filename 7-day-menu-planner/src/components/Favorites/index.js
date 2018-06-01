@@ -2,10 +2,10 @@ import React from 'react';
 import RecipeCardsDisplay from '../RecipeCardsDisplay';
 import './index.css';
 
-const Favorites = { favorites } => {
+const Favorites = ({ favorites }) => {
   return (
     <div className="display-cards">
-      <RecipeCardsDisplay recipeCards={recipeCards} />
+      <RecipeCardsDisplay recipeCards={favorites} />
     </div>
   )
 }

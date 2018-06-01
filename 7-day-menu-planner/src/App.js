@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { NavLink, Route } from 'react-router-dom';
 import HomeContainer from './containers/HomeContainer';
 import MenuCalendarContainer from './containers/MenuCalendarContainer';
-import FavoritesContainer from '.containers/FavoritesContainer';
+import FavoritesContainer from './containers/FavoritesContainer';
 import './App.css';
 
 export default class App extends Component {
