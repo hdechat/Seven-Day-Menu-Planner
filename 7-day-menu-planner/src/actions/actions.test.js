@@ -104,4 +104,24 @@ describe('RECIPES ACTIONS', () => {
       expect(actual).toEqual(expected);
     });
   });
+
+  describe('Add To Favorites', () => {
+    const mockFavoritedRecipe = {
+      image: 'image url',
+      ingredients: ['ingredients'],
+      title: 'recipe name',
+      url: 'recipe url'
+    };
+
+    it('should have a type of ADD_TO_FAVORITES and return a recipe object', () => {
+      const expected = {
+        type: 'ADD_TO_FAVORITES',
+        favoritedRecipe: mockFavoritedRecipe
+      };
+
+      const actual = actions.AddToFavorites(mockFavoritedRecipe);
+
+      expect(actual).toEqual(expected);
+    });
+  });
 });
