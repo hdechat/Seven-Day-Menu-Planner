@@ -119,7 +119,7 @@ describe('RECIPES ACTIONS', () => {
         favoritedRecipe: mockFavoritedRecipe
       };
 
-      const actual = actions.AddToFavorites(mockFavoritedRecipe);
+      const actual = actions.addToFavorites(mockFavoritedRecipe);
 
       expect(actual).toEqual(expected);
     });

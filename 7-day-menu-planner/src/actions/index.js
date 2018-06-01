@@ -29,3 +29,8 @@ export const addToGroceryList = (ingredients) => ({
   type: 'ADD_TO_GROCERY_LIST',
   ingredients
 });
+
+export const addToFavorites = (favoritedRecipe) => ({
+  type: 'ADD_TO_FAVORITES',
+  favoritedRecipe
+});
