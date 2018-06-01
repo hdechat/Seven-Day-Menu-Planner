@@ -1,19 +1,7 @@
-import React from 'react';
-import { shallow } from 'enzyme';
-import HomeContainer, { mapStateToProps, mapDispatchToProps } from './index.js';
+import { mapStateToProps, mapDispatchToProps } from './index.js';
 import { chooseCategory } from '../../actions';
 
 describe('HOME CONTAINER', () => {
-  let wrapper;
-
-  beforeEach(() => {
-    wrapper = shallow(<HomeContainer />);
-  });
-
-  it('matches snapshot', () => {
-    expect(wrapper).toMatchSnapshot();
-  });
-  
   it('should call dispatch with a chooseCategory action', () => {
     const dispatch = jest.fn();
     const actionToDispatch = chooseCategory('paleo');

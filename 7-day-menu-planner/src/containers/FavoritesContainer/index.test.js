@@ -1,18 +1,6 @@
-import React from 'react';
-import { shallow } from 'enzyme';
-import FavoritesContainer, { mapStateToProps } from './index.js';
+import { mapStateToProps } from './index.js';
 
 describe('FAVORITES CONTAINER', () => {
-  let wrapper;
-
-  beforeEach(() => {
-    wrapper = shallow(<FavoritesContainer />);
-  });
-
-  it('matches snapshot', () => {
-    expect(wrapper).toMatchSnapshot();
-  });
-
   it('should return the prop object', () => {
     const mockState = {
       recipes: {},
