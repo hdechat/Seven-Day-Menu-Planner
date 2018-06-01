@@ -4,7 +4,7 @@ import './index.css';
 
 const Favorites = ({ favorites }) => {
   return (
-    <div className="display-cards">
+    <div className="display-favorites">
       <RecipeCardsDisplay recipeCards={favorites} />
     </div>
   )
