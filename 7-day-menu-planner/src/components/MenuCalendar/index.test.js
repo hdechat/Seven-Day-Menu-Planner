@@ -11,7 +11,7 @@ describe('Add To Menu', () => {
       menu: {
         breakfast: {title: 'Recipe Name'}
       }
-    }
+    };
 
     wrapper = shallow(<MenuCalendar menu={mockMenu} />);
   });

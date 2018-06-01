@@ -1,12 +1,12 @@
 import * as reducers from './index.js';
-import { chooseCategory, fetchRecipesSuccess, recipesIsLoading, recipesHasErrored } from '../../actions';
+import { fetchRecipesSuccess, recipesIsLoading, recipesHasErrored } from '../../actions';
 import { cleanedPaleoRecipes } from '../../mock-data.js';
 
 describe('Recipes Reducer', () => {
   let mockState;
 
   beforeEach(() => {
-    mockState = { results: [] }
+    mockState = { results: [] };
   });
 
   it('should return initialState if there is no given state', () => {
@@ -15,7 +15,7 @@ describe('Recipes Reducer', () => {
     expect(actual).toEqual(mockState);
   });
 
-  it('should return results array of recipes object when it receives the correct action', () => {
+  it('should return array of objects when it receives the correct action', () => {
     const expected = {results: [...cleanedPaleoRecipes]};
 
     const actual = reducers.recipesReducer(mockState, fetchRecipesSuccess(cleanedPaleoRecipes));
@@ -24,7 +24,7 @@ describe('Recipes Reducer', () => {
   });
 
   it('should return a boolean when it receives the correct action', () => {
-    const expected = { results: [], recipesIsLoading: true}
+    const expected = { results: [], recipesIsLoading: true};
 
     const actual = reducers.recipesReducer(mockState, recipesIsLoading(true));
 
@@ -33,23 +33,9 @@ describe('Recipes Reducer', () => {
 
 
   it('should return a boolean when it receives the correct action', () => {
-    const expected = { results: [], recipesHasErrored: 'error message'}
+    const expected = { results: [], recipesHasErrored: 'error message'};
 
-    const actual = reducers.recipesReducer(mockState, recipesHasErrored('error message'))
+    const actual = reducers.recipesReducer(mockState, recipesHasErrored('error message'));
     expect(actual).toEqual(expected);
   });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-

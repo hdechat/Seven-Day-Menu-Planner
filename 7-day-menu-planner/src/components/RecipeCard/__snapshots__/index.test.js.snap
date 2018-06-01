@@ -8,7 +8,7 @@ ShallowWrapper {
     displayAddToMenu={true}
     recipe={
         Object {
-            "image": "https://www.edamam.com/web-img/e50/e50584043c015a91a26a7a37f093d476",
+            "image": "https://www.edamam.com/web-img/e50/e50584043",
             "ingredients": Array [
               "1½ pounds fresh red jalapeño peppers, stemmed, seeded, and roughly chopped",
               "8 garlic cloves, peeled and smashed",
@@ -36,23 +36,20 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h1>
-          Paleo Sriracha recipes
-</h1>,
         <img
           alt="recipe meal"
-          src="https://www.edamam.com/web-img/e50/e50584043c015a91a26a7a37f093d476"
+          src="https://www.edamam.com/web-img/e50/e50584043"
 />,
         <a
           href="http://nomnompaleo.com/post/36060636540/paleo-sriracha"
           target="_blank"
 >
-          Click here to open Recipe Page in a new window
+          Paleo Sriracha recipes
 </a>,
         <Connect(AddToMenu)
           recipe={
                     Object {
-                              "image": "https://www.edamam.com/web-img/e50/e50584043c015a91a26a7a37f093d476",
+                              "image": "https://www.edamam.com/web-img/e50/e50584043",
                               "ingredients": Array [
                                 "1½ pounds fresh red jalapeño peppers, stemmed, seeded, and roughly chopped",
                                 "8 garlic cloves, peeled and smashed",
@@ -76,19 +73,8 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Paleo Sriracha recipes",
-        },
-        "ref": null,
-        "rendered": "Paleo Sriracha recipes",
-        "type": "h1",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
           "alt": "recipe meal",
-          "src": "https://www.edamam.com/web-img/e50/e50584043c015a91a26a7a37f093d476",
+          "src": "https://www.edamam.com/web-img/e50/e50584043",
         },
         "ref": null,
         "rendered": null,
@@ -99,12 +85,12 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Click here to open Recipe Page in a new window",
+          "children": "Paleo Sriracha recipes",
           "href": "http://nomnompaleo.com/post/36060636540/paleo-sriracha",
           "target": "_blank",
         },
         "ref": null,
-        "rendered": "Click here to open Recipe Page in a new window",
+        "rendered": "Paleo Sriracha recipes",
         "type": "a",
       },
       Object {
@@ -113,7 +99,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "recipe": Object {
-            "image": "https://www.edamam.com/web-img/e50/e50584043c015a91a26a7a37f093d476",
+            "image": "https://www.edamam.com/web-img/e50/e50584043",
             "ingredients": Array [
               "1½ pounds fresh red jalapeño peppers, stemmed, seeded, and roughly chopped",
               "8 garlic cloves, peeled and smashed",
@@ -141,23 +127,20 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h1>
-            Paleo Sriracha recipes
-</h1>,
           <img
             alt="recipe meal"
-            src="https://www.edamam.com/web-img/e50/e50584043c015a91a26a7a37f093d476"
+            src="https://www.edamam.com/web-img/e50/e50584043"
 />,
           <a
             href="http://nomnompaleo.com/post/36060636540/paleo-sriracha"
             target="_blank"
 >
-            Click here to open Recipe Page in a new window
+            Paleo Sriracha recipes
 </a>,
           <Connect(AddToMenu)
             recipe={
                         Object {
-                                    "image": "https://www.edamam.com/web-img/e50/e50584043c015a91a26a7a37f093d476",
+                                    "image": "https://www.edamam.com/web-img/e50/e50584043",
                                     "ingredients": Array [
                                       "1½ pounds fresh red jalapeño peppers, stemmed, seeded, and roughly chopped",
                                       "8 garlic cloves, peeled and smashed",
@@ -181,19 +164,8 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Paleo Sriracha recipes",
-          },
-          "ref": null,
-          "rendered": "Paleo Sriracha recipes",
-          "type": "h1",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
             "alt": "recipe meal",
-            "src": "https://www.edamam.com/web-img/e50/e50584043c015a91a26a7a37f093d476",
+            "src": "https://www.edamam.com/web-img/e50/e50584043",
           },
           "ref": null,
           "rendered": null,
@@ -204,12 +176,12 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Click here to open Recipe Page in a new window",
+            "children": "Paleo Sriracha recipes",
             "href": "http://nomnompaleo.com/post/36060636540/paleo-sriracha",
             "target": "_blank",
           },
           "ref": null,
-          "rendered": "Click here to open Recipe Page in a new window",
+          "rendered": "Paleo Sriracha recipes",
           "type": "a",
         },
         Object {
@@ -218,7 +190,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "recipe": Object {
-              "image": "https://www.edamam.com/web-img/e50/e50584043c015a91a26a7a37f093d476",
+              "image": "https://www.edamam.com/web-img/e50/e50584043",
               "ingredients": Array [
                 "1½ pounds fresh red jalapeño peppers, stemmed, seeded, and roughly chopped",
                 "8 garlic cloves, peeled and smashed",

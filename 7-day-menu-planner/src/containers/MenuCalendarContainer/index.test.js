@@ -23,6 +23,6 @@ describe('Menu Calendar', () => {
 
     const mappedProps = mapStateToProps(mockState);
 
-    expect(mappedProps).toEqual(expected)
+    expect(mappedProps).toEqual(expected);
   });
 });

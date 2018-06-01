@@ -1,8 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { shallow, mount } from 'enzyme';
-import HomeContainer from './index.js';
-import { mapStateToProps, mapDispatchToProps } from './index.js';
+import { shallow } from 'enzyme';
+import HomeContainer, { mapStateToProps, mapDispatchToProps } from './index.js';
 import { chooseCategory } from '../../actions';
 
 describe('HomeContainer', () => {
@@ -38,9 +36,9 @@ describe('HomeContainer', () => {
       recipeCards: [{title: 'Recipe Name'}],
       recipesIsLoading: false, 
       recipesHasErrored: undefined
-    }
+    };
 
-    const mappedProps = mapStateToProps(mockState)
+    const mappedProps = mapStateToProps(mockState);
 
     expect(mappedProps).toEqual(expected);
   });

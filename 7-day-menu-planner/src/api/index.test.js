@@ -9,15 +9,15 @@ describe('Fetch Recipes', () => {
     window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
       status: 200,
       json: () => Promise.resolve(mockResults)
-    }))
+    }));
   });
 
   it('should call fetch with the correct params', () => {
-    const expected = "https://api.edamam.com/search?q=paleo&app_id=3ed8819c&app_key=de997af620368eed6dcd7f4f42c179c2";
+    const expected = "https://api.edamam.com/search?q=paleo&app_id=3ed8819c&app_key=de997af620368eed6dcd7f4f42c179c2&from=0&to=12";
 
     fetchRecipes('paleo');
 
-    expect(window.fetch).toHaveBeenCalledWith(expected)
+    expect(window.fetch).toHaveBeenCalledWith(expected);
   });
 
   it('should return an object if the status code is ok', async () => {
@@ -27,7 +27,8 @@ describe('Fetch Recipes', () => {
   });
 
   it('should throw an error if the status is code is not ok', async () => {
-    window.fetch = jest.fn().mockImplementation(() => Promise.resolve({status: 404}));
+    window.fetch = jest.fn()
+      .mockImplementation(() => Promise.resolve({status: 404}));
 
     const expected = new Error('Error status code 404');
 

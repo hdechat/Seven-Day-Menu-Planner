@@ -84,7 +84,7 @@ describe('chooseCategory on error', () => {
     mockAction = {
       type: 'CHOOSE_CATEGORY',
       category: 'paleo'
-    }
+    };
 
     iterator = sagas.chooseCategory(mockAction);
     iterator.next();

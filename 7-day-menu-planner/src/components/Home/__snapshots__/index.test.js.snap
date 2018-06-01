@@ -6,7 +6,8 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Home
     chooseCategory={[Function]}
-    recipeCards={Array []}
+    ecipeCards={Array []}
+    r={true}
     recipesHasErrored=""
     recipesIsLoading={false}
 />,
@@ -23,37 +24,44 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <header />,
-        <select
-          id="category"
-          onChange={[Function]}
+        <div
+          className="select-category"
 >
-          <option>
-                    SELECT CATEGORY
-          </option>
-          <option
-                    value="paleo"
+          <select
+                    id="category"
+                    onChange={[Function]}
           >
-                    Paleo
-          </option>
-          <option
-                    value="vegetarian"
-          >
-                    Vegetarian
-          </option>
-          <option
-                    value="vegan"
-          >
-                    Vegan
-          </option>
-</select>,
+                    <option>
+                              SELECT CATEGORY
+                    </option>
+                    <option
+                              value="paleo"
+                    >
+                              Paleo
+                    </option>
+                    <option
+                              value="vegetarian"
+                    >
+                              Vegetarian
+                    </option>
+                    <option
+                              value="vegan"
+                    >
+                              Vegan
+                    </option>
+          </select>
+</div>,
         null,
         null,
-        <RecipeCardsDisplay
-          recipeCards={Array []}
-/>,
+        <div
+          className="display-cards"
+>
+          <RecipeCardsDisplay
+                    recipeCards={undefined}
+          />
+</div>,
       ],
-      "className": "App",
+      "className": "home",
     },
     "ref": null,
     "rendered": Array [
@@ -61,116 +69,8 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": "header",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
         "props": Object {
-          "children": Array [
-            <option>
-              SELECT CATEGORY
-</option>,
-            <option
-              value="paleo"
->
-              Paleo
-</option>,
-            <option
-              value="vegetarian"
->
-              Vegetarian
-</option>,
-            <option
-              value="vegan"
->
-              Vegan
-</option>,
-          ],
-          "id": "category",
-          "onChange": [Function],
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "SELECT CATEGORY",
-            },
-            "ref": null,
-            "rendered": "SELECT CATEGORY",
-            "type": "option",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Paleo",
-              "value": "paleo",
-            },
-            "ref": null,
-            "rendered": "Paleo",
-            "type": "option",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Vegetarian",
-              "value": "vegetarian",
-            },
-            "ref": null,
-            "rendered": "Vegetarian",
-            "type": "option",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Vegan",
-              "value": "vegan",
-            },
-            "ref": null,
-            "rendered": "Vegan",
-            "type": "option",
-          },
-        ],
-        "type": "select",
-      },
-      null,
-      null,
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "recipeCards": Array [],
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <header />,
-          <select
+          "children": <select
             id="category"
             onChange={[Function]}
 >
@@ -193,26 +93,10 @@ ShallowWrapper {
                         Vegan
             </option>
 </select>,
-          null,
-          null,
-          <RecipeCardsDisplay
-            recipeCards={Array []}
-/>,
-        ],
-        "className": "App",
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": "header",
+          "className": "select-category",
         },
-        Object {
+        "ref": null,
+        "rendered": Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
@@ -292,18 +176,223 @@ ShallowWrapper {
           ],
           "type": "select",
         },
+        "type": "div",
+      },
+      null,
+      null,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <RecipeCardsDisplay
+            recipeCards={undefined}
+/>,
+          "className": "display-cards",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "recipeCards": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="select-category"
+>
+            <select
+                        id="category"
+                        onChange={[Function]}
+            >
+                        <option>
+                                    SELECT CATEGORY
+                        </option>
+                        <option
+                                    value="paleo"
+                        >
+                                    Paleo
+                        </option>
+                        <option
+                                    value="vegetarian"
+                        >
+                                    Vegetarian
+                        </option>
+                        <option
+                                    value="vegan"
+                        >
+                                    Vegan
+                        </option>
+            </select>
+</div>,
+          null,
+          null,
+          <div
+            className="display-cards"
+>
+            <RecipeCardsDisplay
+                        recipeCards={undefined}
+            />
+</div>,
+        ],
+        "className": "home",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <select
+              id="category"
+              onChange={[Function]}
+>
+              <option>
+                            SELECT CATEGORY
+              </option>
+              <option
+                            value="paleo"
+              >
+                            Paleo
+              </option>
+              <option
+                            value="vegetarian"
+              >
+                            Vegetarian
+              </option>
+              <option
+                            value="vegan"
+              >
+                            Vegan
+              </option>
+</select>,
+            "className": "select-category",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <option>
+                  SELECT CATEGORY
+</option>,
+                <option
+                  value="paleo"
+>
+                  Paleo
+</option>,
+                <option
+                  value="vegetarian"
+>
+                  Vegetarian
+</option>,
+                <option
+                  value="vegan"
+>
+                  Vegan
+</option>,
+              ],
+              "id": "category",
+              "onChange": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "SELECT CATEGORY",
+                },
+                "ref": null,
+                "rendered": "SELECT CATEGORY",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Paleo",
+                  "value": "paleo",
+                },
+                "ref": null,
+                "rendered": "Paleo",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Vegetarian",
+                  "value": "vegetarian",
+                },
+                "ref": null,
+                "rendered": "Vegetarian",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Vegan",
+                  "value": "vegan",
+                },
+                "ref": null,
+                "rendered": "Vegan",
+                "type": "option",
+              },
+            ],
+            "type": "select",
+          },
+          "type": "div",
+        },
         null,
         null,
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "host",
           "props": Object {
-            "recipeCards": Array [],
+            "children": <RecipeCardsDisplay
+              recipeCards={undefined}
+/>,
+            "className": "display-cards",
           },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "recipeCards": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "div",
         },
       ],
       "type": "div",

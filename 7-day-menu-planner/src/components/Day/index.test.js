@@ -1,3 +1,4 @@
+import React from 'react';
 import Day from './index.js';
 import { shallow } from 'enzyme';
 
@@ -8,8 +9,8 @@ describe('Day', () => {
   beforeEach(() => {
     mockMenu = {
       breakfast: {title: 'Recipe Name'}
-    }
-    wrapper = shallow(<Day menu={mockMenu}/>)
+    };
+    wrapper = shallow(<Day menu={mockMenu}/>);
   });
 
   it('matches snapshot', () => {

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './index.css';
 
 export default class AddToMenu extends Component {
   constructor(props) {
@@ -7,11 +8,11 @@ export default class AddToMenu extends Component {
     this.state = {
       weekday: '',
       mealTime: ''
-    }
+    };
   }
 
   handleClick = (event) => {
-    this.setState({ [event.target.name]: event.target.value})
+    this.setState({ [event.target.name]: event.target.value});
   }
 
   handleSubmit = (event) => {
@@ -23,30 +24,40 @@ export default class AddToMenu extends Component {
   }
 
   listWeekdayOptions = () => {
-    const weekdays = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+    const weekdays = [
+      'sunday', 'monday', 'tuesday', 
+      'wednesday', 'thursday', 'friday', 'saturday'
+    ];
 
-    return weekdays.map(day => <option key={day} value={day}>{day}</option>)
+    return weekdays.map(day => <option key={day} value={day}>{day}</option>);
   }
 
   listMealTimeOptions = () => {
     const mealTimes = ['breakfast', 'lunch', 'dinner'];
 
-    return mealTimes.map(meal => <option key={meal} value={meal}>{meal}</option>)
+    return mealTimes.map(meal => <option key={meal} value={meal}>{meal}</option>);
   }
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <select name="weekday" id="weekday" onChange={this.handleClick}>
-          <option>SELECT WEEKDAY</option>
-          {this.listWeekdayOptions()}
-        </select>
-        <select name="mealTime" id="meal-time" onChange={this.handleClick}>
-          <option>SELECT MEAL-TIME</option>
-          {this.listMealTimeOptions()}
-        </select>
-        <button type='submit'>Add To Menu</button>
-      </form>
-    )
+      <div>
+        <p>Add this meal to your menu!</p>
+        <form class="add-to-menu" onSubmit={this.handleSubmit}>
+          <div className="select-category">
+            <select name="weekday" id="weekday" onChange={this.handleClick}>
+              <option>SELECT WEEKDAY</option>
+              {this.listWeekdayOptions()}
+            </select>
+          </div>
+          <div className="select-category">
+            <select name="mealTime" id="meal-time" onChange={this.handleClick}>
+              <option>SELECT MEAL-TIME</option>
+              {this.listMealTimeOptions()}
+            </select>
+          </div>
+          <button type='submit'>Add To Menu</button>
+        </form>
+      </div>
+    );
   }
 }

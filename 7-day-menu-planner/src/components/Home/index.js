@@ -1,22 +1,27 @@
 import React from 'react';
 import RecipeCardsDisplay from '../RecipeCardsDisplay';
+import './index.css';
 
-const Home = ({ recipeCards, chooseCategory, recipesIsLoading, recipesHasErrored }) => {
+const Home = (props) => {
+  const { 
+    recipeCards, 
+    chooseCategory, 
+    recipesIsLoading, 
+    recipesHasErrored } = props;
 
   const displayLoadingMessage = () => {
     return recipesIsLoading ?
       <p className="loading-message">Your Recipes Are Loading</p> : null;
-  }
+  };
 
   const displayErrorMessage = () => {
     return recipesHasErrored ?
       <p className="error-message">{recipesHasErrored}</p> : null;
-  }
+  };
 
-    return (
-      <div className="App">
-        <header>
-        </header>
+  return (
+    <div className="home">
+      <div className="select-category">
         <select 
           onChange={event => chooseCategory(event.target.value)}
           id='category'>
@@ -25,11 +30,14 @@ const Home = ({ recipeCards, chooseCategory, recipesIsLoading, recipesHasErrored
           <option value='vegetarian'>Vegetarian</option>
           <option value='vegan'>Vegan</option>
         </select>
+      </div>
         {displayLoadingMessage()}
         {displayErrorMessage()}
+      <div className="display-cards">
         <RecipeCardsDisplay recipeCards={recipeCards} />
       </div>
-    );
+    </div>
+  );
 }
 
 export default Home;

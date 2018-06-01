@@ -1,19 +1,19 @@
 import React from 'react';
-import AddToMenuContainer from '../../containers/AddToMenuContainer'
+import AddToMenuContainer from '../../containers/AddToMenuContainer';
+import './index.css'
 
 const RecipeCard = ({ recipe, displayAddToMenu }) => {
   const displayInset = () => {
     return displayAddToMenu ? 
       <AddToMenuContainer recipe={recipe} /> : null;
-  }
+  };
   return (
     <article>
-      <h1>{recipe.title}</h1>
       <img src={recipe.image} alt="recipe meal" />
-      <a href={recipe.url} target="_blank">Click here to open Recipe Page in a new window</a>
+      <a href={recipe.url} target="_blank">{recipe.title}</a>
       {displayInset()}
     </article>
-  )
-}
+  );
+};
 
 export default RecipeCard;

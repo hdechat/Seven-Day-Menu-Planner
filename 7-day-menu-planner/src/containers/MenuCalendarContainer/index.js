@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router'
+import { withRouter } from 'react-router';
 import MenuCalendar from '../../components/MenuCalendar';
 
 export const mapStateToProps = state => ({

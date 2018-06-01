@@ -7,6 +7,6 @@ export const groceryListReducer = (state = initialState, action) => {
     default:
       return state;
   }
-}
+};
 
 export default groceryListReducer;

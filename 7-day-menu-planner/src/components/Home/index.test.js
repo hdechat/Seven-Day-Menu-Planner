@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Home from './index.js';
 import { shallow } from 'enzyme';
 
@@ -10,14 +9,18 @@ describe('Home', () => {
   beforeEach(() => {
     mockFunction = jest.fn();
 
-    wrapper = shallow(<Home recipesHasErrored={''} recipesIsLoading={false} recipeCards={[]} chooseCategory={mockFunction} />);
+    wrapper = shallow(<Home 
+      recipesHasErrored={''}
+       recipesIsLoading={false} r
+       ecipeCards={[]} 
+       chooseCategory={mockFunction} />);
   });
 
   it('matches snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should call chooseCategory with the correct params when the user selects a category', () => {
+  it('should call chooseCategory with the correct params when category selected', () => {
     wrapper.find('select').simulate('change', {target: {value: 'paleo'}});
 
     expect(mockFunction).toHaveBeenCalledWith('paleo');

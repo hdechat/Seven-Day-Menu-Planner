@@ -1,3 +1,251 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Day matches snapshot 1`] = `undefined`;
+exports[`Day matches snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Day
+    menu={
+        Object {
+            "breakfast": Object {
+              "title": "Recipe Name",
+            },
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h6>
+          Breakfast
+</h6>,
+        <RecipeCard
+          displayAddToMenu={false}
+          recipe={
+                    Object {
+                              "title": "Recipe Name",
+                            }
+          }
+/>,
+        <h6>
+          Lunch
+</h6>,
+        <RecipeCard
+          displayAddToMenu={false}
+          recipe={undefined}
+/>,
+        <h6>
+          Dinner
+</h6>,
+        <RecipeCard
+          displayAddToMenu={false}
+          recipe={undefined}
+/>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Breakfast",
+        },
+        "ref": null,
+        "rendered": "Breakfast",
+        "type": "h6",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "displayAddToMenu": false,
+          "recipe": Object {
+            "title": "Recipe Name",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Lunch",
+        },
+        "ref": null,
+        "rendered": "Lunch",
+        "type": "h6",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "displayAddToMenu": false,
+          "recipe": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Dinner",
+        },
+        "ref": null,
+        "rendered": "Dinner",
+        "type": "h6",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "displayAddToMenu": false,
+          "recipe": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h6>
+            Breakfast
+</h6>,
+          <RecipeCard
+            displayAddToMenu={false}
+            recipe={
+                        Object {
+                                    "title": "Recipe Name",
+                                  }
+            }
+/>,
+          <h6>
+            Lunch
+</h6>,
+          <RecipeCard
+            displayAddToMenu={false}
+            recipe={undefined}
+/>,
+          <h6>
+            Dinner
+</h6>,
+          <RecipeCard
+            displayAddToMenu={false}
+            recipe={undefined}
+/>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Breakfast",
+          },
+          "ref": null,
+          "rendered": "Breakfast",
+          "type": "h6",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "displayAddToMenu": false,
+            "recipe": Object {
+              "title": "Recipe Name",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Lunch",
+          },
+          "ref": null,
+          "rendered": "Lunch",
+          "type": "h6",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "displayAddToMenu": false,
+            "recipe": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Dinner",
+          },
+          "ref": null,
+          "rendered": "Dinner",
+          "type": "h6",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "displayAddToMenu": false,
+            "recipe": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
