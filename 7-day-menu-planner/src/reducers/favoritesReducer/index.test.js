@@ -1,4 +1,4 @@
-import * as reducers from '.index.js';
+import * as reducers from './index.js';
 import { addToFavorites } from '../../actions';
 
 describe('Favorites Reducer', () => {
@@ -20,7 +20,7 @@ describe('Favorites Reducer', () => {
       "image": "https://www.edamam.com/web-img/e50/e50584043c015a91a26a7",
       "title": "Paleo Sriracha recipes",
       "url": "http://nomnompaleo.com/post/36060636540/paleo-sriracha"
-    }
+    };
 
     const expected = [...mockState, mockFavoritedRecipe];
 
