@@ -2,8 +2,8 @@ const initialState = [];
 
 export const favoritesReducer = (state = initialState, action) => {
   switch (action.type) {
-    case 'ADD_TO_FAVORITES':
-      return [...state, action.favoritedRecipe];
+    case 'TOGGLE_FAVORITES':
+      return [...state, action.toggledRecipe];
     default:
       return state;
   }

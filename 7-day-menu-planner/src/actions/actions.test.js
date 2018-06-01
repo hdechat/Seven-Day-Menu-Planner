@@ -105,21 +105,21 @@ describe('RECIPES ACTIONS', () => {
     });
   });
 
-  describe('Add To Favorites', () => {
-    const mockFavoritedRecipe = {
+  describe('Toggle Favorites', () => {
+    const mockToggledRecipe = {
       image: 'image url',
       ingredients: ['ingredients'],
       title: 'recipe name',
       url: 'recipe url'
     };
 
-    it('should have a type of ADD_TO_FAVORITES and return a recipe object', () => {
+    it('should have a type of TOGGLE_FAVORITES and return a recipe object', () => {
       const expected = {
-        type: 'ADD_TO_FAVORITES',
-        favoritedRecipe: mockFavoritedRecipe
+        type: 'TOGGLE_FAVORITES',
+        toggledRecipe: mockToggledRecipe
       };
 
-      const actual = actions.addToFavorites(mockFavoritedRecipe);
+      const actual = actions.toggleFavorites(mockToggledRecipe);
 
       expect(actual).toEqual(expected);
     });

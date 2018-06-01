@@ -28,14 +28,14 @@ describe('Recipe Card', () => {
     wrapper = shallow(<RecipeCard 
       recipe={mockRecipe} 
       displayAddToMenu={true}
-      addToFavorites={mockFunction}/>);
+      toggleFavorites={mockFunction}/>);
   });
 
   it('matches snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should call addToFavorites when star icon is clicked', () => {
+  it('should call toggleFavorites when star icon is clicked', () => {
     wrapper.find('.star').simulate('click');
 
     expect(mockFunction).toHaveBeenCalledWith(mockRecipe);
