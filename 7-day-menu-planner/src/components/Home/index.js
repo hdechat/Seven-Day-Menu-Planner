@@ -2,7 +2,7 @@ import React from 'react';
 import RecipeCardsDisplay from '../RecipeCardsDisplay';
 import './index.css';
 
-const Home = (props) => {
+const Home = props => {
   const { 
     recipeCards, 
     chooseCategory, 

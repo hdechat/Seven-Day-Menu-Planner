@@ -1,18 +1,18 @@
 import React from 'react';
-import RecipeCard from '../RecipeCard';
+import RecipeCardContainer from '../../containers/RecipeCardContainer';
 import './index.css';
 
 const Day = ({ menu }) => {
   return (
     <section className="day">
       <h6>Breakfast</h6>
-      <RecipeCard recipe={menu.breakfast} displayAddToMenu={false} />
+      <RecipeCardContainer recipe={menu.breakfast} displayAddToMenu={false} />
 
       <h6>Lunch</h6>
-      <RecipeCard recipe={menu.lunch} displayAddToMenu={false} />
+      <RecipeCardContainer recipe={menu.lunch} displayAddToMenu={false} />
 
       <h6>Dinner</h6>
-      <RecipeCard recipe={menu.dinner} displayAddToMenu={false} />
+      <RecipeCardContainer recipe={menu.dinner} displayAddToMenu={false} />
     </section>
   );
 };

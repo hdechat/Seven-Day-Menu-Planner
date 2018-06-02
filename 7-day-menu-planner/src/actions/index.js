@@ -29,3 +29,8 @@ export const addToGroceryList = (ingredients) => ({
   type: 'ADD_TO_GROCERY_LIST',
   ingredients
 });
+
+export const toggleFavorites = (toggledRecipe) => ({
+  type: 'TOGGLE_FAVORITES',
+  toggledRecipe
+});

@@ -104,4 +104,24 @@ describe('RECIPES ACTIONS', () => {
       expect(actual).toEqual(expected);
     });
   });
+
+  describe('Toggle Favorites', () => {
+    const mockToggledRecipe = {
+      image: 'image url',
+      ingredients: ['ingredients'],
+      title: 'recipe name',
+      url: 'recipe url'
+    };
+
+    it('should have a type of TOGGLE_FAVORITES and return a recipe object', () => {
+      const expected = {
+        type: 'TOGGLE_FAVORITES',
+        toggledRecipe: mockToggledRecipe
+      };
+
+      const actual = actions.toggleFavorites(mockToggledRecipe);
+
+      expect(actual).toEqual(expected);
+    });
+  });
 });

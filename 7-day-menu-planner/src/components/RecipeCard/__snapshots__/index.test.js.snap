@@ -6,6 +6,13 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <RecipeCard
     displayAddToMenu={true}
+    favorites={
+        Array [
+            Object {
+              "title": "Recipe1",
+            },
+          ]
+    }
     recipe={
         Object {
             "image": "https://www.edamam.com/web-img/e50/e50584043",
@@ -22,6 +29,7 @@ ShallowWrapper {
             "url": "http://nomnompaleo.com/post/36060636540/paleo-sriracha",
           }
     }
+    toggleFavorites={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -36,6 +44,12 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <img
+          alt="star"
+          className="star"
+          onClick={[Function]}
+          src="emptyStar.png"
+/>,
         <img
           alt="recipe meal"
           src="https://www.edamam.com/web-img/e50/e50584043"
@@ -68,6 +82,20 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "star",
+          "className": "star",
+          "onClick": [Function],
+          "src": "emptyStar.png",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -128,6 +156,12 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <img
+            alt="star"
+            className="star"
+            onClick={[Function]}
+            src="emptyStar.png"
+/>,
+          <img
             alt="recipe meal"
             src="https://www.edamam.com/web-img/e50/e50584043"
 />,
@@ -159,6 +193,20 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "star",
+            "className": "star",
+            "onClick": [Function],
+            "src": "emptyStar.png",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
         Object {
           "instance": null,
           "key": undefined,

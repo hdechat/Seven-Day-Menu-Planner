@@ -29,65 +29,41 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <RecipeCard
-          displayAddToMenu={true}
-          recipe={
-                    Object {
-                              "title": "recipe 1",
-                            }
-          }
-/>,
-        <RecipeCard
-          displayAddToMenu={true}
-          recipe={
-                    Object {
-                              "title": "recipe 2",
-                            }
-          }
-/>,
+        <div
+          className="home-display"
+>
+          <RecipeCard
+                    displayAddToMenu={true}
+                    recipe={
+                              Object {
+                                        "title": "recipe 1",
+                                      }
+                    }
+          />
+</div>,
+        <div
+          className="home-display"
+>
+          <RecipeCard
+                    displayAddToMenu={true}
+                    recipe={
+                              Object {
+                                        "title": "recipe 2",
+                                      }
+                    }
+          />
+</div>,
       ],
+      "className": "recipe-cards-display",
     },
     "ref": null,
     "rendered": Array [
       Object {
         "instance": null,
-        "key": "recipe 1",
-        "nodeType": "function",
+        "key": undefined,
+        "nodeType": "host",
         "props": Object {
-          "displayAddToMenu": true,
-          "recipe": Object {
-            "title": "recipe 1",
-          },
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": "recipe 2",
-        "nodeType": "function",
-        "props": Object {
-          "displayAddToMenu": true,
-          "recipe": Object {
-            "title": "recipe 2",
-          },
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
-    "type": "section",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <RecipeCard
+          "children": <RecipeCard
             displayAddToMenu={true}
             recipe={
                         Object {
@@ -95,19 +71,10 @@ ShallowWrapper {
                                   }
             }
 />,
-          <RecipeCard
-            displayAddToMenu={true}
-            recipe={
-                        Object {
-                                    "title": "recipe 2",
-                                  }
-            }
-/>,
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
+          "className": "home-display",
+        },
+        "ref": null,
+        "rendered": Object {
           "instance": null,
           "key": "recipe 1",
           "nodeType": "function",
@@ -121,7 +88,25 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
-        Object {
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <RecipeCard
+            displayAddToMenu={true}
+            recipe={
+                        Object {
+                                    "title": "recipe 2",
+                                  }
+            }
+/>,
+          "className": "home-display",
+        },
+        "ref": null,
+        "rendered": Object {
           "instance": null,
           "key": "recipe 2",
           "nodeType": "function",
@@ -134,6 +119,111 @@ ShallowWrapper {
           "ref": null,
           "rendered": null,
           "type": [Function],
+        },
+        "type": "div",
+      },
+    ],
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="home-display"
+>
+            <RecipeCard
+                        displayAddToMenu={true}
+                        recipe={
+                                    Object {
+                                                "title": "recipe 1",
+                                              }
+                        }
+            />
+</div>,
+          <div
+            className="home-display"
+>
+            <RecipeCard
+                        displayAddToMenu={true}
+                        recipe={
+                                    Object {
+                                                "title": "recipe 2",
+                                              }
+                        }
+            />
+</div>,
+        ],
+        "className": "recipe-cards-display",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <RecipeCard
+              displayAddToMenu={true}
+              recipe={
+                            Object {
+                                          "title": "recipe 1",
+                                        }
+              }
+/>,
+            "className": "home-display",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": "recipe 1",
+            "nodeType": "function",
+            "props": Object {
+              "displayAddToMenu": true,
+              "recipe": Object {
+                "title": "recipe 1",
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <RecipeCard
+              displayAddToMenu={true}
+              recipe={
+                            Object {
+                                          "title": "recipe 2",
+                                        }
+              }
+/>,
+            "className": "home-display",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": "recipe 2",
+            "nodeType": "function",
+            "props": Object {
+              "displayAddToMenu": true,
+              "recipe": Object {
+                "title": "recipe 2",
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "div",
         },
       ],
       "type": "section",
