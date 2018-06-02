@@ -83,6 +83,18 @@ describe('RECIPES ACTIONS', () => {
     });
   });
 
+  describe('Remove FROM MENU', () => {
+    it('should have a type of REMOVE_FROM_MENU and return day and mealTime', () => {
+      const expected = {
+        type: 'REMOVE_FROM_MENU',
+        day: 'monday',
+        mealTime: 'breakfast'
+      }
+
+      const actual = actions.removeFromMenu('monday', 'breakfast')
+    });
+  });
+
   describe('Add To Grocery List', () => {
     const mockIngredients = [
       "1½ pounds fresh red jalapeño peppers, stemmed, seeded, and roughly chopped",
