@@ -20,6 +20,7 @@ export default class App extends Component {
         <Route exact path='/' component={HomeContainer} />
         <Route exact path='/menu-calendar' component={MenuCalendar} />
         <Route exact path='/favorites' component={FavoritesContainer} />
+        <Route exact path='/grocery-list' component={GroceryList} />
       </div>
     );
   }
