@@ -36,44 +36,44 @@ ShallowWrapper {
 >
           <li>
                     Sunday
-                    <Day
-                              menu={undefined}
+                    <withRouter(Connect(Day))
+                              day="sunday"
                     />
           </li>
           <li>
                     Monday
-                    <Day
-                              menu={undefined}
+                    <withRouter(Connect(Day))
+                              day="monday"
                     />
           </li>
           <li>
                     Tuesday
-                    <Day
-                              menu={undefined}
+                    <withRouter(Connect(Day))
+                              day="tuesday"
                     />
           </li>
           <li>
                     Wednesday
-                    <Day
-                              menu={undefined}
+                    <withRouter(Connect(Day))
+                              day="wednesday"
                     />
           </li>
           <li>
                     Thursday
-                    <Day
-                              menu={undefined}
+                    <withRouter(Connect(Day))
+                              day="thursday"
                     />
           </li>
           <li>
                     Friday
-                    <Day
-                              menu={undefined}
+                    <withRouter(Connect(Day))
+                              day="friday"
                     />
           </li>
           <li>
                     Saturday
-                    <Day
-                              menu={undefined}
+                    <withRouter(Connect(Day))
+                              day="saturday"
                     />
           </li>
 </ul>,
@@ -101,44 +101,44 @@ ShallowWrapper {
           "children": Array [
             <li>
               Sunday
-              <Day
-                            menu={undefined}
+              <withRouter(Connect(Day))
+                            day="sunday"
               />
 </li>,
             <li>
               Monday
-              <Day
-                            menu={undefined}
+              <withRouter(Connect(Day))
+                            day="monday"
               />
 </li>,
             <li>
               Tuesday
-              <Day
-                            menu={undefined}
+              <withRouter(Connect(Day))
+                            day="tuesday"
               />
 </li>,
             <li>
               Wednesday
-              <Day
-                            menu={undefined}
+              <withRouter(Connect(Day))
+                            day="wednesday"
               />
 </li>,
             <li>
               Thursday
-              <Day
-                            menu={undefined}
+              <withRouter(Connect(Day))
+                            day="thursday"
               />
 </li>,
             <li>
               Friday
-              <Day
-                            menu={undefined}
+              <withRouter(Connect(Day))
+                            day="friday"
               />
 </li>,
             <li>
               Saturday
-              <Day
-                            menu={undefined}
+              <withRouter(Connect(Day))
+                            day="saturday"
               />
 </li>,
           ],
@@ -153,8 +153,8 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 "Sunday",
-                <Day
-                  menu={undefined}
+                <withRouter(Connect(Day))
+                  day="sunday"
 />,
               ],
             },
@@ -166,7 +166,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "function",
                 "props": Object {
-                  "menu": undefined,
+                  "day": "sunday",
                 },
                 "ref": null,
                 "rendered": null,
@@ -182,8 +182,8 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 "Monday",
-                <Day
-                  menu={undefined}
+                <withRouter(Connect(Day))
+                  day="monday"
 />,
               ],
             },
@@ -195,7 +195,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "function",
                 "props": Object {
-                  "menu": undefined,
+                  "day": "monday",
                 },
                 "ref": null,
                 "rendered": null,
@@ -211,8 +211,8 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 "Tuesday",
-                <Day
-                  menu={undefined}
+                <withRouter(Connect(Day))
+                  day="tuesday"
 />,
               ],
             },
@@ -224,7 +224,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "function",
                 "props": Object {
-                  "menu": undefined,
+                  "day": "tuesday",
                 },
                 "ref": null,
                 "rendered": null,
@@ -240,8 +240,8 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 "Wednesday",
-                <Day
-                  menu={undefined}
+                <withRouter(Connect(Day))
+                  day="wednesday"
 />,
               ],
             },
@@ -253,7 +253,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "function",
                 "props": Object {
-                  "menu": undefined,
+                  "day": "wednesday",
                 },
                 "ref": null,
                 "rendered": null,
@@ -269,8 +269,8 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 "Thursday",
-                <Day
-                  menu={undefined}
+                <withRouter(Connect(Day))
+                  day="thursday"
 />,
               ],
             },
@@ -282,7 +282,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "function",
                 "props": Object {
-                  "menu": undefined,
+                  "day": "thursday",
                 },
                 "ref": null,
                 "rendered": null,
@@ -298,8 +298,8 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 "Friday",
-                <Day
-                  menu={undefined}
+                <withRouter(Connect(Day))
+                  day="friday"
 />,
               ],
             },
@@ -311,7 +311,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "function",
                 "props": Object {
-                  "menu": undefined,
+                  "day": "friday",
                 },
                 "ref": null,
                 "rendered": null,
@@ -327,8 +327,8 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 "Saturday",
-                <Day
-                  menu={undefined}
+                <withRouter(Connect(Day))
+                  day="saturday"
 />,
               ],
             },
@@ -340,7 +340,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "function",
                 "props": Object {
-                  "menu": undefined,
+                  "day": "saturday",
                 },
                 "ref": null,
                 "rendered": null,
@@ -370,44 +370,44 @@ ShallowWrapper {
 >
             <li>
                         Sunday
-                        <Day
-                                    menu={undefined}
+                        <withRouter(Connect(Day))
+                                    day="sunday"
                         />
             </li>
             <li>
                         Monday
-                        <Day
-                                    menu={undefined}
+                        <withRouter(Connect(Day))
+                                    day="monday"
                         />
             </li>
             <li>
                         Tuesday
-                        <Day
-                                    menu={undefined}
+                        <withRouter(Connect(Day))
+                                    day="tuesday"
                         />
             </li>
             <li>
                         Wednesday
-                        <Day
-                                    menu={undefined}
+                        <withRouter(Connect(Day))
+                                    day="wednesday"
                         />
             </li>
             <li>
                         Thursday
-                        <Day
-                                    menu={undefined}
+                        <withRouter(Connect(Day))
+                                    day="thursday"
                         />
             </li>
             <li>
                         Friday
-                        <Day
-                                    menu={undefined}
+                        <withRouter(Connect(Day))
+                                    day="friday"
                         />
             </li>
             <li>
                         Saturday
-                        <Day
-                                    menu={undefined}
+                        <withRouter(Connect(Day))
+                                    day="saturday"
                         />
             </li>
 </ul>,
@@ -435,44 +435,44 @@ ShallowWrapper {
             "children": Array [
               <li>
                 Sunday
-                <Day
-                                menu={undefined}
+                <withRouter(Connect(Day))
+                                day="sunday"
                 />
 </li>,
               <li>
                 Monday
-                <Day
-                                menu={undefined}
+                <withRouter(Connect(Day))
+                                day="monday"
                 />
 </li>,
               <li>
                 Tuesday
-                <Day
-                                menu={undefined}
+                <withRouter(Connect(Day))
+                                day="tuesday"
                 />
 </li>,
               <li>
                 Wednesday
-                <Day
-                                menu={undefined}
+                <withRouter(Connect(Day))
+                                day="wednesday"
                 />
 </li>,
               <li>
                 Thursday
-                <Day
-                                menu={undefined}
+                <withRouter(Connect(Day))
+                                day="thursday"
                 />
 </li>,
               <li>
                 Friday
-                <Day
-                                menu={undefined}
+                <withRouter(Connect(Day))
+                                day="friday"
                 />
 </li>,
               <li>
                 Saturday
-                <Day
-                                menu={undefined}
+                <withRouter(Connect(Day))
+                                day="saturday"
                 />
 </li>,
             ],
@@ -487,8 +487,8 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   "Sunday",
-                  <Day
-                    menu={undefined}
+                  <withRouter(Connect(Day))
+                    day="sunday"
 />,
                 ],
               },
@@ -500,7 +500,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "function",
                   "props": Object {
-                    "menu": undefined,
+                    "day": "sunday",
                   },
                   "ref": null,
                   "rendered": null,
@@ -516,8 +516,8 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   "Monday",
-                  <Day
-                    menu={undefined}
+                  <withRouter(Connect(Day))
+                    day="monday"
 />,
                 ],
               },
@@ -529,7 +529,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "function",
                   "props": Object {
-                    "menu": undefined,
+                    "day": "monday",
                   },
                   "ref": null,
                   "rendered": null,
@@ -545,8 +545,8 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   "Tuesday",
-                  <Day
-                    menu={undefined}
+                  <withRouter(Connect(Day))
+                    day="tuesday"
 />,
                 ],
               },
@@ -558,7 +558,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "function",
                   "props": Object {
-                    "menu": undefined,
+                    "day": "tuesday",
                   },
                   "ref": null,
                   "rendered": null,
@@ -574,8 +574,8 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   "Wednesday",
-                  <Day
-                    menu={undefined}
+                  <withRouter(Connect(Day))
+                    day="wednesday"
 />,
                 ],
               },
@@ -587,7 +587,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "function",
                   "props": Object {
-                    "menu": undefined,
+                    "day": "wednesday",
                   },
                   "ref": null,
                   "rendered": null,
@@ -603,8 +603,8 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   "Thursday",
-                  <Day
-                    menu={undefined}
+                  <withRouter(Connect(Day))
+                    day="thursday"
 />,
                 ],
               },
@@ -616,7 +616,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "function",
                   "props": Object {
-                    "menu": undefined,
+                    "day": "thursday",
                   },
                   "ref": null,
                   "rendered": null,
@@ -632,8 +632,8 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   "Friday",
-                  <Day
-                    menu={undefined}
+                  <withRouter(Connect(Day))
+                    day="friday"
 />,
                 ],
               },
@@ -645,7 +645,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "function",
                   "props": Object {
-                    "menu": undefined,
+                    "day": "friday",
                   },
                   "ref": null,
                   "rendered": null,
@@ -661,8 +661,8 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   "Saturday",
-                  <Day
-                    menu={undefined}
+                  <withRouter(Connect(Day))
+                    day="saturday"
 />,
                 ],
               },
@@ -674,7 +674,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "function",
                   "props": Object {
-                    "menu": undefined,
+                    "day": "saturday",
                   },
                   "ref": null,
                   "rendered": null,

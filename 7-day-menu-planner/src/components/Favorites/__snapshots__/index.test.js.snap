@@ -40,7 +40,7 @@ ShallowWrapper {
                       ]
         }
 />,
-      "className": "display-cards",
+      "className": "display-favorites",
     },
     "ref": null,
     "rendered": Object {
@@ -81,7 +81,7 @@ ShallowWrapper {
                             ]
           }
 />,
-        "className": "display-cards",
+        "className": "display-favorites",
       },
       "ref": null,
       "rendered": Object {

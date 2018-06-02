@@ -5,13 +5,19 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Day
+    day="sunday"
     menu={
         Object {
-            "breakfast": Object {
-              "title": "Recipe Name",
+            "sunday": Object {
+              "breakfast": Object {
+                "title": "Recipe Name",
+              },
+              "dinner": Object {},
+              "lunch": Object {},
             },
           }
     }
+    removeFromMenu={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -29,7 +35,12 @@ ShallowWrapper {
         <h6>
           Breakfast
 </h6>,
-        <RecipeCard
+        <button
+          onClick={[Function]}
+>
+          Remove Recipe
+</button>,
+        <Connect(RecipeCard)
           displayAddToMenu={false}
           recipe={
                     Object {
@@ -40,16 +51,26 @@ ShallowWrapper {
         <h6>
           Lunch
 </h6>,
-        <RecipeCard
+        <button
+          onClick={[Function]}
+>
+          Remove Recipe
+</button>,
+        <Connect(RecipeCard)
           displayAddToMenu={false}
-          recipe={undefined}
+          recipe={Object {}}
 />,
         <h6>
           Dinner
 </h6>,
-        <RecipeCard
+        <button
+          onClick={[Function]}
+>
+          Remove Recipe
+</button>,
+        <Connect(RecipeCard)
           displayAddToMenu={false}
-          recipe={undefined}
+          recipe={Object {}}
 />,
       ],
       "className": "day",
@@ -70,7 +91,19 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "host",
+        "props": Object {
+          "children": "Remove Recipe",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Remove Recipe",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
         "props": Object {
           "displayAddToMenu": false,
           "recipe": Object {
@@ -95,10 +128,22 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "host",
+        "props": Object {
+          "children": "Remove Recipe",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Remove Recipe",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
         "props": Object {
           "displayAddToMenu": false,
-          "recipe": undefined,
+          "recipe": Object {},
         },
         "ref": null,
         "rendered": null,
@@ -118,10 +163,22 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "host",
+        "props": Object {
+          "children": "Remove Recipe",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Remove Recipe",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
         "props": Object {
           "displayAddToMenu": false,
-          "recipe": undefined,
+          "recipe": Object {},
         },
         "ref": null,
         "rendered": null,
@@ -140,7 +197,12 @@ ShallowWrapper {
           <h6>
             Breakfast
 </h6>,
-          <RecipeCard
+          <button
+            onClick={[Function]}
+>
+            Remove Recipe
+</button>,
+          <Connect(RecipeCard)
             displayAddToMenu={false}
             recipe={
                         Object {
@@ -151,16 +213,26 @@ ShallowWrapper {
           <h6>
             Lunch
 </h6>,
-          <RecipeCard
+          <button
+            onClick={[Function]}
+>
+            Remove Recipe
+</button>,
+          <Connect(RecipeCard)
             displayAddToMenu={false}
-            recipe={undefined}
+            recipe={Object {}}
 />,
           <h6>
             Dinner
 </h6>,
-          <RecipeCard
+          <button
+            onClick={[Function]}
+>
+            Remove Recipe
+</button>,
+          <Connect(RecipeCard)
             displayAddToMenu={false}
-            recipe={undefined}
+            recipe={Object {}}
 />,
         ],
         "className": "day",
@@ -181,7 +253,19 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "host",
+          "props": Object {
+            "children": "Remove Recipe",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Remove Recipe",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
           "props": Object {
             "displayAddToMenu": false,
             "recipe": Object {
@@ -206,10 +290,22 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "host",
+          "props": Object {
+            "children": "Remove Recipe",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Remove Recipe",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
           "props": Object {
             "displayAddToMenu": false,
-            "recipe": undefined,
+            "recipe": Object {},
           },
           "ref": null,
           "rendered": null,
@@ -229,10 +325,22 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "host",
+          "props": Object {
+            "children": "Remove Recipe",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Remove Recipe",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
           "props": Object {
             "displayAddToMenu": false,
-            "recipe": undefined,
+            "recipe": Object {},
           },
           "ref": null,
           "rendered": null,

@@ -1,19 +1,19 @@
 import React from 'react';
-import Day from '../Day';
+import DayContainer from '../../containers/DayContainer';
 import'./index.css';
 
-const MenuCalendar = ({ menu }) => {
+const MenuCalendar = () => {
   return (
     <section class="menu">
       <h1>THIS WEEKS MENU PLAN</h1>
       <ul className="week">
-        <li>Sunday<Day menu={menu.sunday}/></li>
-        <li>Monday<Day menu={menu.monday}/></li>
-        <li>Tuesday<Day menu={menu.tuesday}/></li>
-        <li>Wednesday<Day menu={menu.wednesday}/></li>
-        <li>Thursday<Day menu={menu.thursday}/></li>
-        <li>Friday<Day menu={menu.friday}/></li>
-        <li>Saturday<Day menu={menu.saturday}/></li>
+        <li>Sunday<DayContainer day={'sunday'} /></li>
+        <li>Monday<DayContainer day={'monday'} /></li>
+        <li>Tuesday<DayContainer day={'tuesday'} /></li>
+        <li>Wednesday<DayContainer day={'wednesday'} /></li>
+        <li>Thursday<DayContainer day={'thursday'} /></li>
+        <li>Friday<DayContainer day={'friday'} /></li>
+        <li>Saturday<DayContainer day={'saturday'} /></li>
       </ul>
     </section>
   );

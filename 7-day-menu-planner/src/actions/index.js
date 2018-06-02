@@ -25,6 +25,12 @@ export const addToMenu = (weekday, mealTime, recipe) => ({
   recipe
 });
 
+export const removeFromMenu = (weekday, mealTime) => ({
+  type: 'REMOVE_FROM_MENU',
+  weekday,
+  mealTime
+});
+
 export const addToGroceryList = (ingredients) => ({
   type: 'ADD_TO_GROCERY_LIST',
   ingredients
