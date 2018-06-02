@@ -3,6 +3,7 @@ import { NavLink, Route } from 'react-router-dom';
 import HomeContainer from './containers/HomeContainer';
 import MenuCalendar from './components/MenuCalendar';
 import FavoritesContainer from './containers/FavoritesContainer';
+import GroceryListContainer from './containers/GroceryListContainer';
 import './App.css';
 
 export default class App extends Component {
@@ -20,7 +21,7 @@ export default class App extends Component {
         <Route exact path='/' component={HomeContainer} />
         <Route exact path='/menu-calendar' component={MenuCalendar} />
         <Route exact path='/favorites' component={FavoritesContainer} />
-        <Route exact path='/grocery-list' component={GroceryList} />
+        <Route exact path='/grocery-list' component={GroceryListContainer} />
       </div>
     );
   }
