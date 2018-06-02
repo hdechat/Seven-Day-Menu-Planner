@@ -1,4 +1,4 @@
-import { mapStateToProps } from './index.js';
+import { mapStateToProps, mapDispatchToProps } from './index.js';
 import { removeFromMenu } from '../../actions';
 
 
