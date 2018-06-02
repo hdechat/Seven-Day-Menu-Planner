@@ -22,6 +22,10 @@ export const menuReducer = (state = initialState, action) => {
       return {...state, 
         [action.weekday]: {...state[action.weekday], 
           [action.mealTime]: action.recipe}};
+    case 'REMOVE_FROM_MENU':
+      return {...state,
+        [action.weekday]: {...state[action.weekday],
+          [action.mealTime]: {}}}
     default:
       return state;
   }
