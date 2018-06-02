@@ -1,4 +1,4 @@
-import { mapStateToprops } from './index.js';
+import { mapStateToProps } from './index.js';
 
 describe('GROCERY LIST CONTAINER', () => {
   it('should return the expected object', () => {
@@ -8,7 +8,7 @@ describe('GROCERY LIST CONTAINER', () => {
     groceryList: ['apples', 'bananas']
    }
 
-   const actual = mapStateToprops(mockState);
+   const actual = mapStateToProps(mockState);
 
    const expected = {
     groceryList: ['apples', 'bananas']
