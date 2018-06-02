@@ -45,10 +45,10 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <img
-          alt="empty star"
-          className="empty-star"
+          alt="star"
+          className="star"
           onClick={[Function]}
-          src="star-empty.png"
+          src="emptyStar.png"
 />,
         <img
           alt="recipe meal"
@@ -87,10 +87,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "alt": "empty star",
-          "className": "empty-star",
+          "alt": "star",
+          "className": "star",
           "onClick": [Function],
-          "src": "star-empty.png",
+          "src": "emptyStar.png",
         },
         "ref": null,
         "rendered": null,
@@ -156,10 +156,10 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <img
-            alt="empty star"
-            className="empty-star"
+            alt="star"
+            className="star"
             onClick={[Function]}
-            src="star-empty.png"
+            src="emptyStar.png"
 />,
           <img
             alt="recipe meal"
@@ -198,10 +198,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "alt": "empty star",
-            "className": "empty-star",
+            "alt": "star",
+            "className": "star",
             "onClick": [Function],
-            "src": "star-empty.png",
+            "src": "emptyStar.png",
           },
           "ref": null,
           "rendered": null,

@@ -39,20 +39,28 @@ describe('Recipe Card', () => {
   });
 
   it('should call toggleFavorites when star icon is clicked', () => {
-    wrapper.find('.empty-star').simulate('click');
+    wrapper.find('.star').simulate('click');
 
     expect(mockFunction).toHaveBeenCalledWith(mockRecipe);
   });
 
+  //these two tests are a work around in response to jest's 'Compared values have no visual difference'
   it('should render an empty star if it is not a favorite', () => {
+    const expected = JSON.parse(JSON.stringify(<img alt="star" className="star" onClick={() => toggleFavorites(recipe)} src="emptyStar.png" />));
 
-    expect(wrapper.find('.empty-star').length).toEqual(1)
+    const actual = JSON.parse(JSON.stringify(wrapper.props().children[0]));
+
+    expect(actual).toEqual(expected);
   });
 
 
-  it('should render a yellow star if it is not a favorite', () => {
+  it('should render a yellow star if it is a favorite', () => {
     wrapper.setProps({favorites: [mockRecipe]})
 
-    expect(wrapper.find('.yellow-star').length).toEqual(1)
+    const expected = JSON.parse(JSON.stringify(<img alt="star" className="star" onClick={() => toggleFavorites(recipe)} src="yellowStar.png" />));
+
+    const actual = JSON.parse(JSON.stringify(wrapper.props().children[0]));
+
+    expect(actual).toEqual(expected);
   });
 });
