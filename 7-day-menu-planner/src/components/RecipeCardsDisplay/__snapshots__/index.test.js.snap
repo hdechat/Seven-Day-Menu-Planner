@@ -32,7 +32,7 @@ ShallowWrapper {
         <div
           className="home-display"
 >
-          <RecipeCard
+          <Connect(RecipeCard)
                     displayAddToMenu={true}
                     recipe={
                               Object {
@@ -44,7 +44,7 @@ ShallowWrapper {
         <div
           className="home-display"
 >
-          <RecipeCard
+          <Connect(RecipeCard)
                     displayAddToMenu={true}
                     recipe={
                               Object {
@@ -63,7 +63,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <RecipeCard
+          "children": <Connect(RecipeCard)
             displayAddToMenu={true}
             recipe={
                         Object {
@@ -77,7 +77,7 @@ ShallowWrapper {
         "rendered": Object {
           "instance": null,
           "key": "recipe 1",
-          "nodeType": "function",
+          "nodeType": "class",
           "props": Object {
             "displayAddToMenu": true,
             "recipe": Object {
@@ -95,7 +95,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <RecipeCard
+          "children": <Connect(RecipeCard)
             displayAddToMenu={true}
             recipe={
                         Object {
@@ -109,7 +109,7 @@ ShallowWrapper {
         "rendered": Object {
           "instance": null,
           "key": "recipe 2",
-          "nodeType": "function",
+          "nodeType": "class",
           "props": Object {
             "displayAddToMenu": true,
             "recipe": Object {
@@ -135,7 +135,7 @@ ShallowWrapper {
           <div
             className="home-display"
 >
-            <RecipeCard
+            <Connect(RecipeCard)
                         displayAddToMenu={true}
                         recipe={
                                     Object {
@@ -147,7 +147,7 @@ ShallowWrapper {
           <div
             className="home-display"
 >
-            <RecipeCard
+            <Connect(RecipeCard)
                         displayAddToMenu={true}
                         recipe={
                                     Object {
@@ -166,7 +166,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <RecipeCard
+            "children": <Connect(RecipeCard)
               displayAddToMenu={true}
               recipe={
                             Object {
@@ -180,7 +180,7 @@ ShallowWrapper {
           "rendered": Object {
             "instance": null,
             "key": "recipe 1",
-            "nodeType": "function",
+            "nodeType": "class",
             "props": Object {
               "displayAddToMenu": true,
               "recipe": Object {
@@ -198,7 +198,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <RecipeCard
+            "children": <Connect(RecipeCard)
               displayAddToMenu={true}
               recipe={
                             Object {
@@ -212,7 +212,7 @@ ShallowWrapper {
           "rendered": Object {
             "instance": null,
             "key": "recipe 2",
-            "nodeType": "function",
+            "nodeType": "class",
             "props": Object {
               "displayAddToMenu": true,
               "recipe": Object {
