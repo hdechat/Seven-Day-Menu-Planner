@@ -2,10 +2,11 @@ import React from 'react';
 import RecipeCardContainer from '../../containers/RecipeCardContainer';
 import './index.css';
 
-const Day = ({ day, menu, removeFromMenu }) => {
+const Day = ({ day, menu, removeFromMenu, removeFromGroceryList }) => {
   
   const handleClick = (mealTime) => {
-    removeFromMenu(day, mealTime)
+    removeFromGroceryList(menu[day][mealTime].ingredients);
+    removeFromMenu(day, mealTime);
   }
 
   return (
