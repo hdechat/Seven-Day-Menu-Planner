@@ -6,7 +6,7 @@ describe('GroceryList', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<GroceryList />);
+    wrapper = shallow(<GroceryList groceryList={[]} />);
   });
 
   it('matches snapshot', () => {
