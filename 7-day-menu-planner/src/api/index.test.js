@@ -1,7 +1,9 @@
 import fetchRecipes from './index.js';
 import { paleo } from '../mock-data.js';
+import { appID, key } from './api-keys.js';
 
 describe('Fetch Recipes', () => {
+  
   let mockResults;
 
   beforeEach(() => {
@@ -13,7 +15,7 @@ describe('Fetch Recipes', () => {
   });
 
   it('should call fetch with the correct params', () => {
-    const expected = "https://api.edamam.com/search?q=paleo&app_id=3ed8819c&app_key=de997af620368eed6dcd7f4f42c179c2&from=0&to=12";
+    const expected = `https://api.edamam.com/search?q=paleo&app_id=${appID}&app_key=${key}`;
 
     fetchRecipes('paleo');
 

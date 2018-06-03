@@ -5,8 +5,8 @@ import './index.css';
 const RecipeCardsDisplay = ({ recipeCards }) => {
   const cards = recipeCards.map(recipe => {
     return (
-      <div className="home-display">
-        <RecipeCardContainer key={recipe.title} recipe={recipe} displayAddToMenu={true} />
+      <div key={recipe.title} className="home-display">
+        <RecipeCardContainer recipe={recipe} displayAddToMenu={true} />
       </div>
     );
   });
