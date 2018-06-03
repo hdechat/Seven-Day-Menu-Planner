@@ -3,18 +3,23 @@ import RecipeCardContainer from '../../containers/RecipeCardContainer';
 import './index.css';
 
 const Day = ({ day, menu, removeFromMenu }) => {
+  
+  const handleClick = (mealTime) => {
+    removeFromMenu(day, mealTime)
+  }
+
   return (
     <section className="day">
       <h6>Breakfast</h6>
-      <button onClick={()=>removeFromMenu(day, 'breakfast')}>Remove Recipe</button>
+      <button onClick={()=>handleClick('breakfast')}>Remove Recipe</button>
       <RecipeCardContainer recipe={menu[day].breakfast} displayAddToMenu={false} />
 
       <h6>Lunch</h6>
-      <button onClick={()=>removeFromMenu(day, 'lunch')}>Remove Recipe</button>
+      <button onClick={()=>handleClick('lunch')}>Remove Recipe</button>
       <RecipeCardContainer recipe={menu[day].lunch} displayAddToMenu={false} />
 
       <h6>Dinner</h6>
-      <button onClick={()=>removeFromMenu(day, 'dinner')}>Remove Recipe</button>
+      <button onClick={()=>handleClick('dinner')}>Remove Recipe</button>
       <RecipeCardContainer recipe={menu[day].dinner} displayAddToMenu={false} />
     </section>
   );
