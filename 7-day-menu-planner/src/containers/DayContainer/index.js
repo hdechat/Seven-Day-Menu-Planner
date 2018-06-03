@@ -8,7 +8,8 @@ export const mapStateToProps = state => ({
 });
 
 export const mapDispatchToProps = dispatch => ({
-  removeFromMenu: (weekday, mealTime) => dispatch(removeFromMenu(weekday, mealTime))
+  removeFromMenu: (weekday, mealTime) => dispatch(removeFromMenu(weekday, mealTime)),
+  
 });
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Day));
