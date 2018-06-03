@@ -36,6 +36,11 @@ export const addToGroceryList = (ingredients) => ({
   ingredients
 });
 
+export const removeFromGroceryList = (ingredients) => ({
+  type: 'REMOVE_FROM_GROCERY_LIST',
+  ingredients
+});
+
 export const toggleFavorites = (toggledRecipe) => ({
   type: 'TOGGLE_FAVORITES',
   toggledRecipe

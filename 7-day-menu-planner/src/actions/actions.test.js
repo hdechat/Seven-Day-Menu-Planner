@@ -14,7 +14,6 @@ describe('Choose Category', () => {
   });
 });
 
-describe('RECIPES ACTIONS', () => {
   describe('Fetch Recipes Success', () => {
     it('should have a type of FETCH_RECIPES_SUCCESS and return an array of cleaned recipe objects', () => {
       const expected = {
@@ -83,7 +82,7 @@ describe('RECIPES ACTIONS', () => {
     });
   });
 
-  describe('Remove FROM MENU', () => {
+  describe('Remove From Menu', () => {
     it('should have a type of REMOVE_FROM_MENU and return day and mealTime', () => {
       const expected = {
         type: 'REMOVE_FROM_MENU',
@@ -105,13 +104,32 @@ describe('RECIPES ACTIONS', () => {
         "1½ teaspoons kosher salt"
       ];
 
-    it('should have a type of ADD_TO_GROCERY_LIST and return and array of ingredients', () => {
+    it('should have a type of ADD_TO_GROCERY_LIST and return an array of ingredients', () => {
       const expected = {
         type: 'ADD_TO_GROCERY_LIST',
         ingredients: mockIngredients
       };
 
       const actual = actions.addToGroceryList(mockIngredients);
+
+      expect(actual).toEqual(expected);
+    });
+  });
+
+  describe('Remove From Grocery List', () => {
+    it('shoud have a type of REMOVE_FROM_GROCERY_LIST and return an array of ingredients', () => {
+
+      const mockIngredients = [
+        "1½ pounds fresh red jalapeño peppers, stemmed, seeded, and roughly chopped",
+         "8 garlic cloves, peeled and smashed"
+      ]
+
+      const expected = {
+        type: 'REMOVE_FROM_GROCERY_LIST',
+        ingredients: mockIngredients
+      }
+
+      const actual = actions.removeFromGroceryList(mockIngredients);
 
       expect(actual).toEqual(expected);
     });
@@ -136,4 +154,3 @@ describe('RECIPES ACTIONS', () => {
       expect(actual).toEqual(expected);
     });
   });
-});
