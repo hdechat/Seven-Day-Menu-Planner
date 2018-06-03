@@ -8,6 +8,13 @@ import './App.css';
 
 export default class App extends Component {
 
+  componentDidMount() {
+    //if localstorage has items, it will
+    //pull from localStorage: favorites, menu, and groceryList
+    //will need a mSTD that dispatches
+    // actions: loadFavoritesFromStorage, loadGroceryListFromStorage, loadMenuFromStorage
+  }
+
   render() {
     return (
       <div className="App">

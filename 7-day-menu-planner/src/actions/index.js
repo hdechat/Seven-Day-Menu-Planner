@@ -45,3 +45,8 @@ export const toggleFavorites = (toggledRecipe) => ({
   type: 'TOGGLE_FAVORITES',
   toggledRecipe
 });
+
+export const loadFavoritesFromStorage = (favorites) => ({
+  type: 'LOAD_FAVORITES_FROM_STORAGE',
+  favorites
+});
