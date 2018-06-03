@@ -8,6 +8,7 @@ const fetchRecipes = async (category) => {
   } else {
     throw (new Error(`Error status code ${response.status}`));
   }
+
 }
 
 export default fetchRecipes;

@@ -20,7 +20,8 @@ const Home = props => {
   };
 
   return (
-    <div className="home">
+    <section className="home">
+      <h2>Select a Catgory</h2>
       <div className="select-category">
         <select 
           onChange={event => chooseCategory(event.target.value)}
@@ -36,7 +37,7 @@ const Home = props => {
       <div className="display-cards">
         <RecipeCardsDisplay recipeCards={recipeCards} />
       </div>
-    </div>
+    </section>
   );
 }
 
