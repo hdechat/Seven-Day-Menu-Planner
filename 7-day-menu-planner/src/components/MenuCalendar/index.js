@@ -4,7 +4,7 @@ import'./index.css';
 
 const MenuCalendar = () => {
   return (
-    <section class="menu">
+    <section className="menu">
       <h1>THIS WEEKS MENU PLAN</h1>
       <ul className="week">
         <li>Sunday<DayContainer day={'sunday'} /></li>
