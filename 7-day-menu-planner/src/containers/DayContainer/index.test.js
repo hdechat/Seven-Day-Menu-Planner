@@ -1,5 +1,5 @@
 import { mapStateToProps, mapDispatchToProps } from './index.js';
-import { removeFromMenu } from '../../actions';
+import { removeFromMenu, removeFromGroceryList } from '../../actions';
 
 
 describe('Menu Calendar', () => {
@@ -34,6 +34,16 @@ describe('Menu Calendar', () => {
     const mappedProps = mapDispatchToProps(dispatch);
 
     mappedProps.removeFromMenu('monday', 'breakfast');
+
+    expect(dispatch).toHaveBeenCalledWith(actionToDispatch);
+  });
+
+  it('should call dispatch with a removeFromGroceryList action', () => {
+    const dispatch = jest.fn();
+    const actionToDispatch = removeFromGroceryList(['ingredients']);
+    const mappedProps = mapDispatchToProps(dispatch);
+
+    mappedProps.removeFromGroceryList(['ingredients']);
 
     expect(dispatch).toHaveBeenCalledWith(actionToDispatch);
   });

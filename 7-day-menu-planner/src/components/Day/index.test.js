@@ -5,19 +5,21 @@ import { shallow } from 'enzyme';
 describe('Day', () => {
   let wrapper;
   let mockMenu;
-  let mockFunction;
+  let mockRemoveFromMenu;
+  let mockRemoveFromGroceryList;
 
   beforeEach(() => {
-    mockFunction = jest.fn();
+    mockRemoveFromMenu = jest.fn();
+    mockRemoveFromGroceryList = jest.fn();
 
     mockMenu = {
       sunday: {
-        breakfast: {title: 'Recipe Name'},
+        breakfast: {title: 'Recipe Name', ingredients: ['apples']},
         lunch: {},
         dinner: {}
       }
     };
-    wrapper = shallow(<Day day='sunday' removeFromMenu={mockFunction} menu={mockMenu}/>);
+    wrapper = shallow(<Day day='sunday' removeFromGroceryList={mockRemoveFromGroceryList} removeFromMenu={mockRemoveFromMenu} menu={mockMenu}/>);
   });
 
   it('matches snapshot', () => {
@@ -27,6 +29,12 @@ describe('Day', () => {
   it('calls removeFromMenu on button click', () => {
     wrapper.find('button').at(0).simulate('click')
 
-    expect(mockFunction).toHaveBeenCalledWith('sunday', 'breakfast');
+    expect(mockRemoveFromMenu).toHaveBeenCalledWith('sunday', 'breakfast');
+  });
+
+  it('calls removeFromGroceryList on button click', () => {
+    wrapper.find('button').at(0).simulate('click')
+
+    expect(mockRemoveFromGroceryList).toHaveBeenCalledWith(['apples']);
   });
 });
