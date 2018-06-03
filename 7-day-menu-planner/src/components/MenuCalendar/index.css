@@ -1,11 +1,7 @@
-.menu {
-  margin-top: 5rem;
-}
-
 .week {
   display: flex;
   list-style-type: none;
-  margin: auto;
+  margin: 1rem auto;
   padding: 0rem;
   width: 85%;
 }

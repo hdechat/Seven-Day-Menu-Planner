@@ -19,7 +19,7 @@ const RecipeCard = props => {
         alt='star'
         className='star' 
         onClick={() => toggleFavorites(recipe)}/>
-      <img src={recipe.image} alt="recipe meal" />
+      <img src={recipe.image} alt="recipe-meal" />
       <a href={recipe.url} target="_blank">{recipe.title}</a>
       { displayInset() }
     </article>

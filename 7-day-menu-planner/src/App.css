@@ -3,6 +3,12 @@ body {
   background-size: cover;
 }
 
+h1 {
+  font-size: 25px;
+  display: inline-block;
+  float: left;
+}
+
 .App {
   height: 100vh;
   text-align: center;
@@ -11,8 +17,8 @@ body {
 .App-header {
   background: #4B4B59;
   color: white;
-  height: 20px;
-  padding: 20px;
+  height: fit-content;
+  padding: 5px;
 }
 
 .nav {
@@ -23,5 +29,5 @@ body {
 }
 
 .title {
-  margin-top: 55px;
+  margin: 0 ;
 }

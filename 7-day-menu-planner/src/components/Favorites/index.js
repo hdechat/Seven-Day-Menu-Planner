@@ -4,9 +4,10 @@ import './index.css';
 
 const Favorites = ({ favorites }) => {
   return (
-    <div className="display-favorites">
+    <section className="display-favorites">
+      <h2>Favorites</h2>
       <RecipeCardsDisplay recipeCards={favorites} />
-    </div>
+    </section>
   )
 }
 
