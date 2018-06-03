@@ -10,4 +10,13 @@ const fetchRecipes = async (category) => {
   }
 }
 
+export const setToStorage = (key, data) => {
+  const stringified = JSON.stringify(data);
+  localStorage.setItem(key, stringified);
+}
+
+export const getFromStorage = (key) => {
+  return JSON.parse(localStorage.getItem(key));
+}
+
 export default fetchRecipes;
