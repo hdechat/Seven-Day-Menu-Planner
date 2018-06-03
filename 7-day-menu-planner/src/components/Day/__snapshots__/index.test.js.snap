@@ -10,6 +10,9 @@ ShallowWrapper {
         Object {
             "sunday": Object {
               "breakfast": Object {
+                "ingredients": Array [
+                  "apples",
+                ],
                 "title": "Recipe Name",
               },
               "dinner": Object {},
@@ -17,6 +20,7 @@ ShallowWrapper {
             },
           }
     }
+    removeFromGroceryList={[Function]}
     removeFromMenu={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
@@ -44,6 +48,9 @@ ShallowWrapper {
           displayAddToMenu={false}
           recipe={
                     Object {
+                              "ingredients": Array [
+                                "apples",
+                              ],
                               "title": "Recipe Name",
                             }
           }
@@ -107,6 +114,9 @@ ShallowWrapper {
         "props": Object {
           "displayAddToMenu": false,
           "recipe": Object {
+            "ingredients": Array [
+              "apples",
+            ],
             "title": "Recipe Name",
           },
         },
@@ -206,6 +216,9 @@ ShallowWrapper {
             displayAddToMenu={false}
             recipe={
                         Object {
+                                    "ingredients": Array [
+                                      "apples",
+                                    ],
                                     "title": "Recipe Name",
                                   }
             }
@@ -269,6 +282,9 @@ ShallowWrapper {
           "props": Object {
             "displayAddToMenu": false,
             "recipe": Object {
+              "ingredients": Array [
+                "apples",
+              ],
               "title": "Recipe Name",
             },
           },
