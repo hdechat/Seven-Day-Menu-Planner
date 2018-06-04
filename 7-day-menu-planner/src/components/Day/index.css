@@ -7,7 +7,7 @@
   border: none;
   float: left;
   font-size: 12px;
-  height: 1.5rem;
+  height: 0;
   margin-bottom: -1rem;
   padding: 0 4px;
   position: relative;
@@ -23,7 +23,7 @@
 }
 
 h6 {
-  margin: 0.5rem auto 0rem auto;
-  padding-top: 16px;
+  margin: 0 auto;
+  padding-top: 10px;
   font-size: 16px;
 }
