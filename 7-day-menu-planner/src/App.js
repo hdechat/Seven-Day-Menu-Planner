@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
-import { NavLink, Route } from 'react-router-dom';
+import { connect } from 'react-redux'
+import { NavLink, Route, withRouter } from 'react-router-dom';
 import HomeContainer from './containers/HomeContainer';
 import MenuCalendar from './components/MenuCalendar';
 import FavoritesContainer from './containers/FavoritesContainer';
 import GroceryListContainer from './containers/GroceryListContainer';
+import { retrieveDataFromStorage } from './actions';
 import './App.css';
 
-export default class App extends Component {
+export class App extends Component {
 
   componentDidMount() {
-    //if localstorage has items, it will
-    //pull from localStorage: favorites, menu, and groceryList
-    //will need a mSTD that dispatches
-    // actions: loadFavoritesFromStorage, loadGroceryListFromStorage, loadMenuFromStorage
+    this.props.retrieveDataFromStorage('favorites');
   }
 
   render() {
@@ -33,3 +32,9 @@ export default class App extends Component {
     );
   }
 }
+
+export const mapDispatchToProps = dispatch => ({
+  retrieveDataFromStorage: key => dispatch(retrieveDataFromStorage(key))
+});
+
+export default withRouter(connect(null, mapDispatchToProps)(App));

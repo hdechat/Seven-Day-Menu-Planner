@@ -15,8 +15,8 @@ export const setFavoritesToStorage = (data) => {
   localStorage.setItem('favorites', stringified);
 };
 
-export const getFavoritesFromStorage = () => {
-  return JSON.parse(localStorage.getItem('favorites'));
+export const getDataFromStorage = (key) => {
+  return JSON.parse(localStorage.getItem(key));
 };
 
 export default fetchRecipes;

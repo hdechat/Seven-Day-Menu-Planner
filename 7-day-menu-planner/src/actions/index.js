@@ -46,8 +46,13 @@ export const toggleFavorites = (toggledRecipe) => ({
   toggledRecipe
 });
 
-export const loadFavoritesFromStorage = (favorites) => ({
-  type: 'LOAD_FAVORITES_FROM_STORAGE',
+export const retrieveDataFromStorage = (key) => ({
+  type: 'RETRIEVE_DATA_FROM_STORAGE',
+  key
+})
+
+export const loadFavoritesToStore = (favorites) => ({
+  type: 'LOAD_FAVORITES_TO_STORE',
   favorites
 });
 
@@ -70,17 +75,3 @@ export const removeFavoriteFromStorage = (recipe) => ({
   type: 'REMOVE_FAVORITE_FROM_STORAGE',
   recipe
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
