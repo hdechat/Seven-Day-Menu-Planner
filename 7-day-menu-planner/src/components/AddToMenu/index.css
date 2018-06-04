@@ -18,10 +18,14 @@ select {
 }
 
 p {
+  color: white;
   margin-bottom: 0rem;
 }
 
 button {
   height: 2rem;
+  display: inline-flex;
+  font-size: 15px;
+  padding-top: 5px;
   widows: 9rem;
 }

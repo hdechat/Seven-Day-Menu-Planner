@@ -26,12 +26,12 @@ export const RecipeCard = props => {
   };
 
   return (
-    <article>
+    <article className="recipe-card">
       <img src={favorited ? yellowStar : emptyStar} 
         alt='star'
         className='star' 
         onClick={handleClick}/>
-      <img src={recipe.image} alt="recipe meal" />
+       <a href={recipe.url} target="_blank"><img src={recipe.image} alt="recipe meal" /></a>
       <a href={recipe.url} target="_blank">{recipe.title}</a>
       { displayInset() }
     </article>

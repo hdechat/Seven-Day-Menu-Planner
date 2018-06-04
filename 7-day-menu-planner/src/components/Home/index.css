@@ -1,7 +1,18 @@
+.home {
+
+}
+
 .select-category {
   border: solid 1px white;
   margin: 1rem auto;
   width: 9rem;
+}
+
+.display-cards {
+  height: 100vh;
+  margin: auto;
+  overflow-y: scroll;
+  width: 90%;
 }
 
 select {
@@ -9,6 +20,7 @@ select {
   background-image: none;
   border: none;
   color: white;
+  font-size: 12px;
   height: 2rem;
   outline: none;
   padding: 5px 8px;
