@@ -40,7 +40,7 @@ export default class AddToMenu extends Component {
     const mealTimes = ['breakfast', 'lunch', 'dinner'];
 
     return mealTimes.map(meal => <option key={meal} value={meal}>{meal}</option>);
-  }
+  } 
 
   render() {
     return (
@@ -59,7 +59,7 @@ export default class AddToMenu extends Component {
               {this.listMealTimeOptions()}
             </select>
           </div>
-          <button type='submit'>Add To Menu</button>
+          <button disabled={!this.state.weekday || !this.state.mealTime} type='submit'>Add To Menu</button>
         </form>
       </div>
     );
