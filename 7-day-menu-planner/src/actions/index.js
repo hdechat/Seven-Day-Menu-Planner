@@ -46,6 +46,7 @@ export const toggleFavorites = (toggledRecipe) => ({
   toggledRecipe
 });
 
+//LOCAL STORAGE ACTIONS
 export const retrieveDataFromStorage = (key) => ({
   type: 'RETRIEVE_DATA_FROM_STORAGE',
   key
@@ -56,13 +57,13 @@ export const loadFavoritesToStore = (favorites) => ({
   favorites
 });
 
-export const loadGroceryListFromStorage = (groceryList) => ({
-  type: 'LOAD_GROCERY_LIST_FROM_STORAGE',
+export const loadGroceryListToStore = (groceryList) => ({
+  type: 'LOAD_GROCERY_LIST_TO_STORE',
   groceryList
 });
 
-export const loadMenuFromStorage = (menu) => ({
-  type: 'LOAD_MENU_FROM_STORAGE',
+export const loadMenuToStore = (menu) => ({
+  type: 'LOAD_MENU_TO_STORE',
   menu
 });
 
@@ -74,4 +75,27 @@ export const addFavoriteToStorage = (recipe) => ({
 export const removeFavoriteFromStorage = (recipe) => ({
   type: 'REMOVE_FAVORITE_FROM_STORAGE',
   recipe
+});
+
+export const addGroceryListToStorage = (groceryList) => ({
+  type: 'ADD_GROCERY_LIST_TO_STORAGE',
+  groceryList
+});
+
+export const removeGroceryListFromStorage = (groceryList) => ({
+  type: 'REMOVE_GROCERY_LIST_FROM_STORAGE',
+  groceryList
+});
+
+export const addMenuItemToStorage = (weekday, mealTime, recipe) => ({
+  type: 'ADD_MENU_ITEM_TO_STORAGE',
+  weekday,
+  mealTime,
+  recipe
+});
+
+export const removeMenuItemFromStorage = (weekday, mealTime) => ({
+  type: 'REMOVE_MENU_ITEM_FROM_STORAGE',
+  weekday,
+  mealTime,
 });

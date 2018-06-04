@@ -181,32 +181,32 @@ describe('Load Favorites To Store', () => {
   });
 });
 
-describe('Load Grocery List From Storage', () => {
-  it('should have a type of LOAD_GROCERY_LIST_FROM_STORAGE and groceryList array', () => {
+describe('Load Grocery List To Storage', () => {
+  it('should have a type of LOAD_GROCERY_LIST_TO_STORE and groceryList array', () => {
     const expected = {
-      type: 'LOAD_GROCERY_LIST_FROM_STORAGE',
+      type: 'LOAD_GROCERY_LIST_TO_STORE',
       groceryList: ['apples']
     };
 
-    const actual = actions.loadGroceryListFromStorage(['apples']);
+    const actual = actions.loadGroceryListToStore(['apples']);
 
     expect(actual).toEqual(expected);
   });
 });
 
-describe('Load Menu From Storage', () => {
-  it('should have a type LOAD_MENU_FROM_STORAGE and menu object', () => {
+describe('Load Menu To Store', () => {
+  it('should have a type LOAD_MENU_TO_STORE and menu object', () => {
     const mockStoredMenu = [
       {sunday: {breakfast: {title: 'recipe name'}}}, 
       {monday: {lunch: {title: 'recipe name'}}}
     ];
 
     const expected = {
-      type: 'LOAD_MENU_FROM_STORAGE',
+      type: 'LOAD_MENU_TO_STORE',
       menu: mockStoredMenu
     };
 
-    const actual = actions.loadMenuFromStorage(mockStoredMenu);
+    const actual = actions.loadMenuToStore(mockStoredMenu);
   });
 });
 
@@ -239,3 +239,64 @@ describe('Remove Favorite From Storage', () => {
     expect(actual).toEqual(expected);
   });
 });
+
+describe('Add Grocery List To Storage', () => {
+  it('should have a type of ADD_GROCERY_LIST_TO_STORAGE', () => {
+    const expected = {
+      type: 'ADD_GROCERY_LIST_TO_STORAGE',
+      groceryList: ['apples']
+    };
+
+    const actual = actions.addGroceryListToStorage(['apples']);
+
+    expect(actual).toEqual(expected);
+  });
+});
+
+describe('Remove Grocery List From Storage', () => {
+  it('should have a type of REMOVE_GROCERY_LIST_FROM_STORAGE', () => {
+    const expected = {
+      type: 'REMOVE_GROCERY_LIST_FROM_STORAGE',
+      groceryList: ['apples']
+    };
+
+    const actual = actions.removeGroceryListFromStorage(['apples']);
+
+    expect(actual).toEqual(expected);
+  });
+});
+
+describe('Add Menu Item To Storage', () => {
+  it('should have a type of ADD_MENU_ITEM_TO_STORAGE', () => {
+    const expected = {
+      type: 'ADD_MENU_ITEM_TO_STORAGE',
+      weekday: 'sunday',
+      mealTime: 'breakfast',
+      recipe: {title: 'recipe name'}
+    };
+
+    const actual = actions.addMenuItemToStorage('sunday', 'breakfast', {title: 'recipe name'});
+
+    expect(actual).toEqual(expected);
+  });
+});
+
+describe('Remove Menu Item From Storage', () => {
+  it('should have a type of REMOVE_MENU_ITEM_FROM_STORAGE', () => {
+    const expected = {
+      type: 'REMOVE_MENU_ITEM_FROM_STORAGE',
+      weekday: 'sunday',
+      mealTime: 'breakfast'
+    };
+
+    const actual = actions.removeMenuItemFromStorage('sunday', 'breakfast');
+
+    expect(actual).toEqual(expected);
+  });
+});
+
+
+
+
+
+
