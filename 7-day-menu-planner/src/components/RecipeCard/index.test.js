@@ -1,12 +1,14 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import RecipeCard from './index.js';
+import { shallow, mount } from 'enzyme';
+import { RecipeCard } from './index.js';
 
 describe('Recipe Card', () => {
   let wrapper;
   let mockRecipe;
-  let mockFunction;
   let mockFavorites;
+  let mockToggleFavorites;
+  let mockAddFavorite;
+  let mockRemoveFavorite;
 
   beforeEach(() => {
     mockRecipe = {
@@ -24,24 +26,29 @@ describe('Recipe Card', () => {
       "url": "http://nomnompaleo.com/post/36060636540/paleo-sriracha"
     };
 
-    mockFunction = jest.fn();
     mockFavorites = [{title: 'Recipe1'}]
+    mockToggleFavorites = jest.fn();
+    mockAddFavorite = jest.fn();
+    mockRemoveFavorite = jest.fn();
 
     wrapper = shallow(<RecipeCard 
       recipe={mockRecipe} 
       displayAddToMenu={true}
-      toggleFavorites={mockFunction}
-      favorites={mockFavorites}/>);
+      toggleFavorites={mockToggleFavorites}
+      favorites={mockFavorites}
+      addFavoriteToStorage={mockAddFavorite}
+      removeFavoriteFromSTorage={mockRemoveFavorite}/>);
   });
 
   it('matches snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should call toggleFavorites when star icon is clicked', () => {
+  it('should call handleClick when star icon is clicked', () => {
     wrapper.find('.star').simulate('click');
 
-    expect(mockFunction).toHaveBeenCalledWith(mockRecipe);
+    expect(mockToggleFavorites).toHaveBeenCalled();
+    expect(mockAddFavorite).toHaveBeenCalled();
   });
 
   //these two tests are a work around in response to jest's 'Compared values have no visual difference'

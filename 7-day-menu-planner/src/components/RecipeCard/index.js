@@ -4,7 +4,7 @@ import './index.css'
 import emptyStar from '../../assets/emptyStar.png';
 import yellowStar from '../../assets/yellowStar.png';
 
-const RecipeCard = props => {
+export const RecipeCard = props => {
   const { 
     recipe, displayAddToMenu, toggleFavorites, favorites, 
     addFavoriteToStorage, removeFavoriteFromStorage } = props;
