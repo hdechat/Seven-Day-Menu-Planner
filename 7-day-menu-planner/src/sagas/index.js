@@ -2,7 +2,7 @@ import { call, put, takeLatest, takeEvery, all } from 'redux-saga/effects';
 import fetchRecipes, { setToStorage, getDataFromStorage } from '../api';
 import * as actions from '../actions';
 import { cleanData } from '../helpers';
-import { paleo } from '../mock-data.js';
+// import { paleo } from '../mock-data.js';
 
 export function* chooseCategory(action) {
   try {

@@ -16,6 +16,7 @@ export class App extends Component {
     this.props.retrieveDataFromStorage('menu');
   }
 
+export default class App extends Component {
   render() {
     return (
       <div className="App">

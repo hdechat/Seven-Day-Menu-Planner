@@ -5,6 +5,8 @@ body {
 
 h1 {
   font-size: 25px;
+  display: inline-block;
+  float: left;
 }
 
 .App {
@@ -27,6 +29,5 @@ h1 {
 }
 
 .title {
-  float: left;
   margin: 0;
 }

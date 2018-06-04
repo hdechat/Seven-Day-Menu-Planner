@@ -8,7 +8,7 @@ const GroceryList = ({ groceryList }) => {
   });
   return (
     <section className="grocery-list">
-      <h2>GROCERY LIST</h2>
+      <h2>Grocery List</h2>
       { groceries }
     </section>
   )
