@@ -8,7 +8,15 @@ const fetchRecipes = async (category) => {
   } else {
     throw (new Error(`Error status code ${response.status}`));
   }
+};
 
-}
+export const setToStorage = (key, data) => {
+  const stringified = JSON.stringify(data);
+  localStorage.setItem(key, stringified);
+};
+
+export const getDataFromStorage = (key) => {
+  return JSON.parse(localStorage.getItem(key));
+};
 
 export default fetchRecipes;

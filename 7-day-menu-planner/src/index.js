@@ -8,7 +8,7 @@ import registerServiceWorker from './registerServiceWorker';
 
 import App from './App';
 import rootReducer from './reducers';
-import listenForChooseCategory from './sagas';
+import rootSaga from './sagas';
 import './index.css';
 
 const sagaMiddleware = createSagaMiddleware();
@@ -16,7 +16,7 @@ const devTools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_
 
 const store = createStore(rootReducer, devTools, applyMiddleware(sagaMiddleware));
 
-sagaMiddleware.run(listenForChooseCategory);
+sagaMiddleware.run(rootSaga);
 
 const app = <Provider store={store}>
               <BrowserRouter>

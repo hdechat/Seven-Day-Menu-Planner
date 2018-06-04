@@ -21,7 +21,7 @@ const Home = props => {
 
   return (
     <section className="home">
-      <h2>Select a Catgory</h2>
+      <h2>Select Category</h2>
       <div className="select-category">
         <select 
           onChange={event => chooseCategory(event.target.value)}

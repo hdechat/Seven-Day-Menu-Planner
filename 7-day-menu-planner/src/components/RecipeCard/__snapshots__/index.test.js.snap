@@ -4,7 +4,8 @@ exports[`Recipe Card matches snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <RecipeCard
+  Symbol(enzyme.__unrendered__): <Unknown
+    addFavoriteToStorage={[Function]}
     displayAddToMenu={true}
     favorites={
         Array [
@@ -29,6 +30,7 @@ ShallowWrapper {
             "url": "http://nomnompaleo.com/post/36060636540/paleo-sriracha",
           }
     }
+    removeFavoriteFromSTorage={[Function]}
     toggleFavorites={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {

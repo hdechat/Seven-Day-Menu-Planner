@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { toggleFavorites } from '../../actions';
+import { toggleFavorites, addFavoriteToStorage, removeFavoriteFromStorage } from '../../actions';
 import RecipeCard from '../../components/RecipeCard';
 
 export const mapStateToProps = state => ({
@@ -7,7 +7,9 @@ export const mapStateToProps = state => ({
 });
 
 export const mapDispatchToProps = dispatch => ({
-  toggleFavorites: favoritedRecipe => dispatch(toggleFavorites(favoritedRecipe))
+  toggleFavorites: recipe => dispatch(toggleFavorites(recipe)),
+  addFavoriteToStorage: recipe => dispatch(addFavoriteToStorage(recipe)),
+  removeFavoriteFromStorage: recipe => dispatch(removeFavoriteFromStorage(recipe))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(RecipeCard);

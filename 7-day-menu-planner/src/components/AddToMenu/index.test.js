@@ -7,6 +7,7 @@ describe('Add To Menu', () => {
   let mockRecipe;
   let mockAddToMenu;
   let mockAddToGroceryList;
+  let mockAddGroceryListToStorage
 
   beforeEach(() => {
     mockRecipe = {
@@ -26,10 +27,12 @@ describe('Add To Menu', () => {
 
     mockAddToMenu = jest.fn();
     mockAddToGroceryList = jest.fn();
+    mockAddGroceryListToStorage = jest.fn();
 
     wrapper = shallow(<AddToMenu 
       addToGroceryList={mockAddToGroceryList} 
       addToMenu={mockAddToMenu} 
+      addGroceryListToStorage={mockAddGroceryListToStorage}
       recipe={mockRecipe}/>);
   });
 
@@ -103,6 +106,7 @@ describe('Add To Menu', () => {
     wrapper = mount(<AddToMenu 
       addToGroceryList={jest.fn()} 
       addToMenu={jest.fn()} 
+      addGroceryListToStorage={jest.fn()}
       recipe={mockRecipe} />);
 
     const spy = spyOn(wrapper.instance(), 'handleSubmit');
@@ -118,5 +122,6 @@ describe('Add To Menu', () => {
 
     expect(mockAddToMenu).toHaveBeenCalled();
     expect(mockAddToGroceryList).toHaveBeenCalled();
+    expect(mockAddGroceryListToStorage).toHaveBeenCalled();
   });
 });

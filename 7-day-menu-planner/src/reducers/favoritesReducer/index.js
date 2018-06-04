@@ -10,6 +10,8 @@ export const favoritesReducer = (state = initialState, action) => {
       } else {
         return [...state, action.toggledRecipe]
       }
+    case 'LOAD_FAVORITES_TO_STORE':
+      return [...state, ...action.favorites]
     default:
       return state;
   }

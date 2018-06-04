@@ -1,11 +1,20 @@
 import React, { Component } from 'react';
-import { NavLink, Route } from 'react-router-dom';
-
+import { connect } from 'react-redux'
+import { NavLink, Route, withRouter } from 'react-router-dom';
 import HomeContainer from './containers/HomeContainer';
 import MenuCalendar from './components/MenuCalendar';
 import FavoritesContainer from './containers/FavoritesContainer';
 import GroceryListContainer from './containers/GroceryListContainer';
+import { retrieveDataFromStorage } from './actions';
 import './App.css';
+
+export class App extends Component {
+
+  componentDidMount() {
+    this.props.retrieveDataFromStorage('favorites');
+    this.props.retrieveDataFromStorage('groceryList');
+    this.props.retrieveDataFromStorage('menu');
+  }
 
 export default class App extends Component {
   render() {
@@ -26,3 +35,9 @@ export default class App extends Component {
     );
   }
 }
+
+export const mapDispatchToProps = dispatch => ({
+  retrieveDataFromStorage: key => dispatch(retrieveDataFromStorage(key))
+});
+
+export default withRouter(connect(null, mapDispatchToProps)(App));
