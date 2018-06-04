@@ -49,7 +49,7 @@ export const toggleFavorites = (toggledRecipe) => ({
 export const retrieveDataFromStorage = (key) => ({
   type: 'RETRIEVE_DATA_FROM_STORAGE',
   key
-})
+});
 
 export const loadFavoritesToStore = (favorites) => ({
   type: 'LOAD_FAVORITES_TO_STORE',

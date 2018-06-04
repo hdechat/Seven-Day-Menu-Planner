@@ -155,14 +155,27 @@ describe('Toggle Favorites', () => {
   });
 });
 
-describe('Load Favorites From Storage', () => {
-  it('should have a type of LOAD_FAVORITES_FROM_STORAGE and a favorites array', () => {
+describe('Retrieve Data From Storage', () => {
+  it('should have a type of RETRIEVE_DATA_FROM_STORAGE', () => {
     const expected = {
-      type: 'LOAD_FAVORITES_FROM_STORAGE',
+      type: 'RETRIEVE_DATA_FROM_STORAGE',
+      key: 'favorites'
+    };
+
+    const actual = actions.retrieveDataFromStorage('favorites');
+
+    expect(actual).toEqual(expected);
+  });
+});
+
+describe('Load Favorites To Store', () => {
+  it('should have a type of LOAD_FAVORITES_TO_STORE and a favorites array', () => {
+    const expected = {
+      type: 'LOAD_FAVORITES_TO_STORE',
       favorites: [{title: 'recipe'}]
     };
 
-    const actual = actions.loadFavoritesFromStorage([{title: 'recipe'}]);
+    const actual = actions.loadFavoritesToStore([{title: 'recipe'}]);
 
     expect(actual).toEqual(expected);
   });
@@ -226,10 +239,3 @@ describe('Remove Favorite From Storage', () => {
     expect(actual).toEqual(expected);
   });
 });
-
-
-
-
-
-
-
