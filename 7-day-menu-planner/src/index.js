@@ -8,14 +8,14 @@ import createSagaMiddleware from 'redux-saga';
 import { Provider } from 'react-redux';
 import {BrowserRouter} from 'react-router-dom';
 import rootReducer from './reducers';
-import listenForChooseCategory from './sagas';
+import rootSaga from './sagas';
 
 const sagaMiddleware = createSagaMiddleware();
 const devTools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
 
 const store = createStore(rootReducer, devTools, applyMiddleware(sagaMiddleware));
 
-sagaMiddleware.run(listenForChooseCategory);
+sagaMiddleware.run(rootSaga);
 
 const app = <Provider store={store}>
               <BrowserRouter>

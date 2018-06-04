@@ -1,6 +1,6 @@
-import { call, put, takeLatest } from 'redux-saga/effects';
-import fetchRecipes from '../api';
-import { fetchRecipesSuccess, recipesIsLoading, recipesHasErrored } from '../actions';
+import { call, put, takeLatest, takeEvery, all } from 'redux-saga/effects';
+import fetchRecipes, { setFavoritesToStorage, getFavoritesFromStorage } from '../api';
+import { fetchRecipesSuccess, recipesIsLoading, recipesHasErrored, } from '../actions';
 import { cleanData } from '../helpers';
 import { paleo } from '../mock-data.js';
 
@@ -17,8 +17,26 @@ export function* chooseCategory(action) {
   }
 }
 
+export function* addFavoriteToStorage(action) {
+  let updatedFavorites;
+  const favorites = yield call(getFavoritesFromStorage);
+  favorites 
+  ? updatedFavorites = [...favorites, action.recipe]
+  : updatedFavorites = [action.recipe];
+  yield call(setFavoritesToStorage, updatedFavorites);
+}
+
 export function* listenForChooseCategory() {
   yield takeLatest('CHOOSE_CATEGORY', chooseCategory);
 }
 
-export default listenForChooseCategory;
+export function* listenForAddFavoriteToStorage() {
+  yield takeEvery('ADD_FAVORITE_TO_STORAGE', addFavoriteToStorage);
+}
+
+export default function* rootSaga() {
+  yield all([
+    listenForChooseCategory(),
+    listenForAddFavoriteToStorage()
+  ])
+}

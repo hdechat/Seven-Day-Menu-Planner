@@ -42,7 +42,7 @@ export default class AddToMenu extends Component {
     return (
       <div>
         <p>Add this meal to your menu!</p>
-        <form class="add-to-menu" onSubmit={this.handleSubmit}>
+        <form className="add-to-menu" onSubmit={this.handleSubmit}>
           <div className="select-category">
             <select name="weekday" id="weekday" onChange={this.handleClick}>
               <option>SELECT WEEKDAY</option>

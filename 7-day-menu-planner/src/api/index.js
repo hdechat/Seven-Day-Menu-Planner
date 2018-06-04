@@ -8,15 +8,20 @@ const fetchRecipes = async (category) => {
   } else {
     throw (new Error(`Error status code ${response.status}`));
   }
-}
+};
 
-export const setToStorage = (key, data) => {
+export const setFavoritesToStorage = (data) => {
   const stringified = JSON.stringify(data);
-  localStorage.setItem(key, stringified);
+  localStorage.setItem('favorites', stringified);
+};
+
+export const getFavoritesFromStorage = () => {
+  return JSON.parse(localStorage.getItem('favorites'));
+};
+
+export const removeFromStorage = (key) => {
+  localStorage.removeItem(key);
 }
 
-export const getFromStorage = (key) => {
-  return JSON.parse(localStorage.getItem(key));
-}
 
 export default fetchRecipes;
