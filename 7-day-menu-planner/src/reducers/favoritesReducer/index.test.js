@@ -1,5 +1,5 @@
 import * as reducers from './index.js';
-import { toggleFavorites, loadFavoritesFromStorage } from '../../actions';
+import { toggleFavorites, loadFavoritesToStore } from '../../actions';
 
 describe('Favorites Reducer', () => {
   let mockState;
@@ -45,12 +45,12 @@ describe('Favorites Reducer', () => {
     expect(actual).toEqual(expected);
   });
 
-  it('should add recipes to the array with the loadFavoritesFromStorage action', () => {
+  it('should add recipes to the array with the loadFavoritesToSTore action', () => {
     const mockFavoritesFromStorage = [{title: 'recipe'}]
 
     const expected = mockFavoritesFromStorage;
 
-    const actual = reducers.favoritesReducer(mockState, loadFavoritesFromStorage(mockFavoritesFromStorage));
+    const actual = reducers.favoritesReducer(mockState, loadFavoritesToStore(mockFavoritesFromStorage));
 
     expect(actual).toEqual(expected);
   });
