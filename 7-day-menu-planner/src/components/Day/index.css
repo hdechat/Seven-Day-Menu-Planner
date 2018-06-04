@@ -3,11 +3,27 @@
 }
 
 .day button {
+  background: transparent;
+  border: none;
+  float: left;
+  font-size: 12px;
   height: 1.5rem;
   margin-bottom: -1rem;
   padding: 0 4px;
+  position: relative;
+  top: 5px;
+}
+
+.display {
+  display: block;
+}
+
+.no-display {
+  display: none;
 }
 
 h6 {
   margin: 0.5rem auto 0rem auto;
+  padding-top: 16px;
+  font-size: 16px;
 }

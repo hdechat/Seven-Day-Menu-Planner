@@ -2,6 +2,7 @@ body {
   background: url('./assets/cutting-board.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  box-sizing: border-box;
 }
 
 h1 {

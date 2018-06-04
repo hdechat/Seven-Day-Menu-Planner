@@ -1,13 +1,22 @@
 .week {
   display: flex;
+  justify-content: space-between;
   list-style-type: none;
   margin: 1rem auto;
   padding: 0rem;
-  width: 85%;
+  width: 100%;
+}
+
+.menu h2 {
+  margin: 0;
 }
 
 li {
   margin: auto 1rem;
   width: 8.7rem;
   height: 30rem;
+}
+
+h3 {
+  border-bottom: solid thin; 
 }

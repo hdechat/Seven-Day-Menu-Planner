@@ -6,7 +6,7 @@ const RecipeCardsDisplay = ({ recipeCards }) => {
   const cards = recipeCards.map(recipe => {
     return (
       <div key={recipe.title} className="home-display">
-        <RecipeCardContainer recipe={recipe} displayAddToMenu={true} />
+        <RecipeCardContainer recipe={recipe} displayAddToMenu={true} displayLinkText={true}/>
       </div>
     );
   });
