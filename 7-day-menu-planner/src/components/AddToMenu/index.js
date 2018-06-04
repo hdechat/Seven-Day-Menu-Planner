@@ -7,7 +7,8 @@ export default class AddToMenu extends Component {
 
     this.state = {
       weekday: '',
-      mealTime: ''
+      mealTime: '',
+      text: 'Add this meal to your menu!'
     };
   }
 
@@ -25,6 +26,7 @@ export default class AddToMenu extends Component {
     addToGroceryList(recipe.ingredients);
     addMenuItemToStorage(this.state.weekday, this.state.mealTime, this.props.recipe)
     addGroceryListToStorage(recipe.ingredients);
+    this.setState({ text: 'ADDED!'})
   }
 
   listWeekdayOptions = () => {
@@ -40,12 +42,12 @@ export default class AddToMenu extends Component {
     const mealTimes = ['breakfast', 'lunch', 'dinner'];
 
     return mealTimes.map(meal => <option key={meal} value={meal}>{meal}</option>);
-  } 
+  }
 
   render() {
     return (
       <div>
-        <p>Add this meal to your menu!</p>
+        <p>{this.state.text}</p>
         <form className="add-to-menu" onSubmit={this.handleSubmit}>
           <div className="select-category">
             <select name="weekday" id="weekday" onChange={this.handleClick}>

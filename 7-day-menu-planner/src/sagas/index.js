@@ -7,8 +7,8 @@ import { cleanData } from '../helpers';
 export function* chooseCategory(action) {
   try {
     yield put(actions.recipesIsLoading(true));
-    const results = paleo;
-    // const results = yield call(fetchRecipes, action.category);
+    // const results = paleo;
+    const results = yield call(fetchRecipes, action.category);
     const recipes = cleanData(results);
     yield put(actions.fetchRecipesSuccess(recipes));
     yield put(actions.recipesIsLoading(false));
