@@ -5,12 +5,13 @@ import './index.css';
 const Day = (props) => {
   const { 
     day, menu, removeFromMenu, removeFromGroceryList,
-    removeGroceryListFromStorage } = props;
+    removeGroceryListFromStorage, removeMenuItemFromStorage } = props;
 
   const handleClick = (mealTime) => {
     removeFromGroceryList(menu[day][mealTime].ingredients);
     removeGroceryListFromStorage(menu[day][mealTime].ingredients)
     removeFromMenu(day, mealTime);
+    removeMenuItemFromStorage(day, mealTime, menu[day][mealTime])
   }
 
   return (

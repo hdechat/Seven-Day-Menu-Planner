@@ -13,6 +13,7 @@ export class App extends Component {
   componentDidMount() {
     this.props.retrieveDataFromStorage('favorites');
     this.props.retrieveDataFromStorage('groceryList');
+    this.props.retrieveDataFromStorage('menu');
   }
 
   render() {

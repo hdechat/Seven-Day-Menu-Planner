@@ -43,11 +43,18 @@ export function* retrieveDataFromStorage(action) {
       break;
     case 'groceryList':
       const groceryList = yield call(getDataFromStorage, action.key);
-        console.log(groceryList);
         groceryList
           ? yield put(actions.loadGroceryListToStore(groceryList))
           : null;
         break;
+    case 'menu':
+      const menu = yield call(getDataFromStorage, action.key);
+        menu
+          ? yield put(actions.loadMenuToStore(menu))
+          : null;
+        break;
+    default:
+      return
   }
 }
 
@@ -64,6 +71,23 @@ export function* removeGroceryListFromStorage(action) {
   const groceryList = yield call(getDataFromStorage, 'groceryList');
   const updatedGroceryList = groceryList.filter(ingred => !action.groceryList.includes(ingred));
   yield call(setToStorage, 'groceryList', updatedGroceryList);
+}
+
+export function* addMenuItemToStorage(action) {
+  let updatedMenu;
+  const menu = yield call(getDataFromStorage, 'menu');
+  menu
+    ? updatedMenu = [...menu, {[action.weekday]: {[action.mealTime]: action.recipe}}]
+    : updatedMenu = [{[action.weekday]: {[action.mealTime]: action.recipe}}];
+  yield call(setToStorage, 'menu', updatedMenu)
+}
+
+export function* removeMenuItemFromStorage(action) {
+  const menu = yield call(getDataFromStorage, 'menu');
+  const updatedMenu = menu.filter(item => {
+    return JSON.stringify(item) !== JSON.stringify({[action.weekday]: {[action.mealTime]: action.recipe}})
+  });
+  yield call(setToStorage, 'menu', updatedMenu);
 }
 
 //LISTENERS
@@ -91,6 +115,14 @@ export function* listenForRemoveGroceryListFromStorage() {
   yield takeEvery('REMOVE_GROCERY_LIST_FROM_STORAGE', removeGroceryListFromStorage);
 }
 
+export function* listenForAddMenuItemToStorage() {
+  yield takeEvery('ADD_MENU_ITEM_TO_STORAGE', addMenuItemToStorage);
+}
+
+export function* listenForRemoveMenuItemFromStorage() {
+  yield takeEvery('REMOVE_MENU_ITEM_FROM_STORAGE', removeMenuItemFromStorage);
+}
+
 export default function* rootSaga() {
   yield all([
     listenForChooseCategory(),
@@ -98,6 +130,8 @@ export default function* rootSaga() {
     listenForRemoveFavoriteFromStorage(),
     listenForRetrieveDataFromStorage(),
     listenForAddGroceryListToStorage(),
-    listenForRemoveGroceryListFromStorage()
+    listenForRemoveGroceryListFromStorage(),
+    listenForAddMenuItemToStorage(),
+    listenForRemoveMenuItemFromStorage()
   ])
 }

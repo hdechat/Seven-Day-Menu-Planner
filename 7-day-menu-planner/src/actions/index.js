@@ -94,8 +94,9 @@ export const addMenuItemToStorage = (weekday, mealTime, recipe) => ({
   recipe
 });
 
-export const removeMenuItemFromStorage = (weekday, mealTime) => ({
+export const removeMenuItemFromStorage = (weekday, mealTime, recipe) => ({
   type: 'REMOVE_MENU_ITEM_FROM_STORAGE',
   weekday,
   mealTime,
+  recipe
 });

@@ -18,11 +18,12 @@ export default class AddToMenu extends Component {
   handleSubmit = (event) => {
     const { 
       addToMenu, addToGroceryList, 
-      recipe, addGroceryListToStorage } = this.props;
+      recipe, addGroceryListToStorage, addMenuItemToStorage } = this.props;
 
     event.preventDefault();
     addToMenu(this.state.weekday, this.state.mealTime, this.props.recipe);
     addToGroceryList(recipe.ingredients);
+    addMenuItemToStorage(this.state.weekday, this.state.mealTime, this.props.recipe)
     addGroceryListToStorage(recipe.ingredients);
   }
 
