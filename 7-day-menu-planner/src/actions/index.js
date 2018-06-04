@@ -50,3 +50,13 @@ export const loadFavoritesFromStorage = (favorites) => ({
   type: 'LOAD_FAVORITES_FROM_STORAGE',
   favorites
 });
+
+export const loadGroceryListFromStorage = (groceryList) => ({
+  type: 'LOAD_GROCERY_LIST_FROM_STORAGE',
+  groceryList
+});
+
+export const loadMenuFromStorage = (menu) => ({
+  type: 'LOAD_MENU_FROM_STORAGE',
+  menu
+});

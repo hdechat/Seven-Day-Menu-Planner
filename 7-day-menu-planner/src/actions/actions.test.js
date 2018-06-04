@@ -167,3 +167,32 @@ describe('Load Favorites From Storage', () => {
     expect(actual).toEqual(expected);
   });
 });
+
+describe('Load Grocery List From Storage', () => {
+  it('should have a type of LOAD_GROCERY_LIST_FROM_STORAGE and groceryList array', () => {
+    const expected = {
+      type: 'LOAD_GROCERY_LIST_FROM_STORAGE',
+      groceryList: ['apples']
+    };
+
+    const actual = actions.loadGroceryListFromStorage(['apples']);
+
+    expect(actual).toEqual(expected);
+  });
+});
+
+describe('Load Menu From Storage', () => {
+  it('should have a type LOAD_MENU_FROM_STORAGE and menu object', () => {
+    const mockStoredMenu = [
+     {sunday: {breakfast: {title: 'recipe name'}}}, 
+      {monday: {lunch: {title: 'recipe name'}}}
+    ]
+
+    const expected = {
+      type: 'LOAD_MENU_FROM_STORAGE',
+      menu: mockStoredMenu
+    }
+
+    const actual = actions.loadMenuFromStorage(mockStoredMenu)
+  });
+});

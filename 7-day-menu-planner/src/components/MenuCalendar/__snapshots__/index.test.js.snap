@@ -78,7 +78,7 @@ ShallowWrapper {
           </li>
 </ul>,
       ],
-      "class": "menu",
+      "className": "menu",
     },
     "ref": null,
     "rendered": Array [
@@ -412,7 +412,7 @@ ShallowWrapper {
             </li>
 </ul>,
         ],
-        "class": "menu",
+        "className": "menu",
       },
       "ref": null,
       "rendered": Array [
