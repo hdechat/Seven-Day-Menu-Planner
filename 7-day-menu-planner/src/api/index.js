@@ -19,9 +19,4 @@ export const getFavoritesFromStorage = () => {
   return JSON.parse(localStorage.getItem('favorites'));
 };
 
-export const removeFromStorage = (key) => {
-  localStorage.removeItem(key);
-}
-
-
 export default fetchRecipes;

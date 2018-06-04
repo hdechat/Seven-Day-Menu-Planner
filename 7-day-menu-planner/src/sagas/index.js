@@ -26,6 +26,12 @@ export function* addFavoriteToStorage(action) {
   yield call(setFavoritesToStorage, updatedFavorites);
 }
 
+export function* removeFavoriteFromStorage(action) {
+  const favorites = yield call(getFavoritesFromStorage);
+  const updatedFavorites = favorites.filter(recipe => recipe.title !== action.recipe.title)
+  yield call(setFavoritesToStorage, updatedFavorites);
+}
+
 export function* listenForChooseCategory() {
   yield takeLatest('CHOOSE_CATEGORY', chooseCategory);
 }
@@ -34,9 +40,14 @@ export function* listenForAddFavoriteToStorage() {
   yield takeEvery('ADD_FAVORITE_TO_STORAGE', addFavoriteToStorage);
 }
 
+export function* listenForRemoveFavoriteFromStorage() {
+  yield takeEvery('REMOVE_FAVORITE_FROM_STORAGE', removeFavoriteFromStorage);
+}
+
 export default function* rootSaga() {
   yield all([
     listenForChooseCategory(),
-    listenForAddFavoriteToStorage()
+    listenForAddFavoriteToStorage(),
+    listenForRemoveFavoriteFromStorage()
   ])
 }

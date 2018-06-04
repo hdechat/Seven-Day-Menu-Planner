@@ -5,7 +5,10 @@ import emptyStar from '../../assets/emptyStar.png';
 import yellowStar from '../../assets/yellowStar.png';
 
 const RecipeCard = props => {
-  const { recipe, displayAddToMenu, toggleFavorites, favorites, addFavoriteToStorage } = props;
+  const { 
+    recipe, displayAddToMenu, toggleFavorites, favorites, 
+    addFavoriteToStorage, removeFavoriteFromStorage } = props;
+    
   const favorited = favorites.find(fave => fave.title === recipe.title);
 
   const displayInset = () => {
@@ -17,6 +20,8 @@ const RecipeCard = props => {
     toggleFavorites(recipe);
     if(!favorited) {
       addFavoriteToStorage(recipe);
+    } else {
+      removeFavoriteFromStorage(recipe);
     }
   };
 
