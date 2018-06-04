@@ -10,9 +10,9 @@ const fetchRecipes = async (category) => {
   }
 };
 
-export const setFavoritesToStorage = (data) => {
+export const setToStorage = (key, data) => {
   const stringified = JSON.stringify(data);
-  localStorage.setItem('favorites', stringified);
+  localStorage.setItem(key, stringified);
 };
 
 export const getDataFromStorage = (key) => {

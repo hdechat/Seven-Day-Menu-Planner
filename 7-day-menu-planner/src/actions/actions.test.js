@@ -294,9 +294,3 @@ describe('Remove Menu Item From Storage', () => {
     expect(actual).toEqual(expected);
   });
 });
-
-
-
-
-
-

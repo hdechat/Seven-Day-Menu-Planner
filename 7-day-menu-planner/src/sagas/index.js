@@ -1,19 +1,19 @@
 import { call, put, takeLatest, takeEvery, all } from 'redux-saga/effects';
-import fetchRecipes, { setFavoritesToStorage, getDataFromStorage } from '../api';
-import { fetchRecipesSuccess, recipesIsLoading, recipesHasErrored, loadFavoritesToStore} from '../actions';
+import fetchRecipes, { setToStorage, getDataFromStorage } from '../api';
+import * as actions from '../actions';
 import { cleanData } from '../helpers';
 import { paleo } from '../mock-data.js';
 
 export function* chooseCategory(action) {
   try {
-    yield put(recipesIsLoading(true));
+    yield put(actions.recipesIsLoading(true));
     const results = paleo;
     // const results = yield call(fetchRecipes, action.category);
     const recipes = cleanData(results);
-    yield put(fetchRecipesSuccess(recipes));
-    yield put(recipesIsLoading(false));
+    yield put(actions.fetchRecipesSuccess(recipes));
+    yield put(actions.recipesIsLoading(false));
   } catch (error) {
-    yield put(recipesHasErrored(error.message));
+    yield put(actions.recipesHasErrored(error.message));
   }
 }
 
@@ -21,20 +21,49 @@ export function* addFavoriteToStorage(action) {
   let updatedFavorites;
   const favorites = yield call(getDataFromStorage, 'favorites');
   favorites 
-  ? updatedFavorites = [...favorites, action.recipe]
-  : updatedFavorites = [action.recipe];
-  yield call(setFavoritesToStorage, updatedFavorites);
+    ? updatedFavorites = [...favorites, action.recipe]
+    : updatedFavorites = [action.recipe];
+  yield call(setToStorage, 'favorites', updatedFavorites);
 }
 
 export function* removeFavoriteFromStorage(action) {
   const favorites = yield call(getDataFromStorage, 'favorites');
-  const updatedFavorites = favorites.filter(recipe => recipe.title !== action.recipe.title)
-  yield call(setFavoritesToStorage, updatedFavorites);
+  const updatedFavorites = favorites.filter(recipe => 
+    recipe.title !== action.recipe.title)
+  yield call(setToStorage, 'favorites', updatedFavorites);
 }
 
 export function* retrieveDataFromStorage(action) {
-  const favorites = yield call(getDataFromStorage, action.key);
-  yield put(loadFavoritesToStore(favorites));
+  switch (action.key) {
+    case 'favorites':
+      const favorites = yield call(getDataFromStorage, action.key);
+      favorites
+        ? yield put(actions.loadFavoritesToStore(favorites))
+        : null;
+      break;
+    case 'groceryList':
+      const groceryList = yield call(getDataFromStorage, action.key);
+        console.log(groceryList);
+        groceryList
+          ? yield put(actions.loadGroceryListToStore(groceryList))
+          : null;
+        break;
+  }
+}
+
+export function* addGroceryListToStorage(action) {
+  let updatedGroceryList;
+  const groceryList = yield call(getDataFromStorage, 'groceryList');
+  groceryList
+    ? updatedGroceryList = [...groceryList, ...action.groceryList]
+    : updatedGroceryList = action.groceryList;
+  yield call(setToStorage, 'groceryList', updatedGroceryList);
+}
+
+export function* removeGroceryListFromStorage(action) {
+  const groceryList = yield call(getDataFromStorage, 'groceryList');
+  const updatedGroceryList = groceryList.filter(ingred => !action.groceryList.includes(ingred));
+  yield call(setToStorage, 'groceryList', updatedGroceryList);
 }
 
 //LISTENERS
@@ -54,11 +83,21 @@ export function* listenForRetrieveDataFromStorage() {
   yield takeEvery('RETRIEVE_DATA_FROM_STORAGE', retrieveDataFromStorage);
 }
 
+export function* listenForAddGroceryListToStorage() {
+  yield takeEvery('ADD_GROCERY_LIST_TO_STORAGE', addGroceryListToStorage);
+}
+
+export function* listenForRemoveGroceryListFromStorage() {
+  yield takeEvery('REMOVE_GROCERY_LIST_FROM_STORAGE', removeGroceryListFromStorage);
+}
+
 export default function* rootSaga() {
   yield all([
     listenForChooseCategory(),
     listenForAddFavoriteToStorage(),
     listenForRemoveFavoriteFromStorage(),
-    listenForRetrieveDataFromStorage()
+    listenForRetrieveDataFromStorage(),
+    listenForAddGroceryListToStorage(),
+    listenForRemoveGroceryListFromStorage()
   ])
 }

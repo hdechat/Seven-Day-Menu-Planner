@@ -5,6 +5,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <AddToMenu
+    addGroceryListToStorage={[Function]}
     addToGroceryList={[Function]}
     addToMenu={[Function]}
     recipe={
@@ -41,7 +42,7 @@ ShallowWrapper {
           Add this meal to your menu!
 </p>,
         <form
-          class="add-to-menu"
+          className="add-to-menu"
           onSubmit={[Function]}
 >
           <div
@@ -229,7 +230,7 @@ ShallowWrapper {
               Add To Menu
 </button>,
           ],
-          "class": "add-to-menu",
+          "className": "add-to-menu",
           "onSubmit": [Function],
         },
         "ref": null,
@@ -585,7 +586,7 @@ ShallowWrapper {
             Add this meal to your menu!
 </p>,
           <form
-            class="add-to-menu"
+            className="add-to-menu"
             onSubmit={[Function]}
 >
             <div
@@ -773,7 +774,7 @@ ShallowWrapper {
                 Add To Menu
 </button>,
             ],
-            "class": "add-to-menu",
+            "className": "add-to-menu",
             "onSubmit": [Function],
           },
           "ref": null,
