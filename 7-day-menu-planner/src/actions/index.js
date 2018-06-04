@@ -60,3 +60,27 @@ export const loadMenuFromStorage = (menu) => ({
   type: 'LOAD_MENU_FROM_STORAGE',
   menu
 });
+
+export const addFavoriteToStorage = (recipe) => ({
+  type: 'ADD_FAVORITE_TO_STORAGE',
+  recipe
+});
+
+export const removeFavoriteFromStorage = (recipe) => ({
+  type: 'REMOVE_FAVORITE_FROM_STORAGE',
+  recipe
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+

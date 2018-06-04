@@ -184,15 +184,52 @@ describe('Load Grocery List From Storage', () => {
 describe('Load Menu From Storage', () => {
   it('should have a type LOAD_MENU_FROM_STORAGE and menu object', () => {
     const mockStoredMenu = [
-     {sunday: {breakfast: {title: 'recipe name'}}}, 
+      {sunday: {breakfast: {title: 'recipe name'}}}, 
       {monday: {lunch: {title: 'recipe name'}}}
-    ]
+    ];
 
     const expected = {
       type: 'LOAD_MENU_FROM_STORAGE',
       menu: mockStoredMenu
-    }
+    };
 
-    const actual = actions.loadMenuFromStorage(mockStoredMenu)
+    const actual = actions.loadMenuFromStorage(mockStoredMenu);
   });
 });
+
+describe('Add Favorite To Storage', () => {
+  it('should have a type of ADD_FAVORITE_TO_STORAGE and a recipe object', () => {
+    const mockRecipe = {title: 'recipe name'};
+
+    const expected = {
+      type: 'ADD_FAVORITE_TO_STORAGE',
+      recipe: mockRecipe
+    };
+
+    const actual = actions.addFavoriteToStorage(mockRecipe);
+
+    expect(actual).toEqual(expected);
+  });
+});
+
+describe('Remove Favorite From Storage', () => {
+  it('should have a type of REMOVE_FAVORITE_FROM_STORAGE and a recipe object', () => {
+    const mockRecipe = {title: 'recipe name'};
+
+    const expected = {
+      type: 'REMOVE_FAVORITE_FROM_STORAGE',
+      recipe: mockRecipe
+    };
+
+    const actual = actions.removeFavoriteFromStorage(mockRecipe);
+
+    expect(actual).toEqual(expected);
+  });
+});
+
+
+
+
+
+
+
