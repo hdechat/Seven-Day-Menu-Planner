@@ -11,8 +11,8 @@ describe('Home', () => {
 
     wrapper = shallow(<Home 
       recipesHasErrored={''}
-       recipesIsLoading={false} r
-       ecipeCards={[]} 
+       recipesIsLoading={false} 
+       recipeCards={[]} 
        chooseCategory={mockFunction} />);
   });
 
@@ -35,5 +35,18 @@ describe('Home', () => {
   it('should render error if fetch has errored', () => {
     wrapper.setProps({recipesHasErrored: 'Something went wrong.'});
     expect(wrapper.find('.error-message').length).toEqual(1);
+  });
+
+  it('should display welcome message if no recipe cards are rendered', () => {
+    expect(wrapper.find('.welcome-message').length).toEqual(1);
+    wrapper.setProps({ recipeCards: [{title: 'recipe'}] });
+
+    expect(wrapper.find('.welcome-message').length).toEqual(0);
+  });
+
+  it('should set state with onChange', () => {
+    wrapper.find('.search').simulate('click', {target: {value: 'high-protein'}});
+
+    expect(wrapper.state('userSearch')).toEqual('high-protein');
   });
 });
