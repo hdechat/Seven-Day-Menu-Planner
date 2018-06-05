@@ -4,6 +4,17 @@
   width: 9rem;
 }
 
+.search {
+  font-size: 16px;
+  height: 2rem;
+  border-radius: 0%;
+  width: 9.2rem;;
+}
+
+.search::placeholder {
+  font-size: 16px;
+}
+
 .display-cards {
   height: 100vh;
   margin: auto;

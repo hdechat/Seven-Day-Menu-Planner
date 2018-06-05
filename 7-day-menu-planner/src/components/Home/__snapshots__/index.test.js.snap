@@ -6,8 +6,7 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Home
     chooseCategory={[Function]}
-    ecipeCards={Array []}
-    r={true}
+    recipeCards={Array []}
     recipesHasErrored=""
     recipesIsLoading={false}
 />,
@@ -24,6 +23,9 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <h2>
+          Select Category
+</h2>,
         <div
           className="select-category"
 >
@@ -51,13 +53,26 @@ ShallowWrapper {
                     </option>
           </select>
 </div>,
+        <input
+          className="search"
+          onChange={[Function]}
+          onKeyPress={[Function]}
+          placeholder="Search"
+          type="search"
+          value=""
+/>,
         null,
         null,
+        <p
+          className="welcome-message"
+>
+          Welcome to your eazy-peazy seven-day meal planner!
+</p>,
         <div
           className="display-cards"
 >
           <RecipeCardsDisplay
-                    recipeCards={undefined}
+                    recipeCards={Array []}
           />
 </div>,
       ],
@@ -65,6 +80,17 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Select Category",
+        },
+        "ref": null,
+        "rendered": "Select Category",
+        "type": "h2",
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -178,6 +204,22 @@ ShallowWrapper {
         },
         "type": "div",
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "search",
+          "onChange": [Function],
+          "onKeyPress": [Function],
+          "placeholder": "Search",
+          "type": "search",
+          "value": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
       null,
       null,
       Object {
@@ -185,8 +227,20 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
+          "children": "Welcome to your eazy-peazy seven-day meal planner!",
+          "className": "welcome-message",
+        },
+        "ref": null,
+        "rendered": "Welcome to your eazy-peazy seven-day meal planner!",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
           "children": <RecipeCardsDisplay
-            recipeCards={undefined}
+            recipeCards={Array []}
 />,
           "className": "display-cards",
         },
@@ -196,7 +250,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "recipeCards": undefined,
+            "recipeCards": Array [],
           },
           "ref": null,
           "rendered": null,
@@ -205,7 +259,7 @@ ShallowWrapper {
         "type": "div",
       },
     ],
-    "type": "div",
+    "type": "section",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -214,6 +268,9 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <h2>
+            Select Category
+</h2>,
           <div
             className="select-category"
 >
@@ -241,13 +298,26 @@ ShallowWrapper {
                         </option>
             </select>
 </div>,
+          <input
+            className="search"
+            onChange={[Function]}
+            onKeyPress={[Function]}
+            placeholder="Search"
+            type="search"
+            value=""
+/>,
           null,
           null,
+          <p
+            className="welcome-message"
+>
+            Welcome to your eazy-peazy seven-day meal planner!
+</p>,
           <div
             className="display-cards"
 >
             <RecipeCardsDisplay
-                        recipeCards={undefined}
+                        recipeCards={Array []}
             />
 </div>,
         ],
@@ -255,6 +325,17 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Select Category",
+          },
+          "ref": null,
+          "rendered": "Select Category",
+          "type": "h2",
+        },
         Object {
           "instance": null,
           "key": undefined,
@@ -368,6 +449,22 @@ ShallowWrapper {
           },
           "type": "div",
         },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "search",
+            "onChange": [Function],
+            "onKeyPress": [Function],
+            "placeholder": "Search",
+            "type": "search",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
         null,
         null,
         Object {
@@ -375,8 +472,20 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "children": "Welcome to your eazy-peazy seven-day meal planner!",
+            "className": "welcome-message",
+          },
+          "ref": null,
+          "rendered": "Welcome to your eazy-peazy seven-day meal planner!",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
             "children": <RecipeCardsDisplay
-              recipeCards={undefined}
+              recipeCards={Array []}
 />,
             "className": "display-cards",
           },
@@ -386,7 +495,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
-              "recipeCards": undefined,
+              "recipeCards": Array [],
             },
             "ref": null,
             "rendered": null,
@@ -395,7 +504,7 @@ ShallowWrapper {
           "type": "div",
         },
       ],
-      "type": "div",
+      "type": "section",
     },
   ],
   Symbol(enzyme.__options__): Object {
