@@ -27,3 +27,27 @@
   color: black;
   width: 50rem;
 }
+
+.print {
+  font-size: 15px;
+  height: 2rem;
+  left: 20.7rem;
+  margin-bottom: 0.2rem;
+  padding-top: 5px;
+  position: relative;
+}
+
+@media print {
+    h2 {
+      margin-bottom: 0;
+    }
+
+    header, button {
+      display: none;
+    }
+    .groceries {
+        border-style: none;
+        display: block !important;
+        overflow: visible;
+    }
+}

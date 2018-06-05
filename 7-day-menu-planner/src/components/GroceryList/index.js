@@ -10,6 +10,7 @@ const GroceryList = ({ groceryList }) => {
   return (
     <section className="grocery-list">
       <h2>Grocery List</h2>
+      <button className="print" onClick={() => window.print()}>PRINT LIST</button>
       <ul className="groceries">
         { groceries }
       </ul>
@@ -18,3 +19,6 @@ const GroceryList = ({ groceryList }) => {
 }
 
 export default GroceryList;
+
+
+        // <p>Click above button opens print preview with these words on page</p>
