@@ -37,6 +37,7 @@ const Home = props => {
           <option value='vegan'>Vegan</option>
         </select>
       </div>
+      <input className='search' type='text' placeholder='Search' />
         {displayLoadingMessage()}
         {displayErrorMessage()}
         {displayWelcomeMessage()}
