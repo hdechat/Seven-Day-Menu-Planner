@@ -19,6 +19,11 @@ const Home = props => {
       <p className="error-message">{recipesHasErrored}</p> : null;
   };
 
+  const displayWelcomeMessage = () => {
+    return !recipeCards.length ?
+      <p className="welcome-message">Welcome to your easy-peasy seven day meal planner!</p> : null;
+  }
+
   return (
     <section className="home">
       <h2>Select Category</h2>
@@ -34,6 +39,7 @@ const Home = props => {
       </div>
         {displayLoadingMessage()}
         {displayErrorMessage()}
+        {displayWelcomeMessage()}
       <div className="display-cards">
         <RecipeCardsDisplay recipeCards={recipeCards} />
       </div>

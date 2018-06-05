@@ -2,13 +2,13 @@ import { call, put, takeLatest, takeEvery, all } from 'redux-saga/effects';
 import fetchRecipes, { setToStorage, getDataFromStorage } from '../api';
 import * as actions from '../actions';
 import { cleanData } from '../helpers';
-// import { paleo } from '../mock-data.js';
+import { paleo } from '../mock-data.js';
 
 export function* chooseCategory(action) {
   try {
     yield put(actions.recipesIsLoading(true));
-    // const results = paleo;
-    const results = yield call(fetchRecipes, action.category);
+    const results = paleo;
+    // const results = yield call(fetchRecipes, action.category);
     const recipes = cleanData(results);
     yield put(actions.fetchRecipesSuccess(recipes));
     yield put(actions.recipesIsLoading(false));

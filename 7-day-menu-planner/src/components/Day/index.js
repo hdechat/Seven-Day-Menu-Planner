@@ -17,16 +17,16 @@ const Day = (props) => {
   return (
     <section className="day">
       <h6>Breakfast</h6>
-      <button onClick={()=>handleClick('breakfast')}>Remove Recipe</button>
-      <RecipeCardContainer recipe={menu[day].breakfast} displayAddToMenu={false} />
+      <button className={menu[day].breakfast.title ? "display" : "no-display"} onClick={()=>handleClick('breakfast')}>Remove Recipe</button>
+      <RecipeCardContainer recipe={menu[day].breakfast} displayAddToMenu={false} displayLinkText={false} />
 
       <h6>Lunch</h6>
-      <button onClick={()=>handleClick('lunch')}>Remove Recipe</button>
-      <RecipeCardContainer recipe={menu[day].lunch} displayAddToMenu={false} />
+      <button className={menu[day].lunch.title ? "display" : "no-display"} onClick={()=>handleClick('lunch')}>Remove Recipe</button>
+      <RecipeCardContainer recipe={menu[day].lunch} displayAddToMenu={false} displayLinkText={false} />
 
       <h6>Dinner</h6>
-      <button onClick={()=>handleClick('dinner')}>Remove Recipe</button>
-      <RecipeCardContainer recipe={menu[day].dinner} displayAddToMenu={false} />
+      <button className={menu[day].dinner.title ? "display" : "no-display"} onClick={()=>handleClick('dinner')}>Remove Recipe</button>
+      <RecipeCardContainer recipe={menu[day].dinner} displayAddToMenu={false} displayLinkText={false} />
     </section>
   );
 };

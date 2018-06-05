@@ -1,0 +1,57 @@
+.grocery-list {
+  margin: 1rem auto;
+  width: 9rem;
+  width: 95%;
+  margin: auto;
+  height: 500px;
+}
+
+.grocery-list h2 {
+  margin-bottom: 0;
+}
+
+.groceries {
+  background: ghostwhite;
+  border-style: inset;
+  height: 500px;
+  list-style: none;
+  margin: auto;
+  overflow-y: scroll;
+  padding: 2rem;
+  text-align: left;
+  width: 50%;
+}
+
+.groceries li {
+  height: 1rem;
+  margin: 0;
+}
+
+.food-item p {
+  color: black;
+  width: 50rem;
+}
+
+.print {
+  font-size: 15px;
+  height: 2rem;
+  left: 20.7rem;
+  margin-bottom: 0.2rem;
+  padding-top: 5px;
+  position: relative;
+}
+
+@media print {
+    h2 {
+      margin-bottom: 0;
+    }
+
+    header, .print {
+      display: none;
+    }
+    .groceries {
+        border-style: none;
+        display: block !important;
+        overflow: visible;
+    }
+}
