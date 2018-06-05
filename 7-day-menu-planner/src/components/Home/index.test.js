@@ -45,8 +45,17 @@ describe('Home', () => {
   });
 
   it('should set state with onChange', () => {
-    wrapper.find('.search').simulate('click', {target: {value: 'high-protein'}});
+    wrapper.find('.search').simulate('change', {target: {value: 'high-protein'}});
 
     expect(wrapper.state('userSearch')).toEqual('high-protein');
+  });
+
+  it('should call chooseCategory when user enters search term', () => {
+    wrapper.setState({ userSearch: 'high-protein' })
+    wrapper.find('.search').simulate('keypress', {
+      preventDefault: jest.fn(),
+      target: {charCode: 13}});
+
+    expect(mockFunction).toHaveBeenCalledWith('high-protein');
   });
 });

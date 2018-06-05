@@ -26,44 +26,48 @@ ShallowWrapper {
         <h2>
           Select Category
 </h2>,
-        <div
-          className="select-category"
->
-          <select
-                    id="category"
-                    onChange={[Function]}
+        <form>
+          <div
+                    className="select-category"
           >
-                    <option>
-                              SELECT CATEGORY
-                    </option>
-                    <option
-                              value="paleo"
+                    <select
+                              id="category"
+                              onChange={[Function]}
                     >
-                              Paleo
-                    </option>
-                    <option
-                              value="vegetarian"
-                    >
-                              Vegetarian
-                    </option>
-                    <option
-                              value="vegan"
-                    >
-                              Vegan
-                    </option>
-          </select>
-</div>,
-        <input
-          className="search"
-          placeholder="Search"
-          type="text"
-/>,
+                              <option>
+                                        SELECT CATEGORY
+                              </option>
+                              <option
+                                        value="paleo"
+                              >
+                                        Paleo
+                              </option>
+                              <option
+                                        value="vegetarian"
+                              >
+                                        Vegetarian
+                              </option>
+                              <option
+                                        value="vegan"
+                              >
+                                        Vegan
+                              </option>
+                    </select>
+          </div>
+          <input
+                    className="search"
+                    onChange={[Function]}
+                    onKeyPress={[Function]}
+                    placeholder="Search"
+                    value=""
+          />
+</form>,
         null,
         null,
         <p
           className="welcome-message"
 >
-          Welcome to your easy-peasy seven day meal planner!
+          Welcome to your eazy-peazy seven-day meal planner!
 </p>,
         <div
           className="display-cards"
@@ -93,126 +97,175 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <select
-            id="category"
-            onChange={[Function]}
+          "children": Array [
+            <div
+              className="select-category"
 >
-            <option>
-                        SELECT CATEGORY
-            </option>
-            <option
-                        value="paleo"
-            >
-                        Paleo
-            </option>
-            <option
-                        value="vegetarian"
-            >
-                        Vegetarian
-            </option>
-            <option
-                        value="vegan"
-            >
-                        Vegan
-            </option>
-</select>,
-          "className": "select-category",
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <option>
-                SELECT CATEGORY
-</option>,
-              <option
-                value="paleo"
->
-                Paleo
-</option>,
-              <option
-                value="vegetarian"
->
-                Vegetarian
-</option>,
-              <option
-                value="vegan"
->
-                Vegan
-</option>,
-            ],
-            "id": "category",
-            "onChange": [Function],
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "SELECT CATEGORY",
-              },
-              "ref": null,
-              "rendered": "SELECT CATEGORY",
-              "type": "option",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Paleo",
-                "value": "paleo",
-              },
-              "ref": null,
-              "rendered": "Paleo",
-              "type": "option",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Vegetarian",
-                "value": "vegetarian",
-              },
-              "ref": null,
-              "rendered": "Vegetarian",
-              "type": "option",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Vegan",
-                "value": "vegan",
-              },
-              "ref": null,
-              "rendered": "Vegan",
-              "type": "option",
-            },
+              <select
+                            id="category"
+                            onChange={[Function]}
+              >
+                            <option>
+                                          SELECT CATEGORY
+                            </option>
+                            <option
+                                          value="paleo"
+                            >
+                                          Paleo
+                            </option>
+                            <option
+                                          value="vegetarian"
+                            >
+                                          Vegetarian
+                            </option>
+                            <option
+                                          value="vegan"
+                            >
+                                          Vegan
+                            </option>
+              </select>
+</div>,
+            <input
+              className="search"
+              onChange={[Function]}
+              onKeyPress={[Function]}
+              placeholder="Search"
+              value=""
+/>,
           ],
-          "type": "select",
-        },
-        "type": "div",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "className": "search",
-          "placeholder": "Search",
-          "type": "text",
         },
         "ref": null,
-        "rendered": null,
-        "type": "input",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <select
+                id="category"
+                onChange={[Function]}
+>
+                <option>
+                                SELECT CATEGORY
+                </option>
+                <option
+                                value="paleo"
+                >
+                                Paleo
+                </option>
+                <option
+                                value="vegetarian"
+                >
+                                Vegetarian
+                </option>
+                <option
+                                value="vegan"
+                >
+                                Vegan
+                </option>
+</select>,
+              "className": "select-category",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <option>
+                    SELECT CATEGORY
+</option>,
+                  <option
+                    value="paleo"
+>
+                    Paleo
+</option>,
+                  <option
+                    value="vegetarian"
+>
+                    Vegetarian
+</option>,
+                  <option
+                    value="vegan"
+>
+                    Vegan
+</option>,
+                ],
+                "id": "category",
+                "onChange": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "SELECT CATEGORY",
+                  },
+                  "ref": null,
+                  "rendered": "SELECT CATEGORY",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Paleo",
+                    "value": "paleo",
+                  },
+                  "ref": null,
+                  "rendered": "Paleo",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Vegetarian",
+                    "value": "vegetarian",
+                  },
+                  "ref": null,
+                  "rendered": "Vegetarian",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Vegan",
+                    "value": "vegan",
+                  },
+                  "ref": null,
+                  "rendered": "Vegan",
+                  "type": "option",
+                },
+              ],
+              "type": "select",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "search",
+              "onChange": [Function],
+              "onKeyPress": [Function],
+              "placeholder": "Search",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+        ],
+        "type": "form",
       },
       null,
       null,
@@ -221,11 +274,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Welcome to your easy-peasy seven day meal planner!",
+          "children": "Welcome to your eazy-peazy seven-day meal planner!",
           "className": "welcome-message",
         },
         "ref": null,
-        "rendered": "Welcome to your easy-peasy seven day meal planner!",
+        "rendered": "Welcome to your eazy-peazy seven-day meal planner!",
         "type": "p",
       },
       Object {
@@ -265,44 +318,48 @@ ShallowWrapper {
           <h2>
             Select Category
 </h2>,
-          <div
-            className="select-category"
->
-            <select
-                        id="category"
-                        onChange={[Function]}
+          <form>
+            <div
+                        className="select-category"
             >
-                        <option>
-                                    SELECT CATEGORY
-                        </option>
-                        <option
-                                    value="paleo"
+                        <select
+                                    id="category"
+                                    onChange={[Function]}
                         >
-                                    Paleo
-                        </option>
-                        <option
-                                    value="vegetarian"
-                        >
-                                    Vegetarian
-                        </option>
-                        <option
-                                    value="vegan"
-                        >
-                                    Vegan
-                        </option>
-            </select>
-</div>,
-          <input
-            className="search"
-            placeholder="Search"
-            type="text"
-/>,
+                                    <option>
+                                                SELECT CATEGORY
+                                    </option>
+                                    <option
+                                                value="paleo"
+                                    >
+                                                Paleo
+                                    </option>
+                                    <option
+                                                value="vegetarian"
+                                    >
+                                                Vegetarian
+                                    </option>
+                                    <option
+                                                value="vegan"
+                                    >
+                                                Vegan
+                                    </option>
+                        </select>
+            </div>
+            <input
+                        className="search"
+                        onChange={[Function]}
+                        onKeyPress={[Function]}
+                        placeholder="Search"
+                        value=""
+            />
+</form>,
           null,
           null,
           <p
             className="welcome-message"
 >
-            Welcome to your easy-peasy seven day meal planner!
+            Welcome to your eazy-peazy seven-day meal planner!
 </p>,
           <div
             className="display-cards"
@@ -332,126 +389,175 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <select
-              id="category"
-              onChange={[Function]}
+            "children": Array [
+              <div
+                className="select-category"
 >
-              <option>
-                            SELECT CATEGORY
-              </option>
-              <option
-                            value="paleo"
-              >
-                            Paleo
-              </option>
-              <option
-                            value="vegetarian"
-              >
-                            Vegetarian
-              </option>
-              <option
-                            value="vegan"
-              >
-                            Vegan
-              </option>
-</select>,
-            "className": "select-category",
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <option>
-                  SELECT CATEGORY
-</option>,
-                <option
-                  value="paleo"
->
-                  Paleo
-</option>,
-                <option
-                  value="vegetarian"
->
-                  Vegetarian
-</option>,
-                <option
-                  value="vegan"
->
-                  Vegan
-</option>,
-              ],
-              "id": "category",
-              "onChange": [Function],
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "SELECT CATEGORY",
-                },
-                "ref": null,
-                "rendered": "SELECT CATEGORY",
-                "type": "option",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Paleo",
-                  "value": "paleo",
-                },
-                "ref": null,
-                "rendered": "Paleo",
-                "type": "option",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Vegetarian",
-                  "value": "vegetarian",
-                },
-                "ref": null,
-                "rendered": "Vegetarian",
-                "type": "option",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Vegan",
-                  "value": "vegan",
-                },
-                "ref": null,
-                "rendered": "Vegan",
-                "type": "option",
-              },
+                <select
+                                id="category"
+                                onChange={[Function]}
+                >
+                                <option>
+                                                SELECT CATEGORY
+                                </option>
+                                <option
+                                                value="paleo"
+                                >
+                                                Paleo
+                                </option>
+                                <option
+                                                value="vegetarian"
+                                >
+                                                Vegetarian
+                                </option>
+                                <option
+                                                value="vegan"
+                                >
+                                                Vegan
+                                </option>
+                </select>
+</div>,
+              <input
+                className="search"
+                onChange={[Function]}
+                onKeyPress={[Function]}
+                placeholder="Search"
+                value=""
+/>,
             ],
-            "type": "select",
-          },
-          "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "className": "search",
-            "placeholder": "Search",
-            "type": "text",
           },
           "ref": null,
-          "rendered": null,
-          "type": "input",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <select
+                  id="category"
+                  onChange={[Function]}
+>
+                  <option>
+                                    SELECT CATEGORY
+                  </option>
+                  <option
+                                    value="paleo"
+                  >
+                                    Paleo
+                  </option>
+                  <option
+                                    value="vegetarian"
+                  >
+                                    Vegetarian
+                  </option>
+                  <option
+                                    value="vegan"
+                  >
+                                    Vegan
+                  </option>
+</select>,
+                "className": "select-category",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <option>
+                      SELECT CATEGORY
+</option>,
+                    <option
+                      value="paleo"
+>
+                      Paleo
+</option>,
+                    <option
+                      value="vegetarian"
+>
+                      Vegetarian
+</option>,
+                    <option
+                      value="vegan"
+>
+                      Vegan
+</option>,
+                  ],
+                  "id": "category",
+                  "onChange": [Function],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "SELECT CATEGORY",
+                    },
+                    "ref": null,
+                    "rendered": "SELECT CATEGORY",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Paleo",
+                      "value": "paleo",
+                    },
+                    "ref": null,
+                    "rendered": "Paleo",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Vegetarian",
+                      "value": "vegetarian",
+                    },
+                    "ref": null,
+                    "rendered": "Vegetarian",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Vegan",
+                      "value": "vegan",
+                    },
+                    "ref": null,
+                    "rendered": "Vegan",
+                    "type": "option",
+                  },
+                ],
+                "type": "select",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "search",
+                "onChange": [Function],
+                "onKeyPress": [Function],
+                "placeholder": "Search",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+          ],
+          "type": "form",
         },
         null,
         null,
@@ -460,11 +566,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Welcome to your easy-peasy seven day meal planner!",
+            "children": "Welcome to your eazy-peazy seven-day meal planner!",
             "className": "welcome-message",
           },
           "ref": null,
-          "rendered": "Welcome to your easy-peasy seven day meal planner!",
+          "rendered": "Welcome to your eazy-peazy seven-day meal planner!",
           "type": "p",
         },
         Object {
