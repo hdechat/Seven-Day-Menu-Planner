@@ -5,6 +5,7 @@ import { cleanData } from '../helpers';
 import { paleo } from '../mock-data.js';
 
 export function* chooseCategory(action) {
+  console.log('click')
   try {
     yield put(actions.recipesIsLoading(true));
     const results = paleo;

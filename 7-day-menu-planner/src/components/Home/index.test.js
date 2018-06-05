@@ -52,9 +52,7 @@ describe('Home', () => {
 
   it('should call chooseCategory when user enters search term', () => {
     wrapper.setState({ userSearch: 'high-protein' })
-    wrapper.find('.search').simulate('keypress', {
-      preventDefault: jest.fn(),
-      target: {charCode: 13}});
+    wrapper.find('.search').simulate('keypress', {key: 'Enter'});
 
     expect(mockFunction).toHaveBeenCalledWith('high-protein');
   });

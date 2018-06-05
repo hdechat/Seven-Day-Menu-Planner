@@ -9,16 +9,11 @@ class Home extends Component {
     this.state = { userSearch: ''};
   }
 
-  handleChange = event => {
-    this.setState({ userSearch: event.target.value})
-  }
-
-  handleEnterPress = event => {
-    event.preventDefault();
-    if(event.target.charCode === 13) {
-      this.props.chooseCategory(this.state.userSearch);
-    }
-  }
+  // handleKeyPress = (event) => {
+  //   if(event.key === 'Enter') {
+  //     this.props.chooseCategory(this.state.userSearch)
+  //   }
+  // }
 
   render() {
     const { 
@@ -44,25 +39,24 @@ class Home extends Component {
 
     return (
       <section className="home">
-        <h2>Select Category</h2>
-        <form>
-          <div className="select-category">
-            <select 
-              onChange={event => chooseCategory(event.target.value)}
-              id='category'>
-              <option>SELECT CATEGORY</option>
-              <option value='paleo'>Paleo</option>
-              <option value='vegetarian'>Vegetarian</option>
-              <option value='vegan'>Vegan</option>
-            </select>
-          </div>
-          <input 
-            className='search' 
-            placeholder='Search'
-            value={this.state.userSearch}
-            onChange={this.handleChange}
-            onKeyPress={this.handleEnterPress} />
-        </form>
+        <h2>Find Your Recipe</h2>
+        <div className="select-category">
+          <select 
+            onChange={event => chooseCategory(event.target.value)}
+            id='category'>
+            <option>SELECT CATEGORY</option>
+            <option value='paleo'>Paleo</option>
+            <option value='vegetarian'>Vegetarian</option>
+            <option value='vegan'>Vegan</option>
+          </select>
+        </div>
+        <input 
+          className='search' 
+          type='search'
+          placeholder='Search'
+          value={this.state.userSearch}
+          onChange={event => this.setState({userSearch: event.target.value})}
+          onKeyPress={e => e.key === 'Enter' ? chooseCategory(this.state.userSearch) : ''} />
           {displayLoadingMessage()}
           {displayErrorMessage()}
           {displayWelcomeMessage()}

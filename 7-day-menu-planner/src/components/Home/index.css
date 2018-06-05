@@ -6,8 +6,9 @@
 
 .search {
   font-size: 16px;
-  height: 1.5rem;
-  width: 9rem;
+  height: 2rem;
+  border-radius: 0%;
+  width: 9.2rem;;
 }
 
 .search::placeholder {
