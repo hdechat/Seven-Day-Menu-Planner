@@ -6,6 +6,10 @@
   height: 500px;
 }
 
+.grocery-list h2 {
+  margin-bottom: 0;
+}
+
 .groceries {
   background: ghostwhite;
   border-style: inset;
@@ -42,7 +46,7 @@
       margin-bottom: 0;
     }
 
-    header, button {
+    header, .print {
       display: none;
     }
     .groceries {
