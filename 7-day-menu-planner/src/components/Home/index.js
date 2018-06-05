@@ -9,12 +9,6 @@ class Home extends Component {
     this.state = { userSearch: ''};
   }
 
-  // handleKeyPress = (event) => {
-  //   if(event.key === 'Enter') {
-  //     this.props.chooseCategory(this.state.userSearch)
-  //   }
-  // }
-
   render() {
     const { 
       recipeCards, 
