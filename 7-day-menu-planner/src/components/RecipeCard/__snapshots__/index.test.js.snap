@@ -52,16 +52,17 @@ ShallowWrapper {
           onClick={[Function]}
           src="emptyStar.png"
 />,
-        <img
-          alt="recipe meal"
-          src="https://www.edamam.com/web-img/e50/e50584043"
-/>,
         <a
           href="http://nomnompaleo.com/post/36060636540/paleo-sriracha"
           target="_blank"
 >
-          Paleo Sriracha recipes
+          <img
+                    alt="recipe meal"
+                    className="card-image"
+                    src="https://www.edamam.com/web-img/e50/e50584043"
+          />
 </a>,
+        null,
         <Connect(AddToMenu)
           recipe={
                     Object {
@@ -81,6 +82,7 @@ ShallowWrapper {
           }
 />,
       ],
+      "className": "recipe-card",
     },
     "ref": null,
     "rendered": Array [
@@ -103,26 +105,31 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "alt": "recipe meal",
-          "src": "https://www.edamam.com/web-img/e50/e50584043",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "img",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Paleo Sriracha recipes",
+          "children": <img
+            alt="recipe meal"
+            className="card-image"
+            src="https://www.edamam.com/web-img/e50/e50584043"
+/>,
           "href": "http://nomnompaleo.com/post/36060636540/paleo-sriracha",
           "target": "_blank",
         },
         "ref": null,
-        "rendered": "Paleo Sriracha recipes",
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "recipe meal",
+            "className": "card-image",
+            "src": "https://www.edamam.com/web-img/e50/e50584043",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
         "type": "a",
       },
+      null,
       Object {
         "instance": null,
         "key": undefined,
@@ -163,16 +170,17 @@ ShallowWrapper {
             onClick={[Function]}
             src="emptyStar.png"
 />,
-          <img
-            alt="recipe meal"
-            src="https://www.edamam.com/web-img/e50/e50584043"
-/>,
           <a
             href="http://nomnompaleo.com/post/36060636540/paleo-sriracha"
             target="_blank"
 >
-            Paleo Sriracha recipes
+            <img
+                        alt="recipe meal"
+                        className="card-image"
+                        src="https://www.edamam.com/web-img/e50/e50584043"
+            />
 </a>,
+          null,
           <Connect(AddToMenu)
             recipe={
                         Object {
@@ -192,6 +200,7 @@ ShallowWrapper {
             }
 />,
         ],
+        "className": "recipe-card",
       },
       "ref": null,
       "rendered": Array [
@@ -214,26 +223,31 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "alt": "recipe meal",
-            "src": "https://www.edamam.com/web-img/e50/e50584043",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "img",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Paleo Sriracha recipes",
+            "children": <img
+              alt="recipe meal"
+              className="card-image"
+              src="https://www.edamam.com/web-img/e50/e50584043"
+/>,
             "href": "http://nomnompaleo.com/post/36060636540/paleo-sriracha",
             "target": "_blank",
           },
           "ref": null,
-          "rendered": "Paleo Sriracha recipes",
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "recipe meal",
+              "className": "card-image",
+              "src": "https://www.edamam.com/web-img/e50/e50584043",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
           "type": "a",
         },
+        null,
         Object {
           "instance": null,
           "key": undefined,

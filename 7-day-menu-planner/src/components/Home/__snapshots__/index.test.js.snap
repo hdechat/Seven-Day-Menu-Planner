@@ -23,44 +23,168 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h2>
-          Select Category
+        <h2
+          className="find-your-recipe"
+>
+          Find Your Recipe / Encuentra Tu Receta
+          <span>
+                    BETA
+          </span>
 </h2>,
         <div
-          className="select-category"
+          className="english-spanish"
 >
-          <select
-                    id="category"
-                    onChange={[Function]}
+          <div
+                    className="english"
           >
-                    <option>
-                              SELECT CATEGORY
-                    </option>
-                    <option
-                              value="paleo"
+                    <div
+                              className="select-category"
                     >
-                              Paleo
-                    </option>
-                    <option
-                              value="vegetarian"
+                              <select
+                                        className="english-select"
+                                        id="category"
+                                        onChange={[Function]}
+                              >
+                                        <option>
+                                                  SELECT CATEGORY
+                                        </option>
+                                        <option
+                                                  value="gluten-free"
+                                        >
+                                                  Gluten-Free
+                                        </option>
+                                        <option
+                                                  value="paleo"
+                                        >
+                                                  Paleo
+                                        </option>
+                                        <option
+                                                  value="vegetarian"
+                                        >
+                                                  Vegetarian
+                                        </option>
+                                        <option
+                                                  value="vegan"
+                                        >
+                                                  Vegan
+                                        </option>
+                              </select>
+                    </div>
+                    <input
+                              className="search"
+                              id="english-search"
+                              onChange={[Function]}
+                              onKeyPress={[Function]}
+                              placeholder="Search"
+                              type="search"
+                              value=""
+                    />
+                    <div
+                              className="filters"
                     >
-                              Vegetarian
-                    </option>
-                    <option
-                              value="vegan"
+                              <select
+                                        id="filters"
+                                        onChange={[Function]}
+                              >
+                                        <option>
+                                                  Filter Options
+                                        </option>
+                                        <option
+                                                  value="&diet=low-carb"
+                                        >
+                                                  Low-Carb
+                                        </option>
+                                        <option
+                                                  className="option"
+                                                  value="&health=peanut-free"
+                                        >
+                                                  Peanut-Free
+                                        </option>
+                                        <option
+                                                  className="option"
+                                                  value="tree-nut-free"
+                                        >
+                                                  Tree-Nut-Free
+                                        </option>
+                              </select>
+                    </div>
+          </div>
+          <div
+                    className="spanish"
+          >
+                    <div
+                              className="select-category"
                     >
-                              Vegan
-                    </option>
-          </select>
+                              <select
+                                        className="spanish-select"
+                                        id="category"
+                                        onChange={[Function]}
+                              >
+                                        <option>
+                                                  CATEGORIAS
+                                        </option>
+                                        <option
+                                                  value="paleo"
+                                        >
+                                                  Paleo
+                                        </option>
+                                        <option
+                                                  value="sin gluten"
+                                        >
+                                                  Sin Gluten
+                                        </option>
+                                        <option
+                                                  value="vegan"
+                                        >
+                                                  Vegano
+                                        </option>
+                                        <option
+                                                  value="vegetarian"
+                                        >
+                                                  Vegetariano
+                                        </option>
+                              </select>
+                    </div>
+                    <input
+                              className="search"
+                              id="spanish-search"
+                              onChange={[Function]}
+                              onKeyPress={[Function]}
+                              placeholder="Buscar"
+                              type="search"
+                              value=""
+                    />
+                    <div
+                              className="filters"
+                    >
+                              <select
+                                        id="filters-sp"
+                                        onChange={[Function]}
+                              >
+                                        <option>
+                                                  Filter Options
+                                        </option>
+                                        <option
+                                                  value="&diet=low-carb"
+                                        >
+                                                  Baja en Carb
+                                        </option>
+                                        <option
+                                                  className="option"
+                                                  value="&health=peanut-free"
+                                        >
+                                                  Sin Mani
+                                        </option>
+                                        <option
+                                                  className="option"
+                                                  value="tree-nut-free"
+                                        >
+                                                  Sin Nueces de Arbol
+                                        </option>
+                              </select>
+                    </div>
+          </div>
 </div>,
-        <input
-          className="search"
-          onChange={[Function]}
-          onKeyPress={[Function]}
-          placeholder="Search"
-          type="search"
-          value=""
-/>,
         null,
         null,
         <p
@@ -85,10 +209,29 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Select Category",
+          "children": Array [
+            "Find Your Recipe / Encuentra Tu Receta",
+            <span>
+              BETA
+</span>,
+          ],
+          "className": "find-your-recipe",
         },
         "ref": null,
-        "rendered": "Select Category",
+        "rendered": Array [
+          "Find Your Recipe / Encuentra Tu Receta",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "BETA",
+            },
+            "ref": null,
+            "rendered": "BETA",
+            "type": "span",
+          },
+        ],
         "type": "h2",
       },
       Object {
@@ -96,129 +239,880 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <select
-            id="category"
-            onChange={[Function]}
+          "children": Array [
+            <div
+              className="english"
 >
-            <option>
-                        SELECT CATEGORY
-            </option>
-            <option
-                        value="paleo"
-            >
-                        Paleo
-            </option>
-            <option
-                        value="vegetarian"
-            >
-                        Vegetarian
-            </option>
-            <option
-                        value="vegan"
-            >
-                        Vegan
-            </option>
-</select>,
-          "className": "select-category",
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <option>
-                SELECT CATEGORY
-</option>,
-              <option
-                value="paleo"
+              <div
+                            className="select-category"
+              >
+                            <select
+                                          className="english-select"
+                                          id="category"
+                                          onChange={[Function]}
+                            >
+                                          <option>
+                                                        SELECT CATEGORY
+                                          </option>
+                                          <option
+                                                        value="gluten-free"
+                                          >
+                                                        Gluten-Free
+                                          </option>
+                                          <option
+                                                        value="paleo"
+                                          >
+                                                        Paleo
+                                          </option>
+                                          <option
+                                                        value="vegetarian"
+                                          >
+                                                        Vegetarian
+                                          </option>
+                                          <option
+                                                        value="vegan"
+                                          >
+                                                        Vegan
+                                          </option>
+                            </select>
+              </div>
+              <input
+                            className="search"
+                            id="english-search"
+                            onChange={[Function]}
+                            onKeyPress={[Function]}
+                            placeholder="Search"
+                            type="search"
+                            value=""
+              />
+              <div
+                            className="filters"
+              >
+                            <select
+                                          id="filters"
+                                          onChange={[Function]}
+                            >
+                                          <option>
+                                                        Filter Options
+                                          </option>
+                                          <option
+                                                        value="&diet=low-carb"
+                                          >
+                                                        Low-Carb
+                                          </option>
+                                          <option
+                                                        className="option"
+                                                        value="&health=peanut-free"
+                                          >
+                                                        Peanut-Free
+                                          </option>
+                                          <option
+                                                        className="option"
+                                                        value="tree-nut-free"
+                                          >
+                                                        Tree-Nut-Free
+                                          </option>
+                            </select>
+              </div>
+</div>,
+            <div
+              className="spanish"
 >
-                Paleo
-</option>,
-              <option
-                value="vegetarian"
->
-                Vegetarian
-</option>,
-              <option
-                value="vegan"
->
-                Vegan
-</option>,
-            ],
-            "id": "category",
-            "onChange": [Function],
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "SELECT CATEGORY",
-              },
-              "ref": null,
-              "rendered": "SELECT CATEGORY",
-              "type": "option",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Paleo",
-                "value": "paleo",
-              },
-              "ref": null,
-              "rendered": "Paleo",
-              "type": "option",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Vegetarian",
-                "value": "vegetarian",
-              },
-              "ref": null,
-              "rendered": "Vegetarian",
-              "type": "option",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Vegan",
-                "value": "vegan",
-              },
-              "ref": null,
-              "rendered": "Vegan",
-              "type": "option",
-            },
+              <div
+                            className="select-category"
+              >
+                            <select
+                                          className="spanish-select"
+                                          id="category"
+                                          onChange={[Function]}
+                            >
+                                          <option>
+                                                        CATEGORIAS
+                                          </option>
+                                          <option
+                                                        value="paleo"
+                                          >
+                                                        Paleo
+                                          </option>
+                                          <option
+                                                        value="sin gluten"
+                                          >
+                                                        Sin Gluten
+                                          </option>
+                                          <option
+                                                        value="vegan"
+                                          >
+                                                        Vegano
+                                          </option>
+                                          <option
+                                                        value="vegetarian"
+                                          >
+                                                        Vegetariano
+                                          </option>
+                            </select>
+              </div>
+              <input
+                            className="search"
+                            id="spanish-search"
+                            onChange={[Function]}
+                            onKeyPress={[Function]}
+                            placeholder="Buscar"
+                            type="search"
+                            value=""
+              />
+              <div
+                            className="filters"
+              >
+                            <select
+                                          id="filters-sp"
+                                          onChange={[Function]}
+                            >
+                                          <option>
+                                                        Filter Options
+                                          </option>
+                                          <option
+                                                        value="&diet=low-carb"
+                                          >
+                                                        Baja en Carb
+                                          </option>
+                                          <option
+                                                        className="option"
+                                                        value="&health=peanut-free"
+                                          >
+                                                        Sin Mani
+                                          </option>
+                                          <option
+                                                        className="option"
+                                                        value="tree-nut-free"
+                                          >
+                                                        Sin Nueces de Arbol
+                                          </option>
+                            </select>
+              </div>
+</div>,
           ],
-          "type": "select",
-        },
-        "type": "div",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "className": "search",
-          "onChange": [Function],
-          "onKeyPress": [Function],
-          "placeholder": "Search",
-          "type": "search",
-          "value": "",
+          "className": "english-spanish",
         },
         "ref": null,
-        "rendered": null,
-        "type": "input",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="select-category"
+>
+                  <select
+                                    className="english-select"
+                                    id="category"
+                                    onChange={[Function]}
+                  >
+                                    <option>
+                                                      SELECT CATEGORY
+                                    </option>
+                                    <option
+                                                      value="gluten-free"
+                                    >
+                                                      Gluten-Free
+                                    </option>
+                                    <option
+                                                      value="paleo"
+                                    >
+                                                      Paleo
+                                    </option>
+                                    <option
+                                                      value="vegetarian"
+                                    >
+                                                      Vegetarian
+                                    </option>
+                                    <option
+                                                      value="vegan"
+                                    >
+                                                      Vegan
+                                    </option>
+                  </select>
+</div>,
+                <input
+                  className="search"
+                  id="english-search"
+                  onChange={[Function]}
+                  onKeyPress={[Function]}
+                  placeholder="Search"
+                  type="search"
+                  value=""
+/>,
+                <div
+                  className="filters"
+>
+                  <select
+                                    id="filters"
+                                    onChange={[Function]}
+                  >
+                                    <option>
+                                                      Filter Options
+                                    </option>
+                                    <option
+                                                      value="&diet=low-carb"
+                                    >
+                                                      Low-Carb
+                                    </option>
+                                    <option
+                                                      className="option"
+                                                      value="&health=peanut-free"
+                                    >
+                                                      Peanut-Free
+                                    </option>
+                                    <option
+                                                      className="option"
+                                                      value="tree-nut-free"
+                                    >
+                                                      Tree-Nut-Free
+                                    </option>
+                  </select>
+</div>,
+              ],
+              "className": "english",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <select
+                    className="english-select"
+                    id="category"
+                    onChange={[Function]}
+>
+                    <option>
+                                        SELECT CATEGORY
+                    </option>
+                    <option
+                                        value="gluten-free"
+                    >
+                                        Gluten-Free
+                    </option>
+                    <option
+                                        value="paleo"
+                    >
+                                        Paleo
+                    </option>
+                    <option
+                                        value="vegetarian"
+                    >
+                                        Vegetarian
+                    </option>
+                    <option
+                                        value="vegan"
+                    >
+                                        Vegan
+                    </option>
+</select>,
+                  "className": "select-category",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <option>
+                        SELECT CATEGORY
+</option>,
+                      <option
+                        value="gluten-free"
+>
+                        Gluten-Free
+</option>,
+                      <option
+                        value="paleo"
+>
+                        Paleo
+</option>,
+                      <option
+                        value="vegetarian"
+>
+                        Vegetarian
+</option>,
+                      <option
+                        value="vegan"
+>
+                        Vegan
+</option>,
+                    ],
+                    "className": "english-select",
+                    "id": "category",
+                    "onChange": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "SELECT CATEGORY",
+                      },
+                      "ref": null,
+                      "rendered": "SELECT CATEGORY",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Gluten-Free",
+                        "value": "gluten-free",
+                      },
+                      "ref": null,
+                      "rendered": "Gluten-Free",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Paleo",
+                        "value": "paleo",
+                      },
+                      "ref": null,
+                      "rendered": "Paleo",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Vegetarian",
+                        "value": "vegetarian",
+                      },
+                      "ref": null,
+                      "rendered": "Vegetarian",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Vegan",
+                        "value": "vegan",
+                      },
+                      "ref": null,
+                      "rendered": "Vegan",
+                      "type": "option",
+                    },
+                  ],
+                  "type": "select",
+                },
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "search",
+                  "id": "english-search",
+                  "onChange": [Function],
+                  "onKeyPress": [Function],
+                  "placeholder": "Search",
+                  "type": "search",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <select
+                    id="filters"
+                    onChange={[Function]}
+>
+                    <option>
+                                        Filter Options
+                    </option>
+                    <option
+                                        value="&diet=low-carb"
+                    >
+                                        Low-Carb
+                    </option>
+                    <option
+                                        className="option"
+                                        value="&health=peanut-free"
+                    >
+                                        Peanut-Free
+                    </option>
+                    <option
+                                        className="option"
+                                        value="tree-nut-free"
+                    >
+                                        Tree-Nut-Free
+                    </option>
+</select>,
+                  "className": "filters",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <option>
+                        Filter Options
+</option>,
+                      <option
+                        value="&diet=low-carb"
+>
+                        Low-Carb
+</option>,
+                      <option
+                        className="option"
+                        value="&health=peanut-free"
+>
+                        Peanut-Free
+</option>,
+                      <option
+                        className="option"
+                        value="tree-nut-free"
+>
+                        Tree-Nut-Free
+</option>,
+                    ],
+                    "id": "filters",
+                    "onChange": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Filter Options",
+                      },
+                      "ref": null,
+                      "rendered": "Filter Options",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Low-Carb",
+                        "value": "&diet=low-carb",
+                      },
+                      "ref": null,
+                      "rendered": "Low-Carb",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Peanut-Free",
+                        "className": "option",
+                        "value": "&health=peanut-free",
+                      },
+                      "ref": null,
+                      "rendered": "Peanut-Free",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Tree-Nut-Free",
+                        "className": "option",
+                        "value": "tree-nut-free",
+                      },
+                      "ref": null,
+                      "rendered": "Tree-Nut-Free",
+                      "type": "option",
+                    },
+                  ],
+                  "type": "select",
+                },
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="select-category"
+>
+                  <select
+                                    className="spanish-select"
+                                    id="category"
+                                    onChange={[Function]}
+                  >
+                                    <option>
+                                                      CATEGORIAS
+                                    </option>
+                                    <option
+                                                      value="paleo"
+                                    >
+                                                      Paleo
+                                    </option>
+                                    <option
+                                                      value="sin gluten"
+                                    >
+                                                      Sin Gluten
+                                    </option>
+                                    <option
+                                                      value="vegan"
+                                    >
+                                                      Vegano
+                                    </option>
+                                    <option
+                                                      value="vegetarian"
+                                    >
+                                                      Vegetariano
+                                    </option>
+                  </select>
+</div>,
+                <input
+                  className="search"
+                  id="spanish-search"
+                  onChange={[Function]}
+                  onKeyPress={[Function]}
+                  placeholder="Buscar"
+                  type="search"
+                  value=""
+/>,
+                <div
+                  className="filters"
+>
+                  <select
+                                    id="filters-sp"
+                                    onChange={[Function]}
+                  >
+                                    <option>
+                                                      Filter Options
+                                    </option>
+                                    <option
+                                                      value="&diet=low-carb"
+                                    >
+                                                      Baja en Carb
+                                    </option>
+                                    <option
+                                                      className="option"
+                                                      value="&health=peanut-free"
+                                    >
+                                                      Sin Mani
+                                    </option>
+                                    <option
+                                                      className="option"
+                                                      value="tree-nut-free"
+                                    >
+                                                      Sin Nueces de Arbol
+                                    </option>
+                  </select>
+</div>,
+              ],
+              "className": "spanish",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <select
+                    className="spanish-select"
+                    id="category"
+                    onChange={[Function]}
+>
+                    <option>
+                                        CATEGORIAS
+                    </option>
+                    <option
+                                        value="paleo"
+                    >
+                                        Paleo
+                    </option>
+                    <option
+                                        value="sin gluten"
+                    >
+                                        Sin Gluten
+                    </option>
+                    <option
+                                        value="vegan"
+                    >
+                                        Vegano
+                    </option>
+                    <option
+                                        value="vegetarian"
+                    >
+                                        Vegetariano
+                    </option>
+</select>,
+                  "className": "select-category",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <option>
+                        CATEGORIAS
+</option>,
+                      <option
+                        value="paleo"
+>
+                        Paleo
+</option>,
+                      <option
+                        value="sin gluten"
+>
+                        Sin Gluten
+</option>,
+                      <option
+                        value="vegan"
+>
+                        Vegano
+</option>,
+                      <option
+                        value="vegetarian"
+>
+                        Vegetariano
+</option>,
+                    ],
+                    "className": "spanish-select",
+                    "id": "category",
+                    "onChange": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "CATEGORIAS",
+                      },
+                      "ref": null,
+                      "rendered": "CATEGORIAS",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Paleo",
+                        "value": "paleo",
+                      },
+                      "ref": null,
+                      "rendered": "Paleo",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Sin Gluten",
+                        "value": "sin gluten",
+                      },
+                      "ref": null,
+                      "rendered": "Sin Gluten",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Vegano",
+                        "value": "vegan",
+                      },
+                      "ref": null,
+                      "rendered": "Vegano",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Vegetariano",
+                        "value": "vegetarian",
+                      },
+                      "ref": null,
+                      "rendered": "Vegetariano",
+                      "type": "option",
+                    },
+                  ],
+                  "type": "select",
+                },
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "search",
+                  "id": "spanish-search",
+                  "onChange": [Function],
+                  "onKeyPress": [Function],
+                  "placeholder": "Buscar",
+                  "type": "search",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <select
+                    id="filters-sp"
+                    onChange={[Function]}
+>
+                    <option>
+                                        Filter Options
+                    </option>
+                    <option
+                                        value="&diet=low-carb"
+                    >
+                                        Baja en Carb
+                    </option>
+                    <option
+                                        className="option"
+                                        value="&health=peanut-free"
+                    >
+                                        Sin Mani
+                    </option>
+                    <option
+                                        className="option"
+                                        value="tree-nut-free"
+                    >
+                                        Sin Nueces de Arbol
+                    </option>
+</select>,
+                  "className": "filters",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <option>
+                        Filter Options
+</option>,
+                      <option
+                        value="&diet=low-carb"
+>
+                        Baja en Carb
+</option>,
+                      <option
+                        className="option"
+                        value="&health=peanut-free"
+>
+                        Sin Mani
+</option>,
+                      <option
+                        className="option"
+                        value="tree-nut-free"
+>
+                        Sin Nueces de Arbol
+</option>,
+                    ],
+                    "id": "filters-sp",
+                    "onChange": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Filter Options",
+                      },
+                      "ref": null,
+                      "rendered": "Filter Options",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Baja en Carb",
+                        "value": "&diet=low-carb",
+                      },
+                      "ref": null,
+                      "rendered": "Baja en Carb",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Sin Mani",
+                        "className": "option",
+                        "value": "&health=peanut-free",
+                      },
+                      "ref": null,
+                      "rendered": "Sin Mani",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Sin Nueces de Arbol",
+                        "className": "option",
+                        "value": "tree-nut-free",
+                      },
+                      "ref": null,
+                      "rendered": "Sin Nueces de Arbol",
+                      "type": "option",
+                    },
+                  ],
+                  "type": "select",
+                },
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
       },
       null,
       null,
@@ -268,44 +1162,168 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h2>
-            Select Category
+          <h2
+            className="find-your-recipe"
+>
+            Find Your Recipe / Encuentra Tu Receta
+            <span>
+                        BETA
+            </span>
 </h2>,
           <div
-            className="select-category"
+            className="english-spanish"
 >
-            <select
-                        id="category"
-                        onChange={[Function]}
+            <div
+                        className="english"
             >
-                        <option>
-                                    SELECT CATEGORY
-                        </option>
-                        <option
-                                    value="paleo"
+                        <div
+                                    className="select-category"
                         >
-                                    Paleo
-                        </option>
-                        <option
-                                    value="vegetarian"
+                                    <select
+                                                className="english-select"
+                                                id="category"
+                                                onChange={[Function]}
+                                    >
+                                                <option>
+                                                            SELECT CATEGORY
+                                                </option>
+                                                <option
+                                                            value="gluten-free"
+                                                >
+                                                            Gluten-Free
+                                                </option>
+                                                <option
+                                                            value="paleo"
+                                                >
+                                                            Paleo
+                                                </option>
+                                                <option
+                                                            value="vegetarian"
+                                                >
+                                                            Vegetarian
+                                                </option>
+                                                <option
+                                                            value="vegan"
+                                                >
+                                                            Vegan
+                                                </option>
+                                    </select>
+                        </div>
+                        <input
+                                    className="search"
+                                    id="english-search"
+                                    onChange={[Function]}
+                                    onKeyPress={[Function]}
+                                    placeholder="Search"
+                                    type="search"
+                                    value=""
+                        />
+                        <div
+                                    className="filters"
                         >
-                                    Vegetarian
-                        </option>
-                        <option
-                                    value="vegan"
+                                    <select
+                                                id="filters"
+                                                onChange={[Function]}
+                                    >
+                                                <option>
+                                                            Filter Options
+                                                </option>
+                                                <option
+                                                            value="&diet=low-carb"
+                                                >
+                                                            Low-Carb
+                                                </option>
+                                                <option
+                                                            className="option"
+                                                            value="&health=peanut-free"
+                                                >
+                                                            Peanut-Free
+                                                </option>
+                                                <option
+                                                            className="option"
+                                                            value="tree-nut-free"
+                                                >
+                                                            Tree-Nut-Free
+                                                </option>
+                                    </select>
+                        </div>
+            </div>
+            <div
+                        className="spanish"
+            >
+                        <div
+                                    className="select-category"
                         >
-                                    Vegan
-                        </option>
-            </select>
+                                    <select
+                                                className="spanish-select"
+                                                id="category"
+                                                onChange={[Function]}
+                                    >
+                                                <option>
+                                                            CATEGORIAS
+                                                </option>
+                                                <option
+                                                            value="paleo"
+                                                >
+                                                            Paleo
+                                                </option>
+                                                <option
+                                                            value="sin gluten"
+                                                >
+                                                            Sin Gluten
+                                                </option>
+                                                <option
+                                                            value="vegan"
+                                                >
+                                                            Vegano
+                                                </option>
+                                                <option
+                                                            value="vegetarian"
+                                                >
+                                                            Vegetariano
+                                                </option>
+                                    </select>
+                        </div>
+                        <input
+                                    className="search"
+                                    id="spanish-search"
+                                    onChange={[Function]}
+                                    onKeyPress={[Function]}
+                                    placeholder="Buscar"
+                                    type="search"
+                                    value=""
+                        />
+                        <div
+                                    className="filters"
+                        >
+                                    <select
+                                                id="filters-sp"
+                                                onChange={[Function]}
+                                    >
+                                                <option>
+                                                            Filter Options
+                                                </option>
+                                                <option
+                                                            value="&diet=low-carb"
+                                                >
+                                                            Baja en Carb
+                                                </option>
+                                                <option
+                                                            className="option"
+                                                            value="&health=peanut-free"
+                                                >
+                                                            Sin Mani
+                                                </option>
+                                                <option
+                                                            className="option"
+                                                            value="tree-nut-free"
+                                                >
+                                                            Sin Nueces de Arbol
+                                                </option>
+                                    </select>
+                        </div>
+            </div>
 </div>,
-          <input
-            className="search"
-            onChange={[Function]}
-            onKeyPress={[Function]}
-            placeholder="Search"
-            type="search"
-            value=""
-/>,
           null,
           null,
           <p
@@ -330,10 +1348,29 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Select Category",
+            "children": Array [
+              "Find Your Recipe / Encuentra Tu Receta",
+              <span>
+                BETA
+</span>,
+            ],
+            "className": "find-your-recipe",
           },
           "ref": null,
-          "rendered": "Select Category",
+          "rendered": Array [
+            "Find Your Recipe / Encuentra Tu Receta",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "BETA",
+              },
+              "ref": null,
+              "rendered": "BETA",
+              "type": "span",
+            },
+          ],
           "type": "h2",
         },
         Object {
@@ -341,129 +1378,880 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <select
-              id="category"
-              onChange={[Function]}
+            "children": Array [
+              <div
+                className="english"
 >
-              <option>
-                            SELECT CATEGORY
-              </option>
-              <option
-                            value="paleo"
-              >
-                            Paleo
-              </option>
-              <option
-                            value="vegetarian"
-              >
-                            Vegetarian
-              </option>
-              <option
-                            value="vegan"
-              >
-                            Vegan
-              </option>
-</select>,
-            "className": "select-category",
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <option>
-                  SELECT CATEGORY
-</option>,
-                <option
-                  value="paleo"
+                <div
+                                className="select-category"
+                >
+                                <select
+                                                className="english-select"
+                                                id="category"
+                                                onChange={[Function]}
+                                >
+                                                <option>
+                                                                SELECT CATEGORY
+                                                </option>
+                                                <option
+                                                                value="gluten-free"
+                                                >
+                                                                Gluten-Free
+                                                </option>
+                                                <option
+                                                                value="paleo"
+                                                >
+                                                                Paleo
+                                                </option>
+                                                <option
+                                                                value="vegetarian"
+                                                >
+                                                                Vegetarian
+                                                </option>
+                                                <option
+                                                                value="vegan"
+                                                >
+                                                                Vegan
+                                                </option>
+                                </select>
+                </div>
+                <input
+                                className="search"
+                                id="english-search"
+                                onChange={[Function]}
+                                onKeyPress={[Function]}
+                                placeholder="Search"
+                                type="search"
+                                value=""
+                />
+                <div
+                                className="filters"
+                >
+                                <select
+                                                id="filters"
+                                                onChange={[Function]}
+                                >
+                                                <option>
+                                                                Filter Options
+                                                </option>
+                                                <option
+                                                                value="&diet=low-carb"
+                                                >
+                                                                Low-Carb
+                                                </option>
+                                                <option
+                                                                className="option"
+                                                                value="&health=peanut-free"
+                                                >
+                                                                Peanut-Free
+                                                </option>
+                                                <option
+                                                                className="option"
+                                                                value="tree-nut-free"
+                                                >
+                                                                Tree-Nut-Free
+                                                </option>
+                                </select>
+                </div>
+</div>,
+              <div
+                className="spanish"
 >
-                  Paleo
-</option>,
-                <option
-                  value="vegetarian"
->
-                  Vegetarian
-</option>,
-                <option
-                  value="vegan"
->
-                  Vegan
-</option>,
-              ],
-              "id": "category",
-              "onChange": [Function],
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "SELECT CATEGORY",
-                },
-                "ref": null,
-                "rendered": "SELECT CATEGORY",
-                "type": "option",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Paleo",
-                  "value": "paleo",
-                },
-                "ref": null,
-                "rendered": "Paleo",
-                "type": "option",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Vegetarian",
-                  "value": "vegetarian",
-                },
-                "ref": null,
-                "rendered": "Vegetarian",
-                "type": "option",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Vegan",
-                  "value": "vegan",
-                },
-                "ref": null,
-                "rendered": "Vegan",
-                "type": "option",
-              },
+                <div
+                                className="select-category"
+                >
+                                <select
+                                                className="spanish-select"
+                                                id="category"
+                                                onChange={[Function]}
+                                >
+                                                <option>
+                                                                CATEGORIAS
+                                                </option>
+                                                <option
+                                                                value="paleo"
+                                                >
+                                                                Paleo
+                                                </option>
+                                                <option
+                                                                value="sin gluten"
+                                                >
+                                                                Sin Gluten
+                                                </option>
+                                                <option
+                                                                value="vegan"
+                                                >
+                                                                Vegano
+                                                </option>
+                                                <option
+                                                                value="vegetarian"
+                                                >
+                                                                Vegetariano
+                                                </option>
+                                </select>
+                </div>
+                <input
+                                className="search"
+                                id="spanish-search"
+                                onChange={[Function]}
+                                onKeyPress={[Function]}
+                                placeholder="Buscar"
+                                type="search"
+                                value=""
+                />
+                <div
+                                className="filters"
+                >
+                                <select
+                                                id="filters-sp"
+                                                onChange={[Function]}
+                                >
+                                                <option>
+                                                                Filter Options
+                                                </option>
+                                                <option
+                                                                value="&diet=low-carb"
+                                                >
+                                                                Baja en Carb
+                                                </option>
+                                                <option
+                                                                className="option"
+                                                                value="&health=peanut-free"
+                                                >
+                                                                Sin Mani
+                                                </option>
+                                                <option
+                                                                className="option"
+                                                                value="tree-nut-free"
+                                                >
+                                                                Sin Nueces de Arbol
+                                                </option>
+                                </select>
+                </div>
+</div>,
             ],
-            "type": "select",
-          },
-          "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "className": "search",
-            "onChange": [Function],
-            "onKeyPress": [Function],
-            "placeholder": "Search",
-            "type": "search",
-            "value": "",
+            "className": "english-spanish",
           },
           "ref": null,
-          "rendered": null,
-          "type": "input",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="select-category"
+>
+                    <select
+                                        className="english-select"
+                                        id="category"
+                                        onChange={[Function]}
+                    >
+                                        <option>
+                                                            SELECT CATEGORY
+                                        </option>
+                                        <option
+                                                            value="gluten-free"
+                                        >
+                                                            Gluten-Free
+                                        </option>
+                                        <option
+                                                            value="paleo"
+                                        >
+                                                            Paleo
+                                        </option>
+                                        <option
+                                                            value="vegetarian"
+                                        >
+                                                            Vegetarian
+                                        </option>
+                                        <option
+                                                            value="vegan"
+                                        >
+                                                            Vegan
+                                        </option>
+                    </select>
+</div>,
+                  <input
+                    className="search"
+                    id="english-search"
+                    onChange={[Function]}
+                    onKeyPress={[Function]}
+                    placeholder="Search"
+                    type="search"
+                    value=""
+/>,
+                  <div
+                    className="filters"
+>
+                    <select
+                                        id="filters"
+                                        onChange={[Function]}
+                    >
+                                        <option>
+                                                            Filter Options
+                                        </option>
+                                        <option
+                                                            value="&diet=low-carb"
+                                        >
+                                                            Low-Carb
+                                        </option>
+                                        <option
+                                                            className="option"
+                                                            value="&health=peanut-free"
+                                        >
+                                                            Peanut-Free
+                                        </option>
+                                        <option
+                                                            className="option"
+                                                            value="tree-nut-free"
+                                        >
+                                                            Tree-Nut-Free
+                                        </option>
+                    </select>
+</div>,
+                ],
+                "className": "english",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <select
+                      className="english-select"
+                      id="category"
+                      onChange={[Function]}
+>
+                      <option>
+                                            SELECT CATEGORY
+                      </option>
+                      <option
+                                            value="gluten-free"
+                      >
+                                            Gluten-Free
+                      </option>
+                      <option
+                                            value="paleo"
+                      >
+                                            Paleo
+                      </option>
+                      <option
+                                            value="vegetarian"
+                      >
+                                            Vegetarian
+                      </option>
+                      <option
+                                            value="vegan"
+                      >
+                                            Vegan
+                      </option>
+</select>,
+                    "className": "select-category",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <option>
+                          SELECT CATEGORY
+</option>,
+                        <option
+                          value="gluten-free"
+>
+                          Gluten-Free
+</option>,
+                        <option
+                          value="paleo"
+>
+                          Paleo
+</option>,
+                        <option
+                          value="vegetarian"
+>
+                          Vegetarian
+</option>,
+                        <option
+                          value="vegan"
+>
+                          Vegan
+</option>,
+                      ],
+                      "className": "english-select",
+                      "id": "category",
+                      "onChange": [Function],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "SELECT CATEGORY",
+                        },
+                        "ref": null,
+                        "rendered": "SELECT CATEGORY",
+                        "type": "option",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Gluten-Free",
+                          "value": "gluten-free",
+                        },
+                        "ref": null,
+                        "rendered": "Gluten-Free",
+                        "type": "option",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Paleo",
+                          "value": "paleo",
+                        },
+                        "ref": null,
+                        "rendered": "Paleo",
+                        "type": "option",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Vegetarian",
+                          "value": "vegetarian",
+                        },
+                        "ref": null,
+                        "rendered": "Vegetarian",
+                        "type": "option",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Vegan",
+                          "value": "vegan",
+                        },
+                        "ref": null,
+                        "rendered": "Vegan",
+                        "type": "option",
+                      },
+                    ],
+                    "type": "select",
+                  },
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "search",
+                    "id": "english-search",
+                    "onChange": [Function],
+                    "onKeyPress": [Function],
+                    "placeholder": "Search",
+                    "type": "search",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <select
+                      id="filters"
+                      onChange={[Function]}
+>
+                      <option>
+                                            Filter Options
+                      </option>
+                      <option
+                                            value="&diet=low-carb"
+                      >
+                                            Low-Carb
+                      </option>
+                      <option
+                                            className="option"
+                                            value="&health=peanut-free"
+                      >
+                                            Peanut-Free
+                      </option>
+                      <option
+                                            className="option"
+                                            value="tree-nut-free"
+                      >
+                                            Tree-Nut-Free
+                      </option>
+</select>,
+                    "className": "filters",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <option>
+                          Filter Options
+</option>,
+                        <option
+                          value="&diet=low-carb"
+>
+                          Low-Carb
+</option>,
+                        <option
+                          className="option"
+                          value="&health=peanut-free"
+>
+                          Peanut-Free
+</option>,
+                        <option
+                          className="option"
+                          value="tree-nut-free"
+>
+                          Tree-Nut-Free
+</option>,
+                      ],
+                      "id": "filters",
+                      "onChange": [Function],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Filter Options",
+                        },
+                        "ref": null,
+                        "rendered": "Filter Options",
+                        "type": "option",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Low-Carb",
+                          "value": "&diet=low-carb",
+                        },
+                        "ref": null,
+                        "rendered": "Low-Carb",
+                        "type": "option",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Peanut-Free",
+                          "className": "option",
+                          "value": "&health=peanut-free",
+                        },
+                        "ref": null,
+                        "rendered": "Peanut-Free",
+                        "type": "option",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Tree-Nut-Free",
+                          "className": "option",
+                          "value": "tree-nut-free",
+                        },
+                        "ref": null,
+                        "rendered": "Tree-Nut-Free",
+                        "type": "option",
+                      },
+                    ],
+                    "type": "select",
+                  },
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="select-category"
+>
+                    <select
+                                        className="spanish-select"
+                                        id="category"
+                                        onChange={[Function]}
+                    >
+                                        <option>
+                                                            CATEGORIAS
+                                        </option>
+                                        <option
+                                                            value="paleo"
+                                        >
+                                                            Paleo
+                                        </option>
+                                        <option
+                                                            value="sin gluten"
+                                        >
+                                                            Sin Gluten
+                                        </option>
+                                        <option
+                                                            value="vegan"
+                                        >
+                                                            Vegano
+                                        </option>
+                                        <option
+                                                            value="vegetarian"
+                                        >
+                                                            Vegetariano
+                                        </option>
+                    </select>
+</div>,
+                  <input
+                    className="search"
+                    id="spanish-search"
+                    onChange={[Function]}
+                    onKeyPress={[Function]}
+                    placeholder="Buscar"
+                    type="search"
+                    value=""
+/>,
+                  <div
+                    className="filters"
+>
+                    <select
+                                        id="filters-sp"
+                                        onChange={[Function]}
+                    >
+                                        <option>
+                                                            Filter Options
+                                        </option>
+                                        <option
+                                                            value="&diet=low-carb"
+                                        >
+                                                            Baja en Carb
+                                        </option>
+                                        <option
+                                                            className="option"
+                                                            value="&health=peanut-free"
+                                        >
+                                                            Sin Mani
+                                        </option>
+                                        <option
+                                                            className="option"
+                                                            value="tree-nut-free"
+                                        >
+                                                            Sin Nueces de Arbol
+                                        </option>
+                    </select>
+</div>,
+                ],
+                "className": "spanish",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <select
+                      className="spanish-select"
+                      id="category"
+                      onChange={[Function]}
+>
+                      <option>
+                                            CATEGORIAS
+                      </option>
+                      <option
+                                            value="paleo"
+                      >
+                                            Paleo
+                      </option>
+                      <option
+                                            value="sin gluten"
+                      >
+                                            Sin Gluten
+                      </option>
+                      <option
+                                            value="vegan"
+                      >
+                                            Vegano
+                      </option>
+                      <option
+                                            value="vegetarian"
+                      >
+                                            Vegetariano
+                      </option>
+</select>,
+                    "className": "select-category",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <option>
+                          CATEGORIAS
+</option>,
+                        <option
+                          value="paleo"
+>
+                          Paleo
+</option>,
+                        <option
+                          value="sin gluten"
+>
+                          Sin Gluten
+</option>,
+                        <option
+                          value="vegan"
+>
+                          Vegano
+</option>,
+                        <option
+                          value="vegetarian"
+>
+                          Vegetariano
+</option>,
+                      ],
+                      "className": "spanish-select",
+                      "id": "category",
+                      "onChange": [Function],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "CATEGORIAS",
+                        },
+                        "ref": null,
+                        "rendered": "CATEGORIAS",
+                        "type": "option",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Paleo",
+                          "value": "paleo",
+                        },
+                        "ref": null,
+                        "rendered": "Paleo",
+                        "type": "option",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Sin Gluten",
+                          "value": "sin gluten",
+                        },
+                        "ref": null,
+                        "rendered": "Sin Gluten",
+                        "type": "option",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Vegano",
+                          "value": "vegan",
+                        },
+                        "ref": null,
+                        "rendered": "Vegano",
+                        "type": "option",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Vegetariano",
+                          "value": "vegetarian",
+                        },
+                        "ref": null,
+                        "rendered": "Vegetariano",
+                        "type": "option",
+                      },
+                    ],
+                    "type": "select",
+                  },
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "search",
+                    "id": "spanish-search",
+                    "onChange": [Function],
+                    "onKeyPress": [Function],
+                    "placeholder": "Buscar",
+                    "type": "search",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <select
+                      id="filters-sp"
+                      onChange={[Function]}
+>
+                      <option>
+                                            Filter Options
+                      </option>
+                      <option
+                                            value="&diet=low-carb"
+                      >
+                                            Baja en Carb
+                      </option>
+                      <option
+                                            className="option"
+                                            value="&health=peanut-free"
+                      >
+                                            Sin Mani
+                      </option>
+                      <option
+                                            className="option"
+                                            value="tree-nut-free"
+                      >
+                                            Sin Nueces de Arbol
+                      </option>
+</select>,
+                    "className": "filters",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <option>
+                          Filter Options
+</option>,
+                        <option
+                          value="&diet=low-carb"
+>
+                          Baja en Carb
+</option>,
+                        <option
+                          className="option"
+                          value="&health=peanut-free"
+>
+                          Sin Mani
+</option>,
+                        <option
+                          className="option"
+                          value="tree-nut-free"
+>
+                          Sin Nueces de Arbol
+</option>,
+                      ],
+                      "id": "filters-sp",
+                      "onChange": [Function],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Filter Options",
+                        },
+                        "ref": null,
+                        "rendered": "Filter Options",
+                        "type": "option",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Baja en Carb",
+                          "value": "&diet=low-carb",
+                        },
+                        "ref": null,
+                        "rendered": "Baja en Carb",
+                        "type": "option",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Sin Mani",
+                          "className": "option",
+                          "value": "&health=peanut-free",
+                        },
+                        "ref": null,
+                        "rendered": "Sin Mani",
+                        "type": "option",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Sin Nueces de Arbol",
+                          "className": "option",
+                          "value": "tree-nut-free",
+                        },
+                        "ref": null,
+                        "rendered": "Sin Nueces de Arbol",
+                        "type": "option",
+                      },
+                    ],
+                    "type": "select",
+                  },
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
         },
         null,
         null,

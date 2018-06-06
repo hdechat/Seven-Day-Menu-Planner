@@ -43,6 +43,11 @@
   width: 90%;
 }
 
+.filters {
+  border: solid grey thin;
+  background: lightblue;
+}
+
 span {
   color: yellowgreen;
   font-size: 1rem
@@ -72,5 +77,15 @@ select:hover {
   .english, .spanish {
     margin-left: 2rem;
     margin-top: 5rem;
+  }
+
+  select#category {
+    font-size: 20px;
+    height: 3rem;
+  }
+
+  .filters {
+    width: 14.1rem;
+    margin-left: 1rem;
   }
 }

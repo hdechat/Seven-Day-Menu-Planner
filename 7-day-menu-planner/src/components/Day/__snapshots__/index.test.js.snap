@@ -40,12 +40,14 @@ ShallowWrapper {
           Breakfast
 </h6>,
         <button
+          className="display"
           onClick={[Function]}
 >
           Remove Recipe
 </button>,
-        <Connect(RecipeCard)
+        <Connect(Component)
           displayAddToMenu={false}
+          displayLinkText={false}
           recipe={
                     Object {
                               "ingredients": Array [
@@ -59,24 +61,28 @@ ShallowWrapper {
           Lunch
 </h6>,
         <button
+          className="no-display"
           onClick={[Function]}
 >
           Remove Recipe
 </button>,
-        <Connect(RecipeCard)
+        <Connect(Component)
           displayAddToMenu={false}
+          displayLinkText={false}
           recipe={Object {}}
 />,
         <h6>
           Dinner
 </h6>,
         <button
+          className="no-display"
           onClick={[Function]}
 >
           Remove Recipe
 </button>,
-        <Connect(RecipeCard)
+        <Connect(Component)
           displayAddToMenu={false}
+          displayLinkText={false}
           recipe={Object {}}
 />,
       ],
@@ -101,6 +107,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "Remove Recipe",
+          "className": "display",
           "onClick": [Function],
         },
         "ref": null,
@@ -113,6 +120,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "displayAddToMenu": false,
+          "displayLinkText": false,
           "recipe": Object {
             "ingredients": Array [
               "apples",
@@ -141,6 +149,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "Remove Recipe",
+          "className": "no-display",
           "onClick": [Function],
         },
         "ref": null,
@@ -153,6 +162,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "displayAddToMenu": false,
+          "displayLinkText": false,
           "recipe": Object {},
         },
         "ref": null,
@@ -176,6 +186,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "Remove Recipe",
+          "className": "no-display",
           "onClick": [Function],
         },
         "ref": null,
@@ -188,6 +199,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "displayAddToMenu": false,
+          "displayLinkText": false,
           "recipe": Object {},
         },
         "ref": null,
@@ -208,12 +220,14 @@ ShallowWrapper {
             Breakfast
 </h6>,
           <button
+            className="display"
             onClick={[Function]}
 >
             Remove Recipe
 </button>,
-          <Connect(RecipeCard)
+          <Connect(Component)
             displayAddToMenu={false}
+            displayLinkText={false}
             recipe={
                         Object {
                                     "ingredients": Array [
@@ -227,24 +241,28 @@ ShallowWrapper {
             Lunch
 </h6>,
           <button
+            className="no-display"
             onClick={[Function]}
 >
             Remove Recipe
 </button>,
-          <Connect(RecipeCard)
+          <Connect(Component)
             displayAddToMenu={false}
+            displayLinkText={false}
             recipe={Object {}}
 />,
           <h6>
             Dinner
 </h6>,
           <button
+            className="no-display"
             onClick={[Function]}
 >
             Remove Recipe
 </button>,
-          <Connect(RecipeCard)
+          <Connect(Component)
             displayAddToMenu={false}
+            displayLinkText={false}
             recipe={Object {}}
 />,
         ],
@@ -269,6 +287,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Remove Recipe",
+            "className": "display",
             "onClick": [Function],
           },
           "ref": null,
@@ -281,6 +300,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "displayAddToMenu": false,
+            "displayLinkText": false,
             "recipe": Object {
               "ingredients": Array [
                 "apples",
@@ -309,6 +329,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Remove Recipe",
+            "className": "no-display",
             "onClick": [Function],
           },
           "ref": null,
@@ -321,6 +342,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "displayAddToMenu": false,
+            "displayLinkText": false,
             "recipe": Object {},
           },
           "ref": null,
@@ -344,6 +366,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Remove Recipe",
+            "className": "no-display",
             "onClick": [Function],
           },
           "ref": null,
@@ -356,6 +379,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "displayAddToMenu": false,
+            "displayLinkText": false,
             "recipe": Object {},
           },
           "ref": null,

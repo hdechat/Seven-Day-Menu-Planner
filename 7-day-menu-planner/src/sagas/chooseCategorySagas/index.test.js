@@ -11,7 +11,9 @@ describe('chooseCategory', () => {
   beforeAll(() => {
     mockAction = {
       type: 'CHOOSE_CATEGORY',
-      category: 'paleo'
+      lang: 'api',
+      category: 'paleo',
+      filter: '&health=peanut-free'
     };
 
     iterator = sagas.chooseCategory(mockAction);
@@ -27,7 +29,7 @@ describe('chooseCategory', () => {
 
 
   it('should yield call with fetchRecipes and correct params', () => {
-    const expected = call(fetchRecipes, mockAction.category);
+    const expected = call(fetchRecipes, mockAction.lang, mockAction.category, mockAction.filter);
 
     const value = iterator.next().value;
 
