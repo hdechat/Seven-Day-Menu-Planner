@@ -15,9 +15,17 @@ describe('Fetch Recipes', () => {
   });
 
   it('should call fetch with the correct params', () => {
-    const expected = `https://api.edamam.com/search?q=paleo&app_id=${appID}&app_key=${key}`;
+    const expected = `https://api.edamam.com/search?q=paleo&app_id=${appID}&app_key=${key}&from=0&to=100&health=peanut-free`;
 
-    fetchRecipes('paleo');
+    fetchRecipes('api', 'paleo', '&health=peanut-free');
+
+    expect(window.fetch).toHaveBeenCalledWith(expected);
+  });
+
+  it('should call fetch with the correct params even if no filters are given', () => {
+    const expected = `https://api.edamam.com/search?q=paleo&app_id=${appID}&app_key=${key}&from=0&to=100`;
+
+    fetchRecipes('api', 'paleo');
 
     expect(window.fetch).toHaveBeenCalledWith(expected);
   });

@@ -1,7 +1,7 @@
 import { appID, key } from './api-keys.js';
 
-const fetchRecipes = async (lang, category) => {
-  const response = await fetch(`https://${lang}.edamam.com/search?q=${category}&app_id=${appID}&app_key=${key}&from=0&to=100`);
+const fetchRecipes = async (lang, category, filter='') => {
+  const response = await fetch(`https://${lang}.edamam.com/search?q=${category}&app_id=${appID}&app_key=${key}&from=0&to=100${filter}`);
 
   if (response.status === 200) {
     return await response.json();
