@@ -35,19 +35,19 @@ export default class AddToMenu extends Component {
       'wednesday', 'thursday', 'friday', 'saturday'
     ];
 
-    return weekdays.map(day => <option key={day} value={day}>{day}</option>);
+    return weekdays.map(day => <option className="option" key={day} value={day}>{day}</option>);
   }
 
   listMealTimeOptions = () => {
     const mealTimes = ['breakfast', 'lunch', 'dinner'];
 
-    return mealTimes.map(meal => <option key={meal} value={meal}>{meal}</option>);
+    return mealTimes.map(meal => <option className="option" key={meal} value={meal}>{meal}</option>);
   }
 
   render() {
     return (
       <div>
-        <p>{this.state.text}</p>
+        <p className="added-state-text">{this.state.text}</p>
         <form className="add-to-menu" onSubmit={this.handleSubmit}>
           <div className="select-category">
             <select name="weekday" id="weekday" onChange={this.handleClick}>
@@ -61,7 +61,7 @@ export default class AddToMenu extends Component {
               {this.listMealTimeOptions()}
             </select>
           </div>
-          <button disabled={!this.state.weekday || !this.state.mealTime} type='submit'>Add To Menu</button>
+          <button className="add-to-menu-button" disabled={!this.state.weekday || !this.state.mealTime} type='submit'>Add To Menu</button>
         </form>
       </div>
     );

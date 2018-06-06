@@ -5,7 +5,9 @@ const initialState = {
 export const recipesReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'FETCH_RECIPES_SUCCESS':
-      return {...state, results: action.recipes};
+      if(action.recipes.length) {
+      return {...state, results: action.recipes, recipesHasErrored: ''};
+      }
     case 'RECIPES_HAS_ERRORED':
       return {...state, recipesHasErrored: action.error};
     case 'RECIPES_IS_LOADING':

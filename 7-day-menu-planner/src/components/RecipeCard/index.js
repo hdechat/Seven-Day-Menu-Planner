@@ -27,7 +27,7 @@ export const RecipeCard = props => {
   
   const displayText = () => {
     return displayLinkText ? 
-      <a href={recipe.url} target="_blank">{recipe.title}</a> : null;
+      <a className="recipe-link" href={recipe.url} target="_blank">{recipe.title}</a> : null;
   };
 
   return (
