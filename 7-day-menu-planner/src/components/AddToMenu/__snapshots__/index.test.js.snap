@@ -38,7 +38,9 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <p>
+        <p
+          className="added-state-text"
+>
           Add this meal to your menu!
 </p>,
         <form
@@ -57,36 +59,43 @@ ShallowWrapper {
                                         SELECT WEEKDAY
                               </option>
                               <option
+                                        className="option"
                                         value="sunday"
                               >
                                         sunday
                               </option>
                               <option
+                                        className="option"
                                         value="monday"
                               >
                                         monday
                               </option>
                               <option
+                                        className="option"
                                         value="tuesday"
                               >
                                         tuesday
                               </option>
                               <option
+                                        className="option"
                                         value="wednesday"
                               >
                                         wednesday
                               </option>
                               <option
+                                        className="option"
                                         value="thursday"
                               >
                                         thursday
                               </option>
                               <option
+                                        className="option"
                                         value="friday"
                               >
                                         friday
                               </option>
                               <option
+                                        className="option"
                                         value="saturday"
                               >
                                         saturday
@@ -105,16 +114,19 @@ ShallowWrapper {
                                         SELECT MEAL-TIME
                               </option>
                               <option
+                                        className="option"
                                         value="breakfast"
                               >
                                         breakfast
                               </option>
                               <option
+                                        className="option"
                                         value="lunch"
                               >
                                         lunch
                               </option>
                               <option
+                                        className="option"
                                         value="dinner"
                               >
                                         dinner
@@ -122,6 +134,8 @@ ShallowWrapper {
                     </select>
           </div>
           <button
+                    className="add-to-menu-button"
+                    disabled={true}
                     type="submit"
           >
                     Add To Menu
@@ -137,6 +151,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "Add this meal to your menu!",
+          "className": "added-state-text",
         },
         "ref": null,
         "rendered": "Add this meal to your menu!",
@@ -160,36 +175,43 @@ ShallowWrapper {
                                           SELECT WEEKDAY
                             </option>
                             <option
+                                          className="option"
                                           value="sunday"
                             >
                                           sunday
                             </option>
                             <option
+                                          className="option"
                                           value="monday"
                             >
                                           monday
                             </option>
                             <option
+                                          className="option"
                                           value="tuesday"
                             >
                                           tuesday
                             </option>
                             <option
+                                          className="option"
                                           value="wednesday"
                             >
                                           wednesday
                             </option>
                             <option
+                                          className="option"
                                           value="thursday"
                             >
                                           thursday
                             </option>
                             <option
+                                          className="option"
                                           value="friday"
                             >
                                           friday
                             </option>
                             <option
+                                          className="option"
                                           value="saturday"
                             >
                                           saturday
@@ -208,16 +230,19 @@ ShallowWrapper {
                                           SELECT MEAL-TIME
                             </option>
                             <option
+                                          className="option"
                                           value="breakfast"
                             >
                                           breakfast
                             </option>
                             <option
+                                          className="option"
                                           value="lunch"
                             >
                                           lunch
                             </option>
                             <option
+                                          className="option"
                                           value="dinner"
                             >
                                           dinner
@@ -225,6 +250,8 @@ ShallowWrapper {
               </select>
 </div>,
             <button
+              className="add-to-menu-button"
+              disabled={true}
               type="submit"
 >
               Add To Menu
@@ -249,36 +276,43 @@ ShallowWrapper {
                                 SELECT WEEKDAY
                 </option>
                 <option
+                                className="option"
                                 value="sunday"
                 >
                                 sunday
                 </option>
                 <option
+                                className="option"
                                 value="monday"
                 >
                                 monday
                 </option>
                 <option
+                                className="option"
                                 value="tuesday"
                 >
                                 tuesday
                 </option>
                 <option
+                                className="option"
                                 value="wednesday"
                 >
                                 wednesday
                 </option>
                 <option
+                                className="option"
                                 value="thursday"
                 >
                                 thursday
                 </option>
                 <option
+                                className="option"
                                 value="friday"
                 >
                                 friday
                 </option>
                 <option
+                                className="option"
                                 value="saturday"
                 >
                                 saturday
@@ -298,36 +332,43 @@ ShallowWrapper {
 </option>,
                   Array [
                     <option
+                      className="option"
                       value="sunday"
 >
                       sunday
 </option>,
                     <option
+                      className="option"
                       value="monday"
 >
                       monday
 </option>,
                     <option
+                      className="option"
                       value="tuesday"
 >
                       tuesday
 </option>,
                     <option
+                      className="option"
                       value="wednesday"
 >
                       wednesday
 </option>,
                     <option
+                      className="option"
                       value="thursday"
 >
                       thursday
 </option>,
                     <option
+                      className="option"
                       value="friday"
 >
                       friday
 </option>,
                     <option
+                      className="option"
                       value="saturday"
 >
                       saturday
@@ -357,6 +398,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "sunday",
+                    "className": "option",
                     "value": "sunday",
                   },
                   "ref": null,
@@ -369,6 +411,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "monday",
+                    "className": "option",
                     "value": "monday",
                   },
                   "ref": null,
@@ -381,6 +424,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "tuesday",
+                    "className": "option",
                     "value": "tuesday",
                   },
                   "ref": null,
@@ -393,6 +437,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "wednesday",
+                    "className": "option",
                     "value": "wednesday",
                   },
                   "ref": null,
@@ -405,6 +450,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "thursday",
+                    "className": "option",
                     "value": "thursday",
                   },
                   "ref": null,
@@ -417,6 +463,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "friday",
+                    "className": "option",
                     "value": "friday",
                   },
                   "ref": null,
@@ -429,6 +476,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "saturday",
+                    "className": "option",
                     "value": "saturday",
                   },
                   "ref": null,
@@ -454,16 +502,19 @@ ShallowWrapper {
                                 SELECT MEAL-TIME
                 </option>
                 <option
+                                className="option"
                                 value="breakfast"
                 >
                                 breakfast
                 </option>
                 <option
+                                className="option"
                                 value="lunch"
                 >
                                 lunch
                 </option>
                 <option
+                                className="option"
                                 value="dinner"
                 >
                                 dinner
@@ -483,16 +534,19 @@ ShallowWrapper {
 </option>,
                   Array [
                     <option
+                      className="option"
                       value="breakfast"
 >
                       breakfast
 </option>,
                     <option
+                      className="option"
                       value="lunch"
 >
                       lunch
 </option>,
                     <option
+                      className="option"
                       value="dinner"
 >
                       dinner
@@ -522,6 +576,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "breakfast",
+                    "className": "option",
                     "value": "breakfast",
                   },
                   "ref": null,
@@ -534,6 +589,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "lunch",
+                    "className": "option",
                     "value": "lunch",
                   },
                   "ref": null,
@@ -546,6 +602,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "dinner",
+                    "className": "option",
                     "value": "dinner",
                   },
                   "ref": null,
@@ -563,6 +620,8 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Add To Menu",
+              "className": "add-to-menu-button",
+              "disabled": true,
               "type": "submit",
             },
             "ref": null,
@@ -582,7 +641,9 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <p>
+          <p
+            className="added-state-text"
+>
             Add this meal to your menu!
 </p>,
           <form
@@ -601,36 +662,43 @@ ShallowWrapper {
                                                 SELECT WEEKDAY
                                     </option>
                                     <option
+                                                className="option"
                                                 value="sunday"
                                     >
                                                 sunday
                                     </option>
                                     <option
+                                                className="option"
                                                 value="monday"
                                     >
                                                 monday
                                     </option>
                                     <option
+                                                className="option"
                                                 value="tuesday"
                                     >
                                                 tuesday
                                     </option>
                                     <option
+                                                className="option"
                                                 value="wednesday"
                                     >
                                                 wednesday
                                     </option>
                                     <option
+                                                className="option"
                                                 value="thursday"
                                     >
                                                 thursday
                                     </option>
                                     <option
+                                                className="option"
                                                 value="friday"
                                     >
                                                 friday
                                     </option>
                                     <option
+                                                className="option"
                                                 value="saturday"
                                     >
                                                 saturday
@@ -649,16 +717,19 @@ ShallowWrapper {
                                                 SELECT MEAL-TIME
                                     </option>
                                     <option
+                                                className="option"
                                                 value="breakfast"
                                     >
                                                 breakfast
                                     </option>
                                     <option
+                                                className="option"
                                                 value="lunch"
                                     >
                                                 lunch
                                     </option>
                                     <option
+                                                className="option"
                                                 value="dinner"
                                     >
                                                 dinner
@@ -666,6 +737,8 @@ ShallowWrapper {
                         </select>
             </div>
             <button
+                        className="add-to-menu-button"
+                        disabled={true}
                         type="submit"
             >
                         Add To Menu
@@ -681,6 +754,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Add this meal to your menu!",
+            "className": "added-state-text",
           },
           "ref": null,
           "rendered": "Add this meal to your menu!",
@@ -704,36 +778,43 @@ ShallowWrapper {
                                                 SELECT WEEKDAY
                                 </option>
                                 <option
+                                                className="option"
                                                 value="sunday"
                                 >
                                                 sunday
                                 </option>
                                 <option
+                                                className="option"
                                                 value="monday"
                                 >
                                                 monday
                                 </option>
                                 <option
+                                                className="option"
                                                 value="tuesday"
                                 >
                                                 tuesday
                                 </option>
                                 <option
+                                                className="option"
                                                 value="wednesday"
                                 >
                                                 wednesday
                                 </option>
                                 <option
+                                                className="option"
                                                 value="thursday"
                                 >
                                                 thursday
                                 </option>
                                 <option
+                                                className="option"
                                                 value="friday"
                                 >
                                                 friday
                                 </option>
                                 <option
+                                                className="option"
                                                 value="saturday"
                                 >
                                                 saturday
@@ -752,16 +833,19 @@ ShallowWrapper {
                                                 SELECT MEAL-TIME
                                 </option>
                                 <option
+                                                className="option"
                                                 value="breakfast"
                                 >
                                                 breakfast
                                 </option>
                                 <option
+                                                className="option"
                                                 value="lunch"
                                 >
                                                 lunch
                                 </option>
                                 <option
+                                                className="option"
                                                 value="dinner"
                                 >
                                                 dinner
@@ -769,6 +853,8 @@ ShallowWrapper {
                 </select>
 </div>,
               <button
+                className="add-to-menu-button"
+                disabled={true}
                 type="submit"
 >
                 Add To Menu
@@ -793,36 +879,43 @@ ShallowWrapper {
                                     SELECT WEEKDAY
                   </option>
                   <option
+                                    className="option"
                                     value="sunday"
                   >
                                     sunday
                   </option>
                   <option
+                                    className="option"
                                     value="monday"
                   >
                                     monday
                   </option>
                   <option
+                                    className="option"
                                     value="tuesday"
                   >
                                     tuesday
                   </option>
                   <option
+                                    className="option"
                                     value="wednesday"
                   >
                                     wednesday
                   </option>
                   <option
+                                    className="option"
                                     value="thursday"
                   >
                                     thursday
                   </option>
                   <option
+                                    className="option"
                                     value="friday"
                   >
                                     friday
                   </option>
                   <option
+                                    className="option"
                                     value="saturday"
                   >
                                     saturday
@@ -842,36 +935,43 @@ ShallowWrapper {
 </option>,
                     Array [
                       <option
+                        className="option"
                         value="sunday"
 >
                         sunday
 </option>,
                       <option
+                        className="option"
                         value="monday"
 >
                         monday
 </option>,
                       <option
+                        className="option"
                         value="tuesday"
 >
                         tuesday
 </option>,
                       <option
+                        className="option"
                         value="wednesday"
 >
                         wednesday
 </option>,
                       <option
+                        className="option"
                         value="thursday"
 >
                         thursday
 </option>,
                       <option
+                        className="option"
                         value="friday"
 >
                         friday
 </option>,
                       <option
+                        className="option"
                         value="saturday"
 >
                         saturday
@@ -901,6 +1001,7 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": "sunday",
+                      "className": "option",
                       "value": "sunday",
                     },
                     "ref": null,
@@ -913,6 +1014,7 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": "monday",
+                      "className": "option",
                       "value": "monday",
                     },
                     "ref": null,
@@ -925,6 +1027,7 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": "tuesday",
+                      "className": "option",
                       "value": "tuesday",
                     },
                     "ref": null,
@@ -937,6 +1040,7 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": "wednesday",
+                      "className": "option",
                       "value": "wednesday",
                     },
                     "ref": null,
@@ -949,6 +1053,7 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": "thursday",
+                      "className": "option",
                       "value": "thursday",
                     },
                     "ref": null,
@@ -961,6 +1066,7 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": "friday",
+                      "className": "option",
                       "value": "friday",
                     },
                     "ref": null,
@@ -973,6 +1079,7 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": "saturday",
+                      "className": "option",
                       "value": "saturday",
                     },
                     "ref": null,
@@ -998,16 +1105,19 @@ ShallowWrapper {
                                     SELECT MEAL-TIME
                   </option>
                   <option
+                                    className="option"
                                     value="breakfast"
                   >
                                     breakfast
                   </option>
                   <option
+                                    className="option"
                                     value="lunch"
                   >
                                     lunch
                   </option>
                   <option
+                                    className="option"
                                     value="dinner"
                   >
                                     dinner
@@ -1027,16 +1137,19 @@ ShallowWrapper {
 </option>,
                     Array [
                       <option
+                        className="option"
                         value="breakfast"
 >
                         breakfast
 </option>,
                       <option
+                        className="option"
                         value="lunch"
 >
                         lunch
 </option>,
                       <option
+                        className="option"
                         value="dinner"
 >
                         dinner
@@ -1066,6 +1179,7 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": "breakfast",
+                      "className": "option",
                       "value": "breakfast",
                     },
                     "ref": null,
@@ -1078,6 +1192,7 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": "lunch",
+                      "className": "option",
                       "value": "lunch",
                     },
                     "ref": null,
@@ -1090,6 +1205,7 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": "dinner",
+                      "className": "option",
                       "value": "dinner",
                     },
                     "ref": null,
@@ -1107,6 +1223,8 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Add To Menu",
+                "className": "add-to-menu-button",
+                "disabled": true,
                 "type": "submit",
               },
               "ref": null,

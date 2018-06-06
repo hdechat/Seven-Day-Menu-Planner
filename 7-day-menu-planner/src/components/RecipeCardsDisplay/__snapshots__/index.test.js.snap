@@ -32,8 +32,9 @@ ShallowWrapper {
         <div
           className="home-display"
 >
-          <Connect(RecipeCard)
+          <Connect(Component)
                     displayAddToMenu={true}
+                    displayLinkText={true}
                     recipe={
                               Object {
                                         "title": "recipe 1",
@@ -44,8 +45,9 @@ ShallowWrapper {
         <div
           className="home-display"
 >
-          <Connect(RecipeCard)
+          <Connect(Component)
                     displayAddToMenu={true}
+                    displayLinkText={true}
                     recipe={
                               Object {
                                         "title": "recipe 2",
@@ -63,8 +65,9 @@ ShallowWrapper {
         "key": "recipe 1",
         "nodeType": "host",
         "props": Object {
-          "children": <Connect(RecipeCard)
+          "children": <Connect(Component)
             displayAddToMenu={true}
+            displayLinkText={true}
             recipe={
                         Object {
                                     "title": "recipe 1",
@@ -80,6 +83,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "displayAddToMenu": true,
+            "displayLinkText": true,
             "recipe": Object {
               "title": "recipe 1",
             },
@@ -95,8 +99,9 @@ ShallowWrapper {
         "key": "recipe 2",
         "nodeType": "host",
         "props": Object {
-          "children": <Connect(RecipeCard)
+          "children": <Connect(Component)
             displayAddToMenu={true}
+            displayLinkText={true}
             recipe={
                         Object {
                                     "title": "recipe 2",
@@ -112,6 +117,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "displayAddToMenu": true,
+            "displayLinkText": true,
             "recipe": Object {
               "title": "recipe 2",
             },
@@ -135,8 +141,9 @@ ShallowWrapper {
           <div
             className="home-display"
 >
-            <Connect(RecipeCard)
+            <Connect(Component)
                         displayAddToMenu={true}
+                        displayLinkText={true}
                         recipe={
                                     Object {
                                                 "title": "recipe 1",
@@ -147,8 +154,9 @@ ShallowWrapper {
           <div
             className="home-display"
 >
-            <Connect(RecipeCard)
+            <Connect(Component)
                         displayAddToMenu={true}
+                        displayLinkText={true}
                         recipe={
                                     Object {
                                                 "title": "recipe 2",
@@ -166,8 +174,9 @@ ShallowWrapper {
           "key": "recipe 1",
           "nodeType": "host",
           "props": Object {
-            "children": <Connect(RecipeCard)
+            "children": <Connect(Component)
               displayAddToMenu={true}
+              displayLinkText={true}
               recipe={
                             Object {
                                           "title": "recipe 1",
@@ -183,6 +192,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "displayAddToMenu": true,
+              "displayLinkText": true,
               "recipe": Object {
                 "title": "recipe 1",
               },
@@ -198,8 +208,9 @@ ShallowWrapper {
           "key": "recipe 2",
           "nodeType": "host",
           "props": Object {
-            "children": <Connect(RecipeCard)
+            "children": <Connect(Component)
               displayAddToMenu={true}
+              displayLinkText={true}
               recipe={
                             Object {
                                           "title": "recipe 2",
@@ -215,6 +226,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "displayAddToMenu": true,
+              "displayLinkText": true,
               "recipe": Object {
                 "title": "recipe 2",
               },

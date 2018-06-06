@@ -20,10 +20,20 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h1>
-          GROCERY LIST
-</h1>,
-        Array [],
+        <h2>
+          Grocery List
+</h2>,
+        <button
+          className="print"
+          onClick={[Function]}
+>
+          PRINT LIST
+</button>,
+        <ul
+          className="groceries"
+>
+          
+</ul>,
       ],
       "className": "grocery-list",
     },
@@ -34,11 +44,36 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "GROCERY LIST",
+          "children": "Grocery List",
         },
         "ref": null,
-        "rendered": "GROCERY LIST",
-        "type": "h1",
+        "rendered": "Grocery List",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "PRINT LIST",
+          "className": "print",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "PRINT LIST",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [],
+          "className": "groceries",
+        },
+        "ref": null,
+        "rendered": Array [],
+        "type": "ul",
       },
     ],
     "type": "section",
@@ -50,10 +85,20 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h1>
-            GROCERY LIST
-</h1>,
-          Array [],
+          <h2>
+            Grocery List
+</h2>,
+          <button
+            className="print"
+            onClick={[Function]}
+>
+            PRINT LIST
+</button>,
+          <ul
+            className="groceries"
+>
+            
+</ul>,
         ],
         "className": "grocery-list",
       },
@@ -64,11 +109,36 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "GROCERY LIST",
+            "children": "Grocery List",
           },
           "ref": null,
-          "rendered": "GROCERY LIST",
-          "type": "h1",
+          "rendered": "Grocery List",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "PRINT LIST",
+            "className": "print",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "PRINT LIST",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [],
+            "className": "groceries",
+          },
+          "ref": null,
+          "rendered": Array [],
+          "type": "ul",
         },
       ],
       "type": "section",
