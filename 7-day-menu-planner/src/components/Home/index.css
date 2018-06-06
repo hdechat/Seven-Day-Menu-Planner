@@ -4,6 +4,12 @@
   width: 9rem;
 }
 
+.english-spanish {
+  display: flex;
+  justify-content: space-around;
+  margin: auto 27rem;
+}
+
 .search {
   font-size: 16px;
   height: 2rem;
@@ -20,6 +26,11 @@
   margin: auto;
   overflow-y: scroll;
   width: 90%;
+}
+
+span {
+  color: yellowgreen;
+  font-size: 1rem
 }
 
 select {

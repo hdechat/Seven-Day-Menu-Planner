@@ -1,5 +1,6 @@
-export const chooseCategory = (category) => ({
+export const chooseCategory = (lang, category) => ({
   type: 'CHOOSE_CATEGORY',
+  lang,
   category
 });
 
