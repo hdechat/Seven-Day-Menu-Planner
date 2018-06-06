@@ -5,13 +5,18 @@
 .day button {
   background: transparent;
   border: none;
+  color: burlywood;
   float: left;
   font-size: 12px;
   height: 0;
-  margin-bottom: -1rem;
+  margin-bottom: 2rem;
   padding: 0 4px;
   position: relative;
   top: 5px;
+}
+
+.day button:hover {
+  color: ghostwhite;
 }
 
 .display {

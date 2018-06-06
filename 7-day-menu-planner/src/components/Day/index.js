@@ -17,15 +17,15 @@ const Day = (props) => {
   return (
     <section className="day">
       <h6>Breakfast</h6>
-      <button className={menu[day].breakfast.title ? "display" : "no-display"} onClick={()=>handleClick('breakfast')}>Remove Recipe</button>
+      <button className={menu[day].breakfast.title ? "display" : "no-display"} onClick={()=>handleClick('breakfast')}>(Remove)</button>
       <RecipeCardContainer recipe={menu[day].breakfast} displayAddToMenu={false} displayLinkText={false} />
 
       <h6>Lunch</h6>
-      <button className={menu[day].lunch.title ? "display" : "no-display"} onClick={()=>handleClick('lunch')}>Remove Recipe</button>
+      <button className={menu[day].lunch.title ? "display" : "no-display"} onClick={()=>handleClick('lunch')}>(Remove)</button>
       <RecipeCardContainer recipe={menu[day].lunch} displayAddToMenu={false} displayLinkText={false} />
 
       <h6>Dinner</h6>
-      <button className={menu[day].dinner.title ? "display" : "no-display"} onClick={()=>handleClick('dinner')}>Remove Recipe</button>
+      <button className={menu[day].dinner.title ? "display" : "no-display"} onClick={()=>handleClick('dinner')}>(Remove)</button>
       <RecipeCardContainer recipe={menu[day].dinner} displayAddToMenu={false} displayLinkText={false} />
     </section>
   );
