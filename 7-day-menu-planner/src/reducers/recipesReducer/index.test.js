@@ -16,7 +16,7 @@ describe('Recipes Reducer', () => {
   });
 
   it('should return array of objects when it receives the correct action', () => {
-    const expected = {results: [...cleanedPaleoRecipes]};
+    const expected = {results: [...cleanedPaleoRecipes], recipesHasErrored: ''};
 
     const actual = reducers.recipesReducer(mockState, fetchRecipesSuccess(cleanedPaleoRecipes));
 

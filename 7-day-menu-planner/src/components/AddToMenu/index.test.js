@@ -7,7 +7,8 @@ describe('Add To Menu', () => {
   let mockRecipe;
   let mockAddToMenu;
   let mockAddToGroceryList;
-  let mockAddGroceryListToStorage
+  let mockAddGroceryListToStorage;
+  let mockAddMenuItemToStorage;
 
   beforeEach(() => {
     mockRecipe = {
@@ -28,12 +29,14 @@ describe('Add To Menu', () => {
     mockAddToMenu = jest.fn();
     mockAddToGroceryList = jest.fn();
     mockAddGroceryListToStorage = jest.fn();
+    mockAddMenuItemToStorage = jest.fn();
 
     wrapper = shallow(<AddToMenu 
       addToGroceryList={mockAddToGroceryList} 
       addToMenu={mockAddToMenu} 
       addGroceryListToStorage={mockAddGroceryListToStorage}
-      recipe={mockRecipe}/>);
+      addMenuItemToStorage={mockAddMenuItemToStorage}
+      recipe={mockRecipe}/>)
   });
 
   it('matches snapshot', () => {
@@ -123,5 +126,6 @@ describe('Add To Menu', () => {
     expect(mockAddToMenu).toHaveBeenCalled();
     expect(mockAddToGroceryList).toHaveBeenCalled();
     expect(mockAddGroceryListToStorage).toHaveBeenCalled();
+    expect(mockAddMenuItemToStorage).toHaveBeenCalled();
   });
 });

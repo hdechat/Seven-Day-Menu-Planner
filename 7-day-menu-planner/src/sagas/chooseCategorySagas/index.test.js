@@ -87,7 +87,6 @@ describe('chooseCategory on error', () => {
 
 describe('listenForChooseCategory', () => {
   let iterator;
-  console.log(sagas)
   beforeAll(() => {
     iterator = sagas.listenForChooseCategory();
   });

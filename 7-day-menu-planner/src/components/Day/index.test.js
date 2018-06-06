@@ -7,10 +7,14 @@ describe('Day', () => {
   let mockMenu;
   let mockRemoveFromMenu;
   let mockRemoveFromGroceryList;
+  let mockRemoveMenuItemFromStorage;
+  let mockRemoveGroceryListFromStorage;
 
   beforeEach(() => {
     mockRemoveFromMenu = jest.fn();
     mockRemoveFromGroceryList = jest.fn();
+    mockRemoveGroceryListFromStorage = jest.fn();
+    mockRemoveMenuItemFromStorage = jest.fn();
 
     mockMenu = {
       sunday: {
@@ -19,7 +23,13 @@ describe('Day', () => {
         dinner: {}
       }
     };
-    wrapper = shallow(<Day day='sunday' removeFromGroceryList={mockRemoveFromGroceryList} removeFromMenu={mockRemoveFromMenu} menu={mockMenu}/>);
+    wrapper = shallow(<Day 
+      day='sunday' 
+      removeFromGroceryList={mockRemoveFromGroceryList} 
+      removeFromMenu={mockRemoveFromMenu} 
+      menu={mockMenu}
+      removeGroceryListFromStorage={mockRemoveGroceryListFromStorage}
+      removeMenuItemFromStorage={mockRemoveMenuItemFromStorage}/>);
   });
 
   it('matches snapshot', () => {
@@ -30,11 +40,10 @@ describe('Day', () => {
     wrapper.find('button').at(0).simulate('click')
 
     expect(mockRemoveFromMenu).toHaveBeenCalledWith('sunday', 'breakfast');
-  });
-
-  it('calls removeFromGroceryList on button click', () => {
-    wrapper.find('button').at(0).simulate('click')
-
     expect(mockRemoveFromGroceryList).toHaveBeenCalledWith(['apples']);
+    expect(mockRemoveMenuItemFromStorage).
+    toHaveBeenCalledWith('sunday', 'breakfast',  
+      {ingredients: ['apples'], title: 'Recipe Name'});
+    expect(mockRemoveGroceryListFromStorage).toHaveBeenCalledWith(['apples']);
   });
 });

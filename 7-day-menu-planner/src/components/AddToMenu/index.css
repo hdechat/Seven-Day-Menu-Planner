@@ -17,9 +17,15 @@ select {
   padding: 5px 8px;
 }
 
-p {
+select.weekday,
+select.mealTime {
+  height: 2rem;
+}
+
+p.added-state-text {
   color: white;
   margin-bottom: 0rem;
+  margin-top: 1.5rem;
 }
 
 button {
