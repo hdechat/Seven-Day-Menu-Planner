@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './index.css';
+import PropTypes from 'prop-types';
+
 
 export default class AddToMenu extends Component {
   constructor(props) {
@@ -24,9 +26,12 @@ export default class AddToMenu extends Component {
     event.preventDefault();
     addToMenu(this.state.weekday, this.state.mealTime, this.props.recipe);
     addToGroceryList(recipe.ingredients);
-    addMenuItemToStorage(this.state.weekday, this.state.mealTime, this.props.recipe)
+    addMenuItemToStorage(
+      this.state.weekday, 
+      this.state.mealTime, 
+      this.props.recipe);
     addGroceryListToStorage(recipe.ingredients);
-    this.setState({ text: 'ADDED!'})
+    this.setState({ text: 'ADDED!'});
   }
 
   listWeekdayOptions = () => {
@@ -35,13 +40,15 @@ export default class AddToMenu extends Component {
       'wednesday', 'thursday', 'friday', 'saturday'
     ];
 
-    return weekdays.map(day => <option className="option" key={day} value={day}>{day}</option>);
+    return weekdays.map(day => 
+      <option className="option" key={day} value={day}>{day}</option>);
   }
 
   listMealTimeOptions = () => {
     const mealTimes = ['breakfast', 'lunch', 'dinner'];
 
-    return mealTimes.map(meal => <option className="option" key={meal} value={meal}>{meal}</option>);
+    return mealTimes.map(meal => 
+      <option className="option" key={meal} value={meal}>{meal}</option>);
   }
 
   render() {
@@ -61,9 +68,21 @@ export default class AddToMenu extends Component {
               {this.listMealTimeOptions()}
             </select>
           </div>
-          <button className="add-to-menu-button" disabled={!this.state.weekday || !this.state.mealTime} type='submit'>Add To Menu</button>
+          <button 
+            className="add-to-menu-button" 
+            disabled={!this.state.weekday || !this.state.mealTime} 
+            type='submit'>Add To Menu</button>
         </form>
       </div>
     );
   }
 }
+
+AddToMenu.propTypes = {
+  addToMenu: PropTypes.func, 
+  addToGroceryList: PropTypes.func,
+  addGroceryListToStorage: PropTypes.func,
+  addMenuItemToStorage: PropTypes.func,
+  recipe: PropTypes.obj
+  
+};

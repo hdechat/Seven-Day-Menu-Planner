@@ -7,9 +7,12 @@ export const mapStateToProps = state => ({
 });
 
 export const mapDispatchToProps = dispatch => ({
-  toggleFavorites: recipe => dispatch(toggleFavorites(recipe)),
-  addFavoriteToStorage: recipe => dispatch(addFavoriteToStorage(recipe)),
-  removeFavoriteFromStorage: recipe => dispatch(removeFavoriteFromStorage(recipe))
+  toggleFavorites: recipe => 
+    dispatch(toggleFavorites(recipe)),
+  addFavoriteToStorage: recipe => 
+    dispatch(addFavoriteToStorage(recipe)),
+  removeFavoriteFromStorage: recipe => 
+    dispatch(removeFavoriteFromStorage(recipe))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(RecipeCard);

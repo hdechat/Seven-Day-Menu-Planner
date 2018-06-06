@@ -1,10 +1,10 @@
 import React from 'react';
 import DayContainer from '../../containers/DayContainer';
-import'./index.css';
+import './index.css';
 
 const MenuCalendar = () => {
   return (
-    <section class="menu">
+    <section className="menu">
       <ul className="week">
         <li><h3>Sunday</h3><DayContainer day={'sunday'} /></li>
         <li><h3>Monday</h3><DayContainer day={'monday'} /></li>

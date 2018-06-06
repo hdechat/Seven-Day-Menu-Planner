@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
 import { NavLink, Route, withRouter } from 'react-router-dom';
 import HomeContainer from './containers/HomeContainer';
 import MenuCalendar from './components/MenuCalendar';
 import FavoritesContainer from './containers/FavoritesContainer';
 import GroceryListContainer from './containers/GroceryListContainer';
 import { retrieveDataFromStorage } from './actions';
+import PropTypes from 'prop-types';
 import './App.css';
 
 export class App extends Component {
@@ -21,7 +22,7 @@ export class App extends Component {
       <div className="App">
         <header className="App-header">
           <NavLink className="nav title" to='/'>
-          <h1 className="title">7 Day Menu Planner</h1>
+            <h1 className="title">7 Day Menu Planner</h1>
           </NavLink>
           <NavLink className="nav" to='/'>Home</NavLink>
           <NavLink className="nav" to='/menu-calendar'>Menu</NavLink>
@@ -42,3 +43,7 @@ export const mapDispatchToProps = dispatch => ({
 });
 
 export default withRouter(connect(null, mapDispatchToProps)(App));
+
+App.PropTypes = {
+  retrieveDataFromStorage: PropTypes.func
+};

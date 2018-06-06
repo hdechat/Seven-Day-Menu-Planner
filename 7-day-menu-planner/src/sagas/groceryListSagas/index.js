@@ -1,4 +1,4 @@
-import { call, put, takeEvery } from 'redux-saga/effects';
+import { call, takeEvery } from 'redux-saga/effects';
 import { setToStorage, getDataFromStorage } from '../../api';
 
 export function* addGroceryListToStorage(action) {
@@ -22,5 +22,6 @@ export function* listenForAddGroceryListToStorage() {
 }
 
 export function* listenForRemoveGroceryListFromStorage() {
-  yield takeEvery('REMOVE_GROCERY_LIST_FROM_STORAGE', removeGroceryListFromStorage);
+  yield takeEvery('REMOVE_GROCERY_LIST_FROM_STORAGE', 
+    removeGroceryListFromStorage);
 }

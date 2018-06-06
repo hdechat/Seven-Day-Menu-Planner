@@ -9,7 +9,8 @@ export const mapStateToProps = state => ({
   recipesHasErrored: state.recipes.recipesHasErrored
 });
 export const mapDispatchToProps = dispatch => ({
-  chooseCategory: (lang, category, filter) => dispatch(chooseCategory(lang, category, filter))
+  chooseCategory: (lang, category, filter) => 
+    dispatch(chooseCategory(lang, category, filter))
 });
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Home));

@@ -12,9 +12,11 @@ import rootSaga from './sagas';
 import './index.css';
 
 const sagaMiddleware = createSagaMiddleware();
-const devTools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
+const devTools = 
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
 
-const store = createStore(rootReducer, devTools, applyMiddleware(sagaMiddleware));
+const store = 
+  createStore(rootReducer, devTools, applyMiddleware(sagaMiddleware));
 
 sagaMiddleware.run(rootSaga);
 

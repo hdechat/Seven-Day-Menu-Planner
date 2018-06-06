@@ -1,4 +1,4 @@
-import { call, put, takeEvery } from 'redux-saga/effects';
+import { call, takeEvery } from 'redux-saga/effects';
 import { setToStorage, getDataFromStorage } from '../../api';
 
 export function* addMenuItemToStorage(action) {
@@ -9,14 +9,14 @@ export function* addMenuItemToStorage(action) {
       [...menu, { [action.weekday]: {[action.mealTime]: action.recipe} }]
     : updatedMenu = 
       [{ [action.weekday]: {[action.mealTime]: action.recipe} }];
-  yield call(setToStorage, 'menu', updatedMenu)
+  yield call(setToStorage, 'menu', updatedMenu);
 }
 
 export function* removeMenuItemFromStorage(action) {
   const menu = yield call(getDataFromStorage, 'menu');
   const updatedMenu = menu.filter(item => {
     return JSON.stringify(item) !== 
-      JSON.stringify({ [action.weekday]: {[action.mealTime]: action.recipe} })
+      JSON.stringify({ [action.weekday]: {[action.mealTime]: action.recipe} });
   });
   yield call(setToStorage, 'menu', updatedMenu);
 }

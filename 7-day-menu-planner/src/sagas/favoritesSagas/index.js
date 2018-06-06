@@ -1,4 +1,4 @@
-import { call, put, takeEvery  } from 'redux-saga/effects';
+import { call, takeEvery  } from 'redux-saga/effects';
 import { setToStorage, getDataFromStorage } from '../../api';
 
 export function* addFavoriteToStorage(action) {
@@ -13,7 +13,7 @@ export function* addFavoriteToStorage(action) {
 export function* removeFavoriteFromStorage(action) {
   const favorites = yield call(getDataFromStorage, 'favorites');
   const updatedFavorites = favorites.filter(recipe => 
-    recipe.title !== action.recipe.title)
+    recipe.title !== action.recipe.title);
   yield call(setToStorage, 'favorites', updatedFavorites);
 }
 
