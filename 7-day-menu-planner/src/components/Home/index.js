@@ -6,7 +6,10 @@ class Home extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { userSearch: ''};
+    this.state = { 
+      userSearch: '',
+      spanishSearch: ''
+    };
   }
 
   render() {
@@ -33,24 +36,47 @@ class Home extends Component {
 
     return (
       <section className="home">
-        <h2>Find Your Recipe</h2>
-        <div className="select-category">
-          <select 
-            onChange={event => chooseCategory(event.target.value)}
-            id='category'>
-            <option>SELECT CATEGORY</option>
-            <option value='paleo'>Paleo</option>
-            <option value='vegetarian'>Vegetarian</option>
-            <option value='vegan'>Vegan</option>
-          </select>
+        <h2>Find Your Recipe / Encuentra Tu Receta<span>BETA</span></h2>
+        <div className="english-spanish">
+          <div className="english">  
+            <div className="select-category">
+              <select 
+                onChange={event => chooseCategory('api', event.target.value)}
+                id='category'>
+                <option>SELECT CATEGORY</option>
+                <option value='paleo'>Paleo</option>
+                <option value='vegetarian'>Vegetarian</option>
+                <option value='vegan'>Vegan</option>
+              </select>
+            </div>
+            <input 
+              className='search' 
+              type='search'
+              placeholder='Search'
+              value={this.state.userSearch}
+              onChange={event => this.setState({userSearch: event.target.value})}
+              onKeyPress={e => e.key === 'Enter' ? chooseCategory('api', this.state.userSearch) : ''} />
+          </div>
+          <div className="spanish">
+            <div className="select-category">
+              <select 
+                onChange={event => chooseCategory('test-es', event.target.value)}
+                id='category'>
+                <option>CATEGORIAS</option>
+                <option value='paleo'>Paleo</option>
+                <option value='vegetarian'>Vegetariano</option>
+                <option value='vegan'>Vegano</option>
+              </select>
+            </div>
+            <input 
+              className='search' 
+              type='search'
+              placeholder='Buscar'
+              value={this.state.spanishSearch}
+              onChange={event => this.setState({spanishSearch: event.target.value})}
+              onKeyPress={e => e.key === 'Enter' ? chooseCategory('test-es', this.state.spanishSearch) : ''} />
+          </div>
         </div>
-        <input 
-          className='search' 
-          type='search'
-          placeholder='Search'
-          value={this.state.userSearch}
-          onChange={event => this.setState({userSearch: event.target.value})}
-          onKeyPress={e => e.key === 'Enter' ? chooseCategory(this.state.userSearch) : ''} />
           {displayLoadingMessage()}
           {displayErrorMessage()}
           {displayWelcomeMessage()}
