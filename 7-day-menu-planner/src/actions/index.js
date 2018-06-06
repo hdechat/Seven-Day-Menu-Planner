@@ -1,7 +1,8 @@
-export const chooseCategory = (lang, category) => ({
+export const chooseCategory = (lang, category, filter) => ({
   type: 'CHOOSE_CATEGORY',
   lang,
-  category
+  category,
+  filter
 });
 
 export const fetchRecipesSuccess = (recipes) => ({

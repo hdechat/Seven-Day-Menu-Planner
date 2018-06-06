@@ -38,7 +38,7 @@ export const RecipeCard = props => {
         alt='star'
         className='star' 
         onClick={handleClick}/>
-        <a href={recipe.url} target="_blank"><img src={recipe.image} alt="recipe meal" /></a>
+        <a href={recipe.url} target="_blank"><img className="card-image" src={recipe.image} alt="recipe meal" /></a>
         { displayText() }
       { displayInset() }
     </article>

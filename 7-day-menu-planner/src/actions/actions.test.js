@@ -5,10 +5,12 @@ describe('Choose Category', () => {
   it('should have a type of CHOOSE_CATEGORY and return a category string', () => {
     const expected = {
       type: 'CHOOSE_CATEGORY',
-      category: 'paleo'
+      lang: 'api', 
+      category: 'paleo',
+      filter: '&health=peanut-free'
     };
 
-    const actual = actions.chooseCategory('paleo');
+    const actual = actions.chooseCategory('api','paleo', '&health=peanut-free');
 
     expect(actual).toEqual(expected);
   });
