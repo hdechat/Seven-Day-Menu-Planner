@@ -20,16 +20,10 @@ describe('Home', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should call chooseCategory with the correct params when category selected', () => {
-    wrapper.find('select').simulate('change', {target: {value: 'paleo'}});
-
-    expect(mockFunction).toHaveBeenCalledWith('paleo');
-  });
-
-  it('should render message if recipesIsLoading is true', () => {
+  it('should render loading gif if recipesIsLoading is true', () => {
     wrapper.setProps({recipesIsLoading: true});
 
-    expect(wrapper.find('.loading-message').length).toEqual(1);
+    expect(wrapper.find('.loading-gif').length).toEqual(1);
   });
 
   it('should render error if fetch has errored', () => {
@@ -44,16 +38,59 @@ describe('Home', () => {
     expect(wrapper.find('.welcome-message').length).toEqual(0);
   });
 
-  it('should set state with onChange', () => {
-    wrapper.find('.search').simulate('change', {target: {value: 'high-protein'}});
+  it('should call chooseCategory with the correct params when category selected', () => {
+    wrapper.find('.english-select').simulate('change', {target: {value: 'paleo'}});
 
-    expect(wrapper.state('userSearch')).toEqual('high-protein');
+    expect(mockFunction).toHaveBeenCalledWith('api', 'paleo');
+  });
+
+  it('should call chooseCategory with the correct params when the filter option is selected', () => {
+    wrapper.setState({ category: 'paleo'})
+
+    wrapper.find('#filters').simulate('change', {target: {value: '&health=peanut-free'}});
+
+    expect(mockFunction).toHaveBeenCalledWith('api', 'paleo', '&health=peanut-free');
+  });
+
+  it('should set state with onChange', () => {
+    wrapper.find('#english-search').simulate('change', {target: {value: 'high-protein'}});
+
+    expect(wrapper.state('category')).toEqual('high-protein');
   });
 
   it('should call chooseCategory when user enters search term', () => {
-    wrapper.setState({ userSearch: 'high-protein' })
-    wrapper.find('.search').simulate('keypress', {key: 'Enter'});
+    wrapper.setState({ category: 'high-protein' })
+    wrapper.find('#english-search').simulate('keypress', {key: 'Enter'});
 
-    expect(mockFunction).toHaveBeenCalledWith('high-protein');
+    expect(mockFunction).toHaveBeenCalledWith('api', 'high-protein');
+  });
+
+  describe('BETA SPANISH', () => {
+    it('should call chooseCategory with the correct params when category selected', () => {
+    wrapper.find('.spanish-select').simulate('change', {target: {value: 'paleo'}});
+
+    expect(mockFunction).toHaveBeenCalledWith('test-es', 'paleo');
+    });
+
+    it('should call chooseCategory with the correct params when the filter option is selected', () => {
+    wrapper.setState({ spanishSearch: 'paleo'})
+
+    wrapper.find('#filters-sp').simulate('change', {target: {value: '&health=peanut-free'}});
+
+    expect(mockFunction).toHaveBeenCalledWith('test-es', 'paleo', '&health=peanut-free');
+    });
+
+    it('should set state with onChange', () => {
+    wrapper.find('#spanish-search').simulate('change', {target: {value: 'high-protein'}});
+
+    expect(wrapper.state('spanishSearch')).toEqual('high-protein');
+    });
+
+    it('should call chooseCategory when user enters search term', () => {
+      wrapper.setState({ spanishSearch: 'high-protein' })
+      wrapper.find('#spanish-search').simulate('keypress', {key: 'Enter'});
+
+      expect(mockFunction).toHaveBeenCalledWith('test-es', 'high-protein');
+    });
   });
 });

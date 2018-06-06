@@ -7,8 +7,8 @@ class Home extends Component {
     super(props);
 
     this.state = { 
-      userSearch: '',
-      spanishSearch: ''
+      category: '',
+      spanishSearch: '',
     };
   }
 
@@ -42,40 +42,68 @@ class Home extends Component {
           <div className="english">  
             <div className="select-category">
               <select 
-                onChange={event => chooseCategory('api', event.target.value)}
+                className="english-select"
+                onChange={event => {
+                  this.setState({ category: event.target.value })
+                  chooseCategory('api', event.target.value)}}
                 id='category'>
                   <option>SELECT CATEGORY</option>
-                  <option className="option" value='paleo'>Paleo</option>
+                  <option value='gluten-free'>Gluten-Free</option>
+                  <option value='paleo'>Paleo</option>
                   <option value='vegetarian'>Vegetarian</option>
                   <option value='vegan'>Vegan</option>
               </select>
             </div>
             <input 
               className='search' 
+              id='english-search'
               type='search'
               placeholder='Search'
-              value={this.state.userSearch}
-              onChange={event => this.setState({userSearch: event.target.value})}
-              onKeyPress={e => e.key === 'Enter' ? chooseCategory('api', this.state.userSearch) : ''} />
+              value={this.state.category}
+              onChange={event => this.setState({category: event.target.value})}
+              onKeyPress={e => e.key === 'Enter' ? chooseCategory('api', this.state.category) : ''} />
+            <div className='filters'>
+              <select 
+                onChange={event => chooseCategory('api', this.state.category, event.target.value)}
+                id='filters'>
+                  <option>Filter Options</option>
+                  <option value='&diet=low-carb'>Low-Carb</option>
+                  <option className="option" value='&health=peanut-free'>Peanut-Free</option>
+                  <option className="option" value='tree-nut-free'>Tree-Nut-Free</option>
+              </select>
+            </div>
           </div>
           <div className="spanish">
             <div className="select-category">
               <select 
+                className="spanish-select"
                 onChange={event => chooseCategory('test-es', event.target.value)}
                 id='category'>
                 <option>CATEGORIAS</option>
                 <option value='paleo'>Paleo</option>
-                <option value='vegetarian'>Vegetariano</option>
+                <option value='sin gluten'>Sin Gluten</option>
                 <option value='vegan'>Vegano</option>
+                <option value='vegetarian'>Vegetariano</option>
               </select>
             </div>
             <input 
-              className='search' 
+              className="search"
+              id="spanish-search"
               type='search'
               placeholder='Buscar'
               value={this.state.spanishSearch}
               onChange={event => this.setState({spanishSearch: event.target.value})}
               onKeyPress={e => e.key === 'Enter' ? chooseCategory('test-es', this.state.spanishSearch) : ''} />
+            <div className='filters'>
+              <select 
+                onChange={event => chooseCategory('test-es', this.state.spanishSearch, event.target.value)}
+                id='filters-sp'>
+                  <option>Filter Options</option>
+                  <option value='&diet=low-carb'>Baja en Carb</option>
+                  <option className="option" value='&health=peanut-free'>Sin Mani</option>
+                  <option className="option" value='tree-nut-free'>Sin Nueces de Arbol</option>
+              </select>
+            </div>
           </div>
         </div>
           {displayLoadingMessage()}
