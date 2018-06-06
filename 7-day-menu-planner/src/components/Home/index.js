@@ -44,12 +44,10 @@ class Home extends Component {
               <select 
                 onChange={event => chooseCategory('api', event.target.value)}
                 id='category'>
-                <optgroup>
                   <option>SELECT CATEGORY</option>
                   <option className="option" value='paleo'>Paleo</option>
                   <option value='vegetarian'>Vegetarian</option>
                   <option value='vegan'>Vegan</option>
-                </optgroup>
               </select>
             </div>
             <input 
