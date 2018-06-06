@@ -4,10 +4,25 @@
   width: 9rem;
 }
 
+.find-your-recipe {
+  margin-bottom: 0;
+}
+
 .english-spanish {
   display: flex;
   justify-content: space-around;
   margin: auto 27rem;
+}
+
+.loading-gif {
+  margin-top: 2rem;
+  width: 40%;
+}
+
+.error-message {
+  color: black;
+  font-size: 30px;
+  margin: 0;
 }
 
 .search {
@@ -22,7 +37,7 @@
 }
 
 .display-cards {
-  height: 100vh;
+  height: 70vh;
   margin: auto;
   overflow-y: scroll;
   width: 90%;
@@ -33,7 +48,7 @@ span {
   font-size: 1rem
 }
 
-select {
+select#category {
   background: transparent;
   background-image: none;
   border: none;
@@ -42,4 +57,20 @@ select {
   height: 2rem;
   outline: none;
   padding: 5px 8px;
+}
+
+select:hover {
+  color: black;
+  font-size: .8rem;
+}
+
+@media screen and (max-width: 350px) {
+  .find-your-recipe {
+    display: none;
+  }
+
+  .english, .spanish {
+    margin-left: 2rem;
+    margin-top: 5rem;
+  }
 }

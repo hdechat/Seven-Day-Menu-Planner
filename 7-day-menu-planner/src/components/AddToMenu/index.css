@@ -29,3 +29,25 @@ button {
   padding-top: 5px;
   widows: 9rem;
 }
+
+@media screen and (max-width: 350px) {
+  .added-state-text {
+    font-size: 26px;
+  }
+
+  form div.select-category {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .add-to-menu-button {
+    height: 2rem;
+    font-size: 25px;
+    padding-top: 5px;
+    widows: 9rem;
+    border: solid thin white;
+    height: 3rem;
+    margin-top: 0.5rem;
+  }
+
+}

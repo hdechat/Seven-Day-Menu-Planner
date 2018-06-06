@@ -1,0 +1,10 @@
+@media screen and (max-width: 350px) {
+  .display-favorites {
+    width: 590px;
+  }
+
+  .favorites-text {
+    display: none;
+  }
+
+}

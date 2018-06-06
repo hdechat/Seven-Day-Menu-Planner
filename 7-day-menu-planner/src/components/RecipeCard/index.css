@@ -22,11 +22,9 @@ img {
   height: 152px;
 }
 
-
-
 .recipe-card a {
   color: black;
-  font-size: 24px;
+  font-size: 20px;
   position: relative;
   text-decoration: none;
   top: 20px;
@@ -48,3 +46,16 @@ img {
 .star:hover {
   width: 13%;
 }
+
+@media screen and (max-width: 350px) {
+  a.recipe-link {
+   display: none;
+  }
+}
+
+
+
+
+
+
+

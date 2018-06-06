@@ -1,10 +1,9 @@
 .week {
-  border: solid thin;
   display: flex;
   height: 635px;
   justify-content: space-between;
   list-style-type: none;
-  margin: auto;
+  margin: 2rem auto;
   padding: 0rem;
   width: 98%;
 }
@@ -20,5 +19,31 @@ li {
 }
 
 h3 {
+  color: ghostwhite;
+  font-weight: lighter;
+  letter-spacing: 0.4rem;
   margin: 0;
+}
+
+@media screen and (max-width: 350px) {
+  h3 {
+    font-size: 30px;
+    margin-top: 5rem;
+  }
+
+  h6 {
+    font-size: 26px;
+  }
+
+  li {
+    height: fit-content;
+  }
+
+  .week {
+    display: block;
+  }
+
+  .day {
+    width: 385%;
+  }
 }

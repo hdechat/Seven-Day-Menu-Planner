@@ -8,3 +8,9 @@
 .home-display {
   width: 300px;
 }
+
+@media screen and (max-width: 350px) {
+  .home-display {
+    width: 475px;
+  }
+}

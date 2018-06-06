@@ -21,12 +21,13 @@ class Home extends Component {
 
     const displayLoadingMessage = () => {
       return recipesIsLoading ?
-        <p className="loading-message">Your Recipes Are Loading</p> : null;
+        <img className="loading-gif" src="https://media.giphy.com/media/HtJ6BUl24PJHW/giphy.gif" />
+        : null;
     };
 
     const displayErrorMessage = () => {
       return recipesHasErrored ?
-        <p className="error-message">{recipesHasErrored}</p> : null;
+        <p className="error-message">{recipesHasErrored} :(</p> : null;
     };
 
     const displayWelcomeMessage = () => {
@@ -36,17 +37,17 @@ class Home extends Component {
 
     return (
       <section className="home">
-        <h2>Find Your Recipe / Encuentra Tu Receta<span>BETA</span></h2>
+        <h2 className="find-your-recipe">Find Your Recipe / Encuentra Tu Receta<span>BETA</span></h2>
         <div className="english-spanish">
           <div className="english">  
             <div className="select-category">
               <select 
                 onChange={event => chooseCategory('api', event.target.value)}
                 id='category'>
-                <option>SELECT CATEGORY</option>
-                <option value='paleo'>Paleo</option>
-                <option value='vegetarian'>Vegetarian</option>
-                <option value='vegan'>Vegan</option>
+                  <option>SELECT CATEGORY</option>
+                  <option className="option" value='paleo'>Paleo</option>
+                  <option value='vegetarian'>Vegetarian</option>
+                  <option value='vegan'>Vegan</option>
               </select>
             </div>
             <input 

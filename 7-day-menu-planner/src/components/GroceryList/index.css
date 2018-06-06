@@ -55,3 +55,31 @@
         overflow: visible;
     }
 }
+
+@media screen and (max-width: 350px) {
+  .groceries {
+    height: 600px;
+    width: 150%;
+    margin-left: 0.8rem;
+  }
+
+  .food-item {
+    font-size: 20px;
+  }
+
+  .print {
+    background: grey;
+    font-size: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
