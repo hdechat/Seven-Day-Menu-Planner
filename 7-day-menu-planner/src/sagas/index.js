@@ -3,7 +3,7 @@ import { all } from 'redux-saga/effects';
 import { listenForChooseCategory } from './chooseCategorySagas';
 import { listenForAddFavoriteToStorage, 
   listenForRemoveFavoriteFromStorage } from './favoritesSagas';
-import { listenForRetrieveDataFromStorage } from './retrieveDataSagas'
+import { listenForRetrieveDataFromStorage } from './retrieveDataSagas';
 import { listenForAddGroceryListToStorage, 
   listenForRemoveGroceryListFromStorage } from './groceryListSagas';
 import { listenForAddMenuItemToStorage, 
@@ -19,5 +19,5 @@ export default function* rootSaga() {
     listenForRemoveGroceryListFromStorage(),
     listenForAddMenuItemToStorage(),
     listenForRemoveMenuItemFromStorage()
-  ])
-};
+  ]);
+}

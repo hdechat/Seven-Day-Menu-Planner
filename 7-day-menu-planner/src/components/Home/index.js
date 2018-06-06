@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import RecipeCardsDisplay from '../RecipeCardsDisplay';
 import './index.css';
 
@@ -8,7 +9,7 @@ class Home extends Component {
 
     this.state = { 
       category: '',
-      spanishSearch: '',
+      spanishSearch: ''
     };
   }
 
@@ -21,7 +22,10 @@ class Home extends Component {
 
     const displayLoadingMessage = () => {
       return recipesIsLoading ?
-        <img className="loading-gif" src="https://media.giphy.com/media/HtJ6BUl24PJHW/giphy.gif" />
+        <img 
+          className="loading-gif" 
+          src="https://media.giphy.com/media/HtJ6BUl24PJHW/giphy.gif" 
+          alt="gif animation of girl chopping carrots"/>
         : null;
     };
 
@@ -32,12 +36,16 @@ class Home extends Component {
 
     const displayWelcomeMessage = () => {
       return !recipeCards.length ?
-        <p className="welcome-message">Welcome to your eazy-peazy seven-day meal planner!</p> : null;
-    }
+        <p className="welcome-message">
+          Welcome to your eazy-peazy seven-day meal planner!
+        </p> : null;
+    };
 
     return (
       <section className="home">
-        <h2 className="find-your-recipe">Find Your Recipe / Encuentra Tu Receta<span>BETA</span></h2>
+        <h2 className="find-your-recipe">
+          Find Your Recipe / Encuentra Tu Receta<span>BETA</span>
+        </h2>
         <div className="english-spanish">
           <div className="english">  
             <div className="select-category">
@@ -45,7 +53,8 @@ class Home extends Component {
                 className="english-select"
                 onChange={event => {
                   this.setState({ category: event.target.value })
-                  chooseCategory('api', event.target.value)}}
+                  chooseCategory('api', event.target.value)}
+                }
                 id='category'>
                   <option>SELECT CATEGORY</option>
                   <option value='gluten-free'>Gluten-Free</option>
@@ -61,15 +70,27 @@ class Home extends Component {
               placeholder='Search'
               value={this.state.category}
               onChange={event => this.setState({category: event.target.value})}
-              onKeyPress={e => e.key === 'Enter' ? chooseCategory('api', this.state.category) : ''} />
+              onKeyPress={event => event.key === 'Enter' 
+                ? chooseCategory('api', this.state.category) 
+                : ''} 
+            />
             <div className='filters'>
               <select 
-                onChange={event => chooseCategory('api', this.state.category, event.target.value)}
+                onChange={event => 
+                  chooseCategory(
+                    'api', 
+                    this.state.category, 
+                    event.target.value)
+                }
                 id='filters'>
                   <option>Filter Options</option>
                   <option value='&diet=low-carb'>Low-Carb</option>
-                  <option className="option" value='&health=peanut-free'>Peanut-Free</option>
-                  <option className="option" value='tree-nut-free'>Tree-Nut-Free</option>
+                  <option className="option" value='&health=peanut-free'>
+                    Peanut-Free
+                  </option>
+                  <option className="option" value='tree-nut-free'>
+                    Tree-Nut-Free
+                  </option>
               </select>
             </div>
           </div>
@@ -77,7 +98,8 @@ class Home extends Component {
             <div className="select-category">
               <select 
                 className="spanish-select"
-                onChange={event => chooseCategory('test-es', event.target.value)}
+                onChange={event => 
+                  chooseCategory('test-es', event.target.value)}
                 id='category'>
                 <option>CATEGORIAS</option>
                 <option value='paleo'>Paleo</option>
@@ -92,16 +114,29 @@ class Home extends Component {
               type='search'
               placeholder='Buscar'
               value={this.state.spanishSearch}
-              onChange={event => this.setState({spanishSearch: event.target.value})}
-              onKeyPress={e => e.key === 'Enter' ? chooseCategory('test-es', this.state.spanishSearch) : ''} />
+              onChange={event => 
+                this.setState({spanishSearch: event.target.value})}
+              onKeyPress={event => event.key === 'Enter' 
+                ? chooseCategory('test-es', this.state.spanishSearch) 
+                : ''} 
+            />
             <div className='filters'>
               <select 
-                onChange={event => chooseCategory('test-es', this.state.spanishSearch, event.target.value)}
+                onChange={event => 
+                  chooseCategory(
+                    'test-es', 
+                    this.state.spanishSearch, 
+                    event.target.value)
+                }
                 id='filters-sp'>
                   <option>Filter Options</option>
                   <option value='&diet=low-carb'>Baja en Carb</option>
-                  <option className="option" value='&health=peanut-free'>Sin Mani</option>
-                  <option className="option" value='tree-nut-free'>Sin Nueces de Arbol</option>
+                  <option className="option" value='&health=peanut-free'>
+                    Sin Mani
+                  </option>
+                  <option className="option" value='tree-nut-free'>
+                    Sin Nueces de Arbol
+                    </option>
               </select>
             </div>
           </div>
@@ -114,7 +149,14 @@ class Home extends Component {
         </div>
       </section>
     );
-  }
+  };
 }
 
 export default Home;
+
+Home.propTypes = {
+  recipeCards: PropTypes.array, 
+  chooseCategory: PropTypes.func, 
+  recipesIsLoading: PropTypes.bool, 
+  recipesHasErrored : PropTypes.string
+};

@@ -1,5 +1,5 @@
 import { call, put, takeEvery } from 'redux-saga/effects';
-import { setToStorage, getDataFromStorage } from '../../api';
+import {  getDataFromStorage } from '../../api';
 import * as actions from '../../actions';
 
 export function* retrieveDataFromStorage(action) {
@@ -12,18 +12,18 @@ export function* retrieveDataFromStorage(action) {
       break;
     case 'groceryList':
       const groceryList = yield call(getDataFromStorage, action.key);
-        groceryList
-          ? yield put(actions.loadGroceryListToStore(groceryList))
-          : null;
-        break;
+      groceryList
+        ? yield put(actions.loadGroceryListToStore(groceryList))
+        : null;
+      break;
     case 'menu':
       const menu = yield call(getDataFromStorage, action.key);
-        menu
-          ? yield put(actions.loadMenuToStore(menu))
-          : null;
-        break;
+      menu
+        ? yield put(actions.loadMenuToStore(menu))
+        : null;
+      break;
     default:
-      return
+      return;
   }
 }
 

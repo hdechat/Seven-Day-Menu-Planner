@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import RecipeCardContainer from '../../containers/RecipeCardContainer';
 import './index.css';
 
@@ -6,7 +7,11 @@ const RecipeCardsDisplay = ({ recipeCards }) => {
   const cards = recipeCards.map(recipe => {
     return (
       <div key={recipe.title} className="home-display">
-        <RecipeCardContainer recipe={recipe} displayAddToMenu={true} displayLinkText={true}/>
+        <RecipeCardContainer 
+          recipe={recipe} 
+          displayAddToMenu={true} 
+          displayLinkText={true}
+        />
       </div>
     );
   });
@@ -18,3 +23,7 @@ const RecipeCardsDisplay = ({ recipeCards }) => {
 };
 
 export default RecipeCardsDisplay;
+
+RecipeCardsDisplay.propTypes = {
+  recipeCards: PropTypes.array
+};

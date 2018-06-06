@@ -87,7 +87,7 @@ ShallowWrapper {
                 />
         </li>
 </ul>,
-      "class": "menu",
+      "className": "menu",
     },
     "ref": null,
     "rendered": Object {
@@ -515,7 +515,7 @@ ShallowWrapper {
                     />
           </li>
 </ul>,
-        "class": "menu",
+        "className": "menu",
       },
       "ref": null,
       "rendered": Object {
