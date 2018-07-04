@@ -1,7 +1,7 @@
 # 7-Day-Menu-Planner
 
 ### Overview
-7 Day Menu Planner fetches data from Edamam API and allows users to search and filter recipes, favorite recipes, and clicking to add to a 7 day menu plan. Users can print out a grocery list that is automatically compiled as recipes are added to or deleted from the menu plan. Pages persist using local storage.  
+7 Day Menu Planner fetches data from Edamam API and allows users to search and filter recipes, favorite recipes, and click to add to a 7 day menu plan. Users can print out a grocery list that is automatically compiled as recipes are added to or deleted from the menu plan. Pages persist using local storage.  
 
 ### Technologies
 React - Router - Redux - Saga - Jest - Enzyme
