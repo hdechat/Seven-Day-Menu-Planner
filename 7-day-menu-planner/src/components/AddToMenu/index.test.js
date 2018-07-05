@@ -43,7 +43,7 @@ describe('Add To Menu', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  describe('Select Weekday', () => {
+  describe('Selecting a weekday', () => {
     let mockEvent;
 
     beforeEach(() => {
@@ -53,15 +53,14 @@ describe('Add To Menu', () => {
       }};
     });
 
-    it('should call handleClick when user selects weekday', () => {
+    it('when weekeday element is changed should call handle click', () => {
       wrapper = mount(<AddToMenu 
         addToGroceryList={jest.fn()} 
         addToMenu={jest.fn()} 
         recipe={mockRecipe} />);
-
       const spy = spyOn(wrapper.instance(), 'handleClick');
-
       wrapper.instance().forceUpdate();
+      
       wrapper.find('#weekday').simulate('change', mockEvent);
 
       expect(spy).toHaveBeenCalled();

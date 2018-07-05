@@ -1,17 +1,25 @@
+.home {
+  background: #d5d7cc;
+  margin-top: 14px;
+}
+
+.background {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: -15px;
+}
+
 .select-category {
-  border: solid 1px white;
-  margin: 1rem auto;
+  font-size: 12px;
   width: 9rem;
 }
 
 .find-your-recipe {
-  margin-bottom: 0;
+  color: #878984;
+  padding-top: 1rem;
 }
 
 .english-spanish {
-  display: flex;
-  justify-content: space-around;
-  margin: auto 27rem;
 }
 
 .loading-gif {
@@ -37,31 +45,28 @@
 }
 
 .display-cards {
+  border-top: solid gray 1.5px;
   height: 70vh;
-  margin: auto;
+  margin: 1rem auto 0 auto;
   overflow-y: scroll;
-  width: 90%;
+  width: 95%;
 }
 
-.filters {
-  border: solid grey thin;
-  background: lightblue;
+#filters, #filters-sp {
+  background: white;
+  display: block;
+  font-size: 14px;
+  margin: 0.3rem auto;
+  width: 150px;
 }
 
-span {
+.beta {
   color: yellowgreen;
   font-size: 1rem
 }
 
-select#category {
-  background: transparent;
-  background-image: none;
-  border: none;
-  color: white;
-  font-size: 12px;
-  height: 2rem;
-  outline: none;
-  padding: 5px 8px;
+.or {
+  margin: auto 0.7rem;
 }
 
 select:hover {

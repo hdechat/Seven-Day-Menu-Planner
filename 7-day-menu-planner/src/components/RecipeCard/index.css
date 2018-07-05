@@ -1,25 +1,35 @@
 article {
+  background: #fff;
   box-shadow: 0.1rem 0.2rem 0.7rem -0.1rem;
   border: solid gray thin;
   height: fit-content;
-  margin: 0.2rem auto;
+  margin: 0.5rem auto;
   padding: 0.5rem 0rem;
   width: 100%;
-  background: #4B4B59;
 }
 
 img {
   position: relative;
-  top: -25px;
-  width: 95%;
+  top: -58px;
+  width: 100%;
 }
 
 img.card-image:hover {
-  box-shadow: 2px 2px 15px 1px burlywood;
+  border: solid #9bd437;
+  opacity: 0.5;
+  width: 98%;
 }
 
 .recipe-image {
   width: 100%;
+}
+
+.recipe-title {
+  color: #2f9aad;
+  margin-top: -55px;
+  font-size: 12px;
+  padding-left: 5px;
+  text-align: left;
 }
 
 .empty-card {
@@ -40,11 +50,14 @@ img.card-image:hover {
 }
 
 .star {
-  width: 10%;
+  background: white;
+  border-radius: 50%;
   float: right;
-  z-index: 2;
   position: relative;
-  top: -8px;
+  right: 5px;
+  top: -5px;
+  width: 10%;
+  z-index: 2;
 }
 
 .star:hover {
@@ -56,10 +69,3 @@ img.card-image:hover {
    display: none;
   }
 }
-
-
-
-
-
-
-

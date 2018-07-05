@@ -10,8 +10,8 @@ const fetchRecipes = async (lang, category, filter='') => {
   }
 };
 
-export const setToStorage = (key, menuGroceriesOrFaves) => {
-  const stringified = JSON.stringify(menuGroceriesOrFaves);
+export const setToStorage = (key, object) => {
+  const stringified = JSON.stringify(object);
   localStorage.setItem(key, stringified);
 };
 

@@ -1,13 +1,9 @@
 body {
-  background: url('./assets/cutting-board.jpg');
   background-repeat: no-repeat;
   box-sizing: border-box;
 }
 
 h1 {
-  font-size: 25px;
-  display: inline-block;
-  float: left;
 }
 
 .App {
@@ -15,31 +11,48 @@ h1 {
 }
 
 .App-header {
-  background: #4B4B59;
-  color: white;
+  background: #878984;
   display: flex;
+  justify-content: space-around;
   height: 2rem;
-  padding: 0.5rem;
+  padding: 0rem 30rem 0.5rem 20rem;
+}
+
+.top-of-nav {
+  margin: -2px;
+}
+
+.bottom-of-nav {
+  margin: 6px;
 }
 
 .nav {
-  color: white;
-  font-size: 1.1rem;
-  margin: auto 5rem;
+  align-self: baseline;
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0.5rem 3rem;
   text-decoration: none;
 }
 
 .nav:hover {
-  color: burlywood;
+  color: #9bd437;
 }
 
 .title {
+  background: #878984;
+  color: #9bd437;
+  text-decoration: none;
+  float: left;
   font-size: 1.5rem;
   margin: 0;
+  padding-left: 5px;
+  line-height: 39px;
 }
 
 .welcome-message {
-  font-size: 30px;
+  color: #de3400;
+  font-size: 50px;
 }
 
 @media screen and (max-width: 350px) {
@@ -97,25 +110,3 @@ h1 {
     height: 3rem;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

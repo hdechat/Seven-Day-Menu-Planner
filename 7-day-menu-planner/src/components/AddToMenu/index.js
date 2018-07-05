@@ -53,9 +53,9 @@ export default class AddToMenu extends Component {
 
   render() {
     return (
-      <div>
+      <form onSubmit={this.handleSubmit}>
         <p className="added-state-text">{this.state.text}</p>
-        <form className="add-to-menu" onSubmit={this.handleSubmit}>
+        <div className="add-to-menu" >
           <div className="select-category">
             <select name="weekday" id="weekday" onChange={this.handleClick}>
               <option>SELECT WEEKDAY</option>
@@ -68,12 +68,12 @@ export default class AddToMenu extends Component {
               {this.listMealTimeOptions()}
             </select>
           </div>
+        </div>
           <button 
             className="add-to-menu-button" 
             disabled={!this.state.weekday || !this.state.mealTime} 
             type='submit'>Add To Menu</button>
-        </form>
-      </div>
+      </form>
     );
   }
 }
@@ -83,6 +83,6 @@ AddToMenu.propTypes = {
   addToGroceryList: PropTypes.func,
   addGroceryListToStorage: PropTypes.func,
   addMenuItemToStorage: PropTypes.func,
-  recipe: PropTypes.obj
+  recipe: PropTypes.shap
   
 };

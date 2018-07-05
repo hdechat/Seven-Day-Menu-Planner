@@ -2,16 +2,18 @@ import { call, put, takeLatest } from 'redux-saga/effects';
 import fetchRecipes from '../../api';
 import * as actions from '../../actions';
 import { cleanData } from '../../helpers';
+import { paleo } from '../../mock-data';
 
 export function* chooseCategory(action) {
   try {
     yield put(actions.recipesIsLoading(true));
-    const results = yield call(
-      fetchRecipes, 
-      action.lang, 
-      action.category, 
-      action.filter
-    );
+    // const results = yield call(
+    //   fetchRecipes, 
+    //   action.lang, 
+    //   action.category, 
+    //   action.filter
+    // );
+    const results = paleo;
     const recipes = cleanData(results);
     yield put(actions.fetchRecipesSuccess(recipes));
     yield put(actions.recipesIsLoading(false));

@@ -1,9 +1,8 @@
 .add-to-menu {
-  margin: 0.3rem;
+  display: flex;
 }
 
 .select-category {
-  border: solid 1px;
   margin: auto;
   width: 9rem;
 }
@@ -11,7 +10,7 @@
 select {
   background: transparent;
   background-image: none;
-  border: none;
+  color: #878984;
   height: 2rem;
   outline: none;
   padding: 5px 8px;
@@ -23,9 +22,9 @@ select.mealTime {
 }
 
 p.added-state-text {
-  color: white;
+  color: #878984;
   margin-bottom: 0rem;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
 button {
@@ -41,7 +40,7 @@ button {
     font-size: 26px;
   }
 
-  form div.select-category {
+  div.select-category {
     display: inline-block;
     margin: 0;
   }

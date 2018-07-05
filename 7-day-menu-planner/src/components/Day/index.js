@@ -17,7 +17,6 @@ const Day = (props) => {
 
   return (
     <section className="day">
-      <h6>Breakfast</h6>
       <button 
         className={menu[day].breakfast.title ? "display" : "no-display"} 
         onClick={()=>handleClick('breakfast')}>(Remove)</button>
@@ -26,7 +25,6 @@ const Day = (props) => {
         displayAddToMenu={false} 
         displayLinkText={false} />
 
-      <h6>Lunch</h6>
       <button 
         className={menu[day].lunch.title ? "display" : "no-display"} 
         onClick={()=>handleClick('lunch')}>(Remove)</button>
@@ -35,7 +33,6 @@ const Day = (props) => {
         displayAddToMenu={false} 
         displayLinkText={false} />
 
-      <h6>Dinner</h6>
       <button 
         className={menu[day].dinner.title ? "display" : "no-display"} 
         onClick={()=>handleClick('dinner')}>(Remove)</button>
