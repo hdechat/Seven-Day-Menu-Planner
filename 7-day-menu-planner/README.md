@@ -13,7 +13,7 @@ React - Router - Redux - Saga - Jest - Enzyme
 With this project, my goal was to do pure TDD style coding, consistently submit microcommits, and have a thoroughly mapped out wireframe of the state-tree and file structure before beginning the project. I learned why it's particularly important to have good styling wireframes with modular code structure.
 
 ### Example
-![](7-day-menu-planner/src/assets/screenshot-home.png)
-![](7-day-menu-planner/src/assets/screenshot-menu.png)
-![](7-day-menu-planner/src/assets/screenshot-faves.png)
-![](7-day-menu-planner/src/assets/screenshot-groceries.png)
+![](src/assets/screenshot-home.png)
+![](src/assets/screenshot-menu.png)
+![](src/assets/screenshot-faves.png)
+![](src/assets/screenshot-groceries.png)
