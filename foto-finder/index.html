@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+  <meta charset="UTF-8">
+  <style rel="stylesheet" href="styles.css" type="text/css"></style>
+  <title>Document</title>
+</head>
+<body>
+  <form action="./photos">
+    <input type="text" name="title" id="title" placeholder="Title"/>
+    <input type="text" name="caption" id="caption" placeholder="caption">
+    <input type="file" name="upload-photo" id="upload-photo">
+   <!--  <label for='file' accept="image/*">Upload your photo</label> -->
+    <button id="submit-button">Add to Album</button>
+  </form>
+  <section class="display">
+    <ul class="photo-list"></ul>
+  </section>
+  <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>

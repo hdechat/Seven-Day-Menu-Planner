@@ -70,8 +70,7 @@
 }
 
 select:hover {
-  color: black;
-  font-size: .8rem;
+  color: #de3400;
 }
 
 @media screen and (max-width: 350px) {

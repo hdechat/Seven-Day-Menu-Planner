@@ -7,6 +7,7 @@
 }
 
 .grocery-list h2 {
+  color: #878984;
   margin-bottom: 0;
 }
 
@@ -33,6 +34,9 @@
 }
 
 .print {
+  background: #de3400;
+  border: solid;
+  border-style: outset;
   font-size: 15px;
   height: 2rem;
   left: 20.7rem;
@@ -46,7 +50,7 @@
       margin-bottom: 0;
     }
 
-    header, .print {
+    header, .print, .nav {
       display: none;
     }
     .groceries {

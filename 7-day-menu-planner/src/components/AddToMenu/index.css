@@ -1,5 +1,6 @@
 .add-to-menu {
   display: flex;
+  margin: 3px auto;
 }
 
 .select-category {
@@ -28,11 +29,29 @@ p.added-state-text {
 }
 
 button {
+  background: #de3400;
+  border: solid;
+  border-style: outset;
+  color: white;
   height: 2rem;
   display: inline-flex;
   font-size: 15px;
   padding-top: 5px;
   widows: 9rem;
+}
+
+button:hover {
+  color: black;
+}
+
+button:active {
+  border: none;
+  border-style: inset;
+  outline: none !important;
+}
+
+button:focus {
+  outline:0;
 }
 
 @media screen and (max-width: 350px) {
