@@ -10,7 +10,7 @@ React - Router - Redux - Saga - Jest - Enzyme
 [Edamam API](https://developer.edamam.com/) - GitHub Projects
 
 ### What I learned
-With this project, my goal was to do pure TDD style coding, consistently submit microcommits, and have a thoroughly mapped out wireframe of the state-tree and file structure before beginning the project. I learned why it's particularly important to have good styling wireframes with modular code structure.
+With this project, my goal was to gain experience with Redux, introduce myself to Saga middleware, do pure TDD style coding, consistently submit microcommits, and have a thoroughly mapped out wireframe of the state-tree and file structure before beginning the project.
 
 ### Example
 ![](7-day-menu-planner/src/assets/screenshot-home.png)
